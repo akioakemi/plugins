@@ -1,0 +1,9984 @@
+// Copyright 1998-2017 Epic Games, Inc. All Rights Reserved.
+/*===========================================================================
+	Generated code exported from UnrealHeaderTool.
+	DO NOT modify this manually! Edit the corresponding .h files instead!
+===========================================================================*/
+
+#include "GeneratedCppIncludes.h"
+#include "VRExpansionPlugin.generated.dep.h"
+PRAGMA_DISABLE_OPTIMIZATION
+#ifdef _MSC_VER
+#pragma warning (push)
+#pragma warning (disable : 4883)
+#endif
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+void EmptyLinkFunctionForGeneratedCode2VRExpansionPlugin() {}
+#if USE_COMPILED_IN_NATIVES
+// Cross Module References
+	COREUOBJECT_API class UClass* Z_Construct_UClass_UObject_NoRegister();
+	COREUOBJECT_API class UScriptStruct* Z_Construct_UScriptStruct_FTransform();
+	COREUOBJECT_API class UScriptStruct* Z_Construct_UScriptStruct_FRotator();
+	COREUOBJECT_API class UScriptStruct* Z_Construct_UScriptStruct_FVector();
+	ENGINE_API class UScriptStruct* Z_Construct_UScriptStruct_FVector_NetQuantize100();
+	ENGINE_API class UClass* Z_Construct_UClass_USceneComponent_NoRegister();
+	ENGINE_API class UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
+	ENGINE_API class UClass* Z_Construct_UClass_AActor_NoRegister();
+	HEADMOUNTEDDISPLAY_API class UClass* Z_Construct_UClass_UMotionControllerComponent();
+	ENGINE_API class UClass* Z_Construct_UClass_UBlueprintFunctionLibrary();
+	ENGINE_API class UClass* Z_Construct_UClass_UBoxComponent();
+	GAMEPLAYTAGS_API class UScriptStruct* Z_Construct_UScriptStruct_FGameplayTagContainer();
+	GAMEPLAYTAGS_API class UClass* Z_Construct_UClass_UGameplayTagAssetInterface_NoRegister();
+	ENGINE_API class UClass* Z_Construct_UClass_UCapsuleComponent();
+	ENGINE_API class UClass* Z_Construct_UClass_ASkeletalMeshActor();
+	ENGINE_API class UClass* Z_Construct_UClass_USkeletalMeshComponent();
+	ENGINE_API class UClass* Z_Construct_UClass_USphereComponent();
+	ENGINE_API class UClass* Z_Construct_UClass_AStaticMeshActor();
+	ENGINE_API class UClass* Z_Construct_UClass_UStaticMeshComponent();
+	ENGINE_API class UClass* Z_Construct_UClass_USceneComponent();
+	ENGINE_API class UScriptStruct* Z_Construct_UScriptStruct_FMinimalViewInfo();
+	ENGINE_API class UClass* Z_Construct_UClass_UCameraComponent();
+	ENGINE_API class UClass* Z_Construct_UClass_UCharacterMovementComponent();
+	ENGINE_API class UClass* Z_Construct_UClass_UNavigationQueryFilter_NoRegister();
+	AIMODULE_API class UEnum* Z_Construct_UEnum_AIModule_EPathFollowingStatus();
+	AIMODULE_API class UEnum* Z_Construct_UEnum_AIModule_EPathFollowingResult();
+	ENGINE_API class UClass* Z_Construct_UClass_ACharacter();
+	AIMODULE_API class UClass* Z_Construct_UClass_AAIController();
+	ENGINE_API class UEnum* Z_Construct_UEnum_Engine_ECollisionChannel();
+	ENGINE_API class UScriptStruct* Z_Construct_UScriptStruct_FVector_NetQuantize10();
+	ENGINE_API class UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
+	ENGINE_API class UClass* Z_Construct_UClass_UCapsuleComponent_NoRegister();
+	ENGINE_API class UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
+	ENGINE_API class UClass* Z_Construct_UClass_UTextureRenderTarget2D_NoRegister();
+	ENGINE_API class UEnum* Z_Construct_UEnum_Engine_EInputEvent();
+	INPUTCORE_API class UScriptStruct* Z_Construct_UScriptStruct_FKey();
+	ENGINE_API class UClass* Z_Construct_UClass_UActorComponent();
+	AIMODULE_API class UClass* Z_Construct_UClass_UPathFollowingComponent();
+	ENGINE_API class UClass* Z_Construct_UClass_APlayerController();
+	UMG_API class UClass* Z_Construct_UClass_UWidgetComponent();
+
+	VREXPANSIONPLUGIN_API class UEnum* Z_Construct_UEnum_VRExpansionPlugin_EPhysicsGripConstraintType();
+	VREXPANSIONPLUGIN_API class UEnum* Z_Construct_UEnum_VRExpansionPlugin_EGripInterfaceTeleportBehavior();
+	VREXPANSIONPLUGIN_API class UEnum* Z_Construct_UEnum_VRExpansionPlugin_EGripTargetType();
+	VREXPANSIONPLUGIN_API class UEnum* Z_Construct_UEnum_VRExpansionPlugin_EGripMovementReplicationSettings();
+	VREXPANSIONPLUGIN_API class UEnum* Z_Construct_UEnum_VRExpansionPlugin_EGripLateUpdateSettings();
+	VREXPANSIONPLUGIN_API class UEnum* Z_Construct_UEnum_VRExpansionPlugin_ESecondaryGripType();
+	VREXPANSIONPLUGIN_API class UEnum* Z_Construct_UEnum_VRExpansionPlugin_EGripLerpState();
+	VREXPANSIONPLUGIN_API class UEnum* Z_Construct_UEnum_VRExpansionPlugin_EBPHMDDeviceType();
+	VREXPANSIONPLUGIN_API class UEnum* Z_Construct_UEnum_VRExpansionPlugin_EGripCollisionType();
+	VREXPANSIONPLUGIN_API class UEnum* Z_Construct_UEnum_VRExpansionPlugin_EVRVectorQuantization();
+	VREXPANSIONPLUGIN_API class UEnum* Z_Construct_UEnum_VRExpansionPlugin_EBPVRWaistTrackingMode();
+	VREXPANSIONPLUGIN_API class UEnum* Z_Construct_UEnum_VRExpansionPlugin_EBPVRResultSwitch();
+	VREXPANSIONPLUGIN_API class UEnum* Z_Construct_UEnum_VRExpansionPlugin_EVRConjoinedMovementModes();
+	VREXPANSIONPLUGIN_API class UEnum* Z_Construct_UEnum_VRExpansionPlugin_EVRCustomMovementMode();
+	VREXPANSIONPLUGIN_API class UEnum* Z_Construct_UEnum_VRExpansionPlugin_EVRInteractibleAxis();
+	VREXPANSIONPLUGIN_API class UScriptStruct* Z_Construct_UScriptStruct_FBPActorPhysicsHandleInformation();
+	VREXPANSIONPLUGIN_API class UScriptStruct* Z_Construct_UScriptStruct_FBPInterfaceProperties();
+	VREXPANSIONPLUGIN_API class UScriptStruct* Z_Construct_UScriptStruct_FBPActorGripInformation();
+	VREXPANSIONPLUGIN_API class UScriptStruct* Z_Construct_UScriptStruct_FBPInteractionSettings();
+	VREXPANSIONPLUGIN_API class UScriptStruct* Z_Construct_UScriptStruct_FBPSecondaryGripInfo();
+	VREXPANSIONPLUGIN_API class UScriptStruct* Z_Construct_UScriptStruct_FBPAdvGripPhysicsSettings();
+	VREXPANSIONPLUGIN_API class UScriptStruct* Z_Construct_UScriptStruct_FBPVRComponentPosRep();
+	VREXPANSIONPLUGIN_API class UScriptStruct* Z_Construct_UScriptStruct_FTransform_NetQuantize();
+	VREXPANSIONPLUGIN_API class UScriptStruct* Z_Construct_UScriptStruct_FBPVRWaistTracking_Info();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRGripInterface_AdvancedPhysicsSettings();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRGripInterface_ClosestPrimarySlotInRange();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRGripInterface_ClosestSecondarySlotInRange();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRGripInterface_DenyGripping();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRGripInterface_FreeGripType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRGripInterface_GetInteractionSettings();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRGripInterface_GripBreakDistance();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRGripInterface_GripDamping();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRGripInterface_GripLateUpdateSetting();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRGripInterface_GripMovementReplicationType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRGripInterface_GripStiffness();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRGripInterface_IsHeld();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRGripInterface_IsInteractible();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRGripInterface_OnChildGrip();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRGripInterface_OnChildGripRelease();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRGripInterface_OnEndSecondaryUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRGripInterface_OnEndUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRGripInterface_OnGrip();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRGripInterface_OnGripRelease();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRGripInterface_OnSecondaryGrip();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRGripInterface_OnSecondaryGripRelease();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRGripInterface_OnSecondaryUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRGripInterface_OnUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRGripInterface_SecondaryGripType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRGripInterface_SetHeld();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRGripInterface_SimulateOnDrop();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRGripInterface_SlotGripType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRGripInterface_TeleportBehavior();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRGripInterface_TickGrip();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UVRGripInterface_NoRegister();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UVRGripInterface();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_AddSecondaryAttachmentPoint();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_BP_HasGripAuthority();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_BP_HasGripMovementAuthority();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_Client_NotifyInvalidLocalGrip();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_ConvertToControllerRelativeTransform();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_ConvertToGripRelativeTransform();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_CreateGripRelativeAdditionTransform_BP();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_DropActor();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_DropComponent();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_DropGrip();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_DropObject();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_DropObjectByInterface();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_GetGripByActor();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_GetGripByComponent();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_GetGripByObject();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_GetGrippedActors();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_GetGrippedComponents();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_GetGrippedObjects();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_GetIsComponentHeld();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_GetIsHeld();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_GetIsObjectHeld();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_GetIsSecondaryAttachment();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_GetPhysicsVelocities();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_GripActor();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_GripComponent();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_GripObject();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_GripObjectByInterface();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_HasGrippedObjects();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_NotifyDrop();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_OnRep_GrippedActors();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_OnRep_LocallyGrippedActors();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_OnRep_ReplicatedControllerTransform();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_PostTeleportMoveGrippedActors();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_RemoveSecondaryAttachmentPoint();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifyLocalGripAddedOrChanged();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifyLocalGripRemoved();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_Server_NotifySecondaryAttachmentChanged();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_Server_SendControllerTransform();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_SetGripAdditionTransform();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_SetGripCollisionType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_SetGripLateUpdateSetting();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_SetGripRelativeTransform();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_SetGripStiffnessAndDamping();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_TeleportMoveGrip();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_TeleportMoveGrippedActor();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGripMotionControllerComponent_TeleportMoveGrippedComponent();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UGripMotionControllerComponent_NoRegister();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UGripMotionControllerComponent();
+	VREXPANSIONPLUGIN_API class UEnum* Z_Construct_UEnum_VRExpansionPlugin_EBPHMDWornState();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRExpansionFunctionLibrary_AddSceneComponentByClass();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRExpansionFunctionLibrary_BreakTransform_NetQuantize();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRExpansionFunctionLibrary_Conv_TransformToTransformNetQuantize();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRExpansionFunctionLibrary_EqualEqual_FBPActorGripInformation();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRExpansionFunctionLibrary_GetGripSlotInRangeByTypeName();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRExpansionFunctionLibrary_GetGripSlotInRangeByTypeName_Component();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRExpansionFunctionLibrary_GetHMDPureYaw();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRExpansionFunctionLibrary_GetHMDType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRExpansionFunctionLibrary_GetIsActorMovable();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRExpansionFunctionLibrary_GetIsHMDConnected();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRExpansionFunctionLibrary_GetIsHMDWorn();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRExpansionFunctionLibrary_IsInVREditorPreviewOrGame();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRExpansionFunctionLibrary_LowPassFilter_Exponential();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRExpansionFunctionLibrary_LowPassFilter_RollingAverage();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRExpansionFunctionLibrary_MakeTransform_NetQuantize();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRExpansionFunctionLibrary_NonAuthorityMinimumAreaRectangle();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRExpansionFunctionLibrary_RotateAroundPivot();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UVRExpansionFunctionLibrary_NoRegister();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UVRExpansionFunctionLibrary();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableBoxComponent_AdvancedPhysicsSettings();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableBoxComponent_ClosestPrimarySlotInRange();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableBoxComponent_ClosestSecondarySlotInRange();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableBoxComponent_DenyGripping();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableBoxComponent_FreeGripType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableBoxComponent_GetInteractionSettings();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableBoxComponent_GripBreakDistance();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableBoxComponent_GripDamping();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableBoxComponent_GripLateUpdateSetting();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableBoxComponent_GripMovementReplicationType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableBoxComponent_GripStiffness();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableBoxComponent_IsHeld();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableBoxComponent_IsInteractible();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableBoxComponent_OnChildGrip();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableBoxComponent_OnChildGripRelease();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableBoxComponent_OnEndSecondaryUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableBoxComponent_OnEndUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableBoxComponent_OnGrip();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableBoxComponent_OnGripRelease();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableBoxComponent_OnSecondaryGrip();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableBoxComponent_OnSecondaryGripRelease();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableBoxComponent_OnSecondaryUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableBoxComponent_OnUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableBoxComponent_SecondaryGripType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableBoxComponent_SetHeld();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableBoxComponent_SimulateOnDrop();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableBoxComponent_SlotGripType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableBoxComponent_TeleportBehavior();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableBoxComponent_TickGrip();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UGrippableBoxComponent_NoRegister();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UGrippableBoxComponent();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_AdvancedPhysicsSettings();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_ClosestPrimarySlotInRange();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_ClosestSecondarySlotInRange();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_DenyGripping();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_FreeGripType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_GetInteractionSettings();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_GripBreakDistance();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_GripDamping();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_GripLateUpdateSetting();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_GripMovementReplicationType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_GripStiffness();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_IsHeld();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_IsInteractible();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_OnChildGrip();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_OnChildGripRelease();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_OnEndSecondaryUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_OnEndUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_OnGrip();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_OnGripRelease();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_OnSecondaryGrip();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_OnSecondaryGripRelease();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_OnSecondaryUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_OnUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_SecondaryGripType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_SetHeld();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_SimulateOnDrop();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_SlotGripType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_TeleportBehavior();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_TickGrip();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UGrippableCapsuleComponent_NoRegister();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UGrippableCapsuleComponent();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_AdvancedPhysicsSettings();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_ClosestPrimarySlotInRange();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_ClosestSecondarySlotInRange();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_DenyGripping();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_FreeGripType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_GetInteractionSettings();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_GripBreakDistance();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_GripDamping();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_GripLateUpdateSetting();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_GripMovementReplicationType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_GripStiffness();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_IsHeld();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_IsInteractible();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnChildGrip();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnChildGripRelease();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnEndSecondaryUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnEndUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnGrip();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnGripRelease();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnSecondaryGrip();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnSecondaryGripRelease();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnSecondaryUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_SecondaryGripType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_SetHeld();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_SimulateOnDrop();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_SlotGripType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_TeleportBehavior();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_TickGrip();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_AGrippableSkeletalMeshActor_NoRegister();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_AGrippableSkeletalMeshActor();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_AdvancedPhysicsSettings();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_ClosestPrimarySlotInRange();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_ClosestSecondarySlotInRange();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_DenyGripping();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_FreeGripType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_GetInteractionSettings();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_GripBreakDistance();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_GripDamping();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_GripLateUpdateSetting();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_GripMovementReplicationType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_GripStiffness();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_IsHeld();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_IsInteractible();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnChildGrip();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnChildGripRelease();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnEndSecondaryUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnEndUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnGrip();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnGripRelease();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnSecondaryGrip();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnSecondaryGripRelease();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnSecondaryUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_SecondaryGripType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_SetHeld();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_SimulateOnDrop();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_SlotGripType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_TeleportBehavior();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_TickGrip();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UGrippableSkeletalMeshComponent_NoRegister();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UGrippableSkeletalMeshComponent();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSphereComponent_AdvancedPhysicsSettings();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSphereComponent_ClosestPrimarySlotInRange();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSphereComponent_ClosestSecondarySlotInRange();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSphereComponent_DenyGripping();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSphereComponent_FreeGripType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSphereComponent_GetInteractionSettings();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSphereComponent_GripBreakDistance();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSphereComponent_GripDamping();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSphereComponent_GripLateUpdateSetting();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSphereComponent_GripMovementReplicationType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSphereComponent_GripStiffness();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSphereComponent_IsHeld();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSphereComponent_IsInteractible();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSphereComponent_OnChildGrip();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSphereComponent_OnChildGripRelease();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSphereComponent_OnEndSecondaryUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSphereComponent_OnEndUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSphereComponent_OnGrip();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSphereComponent_OnGripRelease();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSphereComponent_OnSecondaryGrip();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSphereComponent_OnSecondaryGripRelease();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSphereComponent_OnSecondaryUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSphereComponent_OnUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSphereComponent_SecondaryGripType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSphereComponent_SetHeld();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSphereComponent_SimulateOnDrop();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSphereComponent_SlotGripType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSphereComponent_TeleportBehavior();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableSphereComponent_TickGrip();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UGrippableSphereComponent_NoRegister();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UGrippableSphereComponent();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_AdvancedPhysicsSettings();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_ClosestPrimarySlotInRange();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_ClosestSecondarySlotInRange();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_DenyGripping();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_FreeGripType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_GetInteractionSettings();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_GripBreakDistance();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_GripDamping();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_GripLateUpdateSetting();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_GripMovementReplicationType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_GripStiffness();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_IsHeld();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_IsInteractible();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_OnChildGrip();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_OnChildGripRelease();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_OnEndSecondaryUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_OnEndUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_OnGrip();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_OnGripRelease();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_OnSecondaryGrip();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_OnSecondaryGripRelease();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_OnSecondaryUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_OnUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_SecondaryGripType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_SetHeld();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_SimulateOnDrop();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_SlotGripType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_TeleportBehavior();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_TickGrip();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_AGrippableStaticMeshActor_NoRegister();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_AGrippableStaticMeshActor();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_AdvancedPhysicsSettings();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_ClosestPrimarySlotInRange();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_ClosestSecondarySlotInRange();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_DenyGripping();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_FreeGripType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_GetInteractionSettings();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_GripBreakDistance();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_GripDamping();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_GripLateUpdateSetting();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_GripMovementReplicationType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_GripStiffness();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_IsHeld();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_IsInteractible();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_OnChildGrip();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_OnChildGripRelease();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_OnEndSecondaryUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_OnEndUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_OnGrip();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_OnGripRelease();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_OnSecondaryGrip();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_OnSecondaryGripRelease();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_OnSecondaryUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_OnUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_SecondaryGripType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_SetHeld();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_SimulateOnDrop();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_SlotGripType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_TeleportBehavior();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_TickGrip();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UGrippableStaticMeshComponent_NoRegister();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UGrippableStaticMeshComponent();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRTrackedParentInterface_SetTrackedParent();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UVRTrackedParentInterface_NoRegister();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UVRTrackedParentInterface();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UParentRelativeAttachmentComponent_NoRegister();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UParentRelativeAttachmentComponent();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UReplicatedVRCameraComponent_GetCameraView();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UReplicatedVRCameraComponent_OnRep_ReplicatedTransform();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UReplicatedVRCameraComponent_Server_SendTransform();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UReplicatedVRCameraComponent_NoRegister();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UReplicatedVRCameraComponent();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRBaseCharacterMovementComponent_AddCustomReplicatedMovement();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRBaseCharacterMovementComponent_ClientAdjustPosition();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRBaseCharacterMovementComponent_ClientVeryShortAdjustPosition();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRBaseCharacterMovementComponent_SetClimbingMode();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRBaseCharacterMovementComponent_SetCrouchedHalfHeight();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRBaseCharacterMovementComponent_SetReplicatedMovementMode();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UVRBaseCharacterMovementComponent_NoRegister();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UVRBaseCharacterMovementComponent();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AVRBaseCharacter_ExtendedSimpleMoveToLocation();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AVRBaseCharacter_GetMoveStatus();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AVRBaseCharacter_GetTeleportLocation();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AVRBaseCharacter_GetVRForwardVector();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AVRBaseCharacter_GetVRLocation();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AVRBaseCharacter_GetVRRightVector();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AVRBaseCharacter_GetVRRotation();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AVRBaseCharacter_GetVRUpVector();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AVRBaseCharacter_HasPartialPath();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AVRBaseCharacter_NotifyOfTeleport();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AVRBaseCharacter_OnClimbingSteppedUp();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AVRBaseCharacter_ReceiveNavigationMoveCompleted();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AVRBaseCharacter_SetCharacterHalfHeightVR();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AVRBaseCharacter_SetCharacterSizeVR();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AVRBaseCharacter_StopNavigationMovement();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_AVRBaseCharacter_NoRegister();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_AVRBaseCharacter();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_AVRAIController_NoRegister();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_AVRAIController();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRRootComponent_SetCapsuleHalfHeightVR();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRRootComponent_SetCapsuleSizeVR();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UVRRootComponent_NoRegister();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UVRRootComponent();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRCharacterMovementComponent_ServerMoveVR();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRCharacterMovementComponent_ServerMoveVRDual();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRCharacterMovementComponent_ServerMoveVRDualHybridRootMotion();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UVRCharacterMovementComponent_NoRegister();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UVRCharacterMovementComponent();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AVRCharacter_ExtendedSimpleMoveToLocation();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AVRCharacter_GetTeleportLocation();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AVRCharacter_NotifyOfTeleport();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AVRCharacter_SetCharacterHalfHeightVR();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AVRCharacter_SetCharacterSizeVR();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_AVRCharacter_NoRegister();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_AVRCharacter();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRSimpleCharacterMovementComponent_ServerMoveVR();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRSimpleCharacterMovementComponent_ServerMoveVRDual();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRSimpleCharacterMovementComponent_ServerMoveVRDualHybridRootMotion();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UVRSimpleCharacterMovementComponent_NoRegister();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UVRSimpleCharacterMovementComponent();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_AVRSimpleCharacter_GetTeleportLocation();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_AVRSimpleCharacter_NoRegister();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_AVRSimpleCharacter();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UDelegateFunction_VRExpansionPlugin_VRButtonStateChangedSignature__DelegateSignature();
+	VREXPANSIONPLUGIN_API class UEnum* Z_Construct_UEnum_VRExpansionPlugin_EVRButtonType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRButtonComponent_IsButtonInUse();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRButtonComponent_OnOverlapBegin();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRButtonComponent_OnOverlapEnd();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRButtonComponent_ResetInitialButtonLocation();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UVRButtonComponent_NoRegister();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UVRButtonComponent();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRLeverComponent_AdvancedPhysicsSettings();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRLeverComponent_ClosestPrimarySlotInRange();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRLeverComponent_ClosestSecondarySlotInRange();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRLeverComponent_DenyGripping();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRLeverComponent_FreeGripType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRLeverComponent_GetInteractionSettings();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRLeverComponent_GripBreakDistance();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRLeverComponent_GripDamping();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRLeverComponent_GripLateUpdateSetting();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRLeverComponent_GripMovementReplicationType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRLeverComponent_GripStiffness();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRLeverComponent_IsHeld();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRLeverComponent_IsInteractible();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRLeverComponent_OnChildGrip();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRLeverComponent_OnChildGripRelease();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRLeverComponent_OnEndSecondaryUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRLeverComponent_OnEndUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRLeverComponent_OnGrip();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRLeverComponent_OnGripRelease();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRLeverComponent_OnSecondaryGrip();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRLeverComponent_OnSecondaryGripRelease();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRLeverComponent_OnSecondaryUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRLeverComponent_OnUsed();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRLeverComponent_SecondaryGripType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRLeverComponent_SetHeld();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRLeverComponent_SimulateOnDrop();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRLeverComponent_SlotGripType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRLeverComponent_TeleportBehavior();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRLeverComponent_TickGrip();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UVRLeverComponent_NoRegister();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UVRLeverComponent();
+	VREXPANSIONPLUGIN_API class UEnum* Z_Construct_UEnum_VRExpansionPlugin_EBPVRConsoleDrawType();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRLogComponent_AppendTextToConsole();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRLogComponent_DrawConsoleToRenderTarget2D();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRLogComponent_SendKeyEventToConsole();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRLogComponent_SetConsoleText();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UVRLogComponent_NoRegister();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UVRLogComponent();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UVRPathFollowingComponent_NoRegister();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UVRPathFollowingComponent();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_AVRPlayerController_NoRegister();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_AVRPlayerController();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRStereoWidgetComponent_GetPriority();
+	VREXPANSIONPLUGIN_API class UFunction* Z_Construct_UFunction_UVRStereoWidgetComponent_SetPriority();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UVRStereoWidgetComponent_NoRegister();
+	VREXPANSIONPLUGIN_API class UClass* Z_Construct_UClass_UVRStereoWidgetComponent();
+	VREXPANSIONPLUGIN_API class UPackage* Z_Construct_UPackage__Script_VRExpansionPlugin();
+	static FName NAME_UGrippableCapsuleComponent_AdvancedPhysicsSettings = FName(TEXT("AdvancedPhysicsSettings"));
+	FBPAdvGripPhysicsSettings UGrippableCapsuleComponent::AdvancedPhysicsSettings()
+	{
+		GrippableCapsuleComponent_eventAdvancedPhysicsSettings_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableCapsuleComponent_AdvancedPhysicsSettings),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableCapsuleComponent_ClosestPrimarySlotInRange = FName(TEXT("ClosestPrimarySlotInRange"));
+	void UGrippableCapsuleComponent::ClosestPrimarySlotInRange(FVector WorldLocation, bool& bHadSlotInRange, FTransform& SlotWorldTransform, FName OverridePrefix)
+	{
+		GrippableCapsuleComponent_eventClosestPrimarySlotInRange_Parms Parms;
+		Parms.WorldLocation=WorldLocation;
+		Parms.bHadSlotInRange=bHadSlotInRange ? true : false;
+		Parms.SlotWorldTransform=SlotWorldTransform;
+		Parms.OverridePrefix=OverridePrefix;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableCapsuleComponent_ClosestPrimarySlotInRange),&Parms);
+		bHadSlotInRange=Parms.bHadSlotInRange;
+		SlotWorldTransform=Parms.SlotWorldTransform;
+	}
+	static FName NAME_UGrippableCapsuleComponent_ClosestSecondarySlotInRange = FName(TEXT("ClosestSecondarySlotInRange"));
+	void UGrippableCapsuleComponent::ClosestSecondarySlotInRange(FVector WorldLocation, bool& bHadSlotInRange, FTransform& SlotWorldTransform, FName OverridePrefix)
+	{
+		GrippableCapsuleComponent_eventClosestSecondarySlotInRange_Parms Parms;
+		Parms.WorldLocation=WorldLocation;
+		Parms.bHadSlotInRange=bHadSlotInRange ? true : false;
+		Parms.SlotWorldTransform=SlotWorldTransform;
+		Parms.OverridePrefix=OverridePrefix;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableCapsuleComponent_ClosestSecondarySlotInRange),&Parms);
+		bHadSlotInRange=Parms.bHadSlotInRange;
+		SlotWorldTransform=Parms.SlotWorldTransform;
+	}
+	static FName NAME_UGrippableCapsuleComponent_DenyGripping = FName(TEXT("DenyGripping"));
+	bool UGrippableCapsuleComponent::DenyGripping()
+	{
+		GrippableCapsuleComponent_eventDenyGripping_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableCapsuleComponent_DenyGripping),&Parms);
+		return !!Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableCapsuleComponent_FreeGripType = FName(TEXT("FreeGripType"));
+	EGripCollisionType UGrippableCapsuleComponent::FreeGripType()
+	{
+		GrippableCapsuleComponent_eventFreeGripType_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableCapsuleComponent_FreeGripType),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableCapsuleComponent_GetInteractionSettings = FName(TEXT("GetInteractionSettings"));
+	FBPInteractionSettings UGrippableCapsuleComponent::GetInteractionSettings()
+	{
+		GrippableCapsuleComponent_eventGetInteractionSettings_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableCapsuleComponent_GetInteractionSettings),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableCapsuleComponent_GripBreakDistance = FName(TEXT("GripBreakDistance"));
+	float UGrippableCapsuleComponent::GripBreakDistance()
+	{
+		GrippableCapsuleComponent_eventGripBreakDistance_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableCapsuleComponent_GripBreakDistance),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableCapsuleComponent_GripDamping = FName(TEXT("GripDamping"));
+	float UGrippableCapsuleComponent::GripDamping()
+	{
+		GrippableCapsuleComponent_eventGripDamping_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableCapsuleComponent_GripDamping),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableCapsuleComponent_GripLateUpdateSetting = FName(TEXT("GripLateUpdateSetting"));
+	EGripLateUpdateSettings UGrippableCapsuleComponent::GripLateUpdateSetting()
+	{
+		GrippableCapsuleComponent_eventGripLateUpdateSetting_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableCapsuleComponent_GripLateUpdateSetting),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableCapsuleComponent_GripMovementReplicationType = FName(TEXT("GripMovementReplicationType"));
+	EGripMovementReplicationSettings UGrippableCapsuleComponent::GripMovementReplicationType()
+	{
+		GrippableCapsuleComponent_eventGripMovementReplicationType_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableCapsuleComponent_GripMovementReplicationType),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableCapsuleComponent_GripStiffness = FName(TEXT("GripStiffness"));
+	float UGrippableCapsuleComponent::GripStiffness()
+	{
+		GrippableCapsuleComponent_eventGripStiffness_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableCapsuleComponent_GripStiffness),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableCapsuleComponent_IsHeld = FName(TEXT("IsHeld"));
+	void UGrippableCapsuleComponent::IsHeld(UGripMotionControllerComponent*& HoldingController, bool& bIsHeld)
+	{
+		GrippableCapsuleComponent_eventIsHeld_Parms Parms;
+		Parms.HoldingController=HoldingController;
+		Parms.bIsHeld=bIsHeld ? true : false;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableCapsuleComponent_IsHeld),&Parms);
+		HoldingController=Parms.HoldingController;
+		bIsHeld=Parms.bIsHeld;
+	}
+	static FName NAME_UGrippableCapsuleComponent_IsInteractible = FName(TEXT("IsInteractible"));
+	bool UGrippableCapsuleComponent::IsInteractible()
+	{
+		GrippableCapsuleComponent_eventIsInteractible_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableCapsuleComponent_IsInteractible),&Parms);
+		return !!Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableCapsuleComponent_OnChildGrip = FName(TEXT("OnChildGrip"));
+	void UGrippableCapsuleComponent::OnChildGrip(UGripMotionControllerComponent* GrippingController, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableCapsuleComponent_eventOnChildGrip_Parms Parms;
+		Parms.GrippingController=GrippingController;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableCapsuleComponent_OnChildGrip),&Parms);
+	}
+	static FName NAME_UGrippableCapsuleComponent_OnChildGripRelease = FName(TEXT("OnChildGripRelease"));
+	void UGrippableCapsuleComponent::OnChildGripRelease(UGripMotionControllerComponent* ReleasingController, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableCapsuleComponent_eventOnChildGripRelease_Parms Parms;
+		Parms.ReleasingController=ReleasingController;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableCapsuleComponent_OnChildGripRelease),&Parms);
+	}
+	static FName NAME_UGrippableCapsuleComponent_OnEndSecondaryUsed = FName(TEXT("OnEndSecondaryUsed"));
+	void UGrippableCapsuleComponent::OnEndSecondaryUsed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableCapsuleComponent_OnEndSecondaryUsed),NULL);
+	}
+	static FName NAME_UGrippableCapsuleComponent_OnEndUsed = FName(TEXT("OnEndUsed"));
+	void UGrippableCapsuleComponent::OnEndUsed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableCapsuleComponent_OnEndUsed),NULL);
+	}
+	static FName NAME_UGrippableCapsuleComponent_OnGrip = FName(TEXT("OnGrip"));
+	void UGrippableCapsuleComponent::OnGrip(UGripMotionControllerComponent* GrippingController, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableCapsuleComponent_eventOnGrip_Parms Parms;
+		Parms.GrippingController=GrippingController;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableCapsuleComponent_OnGrip),&Parms);
+	}
+	static FName NAME_UGrippableCapsuleComponent_OnGripRelease = FName(TEXT("OnGripRelease"));
+	void UGrippableCapsuleComponent::OnGripRelease(UGripMotionControllerComponent* ReleasingController, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableCapsuleComponent_eventOnGripRelease_Parms Parms;
+		Parms.ReleasingController=ReleasingController;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableCapsuleComponent_OnGripRelease),&Parms);
+	}
+	static FName NAME_UGrippableCapsuleComponent_OnSecondaryGrip = FName(TEXT("OnSecondaryGrip"));
+	void UGrippableCapsuleComponent::OnSecondaryGrip(USceneComponent* SecondaryGripComponent, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableCapsuleComponent_eventOnSecondaryGrip_Parms Parms;
+		Parms.SecondaryGripComponent=SecondaryGripComponent;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableCapsuleComponent_OnSecondaryGrip),&Parms);
+	}
+	static FName NAME_UGrippableCapsuleComponent_OnSecondaryGripRelease = FName(TEXT("OnSecondaryGripRelease"));
+	void UGrippableCapsuleComponent::OnSecondaryGripRelease(USceneComponent* ReleasingSecondaryGripComponent, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableCapsuleComponent_eventOnSecondaryGripRelease_Parms Parms;
+		Parms.ReleasingSecondaryGripComponent=ReleasingSecondaryGripComponent;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableCapsuleComponent_OnSecondaryGripRelease),&Parms);
+	}
+	static FName NAME_UGrippableCapsuleComponent_OnSecondaryUsed = FName(TEXT("OnSecondaryUsed"));
+	void UGrippableCapsuleComponent::OnSecondaryUsed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableCapsuleComponent_OnSecondaryUsed),NULL);
+	}
+	static FName NAME_UGrippableCapsuleComponent_OnUsed = FName(TEXT("OnUsed"));
+	void UGrippableCapsuleComponent::OnUsed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableCapsuleComponent_OnUsed),NULL);
+	}
+	static FName NAME_UGrippableCapsuleComponent_SecondaryGripType = FName(TEXT("SecondaryGripType"));
+	ESecondaryGripType UGrippableCapsuleComponent::SecondaryGripType()
+	{
+		GrippableCapsuleComponent_eventSecondaryGripType_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableCapsuleComponent_SecondaryGripType),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableCapsuleComponent_SetHeld = FName(TEXT("SetHeld"));
+	void UGrippableCapsuleComponent::SetHeld(UGripMotionControllerComponent* HoldingController, bool bIsHeld)
+	{
+		GrippableCapsuleComponent_eventSetHeld_Parms Parms;
+		Parms.HoldingController=HoldingController;
+		Parms.bIsHeld=bIsHeld ? true : false;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableCapsuleComponent_SetHeld),&Parms);
+	}
+	static FName NAME_UGrippableCapsuleComponent_SimulateOnDrop = FName(TEXT("SimulateOnDrop"));
+	bool UGrippableCapsuleComponent::SimulateOnDrop()
+	{
+		GrippableCapsuleComponent_eventSimulateOnDrop_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableCapsuleComponent_SimulateOnDrop),&Parms);
+		return !!Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableCapsuleComponent_SlotGripType = FName(TEXT("SlotGripType"));
+	EGripCollisionType UGrippableCapsuleComponent::SlotGripType()
+	{
+		GrippableCapsuleComponent_eventSlotGripType_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableCapsuleComponent_SlotGripType),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableCapsuleComponent_TeleportBehavior = FName(TEXT("TeleportBehavior"));
+	EGripInterfaceTeleportBehavior UGrippableCapsuleComponent::TeleportBehavior()
+	{
+		GrippableCapsuleComponent_eventTeleportBehavior_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableCapsuleComponent_TeleportBehavior),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableCapsuleComponent_TickGrip = FName(TEXT("TickGrip"));
+	void UGrippableCapsuleComponent::TickGrip(UGripMotionControllerComponent* GrippingController, FBPActorGripInformation const& GripInformation, FVector MControllerLocDelta, float DeltaTime)
+	{
+		GrippableCapsuleComponent_eventTickGrip_Parms Parms;
+		Parms.GrippingController=GrippingController;
+		Parms.GripInformation=GripInformation;
+		Parms.MControllerLocDelta=MControllerLocDelta;
+		Parms.DeltaTime=DeltaTime;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableCapsuleComponent_TickGrip),&Parms);
+	}
+	void UGrippableCapsuleComponent::StaticRegisterNativesUGrippableCapsuleComponent()
+	{
+		UClass* Class = UGrippableCapsuleComponent::StaticClass();
+		static const TNameNativePtrPair<ANSICHAR> AnsiFuncs[] = {
+			{ "AdvancedPhysicsSettings", (Native)&UGrippableCapsuleComponent::execAdvancedPhysicsSettings },
+			{ "ClosestPrimarySlotInRange", (Native)&UGrippableCapsuleComponent::execClosestPrimarySlotInRange },
+			{ "ClosestSecondarySlotInRange", (Native)&UGrippableCapsuleComponent::execClosestSecondarySlotInRange },
+			{ "DenyGripping", (Native)&UGrippableCapsuleComponent::execDenyGripping },
+			{ "FreeGripType", (Native)&UGrippableCapsuleComponent::execFreeGripType },
+			{ "GetInteractionSettings", (Native)&UGrippableCapsuleComponent::execGetInteractionSettings },
+			{ "GripBreakDistance", (Native)&UGrippableCapsuleComponent::execGripBreakDistance },
+			{ "GripDamping", (Native)&UGrippableCapsuleComponent::execGripDamping },
+			{ "GripLateUpdateSetting", (Native)&UGrippableCapsuleComponent::execGripLateUpdateSetting },
+			{ "GripMovementReplicationType", (Native)&UGrippableCapsuleComponent::execGripMovementReplicationType },
+			{ "GripStiffness", (Native)&UGrippableCapsuleComponent::execGripStiffness },
+			{ "IsHeld", (Native)&UGrippableCapsuleComponent::execIsHeld },
+			{ "IsInteractible", (Native)&UGrippableCapsuleComponent::execIsInteractible },
+			{ "OnChildGrip", (Native)&UGrippableCapsuleComponent::execOnChildGrip },
+			{ "OnChildGripRelease", (Native)&UGrippableCapsuleComponent::execOnChildGripRelease },
+			{ "OnEndSecondaryUsed", (Native)&UGrippableCapsuleComponent::execOnEndSecondaryUsed },
+			{ "OnEndUsed", (Native)&UGrippableCapsuleComponent::execOnEndUsed },
+			{ "OnGrip", (Native)&UGrippableCapsuleComponent::execOnGrip },
+			{ "OnGripRelease", (Native)&UGrippableCapsuleComponent::execOnGripRelease },
+			{ "OnSecondaryGrip", (Native)&UGrippableCapsuleComponent::execOnSecondaryGrip },
+			{ "OnSecondaryGripRelease", (Native)&UGrippableCapsuleComponent::execOnSecondaryGripRelease },
+			{ "OnSecondaryUsed", (Native)&UGrippableCapsuleComponent::execOnSecondaryUsed },
+			{ "OnUsed", (Native)&UGrippableCapsuleComponent::execOnUsed },
+			{ "SecondaryGripType", (Native)&UGrippableCapsuleComponent::execSecondaryGripType },
+			{ "SetHeld", (Native)&UGrippableCapsuleComponent::execSetHeld },
+			{ "SimulateOnDrop", (Native)&UGrippableCapsuleComponent::execSimulateOnDrop },
+			{ "SlotGripType", (Native)&UGrippableCapsuleComponent::execSlotGripType },
+			{ "TeleportBehavior", (Native)&UGrippableCapsuleComponent::execTeleportBehavior },
+			{ "TickGrip", (Native)&UGrippableCapsuleComponent::execTickGrip },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, AnsiFuncs, 29);
+	}
+	UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_AdvancedPhysicsSettings()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableCapsuleComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("AdvancedPhysicsSettings"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableCapsuleComponent_eventAdvancedPhysicsSettings_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableCapsuleComponent_eventAdvancedPhysicsSettings_Parms), 0x0010000000000580, Z_Construct_UScriptStruct_FBPAdvGripPhysicsSettings());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableCapsuleComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Get the advanced physics settings for this grip"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_ClosestPrimarySlotInRange()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableCapsuleComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ClosestPrimarySlotInRange"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0CC20C00, 65535, sizeof(GrippableCapsuleComponent_eventClosestPrimarySlotInRange_Parms));
+			UProperty* NewProp_OverridePrefix = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OverridePrefix"), RF_Public|RF_Transient|RF_MarkAsNative) UNameProperty(CPP_PROPERTY_BASE(OverridePrefix, GrippableCapsuleComponent_eventClosestPrimarySlotInRange_Parms), 0x0010000000000080);
+			UProperty* NewProp_SlotWorldTransform = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("SlotWorldTransform"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(SlotWorldTransform, GrippableCapsuleComponent_eventClosestPrimarySlotInRange_Parms), 0x0010000000000180, Z_Construct_UScriptStruct_FTransform());
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bHadSlotInRange, GrippableCapsuleComponent_eventClosestPrimarySlotInRange_Parms, bool);
+			UProperty* NewProp_bHadSlotInRange = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bHadSlotInRange"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bHadSlotInRange, GrippableCapsuleComponent_eventClosestPrimarySlotInRange_Parms), 0x0010000000000180, CPP_BOOL_PROPERTY_BITMASK(bHadSlotInRange, GrippableCapsuleComponent_eventClosestPrimarySlotInRange_Parms), sizeof(bool), true);
+			UProperty* NewProp_WorldLocation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("WorldLocation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(WorldLocation, GrippableCapsuleComponent_eventClosestPrimarySlotInRange_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableCapsuleComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Get closest primary slot in range"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_ClosestSecondarySlotInRange()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableCapsuleComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ClosestSecondarySlotInRange"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0CC20C00, 65535, sizeof(GrippableCapsuleComponent_eventClosestSecondarySlotInRange_Parms));
+			UProperty* NewProp_OverridePrefix = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OverridePrefix"), RF_Public|RF_Transient|RF_MarkAsNative) UNameProperty(CPP_PROPERTY_BASE(OverridePrefix, GrippableCapsuleComponent_eventClosestSecondarySlotInRange_Parms), 0x0010000000000080);
+			UProperty* NewProp_SlotWorldTransform = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("SlotWorldTransform"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(SlotWorldTransform, GrippableCapsuleComponent_eventClosestSecondarySlotInRange_Parms), 0x0010000000000180, Z_Construct_UScriptStruct_FTransform());
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bHadSlotInRange, GrippableCapsuleComponent_eventClosestSecondarySlotInRange_Parms, bool);
+			UProperty* NewProp_bHadSlotInRange = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bHadSlotInRange"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bHadSlotInRange, GrippableCapsuleComponent_eventClosestSecondarySlotInRange_Parms), 0x0010000000000180, CPP_BOOL_PROPERTY_BITMASK(bHadSlotInRange, GrippableCapsuleComponent_eventClosestSecondarySlotInRange_Parms), sizeof(bool), true);
+			UProperty* NewProp_WorldLocation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("WorldLocation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(WorldLocation, GrippableCapsuleComponent_eventClosestSecondarySlotInRange_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableCapsuleComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Get closest secondary slot in range"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_DenyGripping()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableCapsuleComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("DenyGripping"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableCapsuleComponent_eventDenyGripping_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, GrippableCapsuleComponent_eventDenyGripping_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, GrippableCapsuleComponent_eventDenyGripping_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, GrippableCapsuleComponent_eventDenyGripping_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableCapsuleComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Set up as deny instead of allow so that default allows for gripping"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_FreeGripType()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableCapsuleComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("FreeGripType"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableCapsuleComponent_eventFreeGripType_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableCapsuleComponent_eventFreeGripType_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_EGripCollisionType());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableCapsuleComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Grip type to use when not gripping a slot"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_GetInteractionSettings()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableCapsuleComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GetInteractionSettings"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableCapsuleComponent_eventGetInteractionSettings_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableCapsuleComponent_eventGetInteractionSettings_Parms), 0x0010000000000580, Z_Construct_UScriptStruct_FBPInteractionSettings());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableCapsuleComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Get interactable settings"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_GripBreakDistance()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableCapsuleComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GripBreakDistance"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableCapsuleComponent_eventGripBreakDistance_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableCapsuleComponent_eventGripBreakDistance_Parms), 0x0010000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableCapsuleComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("What distance to break a grip at (only relevent with physics enabled grips"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_GripDamping()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableCapsuleComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GripDamping"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableCapsuleComponent_eventGripDamping_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableCapsuleComponent_eventGripDamping_Parms), 0x0010000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableCapsuleComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("What grip damping to use if using a physics constraint"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_GripLateUpdateSetting()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableCapsuleComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GripLateUpdateSetting"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableCapsuleComponent_eventGripLateUpdateSetting_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableCapsuleComponent_eventGripLateUpdateSetting_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_EGripLateUpdateSettings());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableCapsuleComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Define the late update setting"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_GripMovementReplicationType()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableCapsuleComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GripMovementReplicationType"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableCapsuleComponent_eventGripMovementReplicationType_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableCapsuleComponent_eventGripMovementReplicationType_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_EGripMovementReplicationSettings());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableCapsuleComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Define which movement repliation setting to use"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_GripStiffness()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableCapsuleComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GripStiffness"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableCapsuleComponent_eventGripStiffness_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableCapsuleComponent_eventGripStiffness_Parms), 0x0010000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableCapsuleComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("What grip stiffness to use if using a physics constraint"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_IsHeld()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableCapsuleComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("IsHeld"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C420C00, 65535, sizeof(GrippableCapsuleComponent_eventIsHeld_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsHeld, GrippableCapsuleComponent_eventIsHeld_Parms, bool);
+			UProperty* NewProp_bIsHeld = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bIsHeld"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsHeld, GrippableCapsuleComponent_eventIsHeld_Parms), 0x0010000000000180, CPP_BOOL_PROPERTY_BITMASK(bIsHeld, GrippableCapsuleComponent_eventIsHeld_Parms), sizeof(bool), true);
+			UProperty* NewProp_HoldingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("HoldingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(HoldingController, GrippableCapsuleComponent_eventIsHeld_Parms), 0x0010000000080180, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableCapsuleComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Returns if the object is held and if so, which pawn is holding it"));
+			MetaData->SetValue(NewProp_HoldingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_IsInteractible()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableCapsuleComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("IsInteractible"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableCapsuleComponent_eventIsInteractible_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, GrippableCapsuleComponent_eventIsInteractible_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, GrippableCapsuleComponent_eventIsInteractible_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, GrippableCapsuleComponent_eventIsInteractible_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableCapsuleComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Check if the object is an interactable"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_OnChildGrip()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableCapsuleComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnChildGrip"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableCapsuleComponent_eventOnChildGrip_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableCapsuleComponent_eventOnChildGrip_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_GrippingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GrippingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(GrippingController, GrippableCapsuleComponent_eventOnChildGrip_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableCapsuleComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when child component is gripped"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_GrippingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_OnChildGripRelease()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableCapsuleComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnChildGripRelease"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableCapsuleComponent_eventOnChildGripRelease_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableCapsuleComponent_eventOnChildGripRelease_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_ReleasingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReleasingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ReleasingController, GrippableCapsuleComponent_eventOnChildGripRelease_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableCapsuleComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when child component is released"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_ReleasingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_OnEndSecondaryUsed()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableCapsuleComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnEndSecondaryUsed"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableCapsuleComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Call to stop using an object"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_OnEndUsed()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableCapsuleComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnEndUsed"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableCapsuleComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Call to stop using an object"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_OnGrip()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableCapsuleComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnGrip"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableCapsuleComponent_eventOnGrip_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableCapsuleComponent_eventOnGrip_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_GrippingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GrippingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(GrippingController, GrippableCapsuleComponent_eventOnGrip_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableCapsuleComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when gripped"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_GrippingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_OnGripRelease()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableCapsuleComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnGripRelease"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableCapsuleComponent_eventOnGripRelease_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableCapsuleComponent_eventOnGripRelease_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_ReleasingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReleasingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ReleasingController, GrippableCapsuleComponent_eventOnGripRelease_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableCapsuleComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when grip is released"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_ReleasingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_OnSecondaryGrip()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableCapsuleComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnSecondaryGrip"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableCapsuleComponent_eventOnSecondaryGrip_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableCapsuleComponent_eventOnSecondaryGrip_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_SecondaryGripComponent = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("SecondaryGripComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(SecondaryGripComponent, GrippableCapsuleComponent_eventOnSecondaryGrip_Parms), 0x0010000000080080, Z_Construct_UClass_USceneComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableCapsuleComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when secondary gripped"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_SecondaryGripComponent, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_OnSecondaryGripRelease()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableCapsuleComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnSecondaryGripRelease"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableCapsuleComponent_eventOnSecondaryGripRelease_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableCapsuleComponent_eventOnSecondaryGripRelease_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_ReleasingSecondaryGripComponent = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReleasingSecondaryGripComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ReleasingSecondaryGripComponent, GrippableCapsuleComponent_eventOnSecondaryGripRelease_Parms), 0x0010000000080080, Z_Construct_UClass_USceneComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableCapsuleComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when secondary grip is released"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_ReleasingSecondaryGripComponent, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_OnSecondaryUsed()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableCapsuleComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnSecondaryUsed"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableCapsuleComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Call to use an object"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_OnUsed()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableCapsuleComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnUsed"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableCapsuleComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Call to use an object"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_SecondaryGripType()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableCapsuleComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SecondaryGripType"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableCapsuleComponent_eventSecondaryGripType_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableCapsuleComponent_eventSecondaryGripType_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_ESecondaryGripType());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableCapsuleComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Secondary grip type"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_SetHeld()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableCapsuleComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SetHeld"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableCapsuleComponent_eventSetHeld_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsHeld, GrippableCapsuleComponent_eventSetHeld_Parms, bool);
+			UProperty* NewProp_bIsHeld = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bIsHeld"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsHeld, GrippableCapsuleComponent_eventSetHeld_Parms), 0x0010000000000080, CPP_BOOL_PROPERTY_BITMASK(bIsHeld, GrippableCapsuleComponent_eventSetHeld_Parms), sizeof(bool), true);
+			UProperty* NewProp_HoldingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("HoldingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(HoldingController, GrippableCapsuleComponent_eventSetHeld_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableCapsuleComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Sets is held, used by the plugin"));
+			MetaData->SetValue(NewProp_HoldingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_SimulateOnDrop()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableCapsuleComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SimulateOnDrop"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableCapsuleComponent_eventSimulateOnDrop_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, GrippableCapsuleComponent_eventSimulateOnDrop_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, GrippableCapsuleComponent_eventSimulateOnDrop_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, GrippableCapsuleComponent_eventSimulateOnDrop_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableCapsuleComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Should this object simulate on drop"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_SlotGripType()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableCapsuleComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SlotGripType"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableCapsuleComponent_eventSlotGripType_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableCapsuleComponent_eventSlotGripType_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_EGripCollisionType());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableCapsuleComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Grip type to use when gripping a slot"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_TeleportBehavior()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableCapsuleComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("TeleportBehavior"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableCapsuleComponent_eventTeleportBehavior_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableCapsuleComponent_eventTeleportBehavior_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_EGripInterfaceTeleportBehavior());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableCapsuleComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("How an interfaced object behaves when teleporting"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableCapsuleComponent_TickGrip()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableCapsuleComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("TickGrip"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08C20C00, 65535, sizeof(GrippableCapsuleComponent_eventTickGrip_Parms));
+			UProperty* NewProp_DeltaTime = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("DeltaTime"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(DeltaTime, GrippableCapsuleComponent_eventTickGrip_Parms), 0x0010000000000080);
+			UProperty* NewProp_MControllerLocDelta = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("MControllerLocDelta"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(MControllerLocDelta, GrippableCapsuleComponent_eventTickGrip_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector());
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableCapsuleComponent_eventTickGrip_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_GrippingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GrippingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(GrippingController, GrippableCapsuleComponent_eventTickGrip_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableCapsuleComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered each tick on the interfaced object when gripped, can be used for custom movement or grip based logic"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_GrippingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_UGrippableCapsuleComponent_NoRegister()
+	{
+		return UGrippableCapsuleComponent::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UGrippableCapsuleComponent()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_UCapsuleComponent();
+			Z_Construct_UPackage__Script_VRExpansionPlugin();
+			OuterClass = UGrippableCapsuleComponent::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20B01080;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableCapsuleComponent_AdvancedPhysicsSettings());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableCapsuleComponent_ClosestPrimarySlotInRange());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableCapsuleComponent_ClosestSecondarySlotInRange());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableCapsuleComponent_DenyGripping());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableCapsuleComponent_FreeGripType());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableCapsuleComponent_GetInteractionSettings());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableCapsuleComponent_GripBreakDistance());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableCapsuleComponent_GripDamping());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableCapsuleComponent_GripLateUpdateSetting());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableCapsuleComponent_GripMovementReplicationType());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableCapsuleComponent_GripStiffness());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableCapsuleComponent_IsHeld());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableCapsuleComponent_IsInteractible());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableCapsuleComponent_OnChildGrip());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableCapsuleComponent_OnChildGripRelease());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableCapsuleComponent_OnEndSecondaryUsed());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableCapsuleComponent_OnEndUsed());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableCapsuleComponent_OnGrip());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableCapsuleComponent_OnGripRelease());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableCapsuleComponent_OnSecondaryGrip());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableCapsuleComponent_OnSecondaryGripRelease());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableCapsuleComponent_OnSecondaryUsed());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableCapsuleComponent_OnUsed());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableCapsuleComponent_SecondaryGripType());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableCapsuleComponent_SetHeld());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableCapsuleComponent_SimulateOnDrop());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableCapsuleComponent_SlotGripType());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableCapsuleComponent_TeleportBehavior());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableCapsuleComponent_TickGrip());
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_VRGripInterfaceSettings = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("VRGripInterfaceSettings"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(VRGripInterfaceSettings, UGrippableCapsuleComponent), 0x0010008000000025, Z_Construct_UScriptStruct_FBPInterfaceProperties());
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bRepGripSettingsAndGameplayTags, UGrippableCapsuleComponent, bool);
+				UProperty* NewProp_bRepGripSettingsAndGameplayTags = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bRepGripSettingsAndGameplayTags"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bRepGripSettingsAndGameplayTags, UGrippableCapsuleComponent), 0x0010000000000025, CPP_BOOL_PROPERTY_BITMASK(bRepGripSettingsAndGameplayTags, UGrippableCapsuleComponent), sizeof(bool), true);
+				UProperty* NewProp_GameplayTags = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("GameplayTags"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GameplayTags, UGrippableCapsuleComponent), 0x0010000000000025, Z_Construct_UScriptStruct_FGameplayTagContainer());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableCapsuleComponent_AdvancedPhysicsSettings(), "AdvancedPhysicsSettings"); // 982710541
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableCapsuleComponent_ClosestPrimarySlotInRange(), "ClosestPrimarySlotInRange"); // 2971838551
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableCapsuleComponent_ClosestSecondarySlotInRange(), "ClosestSecondarySlotInRange"); // 1816365501
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableCapsuleComponent_DenyGripping(), "DenyGripping"); // 775556875
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableCapsuleComponent_FreeGripType(), "FreeGripType"); // 106624223
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableCapsuleComponent_GetInteractionSettings(), "GetInteractionSettings"); // 493580842
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableCapsuleComponent_GripBreakDistance(), "GripBreakDistance"); // 4194373244
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableCapsuleComponent_GripDamping(), "GripDamping"); // 2573477528
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableCapsuleComponent_GripLateUpdateSetting(), "GripLateUpdateSetting"); // 3691893585
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableCapsuleComponent_GripMovementReplicationType(), "GripMovementReplicationType"); // 284169151
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableCapsuleComponent_GripStiffness(), "GripStiffness"); // 390545738
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableCapsuleComponent_IsHeld(), "IsHeld"); // 1650418883
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableCapsuleComponent_IsInteractible(), "IsInteractible"); // 2144826060
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableCapsuleComponent_OnChildGrip(), "OnChildGrip"); // 1141402687
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableCapsuleComponent_OnChildGripRelease(), "OnChildGripRelease"); // 1180660246
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableCapsuleComponent_OnEndSecondaryUsed(), "OnEndSecondaryUsed"); // 1229548959
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableCapsuleComponent_OnEndUsed(), "OnEndUsed"); // 968901973
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableCapsuleComponent_OnGrip(), "OnGrip"); // 423383394
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableCapsuleComponent_OnGripRelease(), "OnGripRelease"); // 1193791919
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableCapsuleComponent_OnSecondaryGrip(), "OnSecondaryGrip"); // 958518064
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableCapsuleComponent_OnSecondaryGripRelease(), "OnSecondaryGripRelease"); // 58886627
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableCapsuleComponent_OnSecondaryUsed(), "OnSecondaryUsed"); // 691583485
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableCapsuleComponent_OnUsed(), "OnUsed"); // 1861472236
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableCapsuleComponent_SecondaryGripType(), "SecondaryGripType"); // 4266623358
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableCapsuleComponent_SetHeld(), "SetHeld"); // 3027748785
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableCapsuleComponent_SimulateOnDrop(), "SimulateOnDrop"); // 1008008189
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableCapsuleComponent_SlotGripType(), "SlotGripType"); // 2681110144
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableCapsuleComponent_TeleportBehavior(), "TeleportBehavior"); // 1764033070
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableCapsuleComponent_TickGrip(), "TickGrip"); // 2952732390
+				static TCppClassTypeInfo<TCppClassTypeTraits<UGrippableCapsuleComponent> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->Interfaces.Add(FImplementedInterface(Z_Construct_UClass_UVRGripInterface_NoRegister(), VTABLE_OFFSET(UGrippableCapsuleComponent, IVRGripInterface), false ));
+				OuterClass->Interfaces.Add(FImplementedInterface(Z_Construct_UClass_UGameplayTagAssetInterface_NoRegister(), VTABLE_OFFSET(UGrippableCapsuleComponent, IGameplayTagAssetInterface), false ));
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("BlueprintSpawnableComponent"), TEXT(""));
+				MetaData->SetValue(OuterClass, TEXT("BlueprintType"), TEXT("true"));
+				MetaData->SetValue(OuterClass, TEXT("ClassGroupNames"), TEXT("VRExpansionPlugin"));
+				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Object LOD Lighting TextureStreaming Object LOD Lighting TextureStreaming Activation Components|Activation Trigger"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("GrippableCapsuleComponent.h"));
+				MetaData->SetValue(OuterClass, TEXT("IsBlueprintBase"), TEXT("true"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/GrippableCapsuleComponent.h"));
+				MetaData->SetValue(NewProp_VRGripInterfaceSettings, TEXT("Category"), TEXT("VRGripInterface"));
+				MetaData->SetValue(NewProp_VRGripInterfaceSettings, TEXT("ModuleRelativePath"), TEXT("Public/GrippableCapsuleComponent.h"));
+				MetaData->SetValue(NewProp_bRepGripSettingsAndGameplayTags, TEXT("Category"), TEXT("VRGripInterface"));
+				MetaData->SetValue(NewProp_bRepGripSettingsAndGameplayTags, TEXT("ModuleRelativePath"), TEXT("Public/GrippableCapsuleComponent.h"));
+				MetaData->SetValue(NewProp_bRepGripSettingsAndGameplayTags, TEXT("ToolTip"), TEXT("Requires bReplicates to be true for the component"));
+				MetaData->SetValue(NewProp_GameplayTags, TEXT("Category"), TEXT("GameplayTags"));
+				MetaData->SetValue(NewProp_GameplayTags, TEXT("ModuleRelativePath"), TEXT("Public/GrippableCapsuleComponent.h"));
+				MetaData->SetValue(NewProp_GameplayTags, TEXT("ToolTip"), TEXT("Tags that are set on this object"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UGrippableCapsuleComponent, 2027753110);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UGrippableCapsuleComponent(Z_Construct_UClass_UGrippableCapsuleComponent, &UGrippableCapsuleComponent::StaticClass, TEXT("/Script/VRExpansionPlugin"), TEXT("UGrippableCapsuleComponent"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UGrippableCapsuleComponent);
+	static FName NAME_AGrippableSkeletalMeshActor_AdvancedPhysicsSettings = FName(TEXT("AdvancedPhysicsSettings"));
+	FBPAdvGripPhysicsSettings AGrippableSkeletalMeshActor::AdvancedPhysicsSettings()
+	{
+		GrippableSkeletalMeshActor_eventAdvancedPhysicsSettings_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableSkeletalMeshActor_AdvancedPhysicsSettings),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_AGrippableSkeletalMeshActor_ClosestPrimarySlotInRange = FName(TEXT("ClosestPrimarySlotInRange"));
+	void AGrippableSkeletalMeshActor::ClosestPrimarySlotInRange(FVector WorldLocation, bool& bHadSlotInRange, FTransform& SlotWorldTransform, FName OverridePrefix)
+	{
+		GrippableSkeletalMeshActor_eventClosestPrimarySlotInRange_Parms Parms;
+		Parms.WorldLocation=WorldLocation;
+		Parms.bHadSlotInRange=bHadSlotInRange ? true : false;
+		Parms.SlotWorldTransform=SlotWorldTransform;
+		Parms.OverridePrefix=OverridePrefix;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableSkeletalMeshActor_ClosestPrimarySlotInRange),&Parms);
+		bHadSlotInRange=Parms.bHadSlotInRange;
+		SlotWorldTransform=Parms.SlotWorldTransform;
+	}
+	static FName NAME_AGrippableSkeletalMeshActor_ClosestSecondarySlotInRange = FName(TEXT("ClosestSecondarySlotInRange"));
+	void AGrippableSkeletalMeshActor::ClosestSecondarySlotInRange(FVector WorldLocation, bool& bHadSlotInRange, FTransform& SlotWorldTransform, FName OverridePrefix)
+	{
+		GrippableSkeletalMeshActor_eventClosestSecondarySlotInRange_Parms Parms;
+		Parms.WorldLocation=WorldLocation;
+		Parms.bHadSlotInRange=bHadSlotInRange ? true : false;
+		Parms.SlotWorldTransform=SlotWorldTransform;
+		Parms.OverridePrefix=OverridePrefix;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableSkeletalMeshActor_ClosestSecondarySlotInRange),&Parms);
+		bHadSlotInRange=Parms.bHadSlotInRange;
+		SlotWorldTransform=Parms.SlotWorldTransform;
+	}
+	static FName NAME_AGrippableSkeletalMeshActor_DenyGripping = FName(TEXT("DenyGripping"));
+	bool AGrippableSkeletalMeshActor::DenyGripping()
+	{
+		GrippableSkeletalMeshActor_eventDenyGripping_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableSkeletalMeshActor_DenyGripping),&Parms);
+		return !!Parms.ReturnValue;
+	}
+	static FName NAME_AGrippableSkeletalMeshActor_FreeGripType = FName(TEXT("FreeGripType"));
+	EGripCollisionType AGrippableSkeletalMeshActor::FreeGripType()
+	{
+		GrippableSkeletalMeshActor_eventFreeGripType_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableSkeletalMeshActor_FreeGripType),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_AGrippableSkeletalMeshActor_GetInteractionSettings = FName(TEXT("GetInteractionSettings"));
+	FBPInteractionSettings AGrippableSkeletalMeshActor::GetInteractionSettings()
+	{
+		GrippableSkeletalMeshActor_eventGetInteractionSettings_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableSkeletalMeshActor_GetInteractionSettings),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_AGrippableSkeletalMeshActor_GripBreakDistance = FName(TEXT("GripBreakDistance"));
+	float AGrippableSkeletalMeshActor::GripBreakDistance()
+	{
+		GrippableSkeletalMeshActor_eventGripBreakDistance_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableSkeletalMeshActor_GripBreakDistance),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_AGrippableSkeletalMeshActor_GripDamping = FName(TEXT("GripDamping"));
+	float AGrippableSkeletalMeshActor::GripDamping()
+	{
+		GrippableSkeletalMeshActor_eventGripDamping_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableSkeletalMeshActor_GripDamping),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_AGrippableSkeletalMeshActor_GripLateUpdateSetting = FName(TEXT("GripLateUpdateSetting"));
+	EGripLateUpdateSettings AGrippableSkeletalMeshActor::GripLateUpdateSetting()
+	{
+		GrippableSkeletalMeshActor_eventGripLateUpdateSetting_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableSkeletalMeshActor_GripLateUpdateSetting),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_AGrippableSkeletalMeshActor_GripMovementReplicationType = FName(TEXT("GripMovementReplicationType"));
+	EGripMovementReplicationSettings AGrippableSkeletalMeshActor::GripMovementReplicationType()
+	{
+		GrippableSkeletalMeshActor_eventGripMovementReplicationType_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableSkeletalMeshActor_GripMovementReplicationType),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_AGrippableSkeletalMeshActor_GripStiffness = FName(TEXT("GripStiffness"));
+	float AGrippableSkeletalMeshActor::GripStiffness()
+	{
+		GrippableSkeletalMeshActor_eventGripStiffness_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableSkeletalMeshActor_GripStiffness),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_AGrippableSkeletalMeshActor_IsHeld = FName(TEXT("IsHeld"));
+	void AGrippableSkeletalMeshActor::IsHeld(UGripMotionControllerComponent*& HoldingController, bool& bIsHeld)
+	{
+		GrippableSkeletalMeshActor_eventIsHeld_Parms Parms;
+		Parms.HoldingController=HoldingController;
+		Parms.bIsHeld=bIsHeld ? true : false;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableSkeletalMeshActor_IsHeld),&Parms);
+		HoldingController=Parms.HoldingController;
+		bIsHeld=Parms.bIsHeld;
+	}
+	static FName NAME_AGrippableSkeletalMeshActor_IsInteractible = FName(TEXT("IsInteractible"));
+	bool AGrippableSkeletalMeshActor::IsInteractible()
+	{
+		GrippableSkeletalMeshActor_eventIsInteractible_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableSkeletalMeshActor_IsInteractible),&Parms);
+		return !!Parms.ReturnValue;
+	}
+	static FName NAME_AGrippableSkeletalMeshActor_OnChildGrip = FName(TEXT("OnChildGrip"));
+	void AGrippableSkeletalMeshActor::OnChildGrip(UGripMotionControllerComponent* GrippingController, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableSkeletalMeshActor_eventOnChildGrip_Parms Parms;
+		Parms.GrippingController=GrippingController;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableSkeletalMeshActor_OnChildGrip),&Parms);
+	}
+	static FName NAME_AGrippableSkeletalMeshActor_OnChildGripRelease = FName(TEXT("OnChildGripRelease"));
+	void AGrippableSkeletalMeshActor::OnChildGripRelease(UGripMotionControllerComponent* ReleasingController, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableSkeletalMeshActor_eventOnChildGripRelease_Parms Parms;
+		Parms.ReleasingController=ReleasingController;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableSkeletalMeshActor_OnChildGripRelease),&Parms);
+	}
+	static FName NAME_AGrippableSkeletalMeshActor_OnEndSecondaryUsed = FName(TEXT("OnEndSecondaryUsed"));
+	void AGrippableSkeletalMeshActor::OnEndSecondaryUsed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableSkeletalMeshActor_OnEndSecondaryUsed),NULL);
+	}
+	static FName NAME_AGrippableSkeletalMeshActor_OnEndUsed = FName(TEXT("OnEndUsed"));
+	void AGrippableSkeletalMeshActor::OnEndUsed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableSkeletalMeshActor_OnEndUsed),NULL);
+	}
+	static FName NAME_AGrippableSkeletalMeshActor_OnGrip = FName(TEXT("OnGrip"));
+	void AGrippableSkeletalMeshActor::OnGrip(UGripMotionControllerComponent* GrippingController, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableSkeletalMeshActor_eventOnGrip_Parms Parms;
+		Parms.GrippingController=GrippingController;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableSkeletalMeshActor_OnGrip),&Parms);
+	}
+	static FName NAME_AGrippableSkeletalMeshActor_OnGripRelease = FName(TEXT("OnGripRelease"));
+	void AGrippableSkeletalMeshActor::OnGripRelease(UGripMotionControllerComponent* ReleasingController, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableSkeletalMeshActor_eventOnGripRelease_Parms Parms;
+		Parms.ReleasingController=ReleasingController;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableSkeletalMeshActor_OnGripRelease),&Parms);
+	}
+	static FName NAME_AGrippableSkeletalMeshActor_OnSecondaryGrip = FName(TEXT("OnSecondaryGrip"));
+	void AGrippableSkeletalMeshActor::OnSecondaryGrip(USceneComponent* SecondaryGripComponent, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableSkeletalMeshActor_eventOnSecondaryGrip_Parms Parms;
+		Parms.SecondaryGripComponent=SecondaryGripComponent;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableSkeletalMeshActor_OnSecondaryGrip),&Parms);
+	}
+	static FName NAME_AGrippableSkeletalMeshActor_OnSecondaryGripRelease = FName(TEXT("OnSecondaryGripRelease"));
+	void AGrippableSkeletalMeshActor::OnSecondaryGripRelease(USceneComponent* ReleasingSecondaryGripComponent, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableSkeletalMeshActor_eventOnSecondaryGripRelease_Parms Parms;
+		Parms.ReleasingSecondaryGripComponent=ReleasingSecondaryGripComponent;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableSkeletalMeshActor_OnSecondaryGripRelease),&Parms);
+	}
+	static FName NAME_AGrippableSkeletalMeshActor_OnSecondaryUsed = FName(TEXT("OnSecondaryUsed"));
+	void AGrippableSkeletalMeshActor::OnSecondaryUsed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableSkeletalMeshActor_OnSecondaryUsed),NULL);
+	}
+	static FName NAME_AGrippableSkeletalMeshActor_OnUsed = FName(TEXT("OnUsed"));
+	void AGrippableSkeletalMeshActor::OnUsed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableSkeletalMeshActor_OnUsed),NULL);
+	}
+	static FName NAME_AGrippableSkeletalMeshActor_SecondaryGripType = FName(TEXT("SecondaryGripType"));
+	ESecondaryGripType AGrippableSkeletalMeshActor::SecondaryGripType()
+	{
+		GrippableSkeletalMeshActor_eventSecondaryGripType_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableSkeletalMeshActor_SecondaryGripType),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_AGrippableSkeletalMeshActor_SetHeld = FName(TEXT("SetHeld"));
+	void AGrippableSkeletalMeshActor::SetHeld(UGripMotionControllerComponent* HoldingController, bool bIsHeld)
+	{
+		GrippableSkeletalMeshActor_eventSetHeld_Parms Parms;
+		Parms.HoldingController=HoldingController;
+		Parms.bIsHeld=bIsHeld ? true : false;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableSkeletalMeshActor_SetHeld),&Parms);
+	}
+	static FName NAME_AGrippableSkeletalMeshActor_SimulateOnDrop = FName(TEXT("SimulateOnDrop"));
+	bool AGrippableSkeletalMeshActor::SimulateOnDrop()
+	{
+		GrippableSkeletalMeshActor_eventSimulateOnDrop_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableSkeletalMeshActor_SimulateOnDrop),&Parms);
+		return !!Parms.ReturnValue;
+	}
+	static FName NAME_AGrippableSkeletalMeshActor_SlotGripType = FName(TEXT("SlotGripType"));
+	EGripCollisionType AGrippableSkeletalMeshActor::SlotGripType()
+	{
+		GrippableSkeletalMeshActor_eventSlotGripType_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableSkeletalMeshActor_SlotGripType),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_AGrippableSkeletalMeshActor_TeleportBehavior = FName(TEXT("TeleportBehavior"));
+	EGripInterfaceTeleportBehavior AGrippableSkeletalMeshActor::TeleportBehavior()
+	{
+		GrippableSkeletalMeshActor_eventTeleportBehavior_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableSkeletalMeshActor_TeleportBehavior),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_AGrippableSkeletalMeshActor_TickGrip = FName(TEXT("TickGrip"));
+	void AGrippableSkeletalMeshActor::TickGrip(UGripMotionControllerComponent* GrippingController, FBPActorGripInformation const& GripInformation, FVector MControllerLocDelta, float DeltaTime)
+	{
+		GrippableSkeletalMeshActor_eventTickGrip_Parms Parms;
+		Parms.GrippingController=GrippingController;
+		Parms.GripInformation=GripInformation;
+		Parms.MControllerLocDelta=MControllerLocDelta;
+		Parms.DeltaTime=DeltaTime;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableSkeletalMeshActor_TickGrip),&Parms);
+	}
+	void AGrippableSkeletalMeshActor::StaticRegisterNativesAGrippableSkeletalMeshActor()
+	{
+		UClass* Class = AGrippableSkeletalMeshActor::StaticClass();
+		static const TNameNativePtrPair<ANSICHAR> AnsiFuncs[] = {
+			{ "AdvancedPhysicsSettings", (Native)&AGrippableSkeletalMeshActor::execAdvancedPhysicsSettings },
+			{ "ClosestPrimarySlotInRange", (Native)&AGrippableSkeletalMeshActor::execClosestPrimarySlotInRange },
+			{ "ClosestSecondarySlotInRange", (Native)&AGrippableSkeletalMeshActor::execClosestSecondarySlotInRange },
+			{ "DenyGripping", (Native)&AGrippableSkeletalMeshActor::execDenyGripping },
+			{ "FreeGripType", (Native)&AGrippableSkeletalMeshActor::execFreeGripType },
+			{ "GetInteractionSettings", (Native)&AGrippableSkeletalMeshActor::execGetInteractionSettings },
+			{ "GripBreakDistance", (Native)&AGrippableSkeletalMeshActor::execGripBreakDistance },
+			{ "GripDamping", (Native)&AGrippableSkeletalMeshActor::execGripDamping },
+			{ "GripLateUpdateSetting", (Native)&AGrippableSkeletalMeshActor::execGripLateUpdateSetting },
+			{ "GripMovementReplicationType", (Native)&AGrippableSkeletalMeshActor::execGripMovementReplicationType },
+			{ "GripStiffness", (Native)&AGrippableSkeletalMeshActor::execGripStiffness },
+			{ "IsHeld", (Native)&AGrippableSkeletalMeshActor::execIsHeld },
+			{ "IsInteractible", (Native)&AGrippableSkeletalMeshActor::execIsInteractible },
+			{ "OnChildGrip", (Native)&AGrippableSkeletalMeshActor::execOnChildGrip },
+			{ "OnChildGripRelease", (Native)&AGrippableSkeletalMeshActor::execOnChildGripRelease },
+			{ "OnEndSecondaryUsed", (Native)&AGrippableSkeletalMeshActor::execOnEndSecondaryUsed },
+			{ "OnEndUsed", (Native)&AGrippableSkeletalMeshActor::execOnEndUsed },
+			{ "OnGrip", (Native)&AGrippableSkeletalMeshActor::execOnGrip },
+			{ "OnGripRelease", (Native)&AGrippableSkeletalMeshActor::execOnGripRelease },
+			{ "OnSecondaryGrip", (Native)&AGrippableSkeletalMeshActor::execOnSecondaryGrip },
+			{ "OnSecondaryGripRelease", (Native)&AGrippableSkeletalMeshActor::execOnSecondaryGripRelease },
+			{ "OnSecondaryUsed", (Native)&AGrippableSkeletalMeshActor::execOnSecondaryUsed },
+			{ "OnUsed", (Native)&AGrippableSkeletalMeshActor::execOnUsed },
+			{ "SecondaryGripType", (Native)&AGrippableSkeletalMeshActor::execSecondaryGripType },
+			{ "SetHeld", (Native)&AGrippableSkeletalMeshActor::execSetHeld },
+			{ "SimulateOnDrop", (Native)&AGrippableSkeletalMeshActor::execSimulateOnDrop },
+			{ "SlotGripType", (Native)&AGrippableSkeletalMeshActor::execSlotGripType },
+			{ "TeleportBehavior", (Native)&AGrippableSkeletalMeshActor::execTeleportBehavior },
+			{ "TickGrip", (Native)&AGrippableSkeletalMeshActor::execTickGrip },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, AnsiFuncs, 29);
+	}
+	UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_AdvancedPhysicsSettings()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableSkeletalMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("AdvancedPhysicsSettings"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSkeletalMeshActor_eventAdvancedPhysicsSettings_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableSkeletalMeshActor_eventAdvancedPhysicsSettings_Parms), 0x0010000000000580, Z_Construct_UScriptStruct_FBPAdvGripPhysicsSettings());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Get the advanced physics settings for this grip"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_ClosestPrimarySlotInRange()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableSkeletalMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ClosestPrimarySlotInRange"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0CC20C00, 65535, sizeof(GrippableSkeletalMeshActor_eventClosestPrimarySlotInRange_Parms));
+			UProperty* NewProp_OverridePrefix = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OverridePrefix"), RF_Public|RF_Transient|RF_MarkAsNative) UNameProperty(CPP_PROPERTY_BASE(OverridePrefix, GrippableSkeletalMeshActor_eventClosestPrimarySlotInRange_Parms), 0x0010000000000080);
+			UProperty* NewProp_SlotWorldTransform = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("SlotWorldTransform"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(SlotWorldTransform, GrippableSkeletalMeshActor_eventClosestPrimarySlotInRange_Parms), 0x0010000000000180, Z_Construct_UScriptStruct_FTransform());
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bHadSlotInRange, GrippableSkeletalMeshActor_eventClosestPrimarySlotInRange_Parms, bool);
+			UProperty* NewProp_bHadSlotInRange = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bHadSlotInRange"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bHadSlotInRange, GrippableSkeletalMeshActor_eventClosestPrimarySlotInRange_Parms), 0x0010000000000180, CPP_BOOL_PROPERTY_BITMASK(bHadSlotInRange, GrippableSkeletalMeshActor_eventClosestPrimarySlotInRange_Parms), sizeof(bool), true);
+			UProperty* NewProp_WorldLocation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("WorldLocation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(WorldLocation, GrippableSkeletalMeshActor_eventClosestPrimarySlotInRange_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Get closest primary slot in range"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_ClosestSecondarySlotInRange()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableSkeletalMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ClosestSecondarySlotInRange"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0CC20C00, 65535, sizeof(GrippableSkeletalMeshActor_eventClosestSecondarySlotInRange_Parms));
+			UProperty* NewProp_OverridePrefix = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OverridePrefix"), RF_Public|RF_Transient|RF_MarkAsNative) UNameProperty(CPP_PROPERTY_BASE(OverridePrefix, GrippableSkeletalMeshActor_eventClosestSecondarySlotInRange_Parms), 0x0010000000000080);
+			UProperty* NewProp_SlotWorldTransform = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("SlotWorldTransform"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(SlotWorldTransform, GrippableSkeletalMeshActor_eventClosestSecondarySlotInRange_Parms), 0x0010000000000180, Z_Construct_UScriptStruct_FTransform());
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bHadSlotInRange, GrippableSkeletalMeshActor_eventClosestSecondarySlotInRange_Parms, bool);
+			UProperty* NewProp_bHadSlotInRange = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bHadSlotInRange"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bHadSlotInRange, GrippableSkeletalMeshActor_eventClosestSecondarySlotInRange_Parms), 0x0010000000000180, CPP_BOOL_PROPERTY_BITMASK(bHadSlotInRange, GrippableSkeletalMeshActor_eventClosestSecondarySlotInRange_Parms), sizeof(bool), true);
+			UProperty* NewProp_WorldLocation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("WorldLocation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(WorldLocation, GrippableSkeletalMeshActor_eventClosestSecondarySlotInRange_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Get closest secondary slot in range"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_DenyGripping()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableSkeletalMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("DenyGripping"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSkeletalMeshActor_eventDenyGripping_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, GrippableSkeletalMeshActor_eventDenyGripping_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, GrippableSkeletalMeshActor_eventDenyGripping_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, GrippableSkeletalMeshActor_eventDenyGripping_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Set up as deny instead of allow so that default allows for gripping"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_FreeGripType()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableSkeletalMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("FreeGripType"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSkeletalMeshActor_eventFreeGripType_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableSkeletalMeshActor_eventFreeGripType_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_EGripCollisionType());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Grip type to use when not gripping a slot"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_GetInteractionSettings()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableSkeletalMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GetInteractionSettings"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSkeletalMeshActor_eventGetInteractionSettings_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableSkeletalMeshActor_eventGetInteractionSettings_Parms), 0x0010000000000580, Z_Construct_UScriptStruct_FBPInteractionSettings());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Get interactable settings"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_GripBreakDistance()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableSkeletalMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GripBreakDistance"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSkeletalMeshActor_eventGripBreakDistance_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableSkeletalMeshActor_eventGripBreakDistance_Parms), 0x0010000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("What distance to break a grip at (only relevent with physics enabled grips"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_GripDamping()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableSkeletalMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GripDamping"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSkeletalMeshActor_eventGripDamping_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableSkeletalMeshActor_eventGripDamping_Parms), 0x0010000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("What grip damping to use if using a physics constraint"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_GripLateUpdateSetting()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableSkeletalMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GripLateUpdateSetting"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSkeletalMeshActor_eventGripLateUpdateSetting_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableSkeletalMeshActor_eventGripLateUpdateSetting_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_EGripLateUpdateSettings());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Define the late update setting"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_GripMovementReplicationType()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableSkeletalMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GripMovementReplicationType"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSkeletalMeshActor_eventGripMovementReplicationType_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableSkeletalMeshActor_eventGripMovementReplicationType_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_EGripMovementReplicationSettings());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Define which movement repliation setting to use"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_GripStiffness()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableSkeletalMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GripStiffness"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSkeletalMeshActor_eventGripStiffness_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableSkeletalMeshActor_eventGripStiffness_Parms), 0x0010000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("What grip stiffness to use if using a physics constraint"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_IsHeld()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableSkeletalMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("IsHeld"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C420C00, 65535, sizeof(GrippableSkeletalMeshActor_eventIsHeld_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsHeld, GrippableSkeletalMeshActor_eventIsHeld_Parms, bool);
+			UProperty* NewProp_bIsHeld = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bIsHeld"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsHeld, GrippableSkeletalMeshActor_eventIsHeld_Parms), 0x0010000000000180, CPP_BOOL_PROPERTY_BITMASK(bIsHeld, GrippableSkeletalMeshActor_eventIsHeld_Parms), sizeof(bool), true);
+			UProperty* NewProp_HoldingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("HoldingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(HoldingController, GrippableSkeletalMeshActor_eventIsHeld_Parms), 0x0010000000080180, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Returns if the object is held and if so, which pawn is holding it"));
+			MetaData->SetValue(NewProp_HoldingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_IsInteractible()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableSkeletalMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("IsInteractible"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSkeletalMeshActor_eventIsInteractible_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, GrippableSkeletalMeshActor_eventIsInteractible_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, GrippableSkeletalMeshActor_eventIsInteractible_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, GrippableSkeletalMeshActor_eventIsInteractible_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Check if the object is an interactable"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnChildGrip()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableSkeletalMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnChildGrip"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableSkeletalMeshActor_eventOnChildGrip_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableSkeletalMeshActor_eventOnChildGrip_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_GrippingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GrippingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(GrippingController, GrippableSkeletalMeshActor_eventOnChildGrip_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when child component is gripped"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_GrippingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnChildGripRelease()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableSkeletalMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnChildGripRelease"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableSkeletalMeshActor_eventOnChildGripRelease_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableSkeletalMeshActor_eventOnChildGripRelease_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_ReleasingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReleasingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ReleasingController, GrippableSkeletalMeshActor_eventOnChildGripRelease_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when child component is released"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_ReleasingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnEndSecondaryUsed()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableSkeletalMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnEndSecondaryUsed"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Call to stop using an object"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnEndUsed()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableSkeletalMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnEndUsed"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Call to stop using an object"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnGrip()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableSkeletalMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnGrip"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableSkeletalMeshActor_eventOnGrip_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableSkeletalMeshActor_eventOnGrip_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_GrippingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GrippingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(GrippingController, GrippableSkeletalMeshActor_eventOnGrip_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when gripped"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_GrippingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnGripRelease()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableSkeletalMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnGripRelease"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableSkeletalMeshActor_eventOnGripRelease_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableSkeletalMeshActor_eventOnGripRelease_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_ReleasingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReleasingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ReleasingController, GrippableSkeletalMeshActor_eventOnGripRelease_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when grip is released"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_ReleasingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnSecondaryGrip()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableSkeletalMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnSecondaryGrip"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableSkeletalMeshActor_eventOnSecondaryGrip_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableSkeletalMeshActor_eventOnSecondaryGrip_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_SecondaryGripComponent = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("SecondaryGripComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(SecondaryGripComponent, GrippableSkeletalMeshActor_eventOnSecondaryGrip_Parms), 0x0010000000080080, Z_Construct_UClass_USceneComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when secondary gripped"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_SecondaryGripComponent, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnSecondaryGripRelease()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableSkeletalMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnSecondaryGripRelease"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableSkeletalMeshActor_eventOnSecondaryGripRelease_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableSkeletalMeshActor_eventOnSecondaryGripRelease_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_ReleasingSecondaryGripComponent = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReleasingSecondaryGripComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ReleasingSecondaryGripComponent, GrippableSkeletalMeshActor_eventOnSecondaryGripRelease_Parms), 0x0010000000080080, Z_Construct_UClass_USceneComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when secondary grip is released"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_ReleasingSecondaryGripComponent, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnSecondaryUsed()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableSkeletalMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnSecondaryUsed"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Call to use an object"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnUsed()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableSkeletalMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnUsed"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Call to use an object"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_SecondaryGripType()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableSkeletalMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SecondaryGripType"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSkeletalMeshActor_eventSecondaryGripType_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableSkeletalMeshActor_eventSecondaryGripType_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_ESecondaryGripType());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Secondary grip type"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_SetHeld()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableSkeletalMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SetHeld"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSkeletalMeshActor_eventSetHeld_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsHeld, GrippableSkeletalMeshActor_eventSetHeld_Parms, bool);
+			UProperty* NewProp_bIsHeld = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bIsHeld"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsHeld, GrippableSkeletalMeshActor_eventSetHeld_Parms), 0x0010000000000080, CPP_BOOL_PROPERTY_BITMASK(bIsHeld, GrippableSkeletalMeshActor_eventSetHeld_Parms), sizeof(bool), true);
+			UProperty* NewProp_HoldingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("HoldingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(HoldingController, GrippableSkeletalMeshActor_eventSetHeld_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Sets is held, used by the plugin"));
+			MetaData->SetValue(NewProp_HoldingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_SimulateOnDrop()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableSkeletalMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SimulateOnDrop"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSkeletalMeshActor_eventSimulateOnDrop_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, GrippableSkeletalMeshActor_eventSimulateOnDrop_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, GrippableSkeletalMeshActor_eventSimulateOnDrop_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, GrippableSkeletalMeshActor_eventSimulateOnDrop_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Should this object simulate on drop"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_SlotGripType()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableSkeletalMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SlotGripType"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSkeletalMeshActor_eventSlotGripType_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableSkeletalMeshActor_eventSlotGripType_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_EGripCollisionType());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Grip type to use when gripping a slot"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_TeleportBehavior()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableSkeletalMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("TeleportBehavior"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSkeletalMeshActor_eventTeleportBehavior_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableSkeletalMeshActor_eventTeleportBehavior_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_EGripInterfaceTeleportBehavior());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("How an interfaced object behaves when teleporting"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableSkeletalMeshActor_TickGrip()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableSkeletalMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("TickGrip"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08C20C00, 65535, sizeof(GrippableSkeletalMeshActor_eventTickGrip_Parms));
+			UProperty* NewProp_DeltaTime = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("DeltaTime"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(DeltaTime, GrippableSkeletalMeshActor_eventTickGrip_Parms), 0x0010000000000080);
+			UProperty* NewProp_MControllerLocDelta = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("MControllerLocDelta"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(MControllerLocDelta, GrippableSkeletalMeshActor_eventTickGrip_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector());
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableSkeletalMeshActor_eventTickGrip_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_GrippingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GrippingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(GrippingController, GrippableSkeletalMeshActor_eventTickGrip_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered each tick on the interfaced object when gripped, can be used for custom movement or grip based logic"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_GrippingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_AGrippableSkeletalMeshActor_NoRegister()
+	{
+		return AGrippableSkeletalMeshActor::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AGrippableSkeletalMeshActor()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_ASkeletalMeshActor();
+			Z_Construct_UPackage__Script_VRExpansionPlugin();
+			OuterClass = AGrippableSkeletalMeshActor::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableSkeletalMeshActor_AdvancedPhysicsSettings());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableSkeletalMeshActor_ClosestPrimarySlotInRange());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableSkeletalMeshActor_ClosestSecondarySlotInRange());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableSkeletalMeshActor_DenyGripping());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableSkeletalMeshActor_FreeGripType());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableSkeletalMeshActor_GetInteractionSettings());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableSkeletalMeshActor_GripBreakDistance());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableSkeletalMeshActor_GripDamping());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableSkeletalMeshActor_GripLateUpdateSetting());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableSkeletalMeshActor_GripMovementReplicationType());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableSkeletalMeshActor_GripStiffness());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableSkeletalMeshActor_IsHeld());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableSkeletalMeshActor_IsInteractible());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnChildGrip());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnChildGripRelease());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnEndSecondaryUsed());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnEndUsed());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnGrip());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnGripRelease());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnSecondaryGrip());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnSecondaryGripRelease());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnSecondaryUsed());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnUsed());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableSkeletalMeshActor_SecondaryGripType());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableSkeletalMeshActor_SetHeld());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableSkeletalMeshActor_SimulateOnDrop());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableSkeletalMeshActor_SlotGripType());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableSkeletalMeshActor_TeleportBehavior());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableSkeletalMeshActor_TickGrip());
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_VRGripInterfaceSettings = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("VRGripInterfaceSettings"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(VRGripInterfaceSettings, AGrippableSkeletalMeshActor), 0x0010008000000025, Z_Construct_UScriptStruct_FBPInterfaceProperties());
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bRepGripSettingsAndGameplayTags, AGrippableSkeletalMeshActor, bool);
+				UProperty* NewProp_bRepGripSettingsAndGameplayTags = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bRepGripSettingsAndGameplayTags"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bRepGripSettingsAndGameplayTags, AGrippableSkeletalMeshActor), 0x0010000000000025, CPP_BOOL_PROPERTY_BITMASK(bRepGripSettingsAndGameplayTags, AGrippableSkeletalMeshActor), sizeof(bool), true);
+				UProperty* NewProp_GameplayTags = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("GameplayTags"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GameplayTags, AGrippableSkeletalMeshActor), 0x0010000000000025, Z_Construct_UScriptStruct_FGameplayTagContainer());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableSkeletalMeshActor_AdvancedPhysicsSettings(), "AdvancedPhysicsSettings"); // 1792229046
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableSkeletalMeshActor_ClosestPrimarySlotInRange(), "ClosestPrimarySlotInRange"); // 952486803
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableSkeletalMeshActor_ClosestSecondarySlotInRange(), "ClosestSecondarySlotInRange"); // 4259162089
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableSkeletalMeshActor_DenyGripping(), "DenyGripping"); // 3130975239
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableSkeletalMeshActor_FreeGripType(), "FreeGripType"); // 771964668
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableSkeletalMeshActor_GetInteractionSettings(), "GetInteractionSettings"); // 3992350416
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableSkeletalMeshActor_GripBreakDistance(), "GripBreakDistance"); // 33827061
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableSkeletalMeshActor_GripDamping(), "GripDamping"); // 207609745
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableSkeletalMeshActor_GripLateUpdateSetting(), "GripLateUpdateSetting"); // 384710417
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableSkeletalMeshActor_GripMovementReplicationType(), "GripMovementReplicationType"); // 1265254704
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableSkeletalMeshActor_GripStiffness(), "GripStiffness"); // 1096980526
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableSkeletalMeshActor_IsHeld(), "IsHeld"); // 4030474776
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableSkeletalMeshActor_IsInteractible(), "IsInteractible"); // 2960518422
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnChildGrip(), "OnChildGrip"); // 1894748802
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnChildGripRelease(), "OnChildGripRelease"); // 905992166
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnEndSecondaryUsed(), "OnEndSecondaryUsed"); // 654655153
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnEndUsed(), "OnEndUsed"); // 1421774053
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnGrip(), "OnGrip"); // 1817081908
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnGripRelease(), "OnGripRelease"); // 628265770
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnSecondaryGrip(), "OnSecondaryGrip"); // 812823391
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnSecondaryGripRelease(), "OnSecondaryGripRelease"); // 3759277884
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnSecondaryUsed(), "OnSecondaryUsed"); // 2602441796
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableSkeletalMeshActor_OnUsed(), "OnUsed"); // 2052375544
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableSkeletalMeshActor_SecondaryGripType(), "SecondaryGripType"); // 3989034853
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableSkeletalMeshActor_SetHeld(), "SetHeld"); // 116675909
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableSkeletalMeshActor_SimulateOnDrop(), "SimulateOnDrop"); // 3299100345
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableSkeletalMeshActor_SlotGripType(), "SlotGripType"); // 3544445556
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableSkeletalMeshActor_TeleportBehavior(), "TeleportBehavior"); // 2750676763
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableSkeletalMeshActor_TickGrip(), "TickGrip"); // 1509589716
+				static TCppClassTypeInfo<TCppClassTypeTraits<AGrippableSkeletalMeshActor> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->Interfaces.Add(FImplementedInterface(Z_Construct_UClass_UVRGripInterface_NoRegister(), VTABLE_OFFSET(AGrippableSkeletalMeshActor, IVRGripInterface), false ));
+				OuterClass->Interfaces.Add(FImplementedInterface(Z_Construct_UClass_UGameplayTagAssetInterface_NoRegister(), VTABLE_OFFSET(AGrippableSkeletalMeshActor, IGameplayTagAssetInterface), false ));
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("BlueprintSpawnableComponent"), TEXT(""));
+				MetaData->SetValue(OuterClass, TEXT("BlueprintType"), TEXT("true"));
+				MetaData->SetValue(OuterClass, TEXT("ClassGroupNames"), TEXT("VRExpansionPlugin"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("GrippableSkeletalMeshActor.h"));
+				MetaData->SetValue(OuterClass, TEXT("IsBlueprintBase"), TEXT("true"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshActor.h"));
+				MetaData->SetValue(NewProp_VRGripInterfaceSettings, TEXT("Category"), TEXT("VRGripInterface"));
+				MetaData->SetValue(NewProp_VRGripInterfaceSettings, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshActor.h"));
+				MetaData->SetValue(NewProp_bRepGripSettingsAndGameplayTags, TEXT("Category"), TEXT("VRGripInterface"));
+				MetaData->SetValue(NewProp_bRepGripSettingsAndGameplayTags, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshActor.h"));
+				MetaData->SetValue(NewProp_GameplayTags, TEXT("Category"), TEXT("GameplayTags"));
+				MetaData->SetValue(NewProp_GameplayTags, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshActor.h"));
+				MetaData->SetValue(NewProp_GameplayTags, TEXT("ToolTip"), TEXT("Tags that are set on this object"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(AGrippableSkeletalMeshActor, 1663386187);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AGrippableSkeletalMeshActor(Z_Construct_UClass_AGrippableSkeletalMeshActor, &AGrippableSkeletalMeshActor::StaticClass, TEXT("/Script/VRExpansionPlugin"), TEXT("AGrippableSkeletalMeshActor"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AGrippableSkeletalMeshActor);
+	static FName NAME_UGrippableSkeletalMeshComponent_AdvancedPhysicsSettings = FName(TEXT("AdvancedPhysicsSettings"));
+	FBPAdvGripPhysicsSettings UGrippableSkeletalMeshComponent::AdvancedPhysicsSettings()
+	{
+		GrippableSkeletalMeshComponent_eventAdvancedPhysicsSettings_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSkeletalMeshComponent_AdvancedPhysicsSettings),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableSkeletalMeshComponent_ClosestPrimarySlotInRange = FName(TEXT("ClosestPrimarySlotInRange"));
+	void UGrippableSkeletalMeshComponent::ClosestPrimarySlotInRange(FVector WorldLocation, bool& bHadSlotInRange, FTransform& SlotWorldTransform, FName OverridePrefix)
+	{
+		GrippableSkeletalMeshComponent_eventClosestPrimarySlotInRange_Parms Parms;
+		Parms.WorldLocation=WorldLocation;
+		Parms.bHadSlotInRange=bHadSlotInRange ? true : false;
+		Parms.SlotWorldTransform=SlotWorldTransform;
+		Parms.OverridePrefix=OverridePrefix;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSkeletalMeshComponent_ClosestPrimarySlotInRange),&Parms);
+		bHadSlotInRange=Parms.bHadSlotInRange;
+		SlotWorldTransform=Parms.SlotWorldTransform;
+	}
+	static FName NAME_UGrippableSkeletalMeshComponent_ClosestSecondarySlotInRange = FName(TEXT("ClosestSecondarySlotInRange"));
+	void UGrippableSkeletalMeshComponent::ClosestSecondarySlotInRange(FVector WorldLocation, bool& bHadSlotInRange, FTransform& SlotWorldTransform, FName OverridePrefix)
+	{
+		GrippableSkeletalMeshComponent_eventClosestSecondarySlotInRange_Parms Parms;
+		Parms.WorldLocation=WorldLocation;
+		Parms.bHadSlotInRange=bHadSlotInRange ? true : false;
+		Parms.SlotWorldTransform=SlotWorldTransform;
+		Parms.OverridePrefix=OverridePrefix;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSkeletalMeshComponent_ClosestSecondarySlotInRange),&Parms);
+		bHadSlotInRange=Parms.bHadSlotInRange;
+		SlotWorldTransform=Parms.SlotWorldTransform;
+	}
+	static FName NAME_UGrippableSkeletalMeshComponent_DenyGripping = FName(TEXT("DenyGripping"));
+	bool UGrippableSkeletalMeshComponent::DenyGripping()
+	{
+		GrippableSkeletalMeshComponent_eventDenyGripping_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSkeletalMeshComponent_DenyGripping),&Parms);
+		return !!Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableSkeletalMeshComponent_FreeGripType = FName(TEXT("FreeGripType"));
+	EGripCollisionType UGrippableSkeletalMeshComponent::FreeGripType()
+	{
+		GrippableSkeletalMeshComponent_eventFreeGripType_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSkeletalMeshComponent_FreeGripType),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableSkeletalMeshComponent_GetInteractionSettings = FName(TEXT("GetInteractionSettings"));
+	FBPInteractionSettings UGrippableSkeletalMeshComponent::GetInteractionSettings()
+	{
+		GrippableSkeletalMeshComponent_eventGetInteractionSettings_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSkeletalMeshComponent_GetInteractionSettings),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableSkeletalMeshComponent_GripBreakDistance = FName(TEXT("GripBreakDistance"));
+	float UGrippableSkeletalMeshComponent::GripBreakDistance()
+	{
+		GrippableSkeletalMeshComponent_eventGripBreakDistance_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSkeletalMeshComponent_GripBreakDistance),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableSkeletalMeshComponent_GripDamping = FName(TEXT("GripDamping"));
+	float UGrippableSkeletalMeshComponent::GripDamping()
+	{
+		GrippableSkeletalMeshComponent_eventGripDamping_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSkeletalMeshComponent_GripDamping),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableSkeletalMeshComponent_GripLateUpdateSetting = FName(TEXT("GripLateUpdateSetting"));
+	EGripLateUpdateSettings UGrippableSkeletalMeshComponent::GripLateUpdateSetting()
+	{
+		GrippableSkeletalMeshComponent_eventGripLateUpdateSetting_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSkeletalMeshComponent_GripLateUpdateSetting),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableSkeletalMeshComponent_GripMovementReplicationType = FName(TEXT("GripMovementReplicationType"));
+	EGripMovementReplicationSettings UGrippableSkeletalMeshComponent::GripMovementReplicationType()
+	{
+		GrippableSkeletalMeshComponent_eventGripMovementReplicationType_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSkeletalMeshComponent_GripMovementReplicationType),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableSkeletalMeshComponent_GripStiffness = FName(TEXT("GripStiffness"));
+	float UGrippableSkeletalMeshComponent::GripStiffness()
+	{
+		GrippableSkeletalMeshComponent_eventGripStiffness_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSkeletalMeshComponent_GripStiffness),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableSkeletalMeshComponent_IsHeld = FName(TEXT("IsHeld"));
+	void UGrippableSkeletalMeshComponent::IsHeld(UGripMotionControllerComponent*& HoldingController, bool& bIsHeld)
+	{
+		GrippableSkeletalMeshComponent_eventIsHeld_Parms Parms;
+		Parms.HoldingController=HoldingController;
+		Parms.bIsHeld=bIsHeld ? true : false;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSkeletalMeshComponent_IsHeld),&Parms);
+		HoldingController=Parms.HoldingController;
+		bIsHeld=Parms.bIsHeld;
+	}
+	static FName NAME_UGrippableSkeletalMeshComponent_IsInteractible = FName(TEXT("IsInteractible"));
+	bool UGrippableSkeletalMeshComponent::IsInteractible()
+	{
+		GrippableSkeletalMeshComponent_eventIsInteractible_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSkeletalMeshComponent_IsInteractible),&Parms);
+		return !!Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableSkeletalMeshComponent_OnChildGrip = FName(TEXT("OnChildGrip"));
+	void UGrippableSkeletalMeshComponent::OnChildGrip(UGripMotionControllerComponent* GrippingController, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableSkeletalMeshComponent_eventOnChildGrip_Parms Parms;
+		Parms.GrippingController=GrippingController;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSkeletalMeshComponent_OnChildGrip),&Parms);
+	}
+	static FName NAME_UGrippableSkeletalMeshComponent_OnChildGripRelease = FName(TEXT("OnChildGripRelease"));
+	void UGrippableSkeletalMeshComponent::OnChildGripRelease(UGripMotionControllerComponent* ReleasingController, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableSkeletalMeshComponent_eventOnChildGripRelease_Parms Parms;
+		Parms.ReleasingController=ReleasingController;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSkeletalMeshComponent_OnChildGripRelease),&Parms);
+	}
+	static FName NAME_UGrippableSkeletalMeshComponent_OnEndSecondaryUsed = FName(TEXT("OnEndSecondaryUsed"));
+	void UGrippableSkeletalMeshComponent::OnEndSecondaryUsed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSkeletalMeshComponent_OnEndSecondaryUsed),NULL);
+	}
+	static FName NAME_UGrippableSkeletalMeshComponent_OnEndUsed = FName(TEXT("OnEndUsed"));
+	void UGrippableSkeletalMeshComponent::OnEndUsed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSkeletalMeshComponent_OnEndUsed),NULL);
+	}
+	static FName NAME_UGrippableSkeletalMeshComponent_OnGrip = FName(TEXT("OnGrip"));
+	void UGrippableSkeletalMeshComponent::OnGrip(UGripMotionControllerComponent* GrippingController, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableSkeletalMeshComponent_eventOnGrip_Parms Parms;
+		Parms.GrippingController=GrippingController;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSkeletalMeshComponent_OnGrip),&Parms);
+	}
+	static FName NAME_UGrippableSkeletalMeshComponent_OnGripRelease = FName(TEXT("OnGripRelease"));
+	void UGrippableSkeletalMeshComponent::OnGripRelease(UGripMotionControllerComponent* ReleasingController, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableSkeletalMeshComponent_eventOnGripRelease_Parms Parms;
+		Parms.ReleasingController=ReleasingController;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSkeletalMeshComponent_OnGripRelease),&Parms);
+	}
+	static FName NAME_UGrippableSkeletalMeshComponent_OnSecondaryGrip = FName(TEXT("OnSecondaryGrip"));
+	void UGrippableSkeletalMeshComponent::OnSecondaryGrip(USceneComponent* SecondaryGripComponent, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableSkeletalMeshComponent_eventOnSecondaryGrip_Parms Parms;
+		Parms.SecondaryGripComponent=SecondaryGripComponent;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSkeletalMeshComponent_OnSecondaryGrip),&Parms);
+	}
+	static FName NAME_UGrippableSkeletalMeshComponent_OnSecondaryGripRelease = FName(TEXT("OnSecondaryGripRelease"));
+	void UGrippableSkeletalMeshComponent::OnSecondaryGripRelease(USceneComponent* ReleasingSecondaryGripComponent, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableSkeletalMeshComponent_eventOnSecondaryGripRelease_Parms Parms;
+		Parms.ReleasingSecondaryGripComponent=ReleasingSecondaryGripComponent;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSkeletalMeshComponent_OnSecondaryGripRelease),&Parms);
+	}
+	static FName NAME_UGrippableSkeletalMeshComponent_OnSecondaryUsed = FName(TEXT("OnSecondaryUsed"));
+	void UGrippableSkeletalMeshComponent::OnSecondaryUsed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSkeletalMeshComponent_OnSecondaryUsed),NULL);
+	}
+	static FName NAME_UGrippableSkeletalMeshComponent_OnUsed = FName(TEXT("OnUsed"));
+	void UGrippableSkeletalMeshComponent::OnUsed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSkeletalMeshComponent_OnUsed),NULL);
+	}
+	static FName NAME_UGrippableSkeletalMeshComponent_SecondaryGripType = FName(TEXT("SecondaryGripType"));
+	ESecondaryGripType UGrippableSkeletalMeshComponent::SecondaryGripType()
+	{
+		GrippableSkeletalMeshComponent_eventSecondaryGripType_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSkeletalMeshComponent_SecondaryGripType),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableSkeletalMeshComponent_SetHeld = FName(TEXT("SetHeld"));
+	void UGrippableSkeletalMeshComponent::SetHeld(UGripMotionControllerComponent* HoldingController, bool bIsHeld)
+	{
+		GrippableSkeletalMeshComponent_eventSetHeld_Parms Parms;
+		Parms.HoldingController=HoldingController;
+		Parms.bIsHeld=bIsHeld ? true : false;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSkeletalMeshComponent_SetHeld),&Parms);
+	}
+	static FName NAME_UGrippableSkeletalMeshComponent_SimulateOnDrop = FName(TEXT("SimulateOnDrop"));
+	bool UGrippableSkeletalMeshComponent::SimulateOnDrop()
+	{
+		GrippableSkeletalMeshComponent_eventSimulateOnDrop_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSkeletalMeshComponent_SimulateOnDrop),&Parms);
+		return !!Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableSkeletalMeshComponent_SlotGripType = FName(TEXT("SlotGripType"));
+	EGripCollisionType UGrippableSkeletalMeshComponent::SlotGripType()
+	{
+		GrippableSkeletalMeshComponent_eventSlotGripType_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSkeletalMeshComponent_SlotGripType),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableSkeletalMeshComponent_TeleportBehavior = FName(TEXT("TeleportBehavior"));
+	EGripInterfaceTeleportBehavior UGrippableSkeletalMeshComponent::TeleportBehavior()
+	{
+		GrippableSkeletalMeshComponent_eventTeleportBehavior_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSkeletalMeshComponent_TeleportBehavior),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableSkeletalMeshComponent_TickGrip = FName(TEXT("TickGrip"));
+	void UGrippableSkeletalMeshComponent::TickGrip(UGripMotionControllerComponent* GrippingController, FBPActorGripInformation const& GripInformation, FVector MControllerLocDelta, float DeltaTime)
+	{
+		GrippableSkeletalMeshComponent_eventTickGrip_Parms Parms;
+		Parms.GrippingController=GrippingController;
+		Parms.GripInformation=GripInformation;
+		Parms.MControllerLocDelta=MControllerLocDelta;
+		Parms.DeltaTime=DeltaTime;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSkeletalMeshComponent_TickGrip),&Parms);
+	}
+	void UGrippableSkeletalMeshComponent::StaticRegisterNativesUGrippableSkeletalMeshComponent()
+	{
+		UClass* Class = UGrippableSkeletalMeshComponent::StaticClass();
+		static const TNameNativePtrPair<ANSICHAR> AnsiFuncs[] = {
+			{ "AdvancedPhysicsSettings", (Native)&UGrippableSkeletalMeshComponent::execAdvancedPhysicsSettings },
+			{ "ClosestPrimarySlotInRange", (Native)&UGrippableSkeletalMeshComponent::execClosestPrimarySlotInRange },
+			{ "ClosestSecondarySlotInRange", (Native)&UGrippableSkeletalMeshComponent::execClosestSecondarySlotInRange },
+			{ "DenyGripping", (Native)&UGrippableSkeletalMeshComponent::execDenyGripping },
+			{ "FreeGripType", (Native)&UGrippableSkeletalMeshComponent::execFreeGripType },
+			{ "GetInteractionSettings", (Native)&UGrippableSkeletalMeshComponent::execGetInteractionSettings },
+			{ "GripBreakDistance", (Native)&UGrippableSkeletalMeshComponent::execGripBreakDistance },
+			{ "GripDamping", (Native)&UGrippableSkeletalMeshComponent::execGripDamping },
+			{ "GripLateUpdateSetting", (Native)&UGrippableSkeletalMeshComponent::execGripLateUpdateSetting },
+			{ "GripMovementReplicationType", (Native)&UGrippableSkeletalMeshComponent::execGripMovementReplicationType },
+			{ "GripStiffness", (Native)&UGrippableSkeletalMeshComponent::execGripStiffness },
+			{ "IsHeld", (Native)&UGrippableSkeletalMeshComponent::execIsHeld },
+			{ "IsInteractible", (Native)&UGrippableSkeletalMeshComponent::execIsInteractible },
+			{ "OnChildGrip", (Native)&UGrippableSkeletalMeshComponent::execOnChildGrip },
+			{ "OnChildGripRelease", (Native)&UGrippableSkeletalMeshComponent::execOnChildGripRelease },
+			{ "OnEndSecondaryUsed", (Native)&UGrippableSkeletalMeshComponent::execOnEndSecondaryUsed },
+			{ "OnEndUsed", (Native)&UGrippableSkeletalMeshComponent::execOnEndUsed },
+			{ "OnGrip", (Native)&UGrippableSkeletalMeshComponent::execOnGrip },
+			{ "OnGripRelease", (Native)&UGrippableSkeletalMeshComponent::execOnGripRelease },
+			{ "OnSecondaryGrip", (Native)&UGrippableSkeletalMeshComponent::execOnSecondaryGrip },
+			{ "OnSecondaryGripRelease", (Native)&UGrippableSkeletalMeshComponent::execOnSecondaryGripRelease },
+			{ "OnSecondaryUsed", (Native)&UGrippableSkeletalMeshComponent::execOnSecondaryUsed },
+			{ "OnUsed", (Native)&UGrippableSkeletalMeshComponent::execOnUsed },
+			{ "SecondaryGripType", (Native)&UGrippableSkeletalMeshComponent::execSecondaryGripType },
+			{ "SetHeld", (Native)&UGrippableSkeletalMeshComponent::execSetHeld },
+			{ "SimulateOnDrop", (Native)&UGrippableSkeletalMeshComponent::execSimulateOnDrop },
+			{ "SlotGripType", (Native)&UGrippableSkeletalMeshComponent::execSlotGripType },
+			{ "TeleportBehavior", (Native)&UGrippableSkeletalMeshComponent::execTeleportBehavior },
+			{ "TickGrip", (Native)&UGrippableSkeletalMeshComponent::execTickGrip },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, AnsiFuncs, 29);
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_AdvancedPhysicsSettings()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSkeletalMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("AdvancedPhysicsSettings"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSkeletalMeshComponent_eventAdvancedPhysicsSettings_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableSkeletalMeshComponent_eventAdvancedPhysicsSettings_Parms), 0x0010000000000580, Z_Construct_UScriptStruct_FBPAdvGripPhysicsSettings());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Get the advanced physics settings for this grip"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_ClosestPrimarySlotInRange()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSkeletalMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ClosestPrimarySlotInRange"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0CC20C00, 65535, sizeof(GrippableSkeletalMeshComponent_eventClosestPrimarySlotInRange_Parms));
+			UProperty* NewProp_OverridePrefix = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OverridePrefix"), RF_Public|RF_Transient|RF_MarkAsNative) UNameProperty(CPP_PROPERTY_BASE(OverridePrefix, GrippableSkeletalMeshComponent_eventClosestPrimarySlotInRange_Parms), 0x0010000000000080);
+			UProperty* NewProp_SlotWorldTransform = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("SlotWorldTransform"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(SlotWorldTransform, GrippableSkeletalMeshComponent_eventClosestPrimarySlotInRange_Parms), 0x0010000000000180, Z_Construct_UScriptStruct_FTransform());
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bHadSlotInRange, GrippableSkeletalMeshComponent_eventClosestPrimarySlotInRange_Parms, bool);
+			UProperty* NewProp_bHadSlotInRange = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bHadSlotInRange"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bHadSlotInRange, GrippableSkeletalMeshComponent_eventClosestPrimarySlotInRange_Parms), 0x0010000000000180, CPP_BOOL_PROPERTY_BITMASK(bHadSlotInRange, GrippableSkeletalMeshComponent_eventClosestPrimarySlotInRange_Parms), sizeof(bool), true);
+			UProperty* NewProp_WorldLocation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("WorldLocation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(WorldLocation, GrippableSkeletalMeshComponent_eventClosestPrimarySlotInRange_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Get closest primary slot in range"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_ClosestSecondarySlotInRange()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSkeletalMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ClosestSecondarySlotInRange"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0CC20C00, 65535, sizeof(GrippableSkeletalMeshComponent_eventClosestSecondarySlotInRange_Parms));
+			UProperty* NewProp_OverridePrefix = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OverridePrefix"), RF_Public|RF_Transient|RF_MarkAsNative) UNameProperty(CPP_PROPERTY_BASE(OverridePrefix, GrippableSkeletalMeshComponent_eventClosestSecondarySlotInRange_Parms), 0x0010000000000080);
+			UProperty* NewProp_SlotWorldTransform = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("SlotWorldTransform"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(SlotWorldTransform, GrippableSkeletalMeshComponent_eventClosestSecondarySlotInRange_Parms), 0x0010000000000180, Z_Construct_UScriptStruct_FTransform());
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bHadSlotInRange, GrippableSkeletalMeshComponent_eventClosestSecondarySlotInRange_Parms, bool);
+			UProperty* NewProp_bHadSlotInRange = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bHadSlotInRange"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bHadSlotInRange, GrippableSkeletalMeshComponent_eventClosestSecondarySlotInRange_Parms), 0x0010000000000180, CPP_BOOL_PROPERTY_BITMASK(bHadSlotInRange, GrippableSkeletalMeshComponent_eventClosestSecondarySlotInRange_Parms), sizeof(bool), true);
+			UProperty* NewProp_WorldLocation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("WorldLocation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(WorldLocation, GrippableSkeletalMeshComponent_eventClosestSecondarySlotInRange_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Get closest secondary slot in range"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_DenyGripping()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSkeletalMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("DenyGripping"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSkeletalMeshComponent_eventDenyGripping_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, GrippableSkeletalMeshComponent_eventDenyGripping_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, GrippableSkeletalMeshComponent_eventDenyGripping_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, GrippableSkeletalMeshComponent_eventDenyGripping_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Set up as deny instead of allow so that default allows for gripping"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_FreeGripType()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSkeletalMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("FreeGripType"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSkeletalMeshComponent_eventFreeGripType_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableSkeletalMeshComponent_eventFreeGripType_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_EGripCollisionType());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Grip type to use when not gripping a slot"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_GetInteractionSettings()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSkeletalMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GetInteractionSettings"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSkeletalMeshComponent_eventGetInteractionSettings_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableSkeletalMeshComponent_eventGetInteractionSettings_Parms), 0x0010000000000580, Z_Construct_UScriptStruct_FBPInteractionSettings());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Get interactable settings"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_GripBreakDistance()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSkeletalMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GripBreakDistance"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSkeletalMeshComponent_eventGripBreakDistance_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableSkeletalMeshComponent_eventGripBreakDistance_Parms), 0x0010000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("What distance to break a grip at (only relevent with physics enabled grips"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_GripDamping()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSkeletalMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GripDamping"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSkeletalMeshComponent_eventGripDamping_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableSkeletalMeshComponent_eventGripDamping_Parms), 0x0010000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("What grip damping to use if using a physics constraint"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_GripLateUpdateSetting()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSkeletalMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GripLateUpdateSetting"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSkeletalMeshComponent_eventGripLateUpdateSetting_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableSkeletalMeshComponent_eventGripLateUpdateSetting_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_EGripLateUpdateSettings());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Define the late update setting"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_GripMovementReplicationType()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSkeletalMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GripMovementReplicationType"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSkeletalMeshComponent_eventGripMovementReplicationType_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableSkeletalMeshComponent_eventGripMovementReplicationType_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_EGripMovementReplicationSettings());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Define which movement repliation setting to use"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_GripStiffness()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSkeletalMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GripStiffness"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSkeletalMeshComponent_eventGripStiffness_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableSkeletalMeshComponent_eventGripStiffness_Parms), 0x0010000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("What grip stiffness to use if using a physics constraint"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_IsHeld()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSkeletalMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("IsHeld"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C420C00, 65535, sizeof(GrippableSkeletalMeshComponent_eventIsHeld_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsHeld, GrippableSkeletalMeshComponent_eventIsHeld_Parms, bool);
+			UProperty* NewProp_bIsHeld = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bIsHeld"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsHeld, GrippableSkeletalMeshComponent_eventIsHeld_Parms), 0x0010000000000180, CPP_BOOL_PROPERTY_BITMASK(bIsHeld, GrippableSkeletalMeshComponent_eventIsHeld_Parms), sizeof(bool), true);
+			UProperty* NewProp_HoldingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("HoldingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(HoldingController, GrippableSkeletalMeshComponent_eventIsHeld_Parms), 0x0010000000080180, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Returns if the object is held and if so, which pawn is holding it"));
+			MetaData->SetValue(NewProp_HoldingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_IsInteractible()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSkeletalMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("IsInteractible"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSkeletalMeshComponent_eventIsInteractible_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, GrippableSkeletalMeshComponent_eventIsInteractible_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, GrippableSkeletalMeshComponent_eventIsInteractible_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, GrippableSkeletalMeshComponent_eventIsInteractible_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Check if the object is an interactable"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnChildGrip()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSkeletalMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnChildGrip"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableSkeletalMeshComponent_eventOnChildGrip_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableSkeletalMeshComponent_eventOnChildGrip_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_GrippingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GrippingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(GrippingController, GrippableSkeletalMeshComponent_eventOnChildGrip_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when child component is gripped"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_GrippingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnChildGripRelease()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSkeletalMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnChildGripRelease"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableSkeletalMeshComponent_eventOnChildGripRelease_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableSkeletalMeshComponent_eventOnChildGripRelease_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_ReleasingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReleasingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ReleasingController, GrippableSkeletalMeshComponent_eventOnChildGripRelease_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when child component is released"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_ReleasingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnEndSecondaryUsed()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSkeletalMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnEndSecondaryUsed"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Call to stop using an object"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnEndUsed()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSkeletalMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnEndUsed"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Call to stop using an object"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnGrip()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSkeletalMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnGrip"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableSkeletalMeshComponent_eventOnGrip_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableSkeletalMeshComponent_eventOnGrip_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_GrippingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GrippingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(GrippingController, GrippableSkeletalMeshComponent_eventOnGrip_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when gripped"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_GrippingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnGripRelease()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSkeletalMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnGripRelease"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableSkeletalMeshComponent_eventOnGripRelease_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableSkeletalMeshComponent_eventOnGripRelease_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_ReleasingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReleasingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ReleasingController, GrippableSkeletalMeshComponent_eventOnGripRelease_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when grip is released"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_ReleasingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnSecondaryGrip()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSkeletalMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnSecondaryGrip"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableSkeletalMeshComponent_eventOnSecondaryGrip_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableSkeletalMeshComponent_eventOnSecondaryGrip_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_SecondaryGripComponent = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("SecondaryGripComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(SecondaryGripComponent, GrippableSkeletalMeshComponent_eventOnSecondaryGrip_Parms), 0x0010000000080080, Z_Construct_UClass_USceneComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when secondary gripped"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_SecondaryGripComponent, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnSecondaryGripRelease()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSkeletalMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnSecondaryGripRelease"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableSkeletalMeshComponent_eventOnSecondaryGripRelease_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableSkeletalMeshComponent_eventOnSecondaryGripRelease_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_ReleasingSecondaryGripComponent = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReleasingSecondaryGripComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ReleasingSecondaryGripComponent, GrippableSkeletalMeshComponent_eventOnSecondaryGripRelease_Parms), 0x0010000000080080, Z_Construct_UClass_USceneComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when secondary grip is released"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_ReleasingSecondaryGripComponent, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnSecondaryUsed()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSkeletalMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnSecondaryUsed"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Call to use an object"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnUsed()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSkeletalMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnUsed"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Call to use an object"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_SecondaryGripType()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSkeletalMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SecondaryGripType"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSkeletalMeshComponent_eventSecondaryGripType_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableSkeletalMeshComponent_eventSecondaryGripType_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_ESecondaryGripType());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Secondary grip type"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_SetHeld()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSkeletalMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SetHeld"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSkeletalMeshComponent_eventSetHeld_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsHeld, GrippableSkeletalMeshComponent_eventSetHeld_Parms, bool);
+			UProperty* NewProp_bIsHeld = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bIsHeld"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsHeld, GrippableSkeletalMeshComponent_eventSetHeld_Parms), 0x0010000000000080, CPP_BOOL_PROPERTY_BITMASK(bIsHeld, GrippableSkeletalMeshComponent_eventSetHeld_Parms), sizeof(bool), true);
+			UProperty* NewProp_HoldingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("HoldingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(HoldingController, GrippableSkeletalMeshComponent_eventSetHeld_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Sets is held, used by the plugin"));
+			MetaData->SetValue(NewProp_HoldingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_SimulateOnDrop()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSkeletalMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SimulateOnDrop"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSkeletalMeshComponent_eventSimulateOnDrop_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, GrippableSkeletalMeshComponent_eventSimulateOnDrop_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, GrippableSkeletalMeshComponent_eventSimulateOnDrop_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, GrippableSkeletalMeshComponent_eventSimulateOnDrop_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Should this object simulate on drop"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_SlotGripType()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSkeletalMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SlotGripType"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSkeletalMeshComponent_eventSlotGripType_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableSkeletalMeshComponent_eventSlotGripType_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_EGripCollisionType());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Grip type to use when gripping a slot"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_TeleportBehavior()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSkeletalMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("TeleportBehavior"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSkeletalMeshComponent_eventTeleportBehavior_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableSkeletalMeshComponent_eventTeleportBehavior_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_EGripInterfaceTeleportBehavior());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("How an interfaced object behaves when teleporting"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSkeletalMeshComponent_TickGrip()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSkeletalMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("TickGrip"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08C20C00, 65535, sizeof(GrippableSkeletalMeshComponent_eventTickGrip_Parms));
+			UProperty* NewProp_DeltaTime = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("DeltaTime"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(DeltaTime, GrippableSkeletalMeshComponent_eventTickGrip_Parms), 0x0010000000000080);
+			UProperty* NewProp_MControllerLocDelta = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("MControllerLocDelta"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(MControllerLocDelta, GrippableSkeletalMeshComponent_eventTickGrip_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector());
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableSkeletalMeshComponent_eventTickGrip_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_GrippingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GrippingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(GrippingController, GrippableSkeletalMeshComponent_eventTickGrip_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered each tick on the interfaced object when gripped, can be used for custom movement or grip based logic"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_GrippingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_UGrippableSkeletalMeshComponent_NoRegister()
+	{
+		return UGrippableSkeletalMeshComponent::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UGrippableSkeletalMeshComponent()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_USkeletalMeshComponent();
+			Z_Construct_UPackage__Script_VRExpansionPlugin();
+			OuterClass = UGrippableSkeletalMeshComponent::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20B01080;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_AdvancedPhysicsSettings());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_ClosestPrimarySlotInRange());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_ClosestSecondarySlotInRange());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_DenyGripping());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_FreeGripType());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_GetInteractionSettings());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_GripBreakDistance());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_GripDamping());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_GripLateUpdateSetting());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_GripMovementReplicationType());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_GripStiffness());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_IsHeld());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_IsInteractible());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnChildGrip());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnChildGripRelease());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnEndSecondaryUsed());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnEndUsed());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnGrip());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnGripRelease());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnSecondaryGrip());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnSecondaryGripRelease());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnSecondaryUsed());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnUsed());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_SecondaryGripType());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_SetHeld());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_SimulateOnDrop());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_SlotGripType());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_TeleportBehavior());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_TickGrip());
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_VRGripInterfaceSettings = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("VRGripInterfaceSettings"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(VRGripInterfaceSettings, UGrippableSkeletalMeshComponent), 0x0010008000000025, Z_Construct_UScriptStruct_FBPInterfaceProperties());
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bRepGripSettingsAndGameplayTags, UGrippableSkeletalMeshComponent, bool);
+				UProperty* NewProp_bRepGripSettingsAndGameplayTags = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bRepGripSettingsAndGameplayTags"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bRepGripSettingsAndGameplayTags, UGrippableSkeletalMeshComponent), 0x0010000000000025, CPP_BOOL_PROPERTY_BITMASK(bRepGripSettingsAndGameplayTags, UGrippableSkeletalMeshComponent), sizeof(bool), true);
+				UProperty* NewProp_GameplayTags = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("GameplayTags"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GameplayTags, UGrippableSkeletalMeshComponent), 0x0010000000000025, Z_Construct_UScriptStruct_FGameplayTagContainer());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_AdvancedPhysicsSettings(), "AdvancedPhysicsSettings"); // 810785880
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_ClosestPrimarySlotInRange(), "ClosestPrimarySlotInRange"); // 651651764
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_ClosestSecondarySlotInRange(), "ClosestSecondarySlotInRange"); // 3305089589
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_DenyGripping(), "DenyGripping"); // 815170719
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_FreeGripType(), "FreeGripType"); // 779093141
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_GetInteractionSettings(), "GetInteractionSettings"); // 262024218
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_GripBreakDistance(), "GripBreakDistance"); // 3081185982
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_GripDamping(), "GripDamping"); // 3354385728
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_GripLateUpdateSetting(), "GripLateUpdateSetting"); // 280149912
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_GripMovementReplicationType(), "GripMovementReplicationType"); // 2016965760
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_GripStiffness(), "GripStiffness"); // 3892108093
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_IsHeld(), "IsHeld"); // 1800995436
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_IsInteractible(), "IsInteractible"); // 58169413
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnChildGrip(), "OnChildGrip"); // 1979564448
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnChildGripRelease(), "OnChildGripRelease"); // 2525538225
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnEndSecondaryUsed(), "OnEndSecondaryUsed"); // 2799393928
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnEndUsed(), "OnEndUsed"); // 1466966803
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnGrip(), "OnGrip"); // 610321014
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnGripRelease(), "OnGripRelease"); // 3115071845
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnSecondaryGrip(), "OnSecondaryGrip"); // 1635300570
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnSecondaryGripRelease(), "OnSecondaryGripRelease"); // 4163364027
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnSecondaryUsed(), "OnSecondaryUsed"); // 2412773220
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_OnUsed(), "OnUsed"); // 4175221862
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_SecondaryGripType(), "SecondaryGripType"); // 3509825432
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_SetHeld(), "SetHeld"); // 1530166253
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_SimulateOnDrop(), "SimulateOnDrop"); // 829538058
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_SlotGripType(), "SlotGripType"); // 2228884267
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_TeleportBehavior(), "TeleportBehavior"); // 841274484
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSkeletalMeshComponent_TickGrip(), "TickGrip"); // 2638098364
+				static TCppClassTypeInfo<TCppClassTypeTraits<UGrippableSkeletalMeshComponent> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->Interfaces.Add(FImplementedInterface(Z_Construct_UClass_UVRGripInterface_NoRegister(), VTABLE_OFFSET(UGrippableSkeletalMeshComponent, IVRGripInterface), false ));
+				OuterClass->Interfaces.Add(FImplementedInterface(Z_Construct_UClass_UGameplayTagAssetInterface_NoRegister(), VTABLE_OFFSET(UGrippableSkeletalMeshComponent, IGameplayTagAssetInterface), false ));
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("BlueprintSpawnableComponent"), TEXT(""));
+				MetaData->SetValue(OuterClass, TEXT("BlueprintType"), TEXT("true"));
+				MetaData->SetValue(OuterClass, TEXT("ClassGroupNames"), TEXT("VRExpansionPlugin"));
+				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Object Object Mobility Trigger"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("GrippableSkeletalMeshComponent.h"));
+				MetaData->SetValue(OuterClass, TEXT("IsBlueprintBase"), TEXT("true"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshComponent.h"));
+				MetaData->SetValue(NewProp_VRGripInterfaceSettings, TEXT("Category"), TEXT("VRGripInterface"));
+				MetaData->SetValue(NewProp_VRGripInterfaceSettings, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshComponent.h"));
+				MetaData->SetValue(NewProp_bRepGripSettingsAndGameplayTags, TEXT("Category"), TEXT("VRGripInterface"));
+				MetaData->SetValue(NewProp_bRepGripSettingsAndGameplayTags, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshComponent.h"));
+				MetaData->SetValue(NewProp_bRepGripSettingsAndGameplayTags, TEXT("ToolTip"), TEXT("Requires bReplicates to be true for the component"));
+				MetaData->SetValue(NewProp_GameplayTags, TEXT("Category"), TEXT("GameplayTags"));
+				MetaData->SetValue(NewProp_GameplayTags, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSkeletalMeshComponent.h"));
+				MetaData->SetValue(NewProp_GameplayTags, TEXT("ToolTip"), TEXT("Tags that are set on this object"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UGrippableSkeletalMeshComponent, 1038107993);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UGrippableSkeletalMeshComponent(Z_Construct_UClass_UGrippableSkeletalMeshComponent, &UGrippableSkeletalMeshComponent::StaticClass, TEXT("/Script/VRExpansionPlugin"), TEXT("UGrippableSkeletalMeshComponent"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UGrippableSkeletalMeshComponent);
+	static FName NAME_UGrippableSphereComponent_AdvancedPhysicsSettings = FName(TEXT("AdvancedPhysicsSettings"));
+	FBPAdvGripPhysicsSettings UGrippableSphereComponent::AdvancedPhysicsSettings()
+	{
+		GrippableSphereComponent_eventAdvancedPhysicsSettings_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSphereComponent_AdvancedPhysicsSettings),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableSphereComponent_ClosestPrimarySlotInRange = FName(TEXT("ClosestPrimarySlotInRange"));
+	void UGrippableSphereComponent::ClosestPrimarySlotInRange(FVector WorldLocation, bool& bHadSlotInRange, FTransform& SlotWorldTransform, FName OverridePrefix)
+	{
+		GrippableSphereComponent_eventClosestPrimarySlotInRange_Parms Parms;
+		Parms.WorldLocation=WorldLocation;
+		Parms.bHadSlotInRange=bHadSlotInRange ? true : false;
+		Parms.SlotWorldTransform=SlotWorldTransform;
+		Parms.OverridePrefix=OverridePrefix;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSphereComponent_ClosestPrimarySlotInRange),&Parms);
+		bHadSlotInRange=Parms.bHadSlotInRange;
+		SlotWorldTransform=Parms.SlotWorldTransform;
+	}
+	static FName NAME_UGrippableSphereComponent_ClosestSecondarySlotInRange = FName(TEXT("ClosestSecondarySlotInRange"));
+	void UGrippableSphereComponent::ClosestSecondarySlotInRange(FVector WorldLocation, bool& bHadSlotInRange, FTransform& SlotWorldTransform, FName OverridePrefix)
+	{
+		GrippableSphereComponent_eventClosestSecondarySlotInRange_Parms Parms;
+		Parms.WorldLocation=WorldLocation;
+		Parms.bHadSlotInRange=bHadSlotInRange ? true : false;
+		Parms.SlotWorldTransform=SlotWorldTransform;
+		Parms.OverridePrefix=OverridePrefix;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSphereComponent_ClosestSecondarySlotInRange),&Parms);
+		bHadSlotInRange=Parms.bHadSlotInRange;
+		SlotWorldTransform=Parms.SlotWorldTransform;
+	}
+	static FName NAME_UGrippableSphereComponent_DenyGripping = FName(TEXT("DenyGripping"));
+	bool UGrippableSphereComponent::DenyGripping()
+	{
+		GrippableSphereComponent_eventDenyGripping_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSphereComponent_DenyGripping),&Parms);
+		return !!Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableSphereComponent_FreeGripType = FName(TEXT("FreeGripType"));
+	EGripCollisionType UGrippableSphereComponent::FreeGripType()
+	{
+		GrippableSphereComponent_eventFreeGripType_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSphereComponent_FreeGripType),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableSphereComponent_GetInteractionSettings = FName(TEXT("GetInteractionSettings"));
+	FBPInteractionSettings UGrippableSphereComponent::GetInteractionSettings()
+	{
+		GrippableSphereComponent_eventGetInteractionSettings_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSphereComponent_GetInteractionSettings),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableSphereComponent_GripBreakDistance = FName(TEXT("GripBreakDistance"));
+	float UGrippableSphereComponent::GripBreakDistance()
+	{
+		GrippableSphereComponent_eventGripBreakDistance_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSphereComponent_GripBreakDistance),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableSphereComponent_GripDamping = FName(TEXT("GripDamping"));
+	float UGrippableSphereComponent::GripDamping()
+	{
+		GrippableSphereComponent_eventGripDamping_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSphereComponent_GripDamping),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableSphereComponent_GripLateUpdateSetting = FName(TEXT("GripLateUpdateSetting"));
+	EGripLateUpdateSettings UGrippableSphereComponent::GripLateUpdateSetting()
+	{
+		GrippableSphereComponent_eventGripLateUpdateSetting_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSphereComponent_GripLateUpdateSetting),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableSphereComponent_GripMovementReplicationType = FName(TEXT("GripMovementReplicationType"));
+	EGripMovementReplicationSettings UGrippableSphereComponent::GripMovementReplicationType()
+	{
+		GrippableSphereComponent_eventGripMovementReplicationType_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSphereComponent_GripMovementReplicationType),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableSphereComponent_GripStiffness = FName(TEXT("GripStiffness"));
+	float UGrippableSphereComponent::GripStiffness()
+	{
+		GrippableSphereComponent_eventGripStiffness_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSphereComponent_GripStiffness),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableSphereComponent_IsHeld = FName(TEXT("IsHeld"));
+	void UGrippableSphereComponent::IsHeld(UGripMotionControllerComponent*& HoldingController, bool& bIsHeld)
+	{
+		GrippableSphereComponent_eventIsHeld_Parms Parms;
+		Parms.HoldingController=HoldingController;
+		Parms.bIsHeld=bIsHeld ? true : false;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSphereComponent_IsHeld),&Parms);
+		HoldingController=Parms.HoldingController;
+		bIsHeld=Parms.bIsHeld;
+	}
+	static FName NAME_UGrippableSphereComponent_IsInteractible = FName(TEXT("IsInteractible"));
+	bool UGrippableSphereComponent::IsInteractible()
+	{
+		GrippableSphereComponent_eventIsInteractible_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSphereComponent_IsInteractible),&Parms);
+		return !!Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableSphereComponent_OnChildGrip = FName(TEXT("OnChildGrip"));
+	void UGrippableSphereComponent::OnChildGrip(UGripMotionControllerComponent* GrippingController, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableSphereComponent_eventOnChildGrip_Parms Parms;
+		Parms.GrippingController=GrippingController;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSphereComponent_OnChildGrip),&Parms);
+	}
+	static FName NAME_UGrippableSphereComponent_OnChildGripRelease = FName(TEXT("OnChildGripRelease"));
+	void UGrippableSphereComponent::OnChildGripRelease(UGripMotionControllerComponent* ReleasingController, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableSphereComponent_eventOnChildGripRelease_Parms Parms;
+		Parms.ReleasingController=ReleasingController;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSphereComponent_OnChildGripRelease),&Parms);
+	}
+	static FName NAME_UGrippableSphereComponent_OnEndSecondaryUsed = FName(TEXT("OnEndSecondaryUsed"));
+	void UGrippableSphereComponent::OnEndSecondaryUsed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSphereComponent_OnEndSecondaryUsed),NULL);
+	}
+	static FName NAME_UGrippableSphereComponent_OnEndUsed = FName(TEXT("OnEndUsed"));
+	void UGrippableSphereComponent::OnEndUsed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSphereComponent_OnEndUsed),NULL);
+	}
+	static FName NAME_UGrippableSphereComponent_OnGrip = FName(TEXT("OnGrip"));
+	void UGrippableSphereComponent::OnGrip(UGripMotionControllerComponent* GrippingController, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableSphereComponent_eventOnGrip_Parms Parms;
+		Parms.GrippingController=GrippingController;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSphereComponent_OnGrip),&Parms);
+	}
+	static FName NAME_UGrippableSphereComponent_OnGripRelease = FName(TEXT("OnGripRelease"));
+	void UGrippableSphereComponent::OnGripRelease(UGripMotionControllerComponent* ReleasingController, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableSphereComponent_eventOnGripRelease_Parms Parms;
+		Parms.ReleasingController=ReleasingController;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSphereComponent_OnGripRelease),&Parms);
+	}
+	static FName NAME_UGrippableSphereComponent_OnSecondaryGrip = FName(TEXT("OnSecondaryGrip"));
+	void UGrippableSphereComponent::OnSecondaryGrip(USceneComponent* SecondaryGripComponent, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableSphereComponent_eventOnSecondaryGrip_Parms Parms;
+		Parms.SecondaryGripComponent=SecondaryGripComponent;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSphereComponent_OnSecondaryGrip),&Parms);
+	}
+	static FName NAME_UGrippableSphereComponent_OnSecondaryGripRelease = FName(TEXT("OnSecondaryGripRelease"));
+	void UGrippableSphereComponent::OnSecondaryGripRelease(USceneComponent* ReleasingSecondaryGripComponent, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableSphereComponent_eventOnSecondaryGripRelease_Parms Parms;
+		Parms.ReleasingSecondaryGripComponent=ReleasingSecondaryGripComponent;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSphereComponent_OnSecondaryGripRelease),&Parms);
+	}
+	static FName NAME_UGrippableSphereComponent_OnSecondaryUsed = FName(TEXT("OnSecondaryUsed"));
+	void UGrippableSphereComponent::OnSecondaryUsed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSphereComponent_OnSecondaryUsed),NULL);
+	}
+	static FName NAME_UGrippableSphereComponent_OnUsed = FName(TEXT("OnUsed"));
+	void UGrippableSphereComponent::OnUsed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSphereComponent_OnUsed),NULL);
+	}
+	static FName NAME_UGrippableSphereComponent_SecondaryGripType = FName(TEXT("SecondaryGripType"));
+	ESecondaryGripType UGrippableSphereComponent::SecondaryGripType()
+	{
+		GrippableSphereComponent_eventSecondaryGripType_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSphereComponent_SecondaryGripType),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableSphereComponent_SetHeld = FName(TEXT("SetHeld"));
+	void UGrippableSphereComponent::SetHeld(UGripMotionControllerComponent* HoldingController, bool bIsHeld)
+	{
+		GrippableSphereComponent_eventSetHeld_Parms Parms;
+		Parms.HoldingController=HoldingController;
+		Parms.bIsHeld=bIsHeld ? true : false;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSphereComponent_SetHeld),&Parms);
+	}
+	static FName NAME_UGrippableSphereComponent_SimulateOnDrop = FName(TEXT("SimulateOnDrop"));
+	bool UGrippableSphereComponent::SimulateOnDrop()
+	{
+		GrippableSphereComponent_eventSimulateOnDrop_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSphereComponent_SimulateOnDrop),&Parms);
+		return !!Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableSphereComponent_SlotGripType = FName(TEXT("SlotGripType"));
+	EGripCollisionType UGrippableSphereComponent::SlotGripType()
+	{
+		GrippableSphereComponent_eventSlotGripType_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSphereComponent_SlotGripType),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableSphereComponent_TeleportBehavior = FName(TEXT("TeleportBehavior"));
+	EGripInterfaceTeleportBehavior UGrippableSphereComponent::TeleportBehavior()
+	{
+		GrippableSphereComponent_eventTeleportBehavior_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSphereComponent_TeleportBehavior),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableSphereComponent_TickGrip = FName(TEXT("TickGrip"));
+	void UGrippableSphereComponent::TickGrip(UGripMotionControllerComponent* GrippingController, FBPActorGripInformation const& GripInformation, FVector MControllerLocDelta, float DeltaTime)
+	{
+		GrippableSphereComponent_eventTickGrip_Parms Parms;
+		Parms.GrippingController=GrippingController;
+		Parms.GripInformation=GripInformation;
+		Parms.MControllerLocDelta=MControllerLocDelta;
+		Parms.DeltaTime=DeltaTime;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableSphereComponent_TickGrip),&Parms);
+	}
+	void UGrippableSphereComponent::StaticRegisterNativesUGrippableSphereComponent()
+	{
+		UClass* Class = UGrippableSphereComponent::StaticClass();
+		static const TNameNativePtrPair<ANSICHAR> AnsiFuncs[] = {
+			{ "AdvancedPhysicsSettings", (Native)&UGrippableSphereComponent::execAdvancedPhysicsSettings },
+			{ "ClosestPrimarySlotInRange", (Native)&UGrippableSphereComponent::execClosestPrimarySlotInRange },
+			{ "ClosestSecondarySlotInRange", (Native)&UGrippableSphereComponent::execClosestSecondarySlotInRange },
+			{ "DenyGripping", (Native)&UGrippableSphereComponent::execDenyGripping },
+			{ "FreeGripType", (Native)&UGrippableSphereComponent::execFreeGripType },
+			{ "GetInteractionSettings", (Native)&UGrippableSphereComponent::execGetInteractionSettings },
+			{ "GripBreakDistance", (Native)&UGrippableSphereComponent::execGripBreakDistance },
+			{ "GripDamping", (Native)&UGrippableSphereComponent::execGripDamping },
+			{ "GripLateUpdateSetting", (Native)&UGrippableSphereComponent::execGripLateUpdateSetting },
+			{ "GripMovementReplicationType", (Native)&UGrippableSphereComponent::execGripMovementReplicationType },
+			{ "GripStiffness", (Native)&UGrippableSphereComponent::execGripStiffness },
+			{ "IsHeld", (Native)&UGrippableSphereComponent::execIsHeld },
+			{ "IsInteractible", (Native)&UGrippableSphereComponent::execIsInteractible },
+			{ "OnChildGrip", (Native)&UGrippableSphereComponent::execOnChildGrip },
+			{ "OnChildGripRelease", (Native)&UGrippableSphereComponent::execOnChildGripRelease },
+			{ "OnEndSecondaryUsed", (Native)&UGrippableSphereComponent::execOnEndSecondaryUsed },
+			{ "OnEndUsed", (Native)&UGrippableSphereComponent::execOnEndUsed },
+			{ "OnGrip", (Native)&UGrippableSphereComponent::execOnGrip },
+			{ "OnGripRelease", (Native)&UGrippableSphereComponent::execOnGripRelease },
+			{ "OnSecondaryGrip", (Native)&UGrippableSphereComponent::execOnSecondaryGrip },
+			{ "OnSecondaryGripRelease", (Native)&UGrippableSphereComponent::execOnSecondaryGripRelease },
+			{ "OnSecondaryUsed", (Native)&UGrippableSphereComponent::execOnSecondaryUsed },
+			{ "OnUsed", (Native)&UGrippableSphereComponent::execOnUsed },
+			{ "SecondaryGripType", (Native)&UGrippableSphereComponent::execSecondaryGripType },
+			{ "SetHeld", (Native)&UGrippableSphereComponent::execSetHeld },
+			{ "SimulateOnDrop", (Native)&UGrippableSphereComponent::execSimulateOnDrop },
+			{ "SlotGripType", (Native)&UGrippableSphereComponent::execSlotGripType },
+			{ "TeleportBehavior", (Native)&UGrippableSphereComponent::execTeleportBehavior },
+			{ "TickGrip", (Native)&UGrippableSphereComponent::execTickGrip },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, AnsiFuncs, 29);
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSphereComponent_AdvancedPhysicsSettings()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSphereComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("AdvancedPhysicsSettings"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSphereComponent_eventAdvancedPhysicsSettings_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableSphereComponent_eventAdvancedPhysicsSettings_Parms), 0x0010000000000580, Z_Construct_UScriptStruct_FBPAdvGripPhysicsSettings());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSphereComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Get the advanced physics settings for this grip"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSphereComponent_ClosestPrimarySlotInRange()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSphereComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ClosestPrimarySlotInRange"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0CC20C00, 65535, sizeof(GrippableSphereComponent_eventClosestPrimarySlotInRange_Parms));
+			UProperty* NewProp_OverridePrefix = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OverridePrefix"), RF_Public|RF_Transient|RF_MarkAsNative) UNameProperty(CPP_PROPERTY_BASE(OverridePrefix, GrippableSphereComponent_eventClosestPrimarySlotInRange_Parms), 0x0010000000000080);
+			UProperty* NewProp_SlotWorldTransform = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("SlotWorldTransform"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(SlotWorldTransform, GrippableSphereComponent_eventClosestPrimarySlotInRange_Parms), 0x0010000000000180, Z_Construct_UScriptStruct_FTransform());
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bHadSlotInRange, GrippableSphereComponent_eventClosestPrimarySlotInRange_Parms, bool);
+			UProperty* NewProp_bHadSlotInRange = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bHadSlotInRange"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bHadSlotInRange, GrippableSphereComponent_eventClosestPrimarySlotInRange_Parms), 0x0010000000000180, CPP_BOOL_PROPERTY_BITMASK(bHadSlotInRange, GrippableSphereComponent_eventClosestPrimarySlotInRange_Parms), sizeof(bool), true);
+			UProperty* NewProp_WorldLocation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("WorldLocation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(WorldLocation, GrippableSphereComponent_eventClosestPrimarySlotInRange_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSphereComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Get closest primary slot in range"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSphereComponent_ClosestSecondarySlotInRange()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSphereComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ClosestSecondarySlotInRange"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0CC20C00, 65535, sizeof(GrippableSphereComponent_eventClosestSecondarySlotInRange_Parms));
+			UProperty* NewProp_OverridePrefix = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OverridePrefix"), RF_Public|RF_Transient|RF_MarkAsNative) UNameProperty(CPP_PROPERTY_BASE(OverridePrefix, GrippableSphereComponent_eventClosestSecondarySlotInRange_Parms), 0x0010000000000080);
+			UProperty* NewProp_SlotWorldTransform = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("SlotWorldTransform"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(SlotWorldTransform, GrippableSphereComponent_eventClosestSecondarySlotInRange_Parms), 0x0010000000000180, Z_Construct_UScriptStruct_FTransform());
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bHadSlotInRange, GrippableSphereComponent_eventClosestSecondarySlotInRange_Parms, bool);
+			UProperty* NewProp_bHadSlotInRange = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bHadSlotInRange"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bHadSlotInRange, GrippableSphereComponent_eventClosestSecondarySlotInRange_Parms), 0x0010000000000180, CPP_BOOL_PROPERTY_BITMASK(bHadSlotInRange, GrippableSphereComponent_eventClosestSecondarySlotInRange_Parms), sizeof(bool), true);
+			UProperty* NewProp_WorldLocation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("WorldLocation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(WorldLocation, GrippableSphereComponent_eventClosestSecondarySlotInRange_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSphereComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Get closest secondary slot in range"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSphereComponent_DenyGripping()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSphereComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("DenyGripping"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSphereComponent_eventDenyGripping_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, GrippableSphereComponent_eventDenyGripping_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, GrippableSphereComponent_eventDenyGripping_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, GrippableSphereComponent_eventDenyGripping_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSphereComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Set up as deny instead of allow so that default allows for gripping"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSphereComponent_FreeGripType()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSphereComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("FreeGripType"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSphereComponent_eventFreeGripType_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableSphereComponent_eventFreeGripType_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_EGripCollisionType());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSphereComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Grip type to use when not gripping a slot"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSphereComponent_GetInteractionSettings()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSphereComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GetInteractionSettings"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSphereComponent_eventGetInteractionSettings_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableSphereComponent_eventGetInteractionSettings_Parms), 0x0010000000000580, Z_Construct_UScriptStruct_FBPInteractionSettings());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSphereComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Get interactable settings"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSphereComponent_GripBreakDistance()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSphereComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GripBreakDistance"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSphereComponent_eventGripBreakDistance_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableSphereComponent_eventGripBreakDistance_Parms), 0x0010000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSphereComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("What distance to break a grip at (only relevent with physics enabled grips"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSphereComponent_GripDamping()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSphereComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GripDamping"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSphereComponent_eventGripDamping_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableSphereComponent_eventGripDamping_Parms), 0x0010000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSphereComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("What grip damping to use if using a physics constraint"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSphereComponent_GripLateUpdateSetting()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSphereComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GripLateUpdateSetting"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSphereComponent_eventGripLateUpdateSetting_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableSphereComponent_eventGripLateUpdateSetting_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_EGripLateUpdateSettings());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSphereComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Define the late update setting"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSphereComponent_GripMovementReplicationType()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSphereComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GripMovementReplicationType"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSphereComponent_eventGripMovementReplicationType_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableSphereComponent_eventGripMovementReplicationType_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_EGripMovementReplicationSettings());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSphereComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Define which movement repliation setting to use"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSphereComponent_GripStiffness()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSphereComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GripStiffness"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSphereComponent_eventGripStiffness_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableSphereComponent_eventGripStiffness_Parms), 0x0010000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSphereComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("What grip stiffness to use if using a physics constraint"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSphereComponent_IsHeld()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSphereComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("IsHeld"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C420C00, 65535, sizeof(GrippableSphereComponent_eventIsHeld_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsHeld, GrippableSphereComponent_eventIsHeld_Parms, bool);
+			UProperty* NewProp_bIsHeld = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bIsHeld"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsHeld, GrippableSphereComponent_eventIsHeld_Parms), 0x0010000000000180, CPP_BOOL_PROPERTY_BITMASK(bIsHeld, GrippableSphereComponent_eventIsHeld_Parms), sizeof(bool), true);
+			UProperty* NewProp_HoldingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("HoldingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(HoldingController, GrippableSphereComponent_eventIsHeld_Parms), 0x0010000000080180, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSphereComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Returns if the object is held and if so, which pawn is holding it"));
+			MetaData->SetValue(NewProp_HoldingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSphereComponent_IsInteractible()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSphereComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("IsInteractible"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSphereComponent_eventIsInteractible_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, GrippableSphereComponent_eventIsInteractible_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, GrippableSphereComponent_eventIsInteractible_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, GrippableSphereComponent_eventIsInteractible_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSphereComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Check if the object is an interactable"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSphereComponent_OnChildGrip()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSphereComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnChildGrip"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableSphereComponent_eventOnChildGrip_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableSphereComponent_eventOnChildGrip_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_GrippingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GrippingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(GrippingController, GrippableSphereComponent_eventOnChildGrip_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSphereComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when child component is gripped"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_GrippingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSphereComponent_OnChildGripRelease()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSphereComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnChildGripRelease"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableSphereComponent_eventOnChildGripRelease_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableSphereComponent_eventOnChildGripRelease_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_ReleasingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReleasingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ReleasingController, GrippableSphereComponent_eventOnChildGripRelease_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSphereComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when child component is released"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_ReleasingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSphereComponent_OnEndSecondaryUsed()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSphereComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnEndSecondaryUsed"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSphereComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Call to stop using an object"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSphereComponent_OnEndUsed()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSphereComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnEndUsed"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSphereComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Call to stop using an object"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSphereComponent_OnGrip()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSphereComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnGrip"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableSphereComponent_eventOnGrip_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableSphereComponent_eventOnGrip_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_GrippingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GrippingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(GrippingController, GrippableSphereComponent_eventOnGrip_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSphereComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when gripped"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_GrippingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSphereComponent_OnGripRelease()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSphereComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnGripRelease"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableSphereComponent_eventOnGripRelease_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableSphereComponent_eventOnGripRelease_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_ReleasingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReleasingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ReleasingController, GrippableSphereComponent_eventOnGripRelease_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSphereComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when grip is released"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_ReleasingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSphereComponent_OnSecondaryGrip()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSphereComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnSecondaryGrip"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableSphereComponent_eventOnSecondaryGrip_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableSphereComponent_eventOnSecondaryGrip_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_SecondaryGripComponent = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("SecondaryGripComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(SecondaryGripComponent, GrippableSphereComponent_eventOnSecondaryGrip_Parms), 0x0010000000080080, Z_Construct_UClass_USceneComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSphereComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when secondary gripped"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_SecondaryGripComponent, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSphereComponent_OnSecondaryGripRelease()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSphereComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnSecondaryGripRelease"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableSphereComponent_eventOnSecondaryGripRelease_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableSphereComponent_eventOnSecondaryGripRelease_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_ReleasingSecondaryGripComponent = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReleasingSecondaryGripComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ReleasingSecondaryGripComponent, GrippableSphereComponent_eventOnSecondaryGripRelease_Parms), 0x0010000000080080, Z_Construct_UClass_USceneComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSphereComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when secondary grip is released"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_ReleasingSecondaryGripComponent, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSphereComponent_OnSecondaryUsed()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSphereComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnSecondaryUsed"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSphereComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Call to use an object"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSphereComponent_OnUsed()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSphereComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnUsed"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSphereComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Call to use an object"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSphereComponent_SecondaryGripType()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSphereComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SecondaryGripType"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSphereComponent_eventSecondaryGripType_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableSphereComponent_eventSecondaryGripType_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_ESecondaryGripType());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSphereComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Secondary grip type"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSphereComponent_SetHeld()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSphereComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SetHeld"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSphereComponent_eventSetHeld_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsHeld, GrippableSphereComponent_eventSetHeld_Parms, bool);
+			UProperty* NewProp_bIsHeld = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bIsHeld"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsHeld, GrippableSphereComponent_eventSetHeld_Parms), 0x0010000000000080, CPP_BOOL_PROPERTY_BITMASK(bIsHeld, GrippableSphereComponent_eventSetHeld_Parms), sizeof(bool), true);
+			UProperty* NewProp_HoldingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("HoldingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(HoldingController, GrippableSphereComponent_eventSetHeld_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSphereComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Sets is held, used by the plugin"));
+			MetaData->SetValue(NewProp_HoldingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSphereComponent_SimulateOnDrop()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSphereComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SimulateOnDrop"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSphereComponent_eventSimulateOnDrop_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, GrippableSphereComponent_eventSimulateOnDrop_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, GrippableSphereComponent_eventSimulateOnDrop_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, GrippableSphereComponent_eventSimulateOnDrop_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSphereComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Should this object simulate on drop"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSphereComponent_SlotGripType()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSphereComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SlotGripType"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSphereComponent_eventSlotGripType_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableSphereComponent_eventSlotGripType_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_EGripCollisionType());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSphereComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Grip type to use when gripping a slot"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSphereComponent_TeleportBehavior()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSphereComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("TeleportBehavior"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableSphereComponent_eventTeleportBehavior_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableSphereComponent_eventTeleportBehavior_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_EGripInterfaceTeleportBehavior());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSphereComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("How an interfaced object behaves when teleporting"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableSphereComponent_TickGrip()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableSphereComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("TickGrip"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08C20C00, 65535, sizeof(GrippableSphereComponent_eventTickGrip_Parms));
+			UProperty* NewProp_DeltaTime = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("DeltaTime"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(DeltaTime, GrippableSphereComponent_eventTickGrip_Parms), 0x0010000000000080);
+			UProperty* NewProp_MControllerLocDelta = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("MControllerLocDelta"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(MControllerLocDelta, GrippableSphereComponent_eventTickGrip_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector());
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableSphereComponent_eventTickGrip_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_GrippingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GrippingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(GrippingController, GrippableSphereComponent_eventTickGrip_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSphereComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered each tick on the interfaced object when gripped, can be used for custom movement or grip based logic"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_GrippingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_UGrippableSphereComponent_NoRegister()
+	{
+		return UGrippableSphereComponent::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UGrippableSphereComponent()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_USphereComponent();
+			Z_Construct_UPackage__Script_VRExpansionPlugin();
+			OuterClass = UGrippableSphereComponent::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20B01080;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSphereComponent_AdvancedPhysicsSettings());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSphereComponent_ClosestPrimarySlotInRange());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSphereComponent_ClosestSecondarySlotInRange());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSphereComponent_DenyGripping());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSphereComponent_FreeGripType());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSphereComponent_GetInteractionSettings());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSphereComponent_GripBreakDistance());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSphereComponent_GripDamping());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSphereComponent_GripLateUpdateSetting());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSphereComponent_GripMovementReplicationType());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSphereComponent_GripStiffness());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSphereComponent_IsHeld());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSphereComponent_IsInteractible());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSphereComponent_OnChildGrip());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSphereComponent_OnChildGripRelease());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSphereComponent_OnEndSecondaryUsed());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSphereComponent_OnEndUsed());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSphereComponent_OnGrip());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSphereComponent_OnGripRelease());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSphereComponent_OnSecondaryGrip());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSphereComponent_OnSecondaryGripRelease());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSphereComponent_OnSecondaryUsed());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSphereComponent_OnUsed());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSphereComponent_SecondaryGripType());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSphereComponent_SetHeld());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSphereComponent_SimulateOnDrop());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSphereComponent_SlotGripType());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSphereComponent_TeleportBehavior());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableSphereComponent_TickGrip());
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_VRGripInterfaceSettings = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("VRGripInterfaceSettings"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(VRGripInterfaceSettings, UGrippableSphereComponent), 0x0010008000000025, Z_Construct_UScriptStruct_FBPInterfaceProperties());
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bRepGripSettingsAndGameplayTags, UGrippableSphereComponent, bool);
+				UProperty* NewProp_bRepGripSettingsAndGameplayTags = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bRepGripSettingsAndGameplayTags"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bRepGripSettingsAndGameplayTags, UGrippableSphereComponent), 0x0010000000000025, CPP_BOOL_PROPERTY_BITMASK(bRepGripSettingsAndGameplayTags, UGrippableSphereComponent), sizeof(bool), true);
+				UProperty* NewProp_GameplayTags = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("GameplayTags"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GameplayTags, UGrippableSphereComponent), 0x0010000000000025, Z_Construct_UScriptStruct_FGameplayTagContainer());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSphereComponent_AdvancedPhysicsSettings(), "AdvancedPhysicsSettings"); // 1844117735
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSphereComponent_ClosestPrimarySlotInRange(), "ClosestPrimarySlotInRange"); // 1729094123
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSphereComponent_ClosestSecondarySlotInRange(), "ClosestSecondarySlotInRange"); // 3334797741
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSphereComponent_DenyGripping(), "DenyGripping"); // 502356829
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSphereComponent_FreeGripType(), "FreeGripType"); // 3605886648
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSphereComponent_GetInteractionSettings(), "GetInteractionSettings"); // 1853475045
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSphereComponent_GripBreakDistance(), "GripBreakDistance"); // 2011590053
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSphereComponent_GripDamping(), "GripDamping"); // 2862175817
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSphereComponent_GripLateUpdateSetting(), "GripLateUpdateSetting"); // 3159578903
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSphereComponent_GripMovementReplicationType(), "GripMovementReplicationType"); // 3877734132
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSphereComponent_GripStiffness(), "GripStiffness"); // 1271847469
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSphereComponent_IsHeld(), "IsHeld"); // 2740996761
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSphereComponent_IsInteractible(), "IsInteractible"); // 2531558491
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSphereComponent_OnChildGrip(), "OnChildGrip"); // 2839587183
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSphereComponent_OnChildGripRelease(), "OnChildGripRelease"); // 4101485031
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSphereComponent_OnEndSecondaryUsed(), "OnEndSecondaryUsed"); // 285288683
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSphereComponent_OnEndUsed(), "OnEndUsed"); // 3007004891
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSphereComponent_OnGrip(), "OnGrip"); // 276171552
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSphereComponent_OnGripRelease(), "OnGripRelease"); // 2621484005
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSphereComponent_OnSecondaryGrip(), "OnSecondaryGrip"); // 469228089
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSphereComponent_OnSecondaryGripRelease(), "OnSecondaryGripRelease"); // 2358866089
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSphereComponent_OnSecondaryUsed(), "OnSecondaryUsed"); // 3026910974
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSphereComponent_OnUsed(), "OnUsed"); // 4015470899
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSphereComponent_SecondaryGripType(), "SecondaryGripType"); // 1375580257
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSphereComponent_SetHeld(), "SetHeld"); // 1237638662
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSphereComponent_SimulateOnDrop(), "SimulateOnDrop"); // 316057976
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSphereComponent_SlotGripType(), "SlotGripType"); // 723165863
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSphereComponent_TeleportBehavior(), "TeleportBehavior"); // 4154236026
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableSphereComponent_TickGrip(), "TickGrip"); // 1981941593
+				static TCppClassTypeInfo<TCppClassTypeTraits<UGrippableSphereComponent> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->Interfaces.Add(FImplementedInterface(Z_Construct_UClass_UVRGripInterface_NoRegister(), VTABLE_OFFSET(UGrippableSphereComponent, IVRGripInterface), false ));
+				OuterClass->Interfaces.Add(FImplementedInterface(Z_Construct_UClass_UGameplayTagAssetInterface_NoRegister(), VTABLE_OFFSET(UGrippableSphereComponent, IGameplayTagAssetInterface), false ));
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("BlueprintSpawnableComponent"), TEXT(""));
+				MetaData->SetValue(OuterClass, TEXT("BlueprintType"), TEXT("true"));
+				MetaData->SetValue(OuterClass, TEXT("ClassGroupNames"), TEXT("VRExpansionPlugin"));
+				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Object LOD Lighting TextureStreaming Object LOD Lighting TextureStreaming Activation Components|Activation Trigger"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("GrippableSphereComponent.h"));
+				MetaData->SetValue(OuterClass, TEXT("IsBlueprintBase"), TEXT("true"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSphereComponent.h"));
+				MetaData->SetValue(NewProp_VRGripInterfaceSettings, TEXT("Category"), TEXT("VRGripInterface"));
+				MetaData->SetValue(NewProp_VRGripInterfaceSettings, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSphereComponent.h"));
+				MetaData->SetValue(NewProp_bRepGripSettingsAndGameplayTags, TEXT("Category"), TEXT("VRGripInterface"));
+				MetaData->SetValue(NewProp_bRepGripSettingsAndGameplayTags, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSphereComponent.h"));
+				MetaData->SetValue(NewProp_bRepGripSettingsAndGameplayTags, TEXT("ToolTip"), TEXT("Requires bReplicates to be true for the component"));
+				MetaData->SetValue(NewProp_GameplayTags, TEXT("Category"), TEXT("GameplayTags"));
+				MetaData->SetValue(NewProp_GameplayTags, TEXT("ModuleRelativePath"), TEXT("Public/GrippableSphereComponent.h"));
+				MetaData->SetValue(NewProp_GameplayTags, TEXT("ToolTip"), TEXT("Tags that are set on this object"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UGrippableSphereComponent, 2811556312);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UGrippableSphereComponent(Z_Construct_UClass_UGrippableSphereComponent, &UGrippableSphereComponent::StaticClass, TEXT("/Script/VRExpansionPlugin"), TEXT("UGrippableSphereComponent"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UGrippableSphereComponent);
+	static FName NAME_AGrippableStaticMeshActor_AdvancedPhysicsSettings = FName(TEXT("AdvancedPhysicsSettings"));
+	FBPAdvGripPhysicsSettings AGrippableStaticMeshActor::AdvancedPhysicsSettings()
+	{
+		GrippableStaticMeshActor_eventAdvancedPhysicsSettings_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableStaticMeshActor_AdvancedPhysicsSettings),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_AGrippableStaticMeshActor_ClosestPrimarySlotInRange = FName(TEXT("ClosestPrimarySlotInRange"));
+	void AGrippableStaticMeshActor::ClosestPrimarySlotInRange(FVector WorldLocation, bool& bHadSlotInRange, FTransform& SlotWorldTransform, FName OverridePrefix)
+	{
+		GrippableStaticMeshActor_eventClosestPrimarySlotInRange_Parms Parms;
+		Parms.WorldLocation=WorldLocation;
+		Parms.bHadSlotInRange=bHadSlotInRange ? true : false;
+		Parms.SlotWorldTransform=SlotWorldTransform;
+		Parms.OverridePrefix=OverridePrefix;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableStaticMeshActor_ClosestPrimarySlotInRange),&Parms);
+		bHadSlotInRange=Parms.bHadSlotInRange;
+		SlotWorldTransform=Parms.SlotWorldTransform;
+	}
+	static FName NAME_AGrippableStaticMeshActor_ClosestSecondarySlotInRange = FName(TEXT("ClosestSecondarySlotInRange"));
+	void AGrippableStaticMeshActor::ClosestSecondarySlotInRange(FVector WorldLocation, bool& bHadSlotInRange, FTransform& SlotWorldTransform, FName OverridePrefix)
+	{
+		GrippableStaticMeshActor_eventClosestSecondarySlotInRange_Parms Parms;
+		Parms.WorldLocation=WorldLocation;
+		Parms.bHadSlotInRange=bHadSlotInRange ? true : false;
+		Parms.SlotWorldTransform=SlotWorldTransform;
+		Parms.OverridePrefix=OverridePrefix;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableStaticMeshActor_ClosestSecondarySlotInRange),&Parms);
+		bHadSlotInRange=Parms.bHadSlotInRange;
+		SlotWorldTransform=Parms.SlotWorldTransform;
+	}
+	static FName NAME_AGrippableStaticMeshActor_DenyGripping = FName(TEXT("DenyGripping"));
+	bool AGrippableStaticMeshActor::DenyGripping()
+	{
+		GrippableStaticMeshActor_eventDenyGripping_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableStaticMeshActor_DenyGripping),&Parms);
+		return !!Parms.ReturnValue;
+	}
+	static FName NAME_AGrippableStaticMeshActor_FreeGripType = FName(TEXT("FreeGripType"));
+	EGripCollisionType AGrippableStaticMeshActor::FreeGripType()
+	{
+		GrippableStaticMeshActor_eventFreeGripType_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableStaticMeshActor_FreeGripType),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_AGrippableStaticMeshActor_GetInteractionSettings = FName(TEXT("GetInteractionSettings"));
+	FBPInteractionSettings AGrippableStaticMeshActor::GetInteractionSettings()
+	{
+		GrippableStaticMeshActor_eventGetInteractionSettings_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableStaticMeshActor_GetInteractionSettings),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_AGrippableStaticMeshActor_GripBreakDistance = FName(TEXT("GripBreakDistance"));
+	float AGrippableStaticMeshActor::GripBreakDistance()
+	{
+		GrippableStaticMeshActor_eventGripBreakDistance_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableStaticMeshActor_GripBreakDistance),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_AGrippableStaticMeshActor_GripDamping = FName(TEXT("GripDamping"));
+	float AGrippableStaticMeshActor::GripDamping()
+	{
+		GrippableStaticMeshActor_eventGripDamping_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableStaticMeshActor_GripDamping),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_AGrippableStaticMeshActor_GripLateUpdateSetting = FName(TEXT("GripLateUpdateSetting"));
+	EGripLateUpdateSettings AGrippableStaticMeshActor::GripLateUpdateSetting()
+	{
+		GrippableStaticMeshActor_eventGripLateUpdateSetting_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableStaticMeshActor_GripLateUpdateSetting),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_AGrippableStaticMeshActor_GripMovementReplicationType = FName(TEXT("GripMovementReplicationType"));
+	EGripMovementReplicationSettings AGrippableStaticMeshActor::GripMovementReplicationType()
+	{
+		GrippableStaticMeshActor_eventGripMovementReplicationType_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableStaticMeshActor_GripMovementReplicationType),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_AGrippableStaticMeshActor_GripStiffness = FName(TEXT("GripStiffness"));
+	float AGrippableStaticMeshActor::GripStiffness()
+	{
+		GrippableStaticMeshActor_eventGripStiffness_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableStaticMeshActor_GripStiffness),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_AGrippableStaticMeshActor_IsHeld = FName(TEXT("IsHeld"));
+	void AGrippableStaticMeshActor::IsHeld(UGripMotionControllerComponent*& HoldingController, bool& bIsHeld)
+	{
+		GrippableStaticMeshActor_eventIsHeld_Parms Parms;
+		Parms.HoldingController=HoldingController;
+		Parms.bIsHeld=bIsHeld ? true : false;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableStaticMeshActor_IsHeld),&Parms);
+		HoldingController=Parms.HoldingController;
+		bIsHeld=Parms.bIsHeld;
+	}
+	static FName NAME_AGrippableStaticMeshActor_IsInteractible = FName(TEXT("IsInteractible"));
+	bool AGrippableStaticMeshActor::IsInteractible()
+	{
+		GrippableStaticMeshActor_eventIsInteractible_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableStaticMeshActor_IsInteractible),&Parms);
+		return !!Parms.ReturnValue;
+	}
+	static FName NAME_AGrippableStaticMeshActor_OnChildGrip = FName(TEXT("OnChildGrip"));
+	void AGrippableStaticMeshActor::OnChildGrip(UGripMotionControllerComponent* GrippingController, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableStaticMeshActor_eventOnChildGrip_Parms Parms;
+		Parms.GrippingController=GrippingController;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableStaticMeshActor_OnChildGrip),&Parms);
+	}
+	static FName NAME_AGrippableStaticMeshActor_OnChildGripRelease = FName(TEXT("OnChildGripRelease"));
+	void AGrippableStaticMeshActor::OnChildGripRelease(UGripMotionControllerComponent* ReleasingController, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableStaticMeshActor_eventOnChildGripRelease_Parms Parms;
+		Parms.ReleasingController=ReleasingController;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableStaticMeshActor_OnChildGripRelease),&Parms);
+	}
+	static FName NAME_AGrippableStaticMeshActor_OnEndSecondaryUsed = FName(TEXT("OnEndSecondaryUsed"));
+	void AGrippableStaticMeshActor::OnEndSecondaryUsed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableStaticMeshActor_OnEndSecondaryUsed),NULL);
+	}
+	static FName NAME_AGrippableStaticMeshActor_OnEndUsed = FName(TEXT("OnEndUsed"));
+	void AGrippableStaticMeshActor::OnEndUsed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableStaticMeshActor_OnEndUsed),NULL);
+	}
+	static FName NAME_AGrippableStaticMeshActor_OnGrip = FName(TEXT("OnGrip"));
+	void AGrippableStaticMeshActor::OnGrip(UGripMotionControllerComponent* GrippingController, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableStaticMeshActor_eventOnGrip_Parms Parms;
+		Parms.GrippingController=GrippingController;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableStaticMeshActor_OnGrip),&Parms);
+	}
+	static FName NAME_AGrippableStaticMeshActor_OnGripRelease = FName(TEXT("OnGripRelease"));
+	void AGrippableStaticMeshActor::OnGripRelease(UGripMotionControllerComponent* ReleasingController, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableStaticMeshActor_eventOnGripRelease_Parms Parms;
+		Parms.ReleasingController=ReleasingController;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableStaticMeshActor_OnGripRelease),&Parms);
+	}
+	static FName NAME_AGrippableStaticMeshActor_OnSecondaryGrip = FName(TEXT("OnSecondaryGrip"));
+	void AGrippableStaticMeshActor::OnSecondaryGrip(USceneComponent* SecondaryGripComponent, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableStaticMeshActor_eventOnSecondaryGrip_Parms Parms;
+		Parms.SecondaryGripComponent=SecondaryGripComponent;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableStaticMeshActor_OnSecondaryGrip),&Parms);
+	}
+	static FName NAME_AGrippableStaticMeshActor_OnSecondaryGripRelease = FName(TEXT("OnSecondaryGripRelease"));
+	void AGrippableStaticMeshActor::OnSecondaryGripRelease(USceneComponent* ReleasingSecondaryGripComponent, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableStaticMeshActor_eventOnSecondaryGripRelease_Parms Parms;
+		Parms.ReleasingSecondaryGripComponent=ReleasingSecondaryGripComponent;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableStaticMeshActor_OnSecondaryGripRelease),&Parms);
+	}
+	static FName NAME_AGrippableStaticMeshActor_OnSecondaryUsed = FName(TEXT("OnSecondaryUsed"));
+	void AGrippableStaticMeshActor::OnSecondaryUsed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableStaticMeshActor_OnSecondaryUsed),NULL);
+	}
+	static FName NAME_AGrippableStaticMeshActor_OnUsed = FName(TEXT("OnUsed"));
+	void AGrippableStaticMeshActor::OnUsed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableStaticMeshActor_OnUsed),NULL);
+	}
+	static FName NAME_AGrippableStaticMeshActor_SecondaryGripType = FName(TEXT("SecondaryGripType"));
+	ESecondaryGripType AGrippableStaticMeshActor::SecondaryGripType()
+	{
+		GrippableStaticMeshActor_eventSecondaryGripType_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableStaticMeshActor_SecondaryGripType),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_AGrippableStaticMeshActor_SetHeld = FName(TEXT("SetHeld"));
+	void AGrippableStaticMeshActor::SetHeld(UGripMotionControllerComponent* HoldingController, bool bIsHeld)
+	{
+		GrippableStaticMeshActor_eventSetHeld_Parms Parms;
+		Parms.HoldingController=HoldingController;
+		Parms.bIsHeld=bIsHeld ? true : false;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableStaticMeshActor_SetHeld),&Parms);
+	}
+	static FName NAME_AGrippableStaticMeshActor_SimulateOnDrop = FName(TEXT("SimulateOnDrop"));
+	bool AGrippableStaticMeshActor::SimulateOnDrop()
+	{
+		GrippableStaticMeshActor_eventSimulateOnDrop_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableStaticMeshActor_SimulateOnDrop),&Parms);
+		return !!Parms.ReturnValue;
+	}
+	static FName NAME_AGrippableStaticMeshActor_SlotGripType = FName(TEXT("SlotGripType"));
+	EGripCollisionType AGrippableStaticMeshActor::SlotGripType()
+	{
+		GrippableStaticMeshActor_eventSlotGripType_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableStaticMeshActor_SlotGripType),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_AGrippableStaticMeshActor_TeleportBehavior = FName(TEXT("TeleportBehavior"));
+	EGripInterfaceTeleportBehavior AGrippableStaticMeshActor::TeleportBehavior()
+	{
+		GrippableStaticMeshActor_eventTeleportBehavior_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableStaticMeshActor_TeleportBehavior),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_AGrippableStaticMeshActor_TickGrip = FName(TEXT("TickGrip"));
+	void AGrippableStaticMeshActor::TickGrip(UGripMotionControllerComponent* GrippingController, FBPActorGripInformation const& GripInformation, FVector MControllerLocDelta, float DeltaTime)
+	{
+		GrippableStaticMeshActor_eventTickGrip_Parms Parms;
+		Parms.GrippingController=GrippingController;
+		Parms.GripInformation=GripInformation;
+		Parms.MControllerLocDelta=MControllerLocDelta;
+		Parms.DeltaTime=DeltaTime;
+		ProcessEvent(FindFunctionChecked(NAME_AGrippableStaticMeshActor_TickGrip),&Parms);
+	}
+	void AGrippableStaticMeshActor::StaticRegisterNativesAGrippableStaticMeshActor()
+	{
+		UClass* Class = AGrippableStaticMeshActor::StaticClass();
+		static const TNameNativePtrPair<ANSICHAR> AnsiFuncs[] = {
+			{ "AdvancedPhysicsSettings", (Native)&AGrippableStaticMeshActor::execAdvancedPhysicsSettings },
+			{ "ClosestPrimarySlotInRange", (Native)&AGrippableStaticMeshActor::execClosestPrimarySlotInRange },
+			{ "ClosestSecondarySlotInRange", (Native)&AGrippableStaticMeshActor::execClosestSecondarySlotInRange },
+			{ "DenyGripping", (Native)&AGrippableStaticMeshActor::execDenyGripping },
+			{ "FreeGripType", (Native)&AGrippableStaticMeshActor::execFreeGripType },
+			{ "GetInteractionSettings", (Native)&AGrippableStaticMeshActor::execGetInteractionSettings },
+			{ "GripBreakDistance", (Native)&AGrippableStaticMeshActor::execGripBreakDistance },
+			{ "GripDamping", (Native)&AGrippableStaticMeshActor::execGripDamping },
+			{ "GripLateUpdateSetting", (Native)&AGrippableStaticMeshActor::execGripLateUpdateSetting },
+			{ "GripMovementReplicationType", (Native)&AGrippableStaticMeshActor::execGripMovementReplicationType },
+			{ "GripStiffness", (Native)&AGrippableStaticMeshActor::execGripStiffness },
+			{ "IsHeld", (Native)&AGrippableStaticMeshActor::execIsHeld },
+			{ "IsInteractible", (Native)&AGrippableStaticMeshActor::execIsInteractible },
+			{ "OnChildGrip", (Native)&AGrippableStaticMeshActor::execOnChildGrip },
+			{ "OnChildGripRelease", (Native)&AGrippableStaticMeshActor::execOnChildGripRelease },
+			{ "OnEndSecondaryUsed", (Native)&AGrippableStaticMeshActor::execOnEndSecondaryUsed },
+			{ "OnEndUsed", (Native)&AGrippableStaticMeshActor::execOnEndUsed },
+			{ "OnGrip", (Native)&AGrippableStaticMeshActor::execOnGrip },
+			{ "OnGripRelease", (Native)&AGrippableStaticMeshActor::execOnGripRelease },
+			{ "OnSecondaryGrip", (Native)&AGrippableStaticMeshActor::execOnSecondaryGrip },
+			{ "OnSecondaryGripRelease", (Native)&AGrippableStaticMeshActor::execOnSecondaryGripRelease },
+			{ "OnSecondaryUsed", (Native)&AGrippableStaticMeshActor::execOnSecondaryUsed },
+			{ "OnUsed", (Native)&AGrippableStaticMeshActor::execOnUsed },
+			{ "SecondaryGripType", (Native)&AGrippableStaticMeshActor::execSecondaryGripType },
+			{ "SetHeld", (Native)&AGrippableStaticMeshActor::execSetHeld },
+			{ "SimulateOnDrop", (Native)&AGrippableStaticMeshActor::execSimulateOnDrop },
+			{ "SlotGripType", (Native)&AGrippableStaticMeshActor::execSlotGripType },
+			{ "TeleportBehavior", (Native)&AGrippableStaticMeshActor::execTeleportBehavior },
+			{ "TickGrip", (Native)&AGrippableStaticMeshActor::execTickGrip },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, AnsiFuncs, 29);
+	}
+	UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_AdvancedPhysicsSettings()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableStaticMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("AdvancedPhysicsSettings"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableStaticMeshActor_eventAdvancedPhysicsSettings_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableStaticMeshActor_eventAdvancedPhysicsSettings_Parms), 0x0010000000000580, Z_Construct_UScriptStruct_FBPAdvGripPhysicsSettings());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Get the advanced physics settings for this grip"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_ClosestPrimarySlotInRange()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableStaticMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ClosestPrimarySlotInRange"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0CC20C00, 65535, sizeof(GrippableStaticMeshActor_eventClosestPrimarySlotInRange_Parms));
+			UProperty* NewProp_OverridePrefix = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OverridePrefix"), RF_Public|RF_Transient|RF_MarkAsNative) UNameProperty(CPP_PROPERTY_BASE(OverridePrefix, GrippableStaticMeshActor_eventClosestPrimarySlotInRange_Parms), 0x0010000000000080);
+			UProperty* NewProp_SlotWorldTransform = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("SlotWorldTransform"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(SlotWorldTransform, GrippableStaticMeshActor_eventClosestPrimarySlotInRange_Parms), 0x0010000000000180, Z_Construct_UScriptStruct_FTransform());
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bHadSlotInRange, GrippableStaticMeshActor_eventClosestPrimarySlotInRange_Parms, bool);
+			UProperty* NewProp_bHadSlotInRange = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bHadSlotInRange"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bHadSlotInRange, GrippableStaticMeshActor_eventClosestPrimarySlotInRange_Parms), 0x0010000000000180, CPP_BOOL_PROPERTY_BITMASK(bHadSlotInRange, GrippableStaticMeshActor_eventClosestPrimarySlotInRange_Parms), sizeof(bool), true);
+			UProperty* NewProp_WorldLocation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("WorldLocation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(WorldLocation, GrippableStaticMeshActor_eventClosestPrimarySlotInRange_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Get closest primary slot in range"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_ClosestSecondarySlotInRange()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableStaticMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ClosestSecondarySlotInRange"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0CC20C00, 65535, sizeof(GrippableStaticMeshActor_eventClosestSecondarySlotInRange_Parms));
+			UProperty* NewProp_OverridePrefix = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OverridePrefix"), RF_Public|RF_Transient|RF_MarkAsNative) UNameProperty(CPP_PROPERTY_BASE(OverridePrefix, GrippableStaticMeshActor_eventClosestSecondarySlotInRange_Parms), 0x0010000000000080);
+			UProperty* NewProp_SlotWorldTransform = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("SlotWorldTransform"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(SlotWorldTransform, GrippableStaticMeshActor_eventClosestSecondarySlotInRange_Parms), 0x0010000000000180, Z_Construct_UScriptStruct_FTransform());
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bHadSlotInRange, GrippableStaticMeshActor_eventClosestSecondarySlotInRange_Parms, bool);
+			UProperty* NewProp_bHadSlotInRange = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bHadSlotInRange"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bHadSlotInRange, GrippableStaticMeshActor_eventClosestSecondarySlotInRange_Parms), 0x0010000000000180, CPP_BOOL_PROPERTY_BITMASK(bHadSlotInRange, GrippableStaticMeshActor_eventClosestSecondarySlotInRange_Parms), sizeof(bool), true);
+			UProperty* NewProp_WorldLocation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("WorldLocation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(WorldLocation, GrippableStaticMeshActor_eventClosestSecondarySlotInRange_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Get closest secondary slot in range"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_DenyGripping()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableStaticMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("DenyGripping"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableStaticMeshActor_eventDenyGripping_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, GrippableStaticMeshActor_eventDenyGripping_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, GrippableStaticMeshActor_eventDenyGripping_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, GrippableStaticMeshActor_eventDenyGripping_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Set up as deny instead of allow so that default allows for gripping"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_FreeGripType()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableStaticMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("FreeGripType"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableStaticMeshActor_eventFreeGripType_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableStaticMeshActor_eventFreeGripType_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_EGripCollisionType());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Grip type to use when not gripping a slot"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_GetInteractionSettings()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableStaticMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GetInteractionSettings"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableStaticMeshActor_eventGetInteractionSettings_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableStaticMeshActor_eventGetInteractionSettings_Parms), 0x0010000000000580, Z_Construct_UScriptStruct_FBPInteractionSettings());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Get interactable settings"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_GripBreakDistance()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableStaticMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GripBreakDistance"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableStaticMeshActor_eventGripBreakDistance_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableStaticMeshActor_eventGripBreakDistance_Parms), 0x0010000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("What distance to break a grip at (only relevent with physics enabled grips"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_GripDamping()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableStaticMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GripDamping"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableStaticMeshActor_eventGripDamping_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableStaticMeshActor_eventGripDamping_Parms), 0x0010000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("What grip damping to use if using a physics constraint"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_GripLateUpdateSetting()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableStaticMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GripLateUpdateSetting"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableStaticMeshActor_eventGripLateUpdateSetting_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableStaticMeshActor_eventGripLateUpdateSetting_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_EGripLateUpdateSettings());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Define the late update setting"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_GripMovementReplicationType()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableStaticMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GripMovementReplicationType"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableStaticMeshActor_eventGripMovementReplicationType_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableStaticMeshActor_eventGripMovementReplicationType_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_EGripMovementReplicationSettings());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Define which movement repliation setting to use"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_GripStiffness()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableStaticMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GripStiffness"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableStaticMeshActor_eventGripStiffness_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableStaticMeshActor_eventGripStiffness_Parms), 0x0010000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("What grip stiffness to use if using a physics constraint"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_IsHeld()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableStaticMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("IsHeld"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C420C00, 65535, sizeof(GrippableStaticMeshActor_eventIsHeld_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsHeld, GrippableStaticMeshActor_eventIsHeld_Parms, bool);
+			UProperty* NewProp_bIsHeld = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bIsHeld"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsHeld, GrippableStaticMeshActor_eventIsHeld_Parms), 0x0010000000000180, CPP_BOOL_PROPERTY_BITMASK(bIsHeld, GrippableStaticMeshActor_eventIsHeld_Parms), sizeof(bool), true);
+			UProperty* NewProp_HoldingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("HoldingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(HoldingController, GrippableStaticMeshActor_eventIsHeld_Parms), 0x0010000000080180, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Returns if the object is held and if so, which pawn is holding it"));
+			MetaData->SetValue(NewProp_HoldingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_IsInteractible()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableStaticMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("IsInteractible"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableStaticMeshActor_eventIsInteractible_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, GrippableStaticMeshActor_eventIsInteractible_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, GrippableStaticMeshActor_eventIsInteractible_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, GrippableStaticMeshActor_eventIsInteractible_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Check if the object is an interactable"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_OnChildGrip()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableStaticMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnChildGrip"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableStaticMeshActor_eventOnChildGrip_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableStaticMeshActor_eventOnChildGrip_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_GrippingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GrippingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(GrippingController, GrippableStaticMeshActor_eventOnChildGrip_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when child component is gripped"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_GrippingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_OnChildGripRelease()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableStaticMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnChildGripRelease"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableStaticMeshActor_eventOnChildGripRelease_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableStaticMeshActor_eventOnChildGripRelease_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_ReleasingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReleasingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ReleasingController, GrippableStaticMeshActor_eventOnChildGripRelease_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when child component is released"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_ReleasingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_OnEndSecondaryUsed()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableStaticMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnEndSecondaryUsed"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Call to stop using an object"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_OnEndUsed()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableStaticMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnEndUsed"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Call to stop using an object"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_OnGrip()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableStaticMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnGrip"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableStaticMeshActor_eventOnGrip_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableStaticMeshActor_eventOnGrip_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_GrippingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GrippingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(GrippingController, GrippableStaticMeshActor_eventOnGrip_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when gripped"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_GrippingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_OnGripRelease()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableStaticMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnGripRelease"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableStaticMeshActor_eventOnGripRelease_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableStaticMeshActor_eventOnGripRelease_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_ReleasingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReleasingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ReleasingController, GrippableStaticMeshActor_eventOnGripRelease_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when grip is released"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_ReleasingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_OnSecondaryGrip()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableStaticMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnSecondaryGrip"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableStaticMeshActor_eventOnSecondaryGrip_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableStaticMeshActor_eventOnSecondaryGrip_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_SecondaryGripComponent = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("SecondaryGripComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(SecondaryGripComponent, GrippableStaticMeshActor_eventOnSecondaryGrip_Parms), 0x0010000000080080, Z_Construct_UClass_USceneComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when secondary gripped"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_SecondaryGripComponent, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_OnSecondaryGripRelease()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableStaticMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnSecondaryGripRelease"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableStaticMeshActor_eventOnSecondaryGripRelease_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableStaticMeshActor_eventOnSecondaryGripRelease_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_ReleasingSecondaryGripComponent = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReleasingSecondaryGripComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ReleasingSecondaryGripComponent, GrippableStaticMeshActor_eventOnSecondaryGripRelease_Parms), 0x0010000000080080, Z_Construct_UClass_USceneComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when secondary grip is released"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_ReleasingSecondaryGripComponent, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_OnSecondaryUsed()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableStaticMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnSecondaryUsed"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Call to use an object"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_OnUsed()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableStaticMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnUsed"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Call to use an object"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_SecondaryGripType()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableStaticMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SecondaryGripType"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableStaticMeshActor_eventSecondaryGripType_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableStaticMeshActor_eventSecondaryGripType_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_ESecondaryGripType());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Secondary grip type"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_SetHeld()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableStaticMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SetHeld"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableStaticMeshActor_eventSetHeld_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsHeld, GrippableStaticMeshActor_eventSetHeld_Parms, bool);
+			UProperty* NewProp_bIsHeld = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bIsHeld"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsHeld, GrippableStaticMeshActor_eventSetHeld_Parms), 0x0010000000000080, CPP_BOOL_PROPERTY_BITMASK(bIsHeld, GrippableStaticMeshActor_eventSetHeld_Parms), sizeof(bool), true);
+			UProperty* NewProp_HoldingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("HoldingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(HoldingController, GrippableStaticMeshActor_eventSetHeld_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Sets is held, used by the plugin"));
+			MetaData->SetValue(NewProp_HoldingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_SimulateOnDrop()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableStaticMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SimulateOnDrop"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableStaticMeshActor_eventSimulateOnDrop_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, GrippableStaticMeshActor_eventSimulateOnDrop_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, GrippableStaticMeshActor_eventSimulateOnDrop_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, GrippableStaticMeshActor_eventSimulateOnDrop_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Should this object simulate on drop"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_SlotGripType()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableStaticMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SlotGripType"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableStaticMeshActor_eventSlotGripType_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableStaticMeshActor_eventSlotGripType_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_EGripCollisionType());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Grip type to use when gripping a slot"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_TeleportBehavior()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableStaticMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("TeleportBehavior"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableStaticMeshActor_eventTeleportBehavior_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableStaticMeshActor_eventTeleportBehavior_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_EGripInterfaceTeleportBehavior());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("How an interfaced object behaves when teleporting"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AGrippableStaticMeshActor_TickGrip()
+	{
+		UObject* Outer=Z_Construct_UClass_AGrippableStaticMeshActor();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("TickGrip"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08C20C00, 65535, sizeof(GrippableStaticMeshActor_eventTickGrip_Parms));
+			UProperty* NewProp_DeltaTime = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("DeltaTime"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(DeltaTime, GrippableStaticMeshActor_eventTickGrip_Parms), 0x0010000000000080);
+			UProperty* NewProp_MControllerLocDelta = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("MControllerLocDelta"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(MControllerLocDelta, GrippableStaticMeshActor_eventTickGrip_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector());
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableStaticMeshActor_eventTickGrip_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_GrippingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GrippingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(GrippingController, GrippableStaticMeshActor_eventTickGrip_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshActor.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered each tick on the interfaced object when gripped, can be used for custom movement or grip based logic"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_GrippingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_AGrippableStaticMeshActor_NoRegister()
+	{
+		return AGrippableStaticMeshActor::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AGrippableStaticMeshActor()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AStaticMeshActor();
+			Z_Construct_UPackage__Script_VRExpansionPlugin();
+			OuterClass = AGrippableStaticMeshActor::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableStaticMeshActor_AdvancedPhysicsSettings());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableStaticMeshActor_ClosestPrimarySlotInRange());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableStaticMeshActor_ClosestSecondarySlotInRange());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableStaticMeshActor_DenyGripping());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableStaticMeshActor_FreeGripType());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableStaticMeshActor_GetInteractionSettings());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableStaticMeshActor_GripBreakDistance());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableStaticMeshActor_GripDamping());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableStaticMeshActor_GripLateUpdateSetting());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableStaticMeshActor_GripMovementReplicationType());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableStaticMeshActor_GripStiffness());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableStaticMeshActor_IsHeld());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableStaticMeshActor_IsInteractible());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableStaticMeshActor_OnChildGrip());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableStaticMeshActor_OnChildGripRelease());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableStaticMeshActor_OnEndSecondaryUsed());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableStaticMeshActor_OnEndUsed());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableStaticMeshActor_OnGrip());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableStaticMeshActor_OnGripRelease());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableStaticMeshActor_OnSecondaryGrip());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableStaticMeshActor_OnSecondaryGripRelease());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableStaticMeshActor_OnSecondaryUsed());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableStaticMeshActor_OnUsed());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableStaticMeshActor_SecondaryGripType());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableStaticMeshActor_SetHeld());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableStaticMeshActor_SimulateOnDrop());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableStaticMeshActor_SlotGripType());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableStaticMeshActor_TeleportBehavior());
+				OuterClass->LinkChild(Z_Construct_UFunction_AGrippableStaticMeshActor_TickGrip());
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_VRGripInterfaceSettings = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("VRGripInterfaceSettings"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(VRGripInterfaceSettings, AGrippableStaticMeshActor), 0x0010008000000025, Z_Construct_UScriptStruct_FBPInterfaceProperties());
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bRepGripSettingsAndGameplayTags, AGrippableStaticMeshActor, bool);
+				UProperty* NewProp_bRepGripSettingsAndGameplayTags = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bRepGripSettingsAndGameplayTags"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bRepGripSettingsAndGameplayTags, AGrippableStaticMeshActor), 0x0010000000000025, CPP_BOOL_PROPERTY_BITMASK(bRepGripSettingsAndGameplayTags, AGrippableStaticMeshActor), sizeof(bool), true);
+				UProperty* NewProp_GameplayTags = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("GameplayTags"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GameplayTags, AGrippableStaticMeshActor), 0x0010000000000025, Z_Construct_UScriptStruct_FGameplayTagContainer());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableStaticMeshActor_AdvancedPhysicsSettings(), "AdvancedPhysicsSettings"); // 376147878
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableStaticMeshActor_ClosestPrimarySlotInRange(), "ClosestPrimarySlotInRange"); // 2708235934
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableStaticMeshActor_ClosestSecondarySlotInRange(), "ClosestSecondarySlotInRange"); // 112738279
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableStaticMeshActor_DenyGripping(), "DenyGripping"); // 3281234776
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableStaticMeshActor_FreeGripType(), "FreeGripType"); // 4223512649
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableStaticMeshActor_GetInteractionSettings(), "GetInteractionSettings"); // 691052434
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableStaticMeshActor_GripBreakDistance(), "GripBreakDistance"); // 595099532
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableStaticMeshActor_GripDamping(), "GripDamping"); // 435097795
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableStaticMeshActor_GripLateUpdateSetting(), "GripLateUpdateSetting"); // 671907350
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableStaticMeshActor_GripMovementReplicationType(), "GripMovementReplicationType"); // 1775454226
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableStaticMeshActor_GripStiffness(), "GripStiffness"); // 405411578
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableStaticMeshActor_IsHeld(), "IsHeld"); // 1935043393
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableStaticMeshActor_IsInteractible(), "IsInteractible"); // 939536062
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableStaticMeshActor_OnChildGrip(), "OnChildGrip"); // 1529889439
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableStaticMeshActor_OnChildGripRelease(), "OnChildGripRelease"); // 4037506921
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableStaticMeshActor_OnEndSecondaryUsed(), "OnEndSecondaryUsed"); // 4106701648
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableStaticMeshActor_OnEndUsed(), "OnEndUsed"); // 992278417
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableStaticMeshActor_OnGrip(), "OnGrip"); // 4226842540
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableStaticMeshActor_OnGripRelease(), "OnGripRelease"); // 964764738
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableStaticMeshActor_OnSecondaryGrip(), "OnSecondaryGrip"); // 3783844524
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableStaticMeshActor_OnSecondaryGripRelease(), "OnSecondaryGripRelease"); // 3296505956
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableStaticMeshActor_OnSecondaryUsed(), "OnSecondaryUsed"); // 323780605
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableStaticMeshActor_OnUsed(), "OnUsed"); // 1468373648
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableStaticMeshActor_SecondaryGripType(), "SecondaryGripType"); // 1495988230
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableStaticMeshActor_SetHeld(), "SetHeld"); // 2129566797
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableStaticMeshActor_SimulateOnDrop(), "SimulateOnDrop"); // 1964938005
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableStaticMeshActor_SlotGripType(), "SlotGripType"); // 1161192056
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableStaticMeshActor_TeleportBehavior(), "TeleportBehavior"); // 2749286890
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AGrippableStaticMeshActor_TickGrip(), "TickGrip"); // 3874537047
+				static TCppClassTypeInfo<TCppClassTypeTraits<AGrippableStaticMeshActor> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->Interfaces.Add(FImplementedInterface(Z_Construct_UClass_UVRGripInterface_NoRegister(), VTABLE_OFFSET(AGrippableStaticMeshActor, IVRGripInterface), false ));
+				OuterClass->Interfaces.Add(FImplementedInterface(Z_Construct_UClass_UGameplayTagAssetInterface_NoRegister(), VTABLE_OFFSET(AGrippableStaticMeshActor, IGameplayTagAssetInterface), false ));
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("BlueprintSpawnableComponent"), TEXT(""));
+				MetaData->SetValue(OuterClass, TEXT("BlueprintType"), TEXT("true"));
+				MetaData->SetValue(OuterClass, TEXT("ClassGroupNames"), TEXT("VRExpansionPlugin"));
+				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Input"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("GrippableStaticMeshActor.h"));
+				MetaData->SetValue(OuterClass, TEXT("IsBlueprintBase"), TEXT("true"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshActor.h"));
+				MetaData->SetValue(OuterClass, TEXT("ShowCategories"), TEXT("Input|MouseInput Input|TouchInput"));
+				MetaData->SetValue(NewProp_VRGripInterfaceSettings, TEXT("Category"), TEXT("VRGripInterface"));
+				MetaData->SetValue(NewProp_VRGripInterfaceSettings, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshActor.h"));
+				MetaData->SetValue(NewProp_bRepGripSettingsAndGameplayTags, TEXT("Category"), TEXT("VRGripInterface"));
+				MetaData->SetValue(NewProp_bRepGripSettingsAndGameplayTags, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshActor.h"));
+				MetaData->SetValue(NewProp_GameplayTags, TEXT("Category"), TEXT("GameplayTags"));
+				MetaData->SetValue(NewProp_GameplayTags, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshActor.h"));
+				MetaData->SetValue(NewProp_GameplayTags, TEXT("ToolTip"), TEXT("Tags that are set on this object"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(AGrippableStaticMeshActor, 392867405);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AGrippableStaticMeshActor(Z_Construct_UClass_AGrippableStaticMeshActor, &AGrippableStaticMeshActor::StaticClass, TEXT("/Script/VRExpansionPlugin"), TEXT("AGrippableStaticMeshActor"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AGrippableStaticMeshActor);
+	static FName NAME_UGrippableStaticMeshComponent_AdvancedPhysicsSettings = FName(TEXT("AdvancedPhysicsSettings"));
+	FBPAdvGripPhysicsSettings UGrippableStaticMeshComponent::AdvancedPhysicsSettings()
+	{
+		GrippableStaticMeshComponent_eventAdvancedPhysicsSettings_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableStaticMeshComponent_AdvancedPhysicsSettings),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableStaticMeshComponent_ClosestPrimarySlotInRange = FName(TEXT("ClosestPrimarySlotInRange"));
+	void UGrippableStaticMeshComponent::ClosestPrimarySlotInRange(FVector WorldLocation, bool& bHadSlotInRange, FTransform& SlotWorldTransform, FName OverridePrefix)
+	{
+		GrippableStaticMeshComponent_eventClosestPrimarySlotInRange_Parms Parms;
+		Parms.WorldLocation=WorldLocation;
+		Parms.bHadSlotInRange=bHadSlotInRange ? true : false;
+		Parms.SlotWorldTransform=SlotWorldTransform;
+		Parms.OverridePrefix=OverridePrefix;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableStaticMeshComponent_ClosestPrimarySlotInRange),&Parms);
+		bHadSlotInRange=Parms.bHadSlotInRange;
+		SlotWorldTransform=Parms.SlotWorldTransform;
+	}
+	static FName NAME_UGrippableStaticMeshComponent_ClosestSecondarySlotInRange = FName(TEXT("ClosestSecondarySlotInRange"));
+	void UGrippableStaticMeshComponent::ClosestSecondarySlotInRange(FVector WorldLocation, bool& bHadSlotInRange, FTransform& SlotWorldTransform, FName OverridePrefix)
+	{
+		GrippableStaticMeshComponent_eventClosestSecondarySlotInRange_Parms Parms;
+		Parms.WorldLocation=WorldLocation;
+		Parms.bHadSlotInRange=bHadSlotInRange ? true : false;
+		Parms.SlotWorldTransform=SlotWorldTransform;
+		Parms.OverridePrefix=OverridePrefix;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableStaticMeshComponent_ClosestSecondarySlotInRange),&Parms);
+		bHadSlotInRange=Parms.bHadSlotInRange;
+		SlotWorldTransform=Parms.SlotWorldTransform;
+	}
+	static FName NAME_UGrippableStaticMeshComponent_DenyGripping = FName(TEXT("DenyGripping"));
+	bool UGrippableStaticMeshComponent::DenyGripping()
+	{
+		GrippableStaticMeshComponent_eventDenyGripping_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableStaticMeshComponent_DenyGripping),&Parms);
+		return !!Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableStaticMeshComponent_FreeGripType = FName(TEXT("FreeGripType"));
+	EGripCollisionType UGrippableStaticMeshComponent::FreeGripType()
+	{
+		GrippableStaticMeshComponent_eventFreeGripType_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableStaticMeshComponent_FreeGripType),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableStaticMeshComponent_GetInteractionSettings = FName(TEXT("GetInteractionSettings"));
+	FBPInteractionSettings UGrippableStaticMeshComponent::GetInteractionSettings()
+	{
+		GrippableStaticMeshComponent_eventGetInteractionSettings_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableStaticMeshComponent_GetInteractionSettings),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableStaticMeshComponent_GripBreakDistance = FName(TEXT("GripBreakDistance"));
+	float UGrippableStaticMeshComponent::GripBreakDistance()
+	{
+		GrippableStaticMeshComponent_eventGripBreakDistance_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableStaticMeshComponent_GripBreakDistance),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableStaticMeshComponent_GripDamping = FName(TEXT("GripDamping"));
+	float UGrippableStaticMeshComponent::GripDamping()
+	{
+		GrippableStaticMeshComponent_eventGripDamping_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableStaticMeshComponent_GripDamping),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableStaticMeshComponent_GripLateUpdateSetting = FName(TEXT("GripLateUpdateSetting"));
+	EGripLateUpdateSettings UGrippableStaticMeshComponent::GripLateUpdateSetting()
+	{
+		GrippableStaticMeshComponent_eventGripLateUpdateSetting_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableStaticMeshComponent_GripLateUpdateSetting),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableStaticMeshComponent_GripMovementReplicationType = FName(TEXT("GripMovementReplicationType"));
+	EGripMovementReplicationSettings UGrippableStaticMeshComponent::GripMovementReplicationType()
+	{
+		GrippableStaticMeshComponent_eventGripMovementReplicationType_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableStaticMeshComponent_GripMovementReplicationType),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableStaticMeshComponent_GripStiffness = FName(TEXT("GripStiffness"));
+	float UGrippableStaticMeshComponent::GripStiffness()
+	{
+		GrippableStaticMeshComponent_eventGripStiffness_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableStaticMeshComponent_GripStiffness),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableStaticMeshComponent_IsHeld = FName(TEXT("IsHeld"));
+	void UGrippableStaticMeshComponent::IsHeld(UGripMotionControllerComponent*& HoldingController, bool& bIsHeld)
+	{
+		GrippableStaticMeshComponent_eventIsHeld_Parms Parms;
+		Parms.HoldingController=HoldingController;
+		Parms.bIsHeld=bIsHeld ? true : false;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableStaticMeshComponent_IsHeld),&Parms);
+		HoldingController=Parms.HoldingController;
+		bIsHeld=Parms.bIsHeld;
+	}
+	static FName NAME_UGrippableStaticMeshComponent_IsInteractible = FName(TEXT("IsInteractible"));
+	bool UGrippableStaticMeshComponent::IsInteractible()
+	{
+		GrippableStaticMeshComponent_eventIsInteractible_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableStaticMeshComponent_IsInteractible),&Parms);
+		return !!Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableStaticMeshComponent_OnChildGrip = FName(TEXT("OnChildGrip"));
+	void UGrippableStaticMeshComponent::OnChildGrip(UGripMotionControllerComponent* GrippingController, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableStaticMeshComponent_eventOnChildGrip_Parms Parms;
+		Parms.GrippingController=GrippingController;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableStaticMeshComponent_OnChildGrip),&Parms);
+	}
+	static FName NAME_UGrippableStaticMeshComponent_OnChildGripRelease = FName(TEXT("OnChildGripRelease"));
+	void UGrippableStaticMeshComponent::OnChildGripRelease(UGripMotionControllerComponent* ReleasingController, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableStaticMeshComponent_eventOnChildGripRelease_Parms Parms;
+		Parms.ReleasingController=ReleasingController;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableStaticMeshComponent_OnChildGripRelease),&Parms);
+	}
+	static FName NAME_UGrippableStaticMeshComponent_OnEndSecondaryUsed = FName(TEXT("OnEndSecondaryUsed"));
+	void UGrippableStaticMeshComponent::OnEndSecondaryUsed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableStaticMeshComponent_OnEndSecondaryUsed),NULL);
+	}
+	static FName NAME_UGrippableStaticMeshComponent_OnEndUsed = FName(TEXT("OnEndUsed"));
+	void UGrippableStaticMeshComponent::OnEndUsed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableStaticMeshComponent_OnEndUsed),NULL);
+	}
+	static FName NAME_UGrippableStaticMeshComponent_OnGrip = FName(TEXT("OnGrip"));
+	void UGrippableStaticMeshComponent::OnGrip(UGripMotionControllerComponent* GrippingController, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableStaticMeshComponent_eventOnGrip_Parms Parms;
+		Parms.GrippingController=GrippingController;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableStaticMeshComponent_OnGrip),&Parms);
+	}
+	static FName NAME_UGrippableStaticMeshComponent_OnGripRelease = FName(TEXT("OnGripRelease"));
+	void UGrippableStaticMeshComponent::OnGripRelease(UGripMotionControllerComponent* ReleasingController, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableStaticMeshComponent_eventOnGripRelease_Parms Parms;
+		Parms.ReleasingController=ReleasingController;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableStaticMeshComponent_OnGripRelease),&Parms);
+	}
+	static FName NAME_UGrippableStaticMeshComponent_OnSecondaryGrip = FName(TEXT("OnSecondaryGrip"));
+	void UGrippableStaticMeshComponent::OnSecondaryGrip(USceneComponent* SecondaryGripComponent, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableStaticMeshComponent_eventOnSecondaryGrip_Parms Parms;
+		Parms.SecondaryGripComponent=SecondaryGripComponent;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableStaticMeshComponent_OnSecondaryGrip),&Parms);
+	}
+	static FName NAME_UGrippableStaticMeshComponent_OnSecondaryGripRelease = FName(TEXT("OnSecondaryGripRelease"));
+	void UGrippableStaticMeshComponent::OnSecondaryGripRelease(USceneComponent* ReleasingSecondaryGripComponent, FBPActorGripInformation const& GripInformation)
+	{
+		GrippableStaticMeshComponent_eventOnSecondaryGripRelease_Parms Parms;
+		Parms.ReleasingSecondaryGripComponent=ReleasingSecondaryGripComponent;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableStaticMeshComponent_OnSecondaryGripRelease),&Parms);
+	}
+	static FName NAME_UGrippableStaticMeshComponent_OnSecondaryUsed = FName(TEXT("OnSecondaryUsed"));
+	void UGrippableStaticMeshComponent::OnSecondaryUsed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableStaticMeshComponent_OnSecondaryUsed),NULL);
+	}
+	static FName NAME_UGrippableStaticMeshComponent_OnUsed = FName(TEXT("OnUsed"));
+	void UGrippableStaticMeshComponent::OnUsed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableStaticMeshComponent_OnUsed),NULL);
+	}
+	static FName NAME_UGrippableStaticMeshComponent_SecondaryGripType = FName(TEXT("SecondaryGripType"));
+	ESecondaryGripType UGrippableStaticMeshComponent::SecondaryGripType()
+	{
+		GrippableStaticMeshComponent_eventSecondaryGripType_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableStaticMeshComponent_SecondaryGripType),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableStaticMeshComponent_SetHeld = FName(TEXT("SetHeld"));
+	void UGrippableStaticMeshComponent::SetHeld(UGripMotionControllerComponent* HoldingController, bool bIsHeld)
+	{
+		GrippableStaticMeshComponent_eventSetHeld_Parms Parms;
+		Parms.HoldingController=HoldingController;
+		Parms.bIsHeld=bIsHeld ? true : false;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableStaticMeshComponent_SetHeld),&Parms);
+	}
+	static FName NAME_UGrippableStaticMeshComponent_SimulateOnDrop = FName(TEXT("SimulateOnDrop"));
+	bool UGrippableStaticMeshComponent::SimulateOnDrop()
+	{
+		GrippableStaticMeshComponent_eventSimulateOnDrop_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableStaticMeshComponent_SimulateOnDrop),&Parms);
+		return !!Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableStaticMeshComponent_SlotGripType = FName(TEXT("SlotGripType"));
+	EGripCollisionType UGrippableStaticMeshComponent::SlotGripType()
+	{
+		GrippableStaticMeshComponent_eventSlotGripType_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableStaticMeshComponent_SlotGripType),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableStaticMeshComponent_TeleportBehavior = FName(TEXT("TeleportBehavior"));
+	EGripInterfaceTeleportBehavior UGrippableStaticMeshComponent::TeleportBehavior()
+	{
+		GrippableStaticMeshComponent_eventTeleportBehavior_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableStaticMeshComponent_TeleportBehavior),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UGrippableStaticMeshComponent_TickGrip = FName(TEXT("TickGrip"));
+	void UGrippableStaticMeshComponent::TickGrip(UGripMotionControllerComponent* GrippingController, FBPActorGripInformation const& GripInformation, FVector MControllerLocDelta, float DeltaTime)
+	{
+		GrippableStaticMeshComponent_eventTickGrip_Parms Parms;
+		Parms.GrippingController=GrippingController;
+		Parms.GripInformation=GripInformation;
+		Parms.MControllerLocDelta=MControllerLocDelta;
+		Parms.DeltaTime=DeltaTime;
+		ProcessEvent(FindFunctionChecked(NAME_UGrippableStaticMeshComponent_TickGrip),&Parms);
+	}
+	void UGrippableStaticMeshComponent::StaticRegisterNativesUGrippableStaticMeshComponent()
+	{
+		UClass* Class = UGrippableStaticMeshComponent::StaticClass();
+		static const TNameNativePtrPair<ANSICHAR> AnsiFuncs[] = {
+			{ "AdvancedPhysicsSettings", (Native)&UGrippableStaticMeshComponent::execAdvancedPhysicsSettings },
+			{ "ClosestPrimarySlotInRange", (Native)&UGrippableStaticMeshComponent::execClosestPrimarySlotInRange },
+			{ "ClosestSecondarySlotInRange", (Native)&UGrippableStaticMeshComponent::execClosestSecondarySlotInRange },
+			{ "DenyGripping", (Native)&UGrippableStaticMeshComponent::execDenyGripping },
+			{ "FreeGripType", (Native)&UGrippableStaticMeshComponent::execFreeGripType },
+			{ "GetInteractionSettings", (Native)&UGrippableStaticMeshComponent::execGetInteractionSettings },
+			{ "GripBreakDistance", (Native)&UGrippableStaticMeshComponent::execGripBreakDistance },
+			{ "GripDamping", (Native)&UGrippableStaticMeshComponent::execGripDamping },
+			{ "GripLateUpdateSetting", (Native)&UGrippableStaticMeshComponent::execGripLateUpdateSetting },
+			{ "GripMovementReplicationType", (Native)&UGrippableStaticMeshComponent::execGripMovementReplicationType },
+			{ "GripStiffness", (Native)&UGrippableStaticMeshComponent::execGripStiffness },
+			{ "IsHeld", (Native)&UGrippableStaticMeshComponent::execIsHeld },
+			{ "IsInteractible", (Native)&UGrippableStaticMeshComponent::execIsInteractible },
+			{ "OnChildGrip", (Native)&UGrippableStaticMeshComponent::execOnChildGrip },
+			{ "OnChildGripRelease", (Native)&UGrippableStaticMeshComponent::execOnChildGripRelease },
+			{ "OnEndSecondaryUsed", (Native)&UGrippableStaticMeshComponent::execOnEndSecondaryUsed },
+			{ "OnEndUsed", (Native)&UGrippableStaticMeshComponent::execOnEndUsed },
+			{ "OnGrip", (Native)&UGrippableStaticMeshComponent::execOnGrip },
+			{ "OnGripRelease", (Native)&UGrippableStaticMeshComponent::execOnGripRelease },
+			{ "OnSecondaryGrip", (Native)&UGrippableStaticMeshComponent::execOnSecondaryGrip },
+			{ "OnSecondaryGripRelease", (Native)&UGrippableStaticMeshComponent::execOnSecondaryGripRelease },
+			{ "OnSecondaryUsed", (Native)&UGrippableStaticMeshComponent::execOnSecondaryUsed },
+			{ "OnUsed", (Native)&UGrippableStaticMeshComponent::execOnUsed },
+			{ "SecondaryGripType", (Native)&UGrippableStaticMeshComponent::execSecondaryGripType },
+			{ "SetHeld", (Native)&UGrippableStaticMeshComponent::execSetHeld },
+			{ "SimulateOnDrop", (Native)&UGrippableStaticMeshComponent::execSimulateOnDrop },
+			{ "SlotGripType", (Native)&UGrippableStaticMeshComponent::execSlotGripType },
+			{ "TeleportBehavior", (Native)&UGrippableStaticMeshComponent::execTeleportBehavior },
+			{ "TickGrip", (Native)&UGrippableStaticMeshComponent::execTickGrip },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, AnsiFuncs, 29);
+	}
+	UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_AdvancedPhysicsSettings()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableStaticMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("AdvancedPhysicsSettings"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableStaticMeshComponent_eventAdvancedPhysicsSettings_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableStaticMeshComponent_eventAdvancedPhysicsSettings_Parms), 0x0010000000000580, Z_Construct_UScriptStruct_FBPAdvGripPhysicsSettings());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Get the advanced physics settings for this grip"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_ClosestPrimarySlotInRange()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableStaticMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ClosestPrimarySlotInRange"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0CC20C00, 65535, sizeof(GrippableStaticMeshComponent_eventClosestPrimarySlotInRange_Parms));
+			UProperty* NewProp_OverridePrefix = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OverridePrefix"), RF_Public|RF_Transient|RF_MarkAsNative) UNameProperty(CPP_PROPERTY_BASE(OverridePrefix, GrippableStaticMeshComponent_eventClosestPrimarySlotInRange_Parms), 0x0010000000000080);
+			UProperty* NewProp_SlotWorldTransform = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("SlotWorldTransform"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(SlotWorldTransform, GrippableStaticMeshComponent_eventClosestPrimarySlotInRange_Parms), 0x0010000000000180, Z_Construct_UScriptStruct_FTransform());
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bHadSlotInRange, GrippableStaticMeshComponent_eventClosestPrimarySlotInRange_Parms, bool);
+			UProperty* NewProp_bHadSlotInRange = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bHadSlotInRange"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bHadSlotInRange, GrippableStaticMeshComponent_eventClosestPrimarySlotInRange_Parms), 0x0010000000000180, CPP_BOOL_PROPERTY_BITMASK(bHadSlotInRange, GrippableStaticMeshComponent_eventClosestPrimarySlotInRange_Parms), sizeof(bool), true);
+			UProperty* NewProp_WorldLocation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("WorldLocation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(WorldLocation, GrippableStaticMeshComponent_eventClosestPrimarySlotInRange_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Get closest primary slot in range"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_ClosestSecondarySlotInRange()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableStaticMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ClosestSecondarySlotInRange"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0CC20C00, 65535, sizeof(GrippableStaticMeshComponent_eventClosestSecondarySlotInRange_Parms));
+			UProperty* NewProp_OverridePrefix = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OverridePrefix"), RF_Public|RF_Transient|RF_MarkAsNative) UNameProperty(CPP_PROPERTY_BASE(OverridePrefix, GrippableStaticMeshComponent_eventClosestSecondarySlotInRange_Parms), 0x0010000000000080);
+			UProperty* NewProp_SlotWorldTransform = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("SlotWorldTransform"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(SlotWorldTransform, GrippableStaticMeshComponent_eventClosestSecondarySlotInRange_Parms), 0x0010000000000180, Z_Construct_UScriptStruct_FTransform());
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bHadSlotInRange, GrippableStaticMeshComponent_eventClosestSecondarySlotInRange_Parms, bool);
+			UProperty* NewProp_bHadSlotInRange = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bHadSlotInRange"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bHadSlotInRange, GrippableStaticMeshComponent_eventClosestSecondarySlotInRange_Parms), 0x0010000000000180, CPP_BOOL_PROPERTY_BITMASK(bHadSlotInRange, GrippableStaticMeshComponent_eventClosestSecondarySlotInRange_Parms), sizeof(bool), true);
+			UProperty* NewProp_WorldLocation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("WorldLocation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(WorldLocation, GrippableStaticMeshComponent_eventClosestSecondarySlotInRange_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Get closest secondary slot in range"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_DenyGripping()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableStaticMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("DenyGripping"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableStaticMeshComponent_eventDenyGripping_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, GrippableStaticMeshComponent_eventDenyGripping_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, GrippableStaticMeshComponent_eventDenyGripping_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, GrippableStaticMeshComponent_eventDenyGripping_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Set up as deny instead of allow so that default allows for gripping"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_FreeGripType()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableStaticMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("FreeGripType"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableStaticMeshComponent_eventFreeGripType_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableStaticMeshComponent_eventFreeGripType_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_EGripCollisionType());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Grip type to use when not gripping a slot"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_GetInteractionSettings()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableStaticMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GetInteractionSettings"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableStaticMeshComponent_eventGetInteractionSettings_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableStaticMeshComponent_eventGetInteractionSettings_Parms), 0x0010000000000580, Z_Construct_UScriptStruct_FBPInteractionSettings());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Get interactable settings"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_GripBreakDistance()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableStaticMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GripBreakDistance"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableStaticMeshComponent_eventGripBreakDistance_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableStaticMeshComponent_eventGripBreakDistance_Parms), 0x0010000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("What distance to break a grip at (only relevent with physics enabled grips"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_GripDamping()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableStaticMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GripDamping"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableStaticMeshComponent_eventGripDamping_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableStaticMeshComponent_eventGripDamping_Parms), 0x0010000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("What grip damping to use if using a physics constraint"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_GripLateUpdateSetting()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableStaticMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GripLateUpdateSetting"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableStaticMeshComponent_eventGripLateUpdateSetting_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableStaticMeshComponent_eventGripLateUpdateSetting_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_EGripLateUpdateSettings());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Define the late update setting"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_GripMovementReplicationType()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableStaticMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GripMovementReplicationType"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableStaticMeshComponent_eventGripMovementReplicationType_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableStaticMeshComponent_eventGripMovementReplicationType_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_EGripMovementReplicationSettings());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Define which movement repliation setting to use"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_GripStiffness()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableStaticMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GripStiffness"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableStaticMeshComponent_eventGripStiffness_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableStaticMeshComponent_eventGripStiffness_Parms), 0x0010000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("What grip stiffness to use if using a physics constraint"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_IsHeld()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableStaticMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("IsHeld"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C420C00, 65535, sizeof(GrippableStaticMeshComponent_eventIsHeld_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsHeld, GrippableStaticMeshComponent_eventIsHeld_Parms, bool);
+			UProperty* NewProp_bIsHeld = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bIsHeld"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsHeld, GrippableStaticMeshComponent_eventIsHeld_Parms), 0x0010000000000180, CPP_BOOL_PROPERTY_BITMASK(bIsHeld, GrippableStaticMeshComponent_eventIsHeld_Parms), sizeof(bool), true);
+			UProperty* NewProp_HoldingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("HoldingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(HoldingController, GrippableStaticMeshComponent_eventIsHeld_Parms), 0x0010000000080180, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Returns if the object is held and if so, which pawn is holding it"));
+			MetaData->SetValue(NewProp_HoldingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_IsInteractible()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableStaticMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("IsInteractible"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableStaticMeshComponent_eventIsInteractible_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, GrippableStaticMeshComponent_eventIsInteractible_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, GrippableStaticMeshComponent_eventIsInteractible_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, GrippableStaticMeshComponent_eventIsInteractible_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Check if the object is an interactable"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_OnChildGrip()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableStaticMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnChildGrip"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableStaticMeshComponent_eventOnChildGrip_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableStaticMeshComponent_eventOnChildGrip_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_GrippingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GrippingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(GrippingController, GrippableStaticMeshComponent_eventOnChildGrip_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when child component is gripped"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_GrippingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_OnChildGripRelease()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableStaticMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnChildGripRelease"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableStaticMeshComponent_eventOnChildGripRelease_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableStaticMeshComponent_eventOnChildGripRelease_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_ReleasingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReleasingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ReleasingController, GrippableStaticMeshComponent_eventOnChildGripRelease_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when child component is released"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_ReleasingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_OnEndSecondaryUsed()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableStaticMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnEndSecondaryUsed"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Call to stop using an object"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_OnEndUsed()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableStaticMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnEndUsed"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Call to stop using an object"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_OnGrip()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableStaticMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnGrip"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableStaticMeshComponent_eventOnGrip_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableStaticMeshComponent_eventOnGrip_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_GrippingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GrippingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(GrippingController, GrippableStaticMeshComponent_eventOnGrip_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when gripped"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_GrippingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_OnGripRelease()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableStaticMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnGripRelease"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableStaticMeshComponent_eventOnGripRelease_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableStaticMeshComponent_eventOnGripRelease_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_ReleasingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReleasingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ReleasingController, GrippableStaticMeshComponent_eventOnGripRelease_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when grip is released"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_ReleasingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_OnSecondaryGrip()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableStaticMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnSecondaryGrip"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableStaticMeshComponent_eventOnSecondaryGrip_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableStaticMeshComponent_eventOnSecondaryGrip_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_SecondaryGripComponent = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("SecondaryGripComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(SecondaryGripComponent, GrippableStaticMeshComponent_eventOnSecondaryGrip_Parms), 0x0010000000080080, Z_Construct_UClass_USceneComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when secondary gripped"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_SecondaryGripComponent, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_OnSecondaryGripRelease()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableStaticMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnSecondaryGripRelease"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(GrippableStaticMeshComponent_eventOnSecondaryGripRelease_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableStaticMeshComponent_eventOnSecondaryGripRelease_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_ReleasingSecondaryGripComponent = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReleasingSecondaryGripComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ReleasingSecondaryGripComponent, GrippableStaticMeshComponent_eventOnSecondaryGripRelease_Parms), 0x0010000000080080, Z_Construct_UClass_USceneComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when secondary grip is released"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_ReleasingSecondaryGripComponent, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_OnSecondaryUsed()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableStaticMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnSecondaryUsed"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Call to use an object"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_OnUsed()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableStaticMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnUsed"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Call to use an object"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_SecondaryGripType()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableStaticMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SecondaryGripType"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableStaticMeshComponent_eventSecondaryGripType_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableStaticMeshComponent_eventSecondaryGripType_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_ESecondaryGripType());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Secondary grip type"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_SetHeld()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableStaticMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SetHeld"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableStaticMeshComponent_eventSetHeld_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsHeld, GrippableStaticMeshComponent_eventSetHeld_Parms, bool);
+			UProperty* NewProp_bIsHeld = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bIsHeld"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsHeld, GrippableStaticMeshComponent_eventSetHeld_Parms), 0x0010000000000080, CPP_BOOL_PROPERTY_BITMASK(bIsHeld, GrippableStaticMeshComponent_eventSetHeld_Parms), sizeof(bool), true);
+			UProperty* NewProp_HoldingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("HoldingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(HoldingController, GrippableStaticMeshComponent_eventSetHeld_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Sets is held, used by the plugin"));
+			MetaData->SetValue(NewProp_HoldingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_SimulateOnDrop()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableStaticMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SimulateOnDrop"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableStaticMeshComponent_eventSimulateOnDrop_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, GrippableStaticMeshComponent_eventSimulateOnDrop_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, GrippableStaticMeshComponent_eventSimulateOnDrop_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, GrippableStaticMeshComponent_eventSimulateOnDrop_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Should this object simulate on drop"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_SlotGripType()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableStaticMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SlotGripType"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableStaticMeshComponent_eventSlotGripType_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableStaticMeshComponent_eventSlotGripType_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_EGripCollisionType());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Grip type to use when gripping a slot"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_TeleportBehavior()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableStaticMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("TeleportBehavior"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(GrippableStaticMeshComponent_eventTeleportBehavior_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, GrippableStaticMeshComponent_eventTeleportBehavior_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_EGripInterfaceTeleportBehavior());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("How an interfaced object behaves when teleporting"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UGrippableStaticMeshComponent_TickGrip()
+	{
+		UObject* Outer=Z_Construct_UClass_UGrippableStaticMeshComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("TickGrip"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08C20C00, 65535, sizeof(GrippableStaticMeshComponent_eventTickGrip_Parms));
+			UProperty* NewProp_DeltaTime = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("DeltaTime"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(DeltaTime, GrippableStaticMeshComponent_eventTickGrip_Parms), 0x0010000000000080);
+			UProperty* NewProp_MControllerLocDelta = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("MControllerLocDelta"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(MControllerLocDelta, GrippableStaticMeshComponent_eventTickGrip_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector());
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, GrippableStaticMeshComponent_eventTickGrip_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_GrippingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GrippingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(GrippingController, GrippableStaticMeshComponent_eventTickGrip_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered each tick on the interfaced object when gripped, can be used for custom movement or grip based logic"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_GrippingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_UGrippableStaticMeshComponent_NoRegister()
+	{
+		return UGrippableStaticMeshComponent::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UGrippableStaticMeshComponent()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_UStaticMeshComponent();
+			Z_Construct_UPackage__Script_VRExpansionPlugin();
+			OuterClass = UGrippableStaticMeshComponent::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20B01080;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableStaticMeshComponent_AdvancedPhysicsSettings());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableStaticMeshComponent_ClosestPrimarySlotInRange());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableStaticMeshComponent_ClosestSecondarySlotInRange());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableStaticMeshComponent_DenyGripping());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableStaticMeshComponent_FreeGripType());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableStaticMeshComponent_GetInteractionSettings());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableStaticMeshComponent_GripBreakDistance());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableStaticMeshComponent_GripDamping());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableStaticMeshComponent_GripLateUpdateSetting());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableStaticMeshComponent_GripMovementReplicationType());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableStaticMeshComponent_GripStiffness());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableStaticMeshComponent_IsHeld());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableStaticMeshComponent_IsInteractible());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableStaticMeshComponent_OnChildGrip());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableStaticMeshComponent_OnChildGripRelease());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableStaticMeshComponent_OnEndSecondaryUsed());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableStaticMeshComponent_OnEndUsed());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableStaticMeshComponent_OnGrip());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableStaticMeshComponent_OnGripRelease());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableStaticMeshComponent_OnSecondaryGrip());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableStaticMeshComponent_OnSecondaryGripRelease());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableStaticMeshComponent_OnSecondaryUsed());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableStaticMeshComponent_OnUsed());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableStaticMeshComponent_SecondaryGripType());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableStaticMeshComponent_SetHeld());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableStaticMeshComponent_SimulateOnDrop());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableStaticMeshComponent_SlotGripType());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableStaticMeshComponent_TeleportBehavior());
+				OuterClass->LinkChild(Z_Construct_UFunction_UGrippableStaticMeshComponent_TickGrip());
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_VRGripInterfaceSettings = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("VRGripInterfaceSettings"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(VRGripInterfaceSettings, UGrippableStaticMeshComponent), 0x0010008000000025, Z_Construct_UScriptStruct_FBPInterfaceProperties());
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bRepGripSettingsAndGameplayTags, UGrippableStaticMeshComponent, bool);
+				UProperty* NewProp_bRepGripSettingsAndGameplayTags = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bRepGripSettingsAndGameplayTags"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bRepGripSettingsAndGameplayTags, UGrippableStaticMeshComponent), 0x0010000000000025, CPP_BOOL_PROPERTY_BITMASK(bRepGripSettingsAndGameplayTags, UGrippableStaticMeshComponent), sizeof(bool), true);
+				UProperty* NewProp_GameplayTags = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("GameplayTags"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GameplayTags, UGrippableStaticMeshComponent), 0x0010000000000025, Z_Construct_UScriptStruct_FGameplayTagContainer());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableStaticMeshComponent_AdvancedPhysicsSettings(), "AdvancedPhysicsSettings"); // 3444543508
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableStaticMeshComponent_ClosestPrimarySlotInRange(), "ClosestPrimarySlotInRange"); // 1430370931
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableStaticMeshComponent_ClosestSecondarySlotInRange(), "ClosestSecondarySlotInRange"); // 1861003047
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableStaticMeshComponent_DenyGripping(), "DenyGripping"); // 2795904747
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableStaticMeshComponent_FreeGripType(), "FreeGripType"); // 3144291688
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableStaticMeshComponent_GetInteractionSettings(), "GetInteractionSettings"); // 2076307061
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableStaticMeshComponent_GripBreakDistance(), "GripBreakDistance"); // 3654207547
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableStaticMeshComponent_GripDamping(), "GripDamping"); // 3550010510
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableStaticMeshComponent_GripLateUpdateSetting(), "GripLateUpdateSetting"); // 1951978381
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableStaticMeshComponent_GripMovementReplicationType(), "GripMovementReplicationType"); // 1227903883
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableStaticMeshComponent_GripStiffness(), "GripStiffness"); // 271963671
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableStaticMeshComponent_IsHeld(), "IsHeld"); // 1902402381
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableStaticMeshComponent_IsInteractible(), "IsInteractible"); // 571537698
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableStaticMeshComponent_OnChildGrip(), "OnChildGrip"); // 422008769
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableStaticMeshComponent_OnChildGripRelease(), "OnChildGripRelease"); // 4170703104
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableStaticMeshComponent_OnEndSecondaryUsed(), "OnEndSecondaryUsed"); // 1867833496
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableStaticMeshComponent_OnEndUsed(), "OnEndUsed"); // 2430099767
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableStaticMeshComponent_OnGrip(), "OnGrip"); // 3958942888
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableStaticMeshComponent_OnGripRelease(), "OnGripRelease"); // 3969999088
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableStaticMeshComponent_OnSecondaryGrip(), "OnSecondaryGrip"); // 2354424236
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableStaticMeshComponent_OnSecondaryGripRelease(), "OnSecondaryGripRelease"); // 1266253368
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableStaticMeshComponent_OnSecondaryUsed(), "OnSecondaryUsed"); // 1304324140
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableStaticMeshComponent_OnUsed(), "OnUsed"); // 1433930323
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableStaticMeshComponent_SecondaryGripType(), "SecondaryGripType"); // 2063861497
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableStaticMeshComponent_SetHeld(), "SetHeld"); // 3976146679
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableStaticMeshComponent_SimulateOnDrop(), "SimulateOnDrop"); // 441434460
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableStaticMeshComponent_SlotGripType(), "SlotGripType"); // 2545708765
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableStaticMeshComponent_TeleportBehavior(), "TeleportBehavior"); // 2386332135
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UGrippableStaticMeshComponent_TickGrip(), "TickGrip"); // 132942504
+				static TCppClassTypeInfo<TCppClassTypeTraits<UGrippableStaticMeshComponent> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->Interfaces.Add(FImplementedInterface(Z_Construct_UClass_UVRGripInterface_NoRegister(), VTABLE_OFFSET(UGrippableStaticMeshComponent, IVRGripInterface), false ));
+				OuterClass->Interfaces.Add(FImplementedInterface(Z_Construct_UClass_UGameplayTagAssetInterface_NoRegister(), VTABLE_OFFSET(UGrippableStaticMeshComponent, IGameplayTagAssetInterface), false ));
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("BlueprintSpawnableComponent"), TEXT(""));
+				MetaData->SetValue(OuterClass, TEXT("BlueprintType"), TEXT("true"));
+				MetaData->SetValue(OuterClass, TEXT("ClassGroupNames"), TEXT("VRExpansionPlugin"));
+				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Object Activation Components|Activation Trigger"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("GrippableStaticMeshComponent.h"));
+				MetaData->SetValue(OuterClass, TEXT("IsBlueprintBase"), TEXT("true"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshComponent.h"));
+				MetaData->SetValue(NewProp_VRGripInterfaceSettings, TEXT("Category"), TEXT("VRGripInterface"));
+				MetaData->SetValue(NewProp_VRGripInterfaceSettings, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshComponent.h"));
+				MetaData->SetValue(NewProp_bRepGripSettingsAndGameplayTags, TEXT("Category"), TEXT("VRGripInterface"));
+				MetaData->SetValue(NewProp_bRepGripSettingsAndGameplayTags, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshComponent.h"));
+				MetaData->SetValue(NewProp_bRepGripSettingsAndGameplayTags, TEXT("ToolTip"), TEXT("Requires bReplicates to be true for the component"));
+				MetaData->SetValue(NewProp_GameplayTags, TEXT("Category"), TEXT("GameplayTags"));
+				MetaData->SetValue(NewProp_GameplayTags, TEXT("ModuleRelativePath"), TEXT("Public/GrippableStaticMeshComponent.h"));
+				MetaData->SetValue(NewProp_GameplayTags, TEXT("ToolTip"), TEXT("Tags that are set on this object"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UGrippableStaticMeshComponent, 1983539777);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UGrippableStaticMeshComponent(Z_Construct_UClass_UGrippableStaticMeshComponent, &UGrippableStaticMeshComponent::StaticClass, TEXT("/Script/VRExpansionPlugin"), TEXT("UGrippableStaticMeshComponent"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UGrippableStaticMeshComponent);
+	void UVRTrackedParentInterface::StaticRegisterNativesUVRTrackedParentInterface()
+	{
+		UClass* Class = UVRTrackedParentInterface::StaticClass();
+		static const TNameNativePtrPair<ANSICHAR> AnsiFuncs[] = {
+			{ "SetTrackedParent", (Native)&IVRTrackedParentInterface::execSetTrackedParent },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, AnsiFuncs, 1);
+	}
+	UFunction* Z_Construct_UFunction_UVRTrackedParentInterface_SetTrackedParent()
+	{
+		struct VRTrackedParentInterface_eventSetTrackedParent_Parms
+		{
+			UPrimitiveComponent* NewParentComponent;
+			float WaistRadius;
+			EBPVRWaistTrackingMode WaistTrackingMode;
+		};
+		UObject* Outer=Z_Construct_UClass_UVRTrackedParentInterface();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SetTrackedParent"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020400, 65535, sizeof(VRTrackedParentInterface_eventSetTrackedParent_Parms));
+			UProperty* NewProp_WaistTrackingMode = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("WaistTrackingMode"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(WaistTrackingMode, VRTrackedParentInterface_eventSetTrackedParent_Parms), 0x0010000000000080, Z_Construct_UEnum_VRExpansionPlugin_EBPVRWaistTrackingMode());
+			UProperty* NewProp_WaistTrackingMode_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_WaistTrackingMode, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			UProperty* NewProp_WaistRadius = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("WaistRadius"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(WaistRadius, VRTrackedParentInterface_eventSetTrackedParent_Parms), 0x0010000000000080);
+			UProperty* NewProp_NewParentComponent = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("NewParentComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(NewParentComponent, VRTrackedParentInterface_eventSetTrackedParent_Parms), 0x0010000000080080, Z_Construct_UClass_UPrimitiveComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRTrackedParentInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/VRTrackedParentInterface.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Set a tracked parent"));
+			MetaData->SetValue(NewProp_NewParentComponent, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_UVRTrackedParentInterface_NoRegister()
+	{
+		return UVRTrackedParentInterface::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UVRTrackedParentInterface()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			UInterface::StaticClass();
+			Z_Construct_UPackage__Script_VRExpansionPlugin();
+			OuterClass = UVRTrackedParentInterface::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20104081;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRTrackedParentInterface_SetTrackedParent());
+
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRTrackedParentInterface_SetTrackedParent(), "SetTrackedParent"); // 3155822995
+				static TCppClassTypeInfo<TCppClassTypeTraits<IVRTrackedParentInterface> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("CannotImplementInterfaceInBlueprint"), TEXT(""));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/VRTrackedParentInterface.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UVRTrackedParentInterface, 3818202103);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UVRTrackedParentInterface(Z_Construct_UClass_UVRTrackedParentInterface, &UVRTrackedParentInterface::StaticClass, TEXT("/Script/VRExpansionPlugin"), TEXT("UVRTrackedParentInterface"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UVRTrackedParentInterface);
+	void UParentRelativeAttachmentComponent::StaticRegisterNativesUParentRelativeAttachmentComponent()
+	{
+	}
+	UClass* Z_Construct_UClass_UParentRelativeAttachmentComponent_NoRegister()
+	{
+		return UParentRelativeAttachmentComponent::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UParentRelativeAttachmentComponent()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_USceneComponent();
+			Z_Construct_UPackage__Script_VRExpansionPlugin();
+			OuterClass = UParentRelativeAttachmentComponent::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20B00080;
+
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_OptionalWaistTrackingParent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("OptionalWaistTrackingParent"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(OptionalWaistTrackingParent, UParentRelativeAttachmentComponent), 0x0010008000000005, Z_Construct_UScriptStruct_FBPVRWaistTracking_Info());
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bOffsetByHMD, UParentRelativeAttachmentComponent, bool);
+				UProperty* NewProp_bOffsetByHMD = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bOffsetByHMD"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bOffsetByHMD, UParentRelativeAttachmentComponent), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bOffsetByHMD, UParentRelativeAttachmentComponent), sizeof(bool), true);
+				UProperty* NewProp_YawTolerance = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("YawTolerance"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(YawTolerance, UParentRelativeAttachmentComponent), 0x0010000000000005);
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				static TCppClassTypeInfo<TCppClassTypeTraits<UParentRelativeAttachmentComponent> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->Interfaces.Add(FImplementedInterface(Z_Construct_UClass_UVRTrackedParentInterface_NoRegister(), VTABLE_OFFSET(UParentRelativeAttachmentComponent, IVRTrackedParentInterface), false ));
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("BlueprintSpawnableComponent"), TEXT(""));
+				MetaData->SetValue(OuterClass, TEXT("BlueprintType"), TEXT("true"));
+				MetaData->SetValue(OuterClass, TEXT("ClassGroupNames"), TEXT("VRExpansionLibrary"));
+				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Trigger PhysicsVolume"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("ParentRelativeAttachmentComponent.h"));
+				MetaData->SetValue(OuterClass, TEXT("IsBlueprintBase"), TEXT("true"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/ParentRelativeAttachmentComponent.h"));
+				MetaData->SetValue(NewProp_OptionalWaistTrackingParent, TEXT("Category"), TEXT("VRTrackedParentInterface"));
+				MetaData->SetValue(NewProp_OptionalWaistTrackingParent, TEXT("ModuleRelativePath"), TEXT("Public/ParentRelativeAttachmentComponent.h"));
+				MetaData->SetValue(NewProp_OptionalWaistTrackingParent, TEXT("ToolTip"), TEXT("If valid will use this as the tracked parent instead of the HMD / Parent"));
+				MetaData->SetValue(NewProp_bOffsetByHMD, TEXT("Category"), TEXT("VRExpansionLibrary"));
+				MetaData->SetValue(NewProp_bOffsetByHMD, TEXT("ModuleRelativePath"), TEXT("Public/ParentRelativeAttachmentComponent.h"));
+				MetaData->SetValue(NewProp_bOffsetByHMD, TEXT("ToolTip"), TEXT("If true will subtract the HMD's location from the position, useful for if the actors base is set to the HMD location always (simple character)."));
+				MetaData->SetValue(NewProp_YawTolerance, TEXT("Category"), TEXT("VRExpansionLibrary"));
+				MetaData->SetValue(NewProp_YawTolerance, TEXT("ClampMin"), TEXT("0"));
+				MetaData->SetValue(NewProp_YawTolerance, TEXT("ModuleRelativePath"), TEXT("Public/ParentRelativeAttachmentComponent.h"));
+				MetaData->SetValue(NewProp_YawTolerance, TEXT("UIMin"), TEXT("0"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UParentRelativeAttachmentComponent, 1327523064);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UParentRelativeAttachmentComponent(Z_Construct_UClass_UParentRelativeAttachmentComponent, &UParentRelativeAttachmentComponent::StaticClass, TEXT("/Script/VRExpansionPlugin"), TEXT("UParentRelativeAttachmentComponent"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UParentRelativeAttachmentComponent);
+	static FName NAME_UReplicatedVRCameraComponent_Server_SendTransform = FName(TEXT("Server_SendTransform"));
+	void UReplicatedVRCameraComponent::Server_SendTransform(FBPVRComponentPosRep NewTransform)
+	{
+		ReplicatedVRCameraComponent_eventServer_SendTransform_Parms Parms;
+		Parms.NewTransform=NewTransform;
+		ProcessEvent(FindFunctionChecked(NAME_UReplicatedVRCameraComponent_Server_SendTransform),&Parms);
+	}
+	void UReplicatedVRCameraComponent::StaticRegisterNativesUReplicatedVRCameraComponent()
+	{
+		UClass* Class = UReplicatedVRCameraComponent::StaticClass();
+		static const TNameNativePtrPair<ANSICHAR> AnsiFuncs[] = {
+			{ "GetCameraView", (Native)&UReplicatedVRCameraComponent::execGetCameraView },
+			{ "OnRep_ReplicatedTransform", (Native)&UReplicatedVRCameraComponent::execOnRep_ReplicatedTransform },
+			{ "Server_SendTransform", (Native)&UReplicatedVRCameraComponent::execServer_SendTransform },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, AnsiFuncs, 3);
+	}
+	UFunction* Z_Construct_UFunction_UReplicatedVRCameraComponent_GetCameraView()
+	{
+		struct ReplicatedVRCameraComponent_eventGetCameraView_Parms
+		{
+			float DeltaTime;
+			FMinimalViewInfo DesiredView;
+		};
+		UObject* Outer=Z_Construct_UClass_UReplicatedVRCameraComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GetCameraView"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04420400, 65535, sizeof(ReplicatedVRCameraComponent_eventGetCameraView_Parms));
+			UProperty* NewProp_DesiredView = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("DesiredView"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(DesiredView, ReplicatedVRCameraComponent_eventGetCameraView_Parms), 0x0010000000000180, Z_Construct_UScriptStruct_FMinimalViewInfo());
+			UProperty* NewProp_DeltaTime = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("DeltaTime"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(DeltaTime, ReplicatedVRCameraComponent_eventGetCameraView_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Camera"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/ReplicatedVRCameraComponent.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UReplicatedVRCameraComponent_OnRep_ReplicatedTransform()
+	{
+		UObject* Outer=Z_Construct_UClass_UReplicatedVRCameraComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnRep_ReplicatedTransform"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020400, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/ReplicatedVRCameraComponent.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UReplicatedVRCameraComponent_Server_SendTransform()
+	{
+		UObject* Outer=Z_Construct_UClass_UReplicatedVRCameraComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("Server_SendTransform"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x80220C40, 65535, sizeof(ReplicatedVRCameraComponent_eventServer_SendTransform_Parms));
+			UProperty* NewProp_NewTransform = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("NewTransform"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(NewTransform, ReplicatedVRCameraComponent_eventServer_SendTransform_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FBPVRComponentPosRep());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/ReplicatedVRCameraComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("I'm sending it unreliable because it is being resent pretty often"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_UReplicatedVRCameraComponent_NoRegister()
+	{
+		return UReplicatedVRCameraComponent::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UReplicatedVRCameraComponent()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_UCameraComponent();
+			Z_Construct_UPackage__Script_VRExpansionPlugin();
+			OuterClass = UReplicatedVRCameraComponent::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20B00080;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_UReplicatedVRCameraComponent_GetCameraView());
+				OuterClass->LinkChild(Z_Construct_UFunction_UReplicatedVRCameraComponent_OnRep_ReplicatedTransform());
+				OuterClass->LinkChild(Z_Construct_UFunction_UReplicatedVRCameraComponent_Server_SendTransform());
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_NetUpdateRate = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("NetUpdateRate"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(NetUpdateRate, UReplicatedVRCameraComponent), 0x0010000000000025);
+				UProperty* NewProp_ReplicatedTransform = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("ReplicatedTransform"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(ReplicatedTransform, UReplicatedVRCameraComponent), 0x0010000100010021, Z_Construct_UScriptStruct_FBPVRComponentPosRep());
+				NewProp_ReplicatedTransform->RepNotifyFunc = FName(TEXT("OnRep_ReplicatedTransform"));
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bAutoSetLockToHmd, UReplicatedVRCameraComponent, uint8);
+				UProperty* NewProp_bAutoSetLockToHmd = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bAutoSetLockToHmd"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bAutoSetLockToHmd, UReplicatedVRCameraComponent), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bAutoSetLockToHmd, UReplicatedVRCameraComponent), sizeof(uint8), false);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bOffsetByHMD, UReplicatedVRCameraComponent, bool);
+				UProperty* NewProp_bOffsetByHMD = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bOffsetByHMD"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bOffsetByHMD, UReplicatedVRCameraComponent), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bOffsetByHMD, UReplicatedVRCameraComponent), sizeof(bool), true);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bSetPositionDuringTick, UReplicatedVRCameraComponent, bool);
+				UProperty* NewProp_bSetPositionDuringTick = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bSetPositionDuringTick"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bSetPositionDuringTick, UReplicatedVRCameraComponent), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bSetPositionDuringTick, UReplicatedVRCameraComponent), sizeof(bool), true);
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UReplicatedVRCameraComponent_GetCameraView(), "GetCameraView"); // 2411523815
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UReplicatedVRCameraComponent_OnRep_ReplicatedTransform(), "OnRep_ReplicatedTransform"); // 2364180053
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UReplicatedVRCameraComponent_Server_SendTransform(), "Server_SendTransform"); // 4268126170
+				static TCppClassTypeInfo<TCppClassTypeTraits<UReplicatedVRCameraComponent> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("BlueprintSpawnableComponent"), TEXT(""));
+				MetaData->SetValue(OuterClass, TEXT("BlueprintType"), TEXT("true"));
+				MetaData->SetValue(OuterClass, TEXT("ClassGroupNames"), TEXT("VRExpansionLibrary"));
+				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Mobility Rendering LOD Trigger PhysicsVolume"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("ReplicatedVRCameraComponent.h"));
+				MetaData->SetValue(OuterClass, TEXT("IsBlueprintBase"), TEXT("true"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/ReplicatedVRCameraComponent.h"));
+				MetaData->SetValue(NewProp_NetUpdateRate, TEXT("Category"), TEXT("VRExpansionLibrary"));
+				MetaData->SetValue(NewProp_NetUpdateRate, TEXT("ModuleRelativePath"), TEXT("Public/ReplicatedVRCameraComponent.h"));
+				MetaData->SetValue(NewProp_NetUpdateRate, TEXT("ToolTip"), TEXT("Rate to update the position to the server, 100htz is default (same as replication rate, should also hit every tick)."));
+				MetaData->SetValue(NewProp_ReplicatedTransform, TEXT("Category"), TEXT("VRExpansionLibrary|Networking"));
+				MetaData->SetValue(NewProp_ReplicatedTransform, TEXT("ModuleRelativePath"), TEXT("Public/ReplicatedVRCameraComponent.h"));
+				MetaData->SetValue(NewProp_bAutoSetLockToHmd, TEXT("Category"), TEXT("VRExpansionLibrary"));
+				MetaData->SetValue(NewProp_bAutoSetLockToHmd, TEXT("ModuleRelativePath"), TEXT("Public/ReplicatedVRCameraComponent.h"));
+				MetaData->SetValue(NewProp_bAutoSetLockToHmd, TEXT("ToolTip"), TEXT("Sets lock to hmd automatically based on if the camera is currently locally controlled or not"));
+				MetaData->SetValue(NewProp_bOffsetByHMD, TEXT("Category"), TEXT("VRExpansionLibrary"));
+				MetaData->SetValue(NewProp_bOffsetByHMD, TEXT("ModuleRelativePath"), TEXT("Public/ReplicatedVRCameraComponent.h"));
+				MetaData->SetValue(NewProp_bOffsetByHMD, TEXT("ToolTip"), TEXT("public:\n If true will subtract the HMD's location from the position, useful for if the actors base is set to the HMD location always (simple character)."));
+				MetaData->SetValue(NewProp_bSetPositionDuringTick, TEXT("Category"), TEXT("VRExpansionLibrary"));
+				MetaData->SetValue(NewProp_bSetPositionDuringTick, TEXT("ModuleRelativePath"), TEXT("Public/ReplicatedVRCameraComponent.h"));
+				MetaData->SetValue(NewProp_bSetPositionDuringTick, TEXT("ToolTip"), TEXT("For non view target positional updates"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UReplicatedVRCameraComponent, 4284690601);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UReplicatedVRCameraComponent(Z_Construct_UClass_UReplicatedVRCameraComponent, &UReplicatedVRCameraComponent::StaticClass, TEXT("/Script/VRExpansionPlugin"), TEXT("UReplicatedVRCameraComponent"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UReplicatedVRCameraComponent);
+	static FName NAME_UVRBaseCharacterMovementComponent_ClientAdjustPosition = FName(TEXT("ClientAdjustPosition"));
+	void UVRBaseCharacterMovementComponent::ClientAdjustPosition(float TimeStamp, FVector NewLoc, FVector NewVel, UPrimitiveComponent* NewBase, FName NewBaseBoneName, bool bHasBase, bool bBaseRelativePosition, uint8 ServerMovementMode)
+	{
+		VRBaseCharacterMovementComponent_eventClientAdjustPosition_Parms Parms;
+		Parms.TimeStamp=TimeStamp;
+		Parms.NewLoc=NewLoc;
+		Parms.NewVel=NewVel;
+		Parms.NewBase=NewBase;
+		Parms.NewBaseBoneName=NewBaseBoneName;
+		Parms.bHasBase=bHasBase ? true : false;
+		Parms.bBaseRelativePosition=bBaseRelativePosition ? true : false;
+		Parms.ServerMovementMode=ServerMovementMode;
+		ProcessEvent(FindFunctionChecked(NAME_UVRBaseCharacterMovementComponent_ClientAdjustPosition),&Parms);
+	}
+	static FName NAME_UVRBaseCharacterMovementComponent_ClientVeryShortAdjustPosition = FName(TEXT("ClientVeryShortAdjustPosition"));
+	void UVRBaseCharacterMovementComponent::ClientVeryShortAdjustPosition(float TimeStamp, FVector NewLoc, UPrimitiveComponent* NewBase, FName NewBaseBoneName, bool bHasBase, bool bBaseRelativePosition, uint8 ServerMovementMode)
+	{
+		VRBaseCharacterMovementComponent_eventClientVeryShortAdjustPosition_Parms Parms;
+		Parms.TimeStamp=TimeStamp;
+		Parms.NewLoc=NewLoc;
+		Parms.NewBase=NewBase;
+		Parms.NewBaseBoneName=NewBaseBoneName;
+		Parms.bHasBase=bHasBase ? true : false;
+		Parms.bBaseRelativePosition=bBaseRelativePosition ? true : false;
+		Parms.ServerMovementMode=ServerMovementMode;
+		ProcessEvent(FindFunctionChecked(NAME_UVRBaseCharacterMovementComponent_ClientVeryShortAdjustPosition),&Parms);
+	}
+	void UVRBaseCharacterMovementComponent::StaticRegisterNativesUVRBaseCharacterMovementComponent()
+	{
+		UClass* Class = UVRBaseCharacterMovementComponent::StaticClass();
+		static const TNameNativePtrPair<ANSICHAR> AnsiFuncs[] = {
+			{ "AddCustomReplicatedMovement", (Native)&UVRBaseCharacterMovementComponent::execAddCustomReplicatedMovement },
+			{ "ClientAdjustPosition", (Native)&UVRBaseCharacterMovementComponent::execClientAdjustPosition },
+			{ "ClientVeryShortAdjustPosition", (Native)&UVRBaseCharacterMovementComponent::execClientVeryShortAdjustPosition },
+			{ "SetClimbingMode", (Native)&UVRBaseCharacterMovementComponent::execSetClimbingMode },
+			{ "SetCrouchedHalfHeight", (Native)&UVRBaseCharacterMovementComponent::execSetCrouchedHalfHeight },
+			{ "SetReplicatedMovementMode", (Native)&UVRBaseCharacterMovementComponent::execSetReplicatedMovementMode },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, AnsiFuncs, 6);
+	}
+	UFunction* Z_Construct_UFunction_UVRBaseCharacterMovementComponent_AddCustomReplicatedMovement()
+	{
+		struct VRBaseCharacterMovementComponent_eventAddCustomReplicatedMovement_Parms
+		{
+			FVector Movement;
+		};
+		UObject* Outer=Z_Construct_UClass_UVRBaseCharacterMovementComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("AddCustomReplicatedMovement"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04820401, 65535, sizeof(VRBaseCharacterMovementComponent_eventAddCustomReplicatedMovement_Parms));
+			UProperty* NewProp_Movement = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Movement"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(Movement, VRBaseCharacterMovementComponent_eventAddCustomReplicatedMovement_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("BaseVRCharacterMovementComponent|VRLocations"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacterMovementComponent.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRBaseCharacterMovementComponent_ClientAdjustPosition()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRBaseCharacterMovementComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ClientAdjustPosition"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x01820C40, 65535, sizeof(VRBaseCharacterMovementComponent_eventClientAdjustPosition_Parms));
+			UProperty* NewProp_ServerMovementMode = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ServerMovementMode"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(ServerMovementMode, VRBaseCharacterMovementComponent_eventClientAdjustPosition_Parms), 0x0010000000000080);
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bBaseRelativePosition, VRBaseCharacterMovementComponent_eventClientAdjustPosition_Parms, bool);
+			UProperty* NewProp_bBaseRelativePosition = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bBaseRelativePosition"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bBaseRelativePosition, VRBaseCharacterMovementComponent_eventClientAdjustPosition_Parms), 0x0010000000000080, CPP_BOOL_PROPERTY_BITMASK(bBaseRelativePosition, VRBaseCharacterMovementComponent_eventClientAdjustPosition_Parms), sizeof(bool), true);
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bHasBase, VRBaseCharacterMovementComponent_eventClientAdjustPosition_Parms, bool);
+			UProperty* NewProp_bHasBase = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bHasBase"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bHasBase, VRBaseCharacterMovementComponent_eventClientAdjustPosition_Parms), 0x0010000000000080, CPP_BOOL_PROPERTY_BITMASK(bHasBase, VRBaseCharacterMovementComponent_eventClientAdjustPosition_Parms), sizeof(bool), true);
+			UProperty* NewProp_NewBaseBoneName = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("NewBaseBoneName"), RF_Public|RF_Transient|RF_MarkAsNative) UNameProperty(CPP_PROPERTY_BASE(NewBaseBoneName, VRBaseCharacterMovementComponent_eventClientAdjustPosition_Parms), 0x0010000000000080);
+			UProperty* NewProp_NewBase = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("NewBase"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(NewBase, VRBaseCharacterMovementComponent_eventClientAdjustPosition_Parms), 0x0010000000080080, Z_Construct_UClass_UPrimitiveComponent_NoRegister());
+			UProperty* NewProp_NewVel = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("NewVel"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(NewVel, VRBaseCharacterMovementComponent_eventClientAdjustPosition_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector());
+			UProperty* NewProp_NewLoc = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("NewLoc"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(NewLoc, VRBaseCharacterMovementComponent_eventClientAdjustPosition_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector());
+			UProperty* NewProp_TimeStamp = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("TimeStamp"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(TimeStamp, VRBaseCharacterMovementComponent_eventClientAdjustPosition_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacterMovementComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Replicate position correction to client, associated with a timestamped servermove.  Client will replay subsequent moves after applying adjustment."));
+			MetaData->SetValue(NewProp_NewBase, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRBaseCharacterMovementComponent_ClientVeryShortAdjustPosition()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRBaseCharacterMovementComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ClientVeryShortAdjustPosition"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x01820C40, 65535, sizeof(VRBaseCharacterMovementComponent_eventClientVeryShortAdjustPosition_Parms));
+			UProperty* NewProp_ServerMovementMode = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ServerMovementMode"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(ServerMovementMode, VRBaseCharacterMovementComponent_eventClientVeryShortAdjustPosition_Parms), 0x0010000000000080);
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bBaseRelativePosition, VRBaseCharacterMovementComponent_eventClientVeryShortAdjustPosition_Parms, bool);
+			UProperty* NewProp_bBaseRelativePosition = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bBaseRelativePosition"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bBaseRelativePosition, VRBaseCharacterMovementComponent_eventClientVeryShortAdjustPosition_Parms), 0x0010000000000080, CPP_BOOL_PROPERTY_BITMASK(bBaseRelativePosition, VRBaseCharacterMovementComponent_eventClientVeryShortAdjustPosition_Parms), sizeof(bool), true);
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bHasBase, VRBaseCharacterMovementComponent_eventClientVeryShortAdjustPosition_Parms, bool);
+			UProperty* NewProp_bHasBase = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bHasBase"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bHasBase, VRBaseCharacterMovementComponent_eventClientVeryShortAdjustPosition_Parms), 0x0010000000000080, CPP_BOOL_PROPERTY_BITMASK(bHasBase, VRBaseCharacterMovementComponent_eventClientVeryShortAdjustPosition_Parms), sizeof(bool), true);
+			UProperty* NewProp_NewBaseBoneName = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("NewBaseBoneName"), RF_Public|RF_Transient|RF_MarkAsNative) UNameProperty(CPP_PROPERTY_BASE(NewBaseBoneName, VRBaseCharacterMovementComponent_eventClientVeryShortAdjustPosition_Parms), 0x0010000000000080);
+			UProperty* NewProp_NewBase = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("NewBase"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(NewBase, VRBaseCharacterMovementComponent_eventClientVeryShortAdjustPosition_Parms), 0x0010000000080080, Z_Construct_UClass_UPrimitiveComponent_NoRegister());
+			UProperty* NewProp_NewLoc = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("NewLoc"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(NewLoc, VRBaseCharacterMovementComponent_eventClientVeryShortAdjustPosition_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector());
+			UProperty* NewProp_TimeStamp = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("TimeStamp"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(TimeStamp, VRBaseCharacterMovementComponent_eventClientVeryShortAdjustPosition_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacterMovementComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Bandwidth saving version, when velocity is zeroed"));
+			MetaData->SetValue(NewProp_NewBase, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRBaseCharacterMovementComponent_SetClimbingMode()
+	{
+		struct VRBaseCharacterMovementComponent_eventSetClimbingMode_Parms
+		{
+			bool bIsClimbing;
+		};
+		UObject* Outer=Z_Construct_UClass_UVRBaseCharacterMovementComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SetClimbingMode"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(VRBaseCharacterMovementComponent_eventSetClimbingMode_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsClimbing, VRBaseCharacterMovementComponent_eventSetClimbingMode_Parms, bool);
+			UProperty* NewProp_bIsClimbing = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bIsClimbing"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsClimbing, VRBaseCharacterMovementComponent_eventSetClimbingMode_Parms), 0x0010000000000080, CPP_BOOL_PROPERTY_BITMASK(bIsClimbing, VRBaseCharacterMovementComponent_eventSetClimbingMode_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRMovement|Climbing"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacterMovementComponent.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRBaseCharacterMovementComponent_SetCrouchedHalfHeight()
+	{
+		struct VRBaseCharacterMovementComponent_eventSetCrouchedHalfHeight_Parms
+		{
+			float NewCrouchedHalfHeight;
+		};
+		UObject* Outer=Z_Construct_UClass_UVRBaseCharacterMovementComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SetCrouchedHalfHeight"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(VRBaseCharacterMovementComponent_eventSetCrouchedHalfHeight_Parms));
+			UProperty* NewProp_NewCrouchedHalfHeight = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("NewCrouchedHalfHeight"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(NewCrouchedHalfHeight, VRBaseCharacterMovementComponent_eventSetCrouchedHalfHeight_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRMovement"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacterMovementComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Sets the crouching half height since it isn't exposed during runtime to blueprints"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRBaseCharacterMovementComponent_SetReplicatedMovementMode()
+	{
+		struct VRBaseCharacterMovementComponent_eventSetReplicatedMovementMode_Parms
+		{
+			EVRConjoinedMovementModes NewMovementMode;
+		};
+		UObject* Outer=Z_Construct_UClass_UVRBaseCharacterMovementComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SetReplicatedMovementMode"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(VRBaseCharacterMovementComponent_eventSetReplicatedMovementMode_Parms));
+			UProperty* NewProp_NewMovementMode = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("NewMovementMode"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(NewMovementMode, VRBaseCharacterMovementComponent_eventSetReplicatedMovementMode_Parms), 0x0010000000000080, Z_Construct_UEnum_VRExpansionPlugin_EVRConjoinedMovementModes());
+			UProperty* NewProp_NewMovementMode_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_NewMovementMode, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRMovement"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacterMovementComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("* This is called client side to make a replicated movement mode change that hits the server in the saved move.\n*\n* Custom Movement Mode is currently limited to 0 - 8, the index's 0 and 1 are currently used up for the plugin movement modes.\n* So setting it to 0 or 1 would be Climbing, and LowGrav respectivly, this leaves 2-8 as open index's for use.\n* For a total of 6 Custom movement modes past the currently implemented plugin ones."));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_UVRBaseCharacterMovementComponent_NoRegister()
+	{
+		return UVRBaseCharacterMovementComponent::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UVRBaseCharacterMovementComponent()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_UCharacterMovementComponent();
+			Z_Construct_UPackage__Script_VRExpansionPlugin();
+			OuterClass = UVRBaseCharacterMovementComponent::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20B00084;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRBaseCharacterMovementComponent_AddCustomReplicatedMovement());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRBaseCharacterMovementComponent_ClientAdjustPosition());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRBaseCharacterMovementComponent_ClientVeryShortAdjustPosition());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRBaseCharacterMovementComponent_SetClimbingMode());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRBaseCharacterMovementComponent_SetCrouchedHalfHeight());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRBaseCharacterMovementComponent_SetReplicatedMovementMode());
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(VRLowGravIgnoresDefaultFluidFriction, UVRBaseCharacterMovementComponent, bool);
+				UProperty* NewProp_VRLowGravIgnoresDefaultFluidFriction = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("VRLowGravIgnoresDefaultFluidFriction"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(VRLowGravIgnoresDefaultFluidFriction, UVRBaseCharacterMovementComponent), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(VRLowGravIgnoresDefaultFluidFriction, UVRBaseCharacterMovementComponent), sizeof(bool), true);
+				UProperty* NewProp_VRLowGravWallFrictionScaler = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("VRLowGravWallFrictionScaler"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(VRLowGravWallFrictionScaler, UVRBaseCharacterMovementComponent), 0x0010000000000005);
+				UProperty* NewProp_DefaultPostClimbMovement = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("DefaultPostClimbMovement"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(DefaultPostClimbMovement, UVRBaseCharacterMovementComponent), 0x0010000000000005, Z_Construct_UEnum_VRExpansionPlugin_EVRConjoinedMovementModes());
+				UProperty* NewProp_DefaultPostClimbMovement_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_DefaultPostClimbMovement, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(VRReplicateCapsuleHeight, UVRBaseCharacterMovementComponent, bool);
+				UProperty* NewProp_VRReplicateCapsuleHeight = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("VRReplicateCapsuleHeight"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(VRReplicateCapsuleHeight, UVRBaseCharacterMovementComponent), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(VRReplicateCapsuleHeight, UVRBaseCharacterMovementComponent), sizeof(bool), true);
+				UProperty* NewProp_VRClimbingMaxReleaseVelocitySize = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("VRClimbingMaxReleaseVelocitySize"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(VRClimbingMaxReleaseVelocitySize, UVRBaseCharacterMovementComponent), 0x0010000000000005);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(SetDefaultPostClimbMovementOnStepUp, UVRBaseCharacterMovementComponent, bool);
+				UProperty* NewProp_SetDefaultPostClimbMovementOnStepUp = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("SetDefaultPostClimbMovementOnStepUp"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(SetDefaultPostClimbMovementOnStepUp, UVRBaseCharacterMovementComponent), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(SetDefaultPostClimbMovementOnStepUp, UVRBaseCharacterMovementComponent), sizeof(bool), true);
+				UProperty* NewProp_VRClimbingStepUpMultiplier = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("VRClimbingStepUpMultiplier"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(VRClimbingStepUpMultiplier, UVRBaseCharacterMovementComponent), 0x0010000000000005);
+				UProperty* NewProp_VRClimbingEdgeRejectDistance = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("VRClimbingEdgeRejectDistance"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(VRClimbingEdgeRejectDistance, UVRBaseCharacterMovementComponent), 0x0010000000000005);
+				UProperty* NewProp_VRClimbingStepHeight = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("VRClimbingStepHeight"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(VRClimbingStepHeight, UVRBaseCharacterMovementComponent), 0x0010000000000005);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIgnoreSimulatingComponentsInFloorCheck, UVRBaseCharacterMovementComponent, bool);
+				UProperty* NewProp_bIgnoreSimulatingComponentsInFloorCheck = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIgnoreSimulatingComponentsInFloorCheck"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIgnoreSimulatingComponentsInFloorCheck, UVRBaseCharacterMovementComponent), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bIgnoreSimulatingComponentsInFloorCheck, UVRBaseCharacterMovementComponent), sizeof(bool), true);
+				UProperty* NewProp_VRWallSlideScaler = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("VRWallSlideScaler"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(VRWallSlideScaler, UVRBaseCharacterMovementComponent), 0x0010000000000005);
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRBaseCharacterMovementComponent_AddCustomReplicatedMovement(), "AddCustomReplicatedMovement"); // 232959001
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRBaseCharacterMovementComponent_ClientAdjustPosition(), "ClientAdjustPosition"); // 1884033274
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRBaseCharacterMovementComponent_ClientVeryShortAdjustPosition(), "ClientVeryShortAdjustPosition"); // 300752733
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRBaseCharacterMovementComponent_SetClimbingMode(), "SetClimbingMode"); // 3157807527
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRBaseCharacterMovementComponent_SetCrouchedHalfHeight(), "SetCrouchedHalfHeight"); // 304799808
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRBaseCharacterMovementComponent_SetReplicatedMovementMode(), "SetReplicatedMovementMode"); // 2737453257
+				OuterClass->ClassConfigName = FName(TEXT("Engine"));
+				static TCppClassTypeInfo<TCppClassTypeTraits<UVRBaseCharacterMovementComponent> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("VRBaseCharacterMovementComponent.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacterMovementComponent.h"));
+				MetaData->SetValue(OuterClass, TEXT("ObjectInitializerConstructorDeclared"), TEXT(""));
+				MetaData->SetValue(OuterClass, TEXT("ToolTip"), TEXT("DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FAIMoveCompletedSignature, FAIRequestID, RequestID, EPathFollowingResult::Type, Result);"));
+				MetaData->SetValue(NewProp_VRLowGravIgnoresDefaultFluidFriction, TEXT("Category"), TEXT("VRMovement|LowGrav"));
+				MetaData->SetValue(NewProp_VRLowGravIgnoresDefaultFluidFriction, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacterMovementComponent.h"));
+				MetaData->SetValue(NewProp_VRLowGravIgnoresDefaultFluidFriction, TEXT("ToolTip"), TEXT("If true then low grav will ignore the default physics volume fluid friction, useful if you have a mix of low grav and normal movement"));
+				MetaData->SetValue(NewProp_VRLowGravWallFrictionScaler, TEXT("Category"), TEXT("VRMovement|LowGrav"));
+				MetaData->SetValue(NewProp_VRLowGravWallFrictionScaler, TEXT("ClampMax"), TEXT("5.0"));
+				MetaData->SetValue(NewProp_VRLowGravWallFrictionScaler, TEXT("ClampMin"), TEXT("0.0"));
+				MetaData->SetValue(NewProp_VRLowGravWallFrictionScaler, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacterMovementComponent.h"));
+				MetaData->SetValue(NewProp_VRLowGravWallFrictionScaler, TEXT("ToolTip"), TEXT("Setting this below 1.0 will change how fast you de-accelerate when touching a wall"));
+				MetaData->SetValue(NewProp_VRLowGravWallFrictionScaler, TEXT("UIMax"), TEXT("5"));
+				MetaData->SetValue(NewProp_VRLowGravWallFrictionScaler, TEXT("UIMin"), TEXT("0"));
+				MetaData->SetValue(NewProp_DefaultPostClimbMovement, TEXT("Category"), TEXT("VRMovement|Climbing"));
+				MetaData->SetValue(NewProp_DefaultPostClimbMovement, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacterMovementComponent.h"));
+				MetaData->SetValue(NewProp_DefaultPostClimbMovement, TEXT("ToolTip"), TEXT("Default movement mode to switch to post climb ended, only used if SetDefaultPostClimbMovementOnStepUp is true"));
+				MetaData->SetValue(NewProp_VRReplicateCapsuleHeight, TEXT("Category"), TEXT("VRMovement"));
+				MetaData->SetValue(NewProp_VRReplicateCapsuleHeight, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacterMovementComponent.h"));
+				MetaData->SetValue(NewProp_VRReplicateCapsuleHeight, TEXT("ToolTip"), TEXT("If true will replicate the capsule height on to clients, allows for dynamic capsule height changes in multiplayer"));
+				MetaData->SetValue(NewProp_VRClimbingMaxReleaseVelocitySize, TEXT("Category"), TEXT("VRMovement|Climbing"));
+				MetaData->SetValue(NewProp_VRClimbingMaxReleaseVelocitySize, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacterMovementComponent.h"));
+				MetaData->SetValue(NewProp_VRClimbingMaxReleaseVelocitySize, TEXT("ToolTip"), TEXT("Max velocity on releasing a climbing grip"));
+				MetaData->SetValue(NewProp_SetDefaultPostClimbMovementOnStepUp, TEXT("Category"), TEXT("VRMovement|Climbing"));
+				MetaData->SetValue(NewProp_SetDefaultPostClimbMovementOnStepUp, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacterMovementComponent.h"));
+				MetaData->SetValue(NewProp_SetDefaultPostClimbMovementOnStepUp, TEXT("ToolTip"), TEXT("If true will automatically set falling when a stepup occurs during climbing"));
+				MetaData->SetValue(NewProp_VRClimbingStepUpMultiplier, TEXT("Category"), TEXT("VRMovement|Climbing"));
+				MetaData->SetValue(NewProp_VRClimbingStepUpMultiplier, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacterMovementComponent.h"));
+				MetaData->SetValue(NewProp_VRClimbingStepUpMultiplier, TEXT("ToolTip"), TEXT("Higher values make it easier to trigger a step up onto a platform and moves you farther in to the base *DEFUNCT*"));
+				MetaData->SetValue(NewProp_VRClimbingEdgeRejectDistance, TEXT("Category"), TEXT("VRMovement|Climbing"));
+				MetaData->SetValue(NewProp_VRClimbingEdgeRejectDistance, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacterMovementComponent.h"));
+				MetaData->SetValue(NewProp_VRClimbingEdgeRejectDistance, TEXT("ToolTip"), TEXT("Custom distance that is required before accepting a climbing stepup\n      *  This is to help with cases where head wobble causes falling backwards\n      *  Do NOT set to larger than capsule radius!\n      *  #TODO: Port to SimpleCharacter as well"));
+				MetaData->SetValue(NewProp_VRClimbingStepHeight, TEXT("Category"), TEXT("VRMovement|Climbing"));
+				MetaData->SetValue(NewProp_VRClimbingStepHeight, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacterMovementComponent.h"));
+				MetaData->SetValue(NewProp_VRClimbingStepHeight, TEXT("ToolTip"), TEXT("Height to auto step up"));
+				MetaData->SetValue(NewProp_bIgnoreSimulatingComponentsInFloorCheck, TEXT("Category"), TEXT("VRMovement"));
+				MetaData->SetValue(NewProp_bIgnoreSimulatingComponentsInFloorCheck, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacterMovementComponent.h"));
+				MetaData->SetValue(NewProp_bIgnoreSimulatingComponentsInFloorCheck, TEXT("ToolTip"), TEXT("If true will never count a simulating component as the floor, to prevent jitter / physics problems."));
+				MetaData->SetValue(NewProp_VRWallSlideScaler, TEXT("Category"), TEXT("VRMovement"));
+				MetaData->SetValue(NewProp_VRWallSlideScaler, TEXT("ClampMax"), TEXT("5.0"));
+				MetaData->SetValue(NewProp_VRWallSlideScaler, TEXT("ClampMin"), TEXT("0.0"));
+				MetaData->SetValue(NewProp_VRWallSlideScaler, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacterMovementComponent.h"));
+				MetaData->SetValue(NewProp_VRWallSlideScaler, TEXT("ToolTip"), TEXT("Setting this higher will divide the wall slide effect by this value, to reduce collision sliding."));
+				MetaData->SetValue(NewProp_VRWallSlideScaler, TEXT("UIMax"), TEXT("5"));
+				MetaData->SetValue(NewProp_VRWallSlideScaler, TEXT("UIMin"), TEXT("0"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UVRBaseCharacterMovementComponent, 1461024684);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UVRBaseCharacterMovementComponent(Z_Construct_UClass_UVRBaseCharacterMovementComponent, &UVRBaseCharacterMovementComponent::StaticClass, TEXT("/Script/VRExpansionPlugin"), TEXT("UVRBaseCharacterMovementComponent"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UVRBaseCharacterMovementComponent);
+	static FName NAME_AVRBaseCharacter_NotifyOfTeleport = FName(TEXT("NotifyOfTeleport"));
+	void AVRBaseCharacter::NotifyOfTeleport()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AVRBaseCharacter_NotifyOfTeleport),NULL);
+	}
+	static FName NAME_AVRBaseCharacter_OnClimbingSteppedUp = FName(TEXT("OnClimbingSteppedUp"));
+	void AVRBaseCharacter::OnClimbingSteppedUp()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AVRBaseCharacter_OnClimbingSteppedUp),NULL);
+	}
+	static FName NAME_AVRBaseCharacter_ReceiveNavigationMoveCompleted = FName(TEXT("ReceiveNavigationMoveCompleted"));
+	void AVRBaseCharacter::ReceiveNavigationMoveCompleted(EPathFollowingResult::Type PathingResult)
+	{
+		VRBaseCharacter_eventReceiveNavigationMoveCompleted_Parms Parms;
+		Parms.PathingResult=PathingResult;
+		ProcessEvent(FindFunctionChecked(NAME_AVRBaseCharacter_ReceiveNavigationMoveCompleted),&Parms);
+	}
+	void AVRBaseCharacter::StaticRegisterNativesAVRBaseCharacter()
+	{
+		UClass* Class = AVRBaseCharacter::StaticClass();
+		static const TNameNativePtrPair<ANSICHAR> AnsiFuncs[] = {
+			{ "ExtendedSimpleMoveToLocation", (Native)&AVRBaseCharacter::execExtendedSimpleMoveToLocation },
+			{ "GetMoveStatus", (Native)&AVRBaseCharacter::execGetMoveStatus },
+			{ "GetTeleportLocation", (Native)&AVRBaseCharacter::execGetTeleportLocation },
+			{ "GetVRForwardVector", (Native)&AVRBaseCharacter::execGetVRForwardVector },
+			{ "GetVRLocation", (Native)&AVRBaseCharacter::execGetVRLocation },
+			{ "GetVRRightVector", (Native)&AVRBaseCharacter::execGetVRRightVector },
+			{ "GetVRRotation", (Native)&AVRBaseCharacter::execGetVRRotation },
+			{ "GetVRUpVector", (Native)&AVRBaseCharacter::execGetVRUpVector },
+			{ "HasPartialPath", (Native)&AVRBaseCharacter::execHasPartialPath },
+			{ "NotifyOfTeleport", (Native)&AVRBaseCharacter::execNotifyOfTeleport },
+			{ "SetCharacterHalfHeightVR", (Native)&AVRBaseCharacter::execSetCharacterHalfHeightVR },
+			{ "SetCharacterSizeVR", (Native)&AVRBaseCharacter::execSetCharacterSizeVR },
+			{ "StopNavigationMovement", (Native)&AVRBaseCharacter::execStopNavigationMovement },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, AnsiFuncs, 13);
+	}
+	UFunction* Z_Construct_UFunction_AVRBaseCharacter_ExtendedSimpleMoveToLocation()
+	{
+		struct VRBaseCharacter_eventExtendedSimpleMoveToLocation_Parms
+		{
+			FVector GoalLocation;
+			float AcceptanceRadius;
+			bool bStopOnOverlap;
+			bool bUsePathfinding;
+			bool bProjectDestinationToNavigation;
+			bool bCanStrafe;
+			TSubclassOf<UNavigationQueryFilter>  FilterClass;
+			bool bAllowPartialPath;
+		};
+		UObject* Outer=Z_Construct_UClass_AVRBaseCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ExtendedSimpleMoveToLocation"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04C20400, 65535, sizeof(VRBaseCharacter_eventExtendedSimpleMoveToLocation_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bAllowPartialPath, VRBaseCharacter_eventExtendedSimpleMoveToLocation_Parms, bool);
+			UProperty* NewProp_bAllowPartialPath = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bAllowPartialPath"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bAllowPartialPath, VRBaseCharacter_eventExtendedSimpleMoveToLocation_Parms), 0x0010040000000080, CPP_BOOL_PROPERTY_BITMASK(bAllowPartialPath, VRBaseCharacter_eventExtendedSimpleMoveToLocation_Parms), sizeof(bool), true);
+			UProperty* NewProp_FilterClass = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("FilterClass"), RF_Public|RF_Transient|RF_MarkAsNative) UClassProperty(CPP_PROPERTY_BASE(FilterClass, VRBaseCharacter_eventExtendedSimpleMoveToLocation_Parms), 0x0014000000000080, Z_Construct_UClass_UNavigationQueryFilter_NoRegister(), UClass::StaticClass());
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bCanStrafe, VRBaseCharacter_eventExtendedSimpleMoveToLocation_Parms, bool);
+			UProperty* NewProp_bCanStrafe = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bCanStrafe"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bCanStrafe, VRBaseCharacter_eventExtendedSimpleMoveToLocation_Parms), 0x0010040000000080, CPP_BOOL_PROPERTY_BITMASK(bCanStrafe, VRBaseCharacter_eventExtendedSimpleMoveToLocation_Parms), sizeof(bool), true);
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bProjectDestinationToNavigation, VRBaseCharacter_eventExtendedSimpleMoveToLocation_Parms, bool);
+			UProperty* NewProp_bProjectDestinationToNavigation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bProjectDestinationToNavigation"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bProjectDestinationToNavigation, VRBaseCharacter_eventExtendedSimpleMoveToLocation_Parms), 0x0010000000000080, CPP_BOOL_PROPERTY_BITMASK(bProjectDestinationToNavigation, VRBaseCharacter_eventExtendedSimpleMoveToLocation_Parms), sizeof(bool), true);
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bUsePathfinding, VRBaseCharacter_eventExtendedSimpleMoveToLocation_Parms, bool);
+			UProperty* NewProp_bUsePathfinding = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bUsePathfinding"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bUsePathfinding, VRBaseCharacter_eventExtendedSimpleMoveToLocation_Parms), 0x0010000000000080, CPP_BOOL_PROPERTY_BITMASK(bUsePathfinding, VRBaseCharacter_eventExtendedSimpleMoveToLocation_Parms), sizeof(bool), true);
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bStopOnOverlap, VRBaseCharacter_eventExtendedSimpleMoveToLocation_Parms, bool);
+			UProperty* NewProp_bStopOnOverlap = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bStopOnOverlap"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bStopOnOverlap, VRBaseCharacter_eventExtendedSimpleMoveToLocation_Parms), 0x0010040000000080, CPP_BOOL_PROPERTY_BITMASK(bStopOnOverlap, VRBaseCharacter_eventExtendedSimpleMoveToLocation_Parms), sizeof(bool), true);
+			UProperty* NewProp_AcceptanceRadius = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("AcceptanceRadius"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(AcceptanceRadius, VRBaseCharacter_eventExtendedSimpleMoveToLocation_Parms), 0x0010000000000080);
+			UProperty* NewProp_GoalLocation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GoalLocation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GoalLocation, VRBaseCharacter_eventExtendedSimpleMoveToLocation_Parms), 0x0010000008000182, Z_Construct_UScriptStruct_FVector());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("AdvancedDisplay"), TEXT("bStopOnOverlap,bCanStrafe,bAllowPartialPath"));
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRBaseCharacter"));
+			MetaData->SetValue(ReturnFunction, TEXT("CPP_Default_AcceptanceRadius"), TEXT("-1.000000"));
+			MetaData->SetValue(ReturnFunction, TEXT("CPP_Default_bAllowPartialPath"), TEXT("true"));
+			MetaData->SetValue(ReturnFunction, TEXT("CPP_Default_bCanStrafe"), TEXT("false"));
+			MetaData->SetValue(ReturnFunction, TEXT("CPP_Default_bProjectDestinationToNavigation"), TEXT("true"));
+			MetaData->SetValue(ReturnFunction, TEXT("CPP_Default_bStopOnOverlap"), TEXT("false"));
+			MetaData->SetValue(ReturnFunction, TEXT("CPP_Default_bUsePathfinding"), TEXT("true"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacter.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("An extended simple move to location with additional parameters"));
+			MetaData->SetValue(NewProp_GoalLocation, TEXT("NativeConst"), TEXT(""));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AVRBaseCharacter_GetMoveStatus()
+	{
+		struct VRBaseCharacter_eventGetMoveStatus_Parms
+		{
+			TEnumAsByte<EPathFollowingStatus::Type> ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_AVRBaseCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GetMoveStatus"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x54020401, 65535, sizeof(VRBaseCharacter_eventGetMoveStatus_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(ReturnValue, VRBaseCharacter_eventGetMoveStatus_Parms), 0x0010000000000580, Z_Construct_UEnum_AIModule_EPathFollowingStatus());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRBaseCharacter"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacter.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AVRBaseCharacter_GetTeleportLocation()
+	{
+		struct VRBaseCharacter_eventGetTeleportLocation_Parms
+		{
+			FVector OriginalLocation;
+			FVector ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_AVRBaseCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GetTeleportLocation"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x14820400, 65535, sizeof(VRBaseCharacter_eventGetTeleportLocation_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(ReturnValue, VRBaseCharacter_eventGetTeleportLocation_Parms), 0x0010000000000580, Z_Construct_UScriptStruct_FVector());
+			UProperty* NewProp_OriginalLocation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OriginalLocation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(OriginalLocation, VRBaseCharacter_eventGetTeleportLocation_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGrip"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacter.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("A helper function that offsets a given vector by the roots collision location\npass in a teleport location and it provides the correct spot for it to be at your feet"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AVRBaseCharacter_GetVRForwardVector()
+	{
+		struct VRBaseCharacter_eventGetVRForwardVector_Parms
+		{
+			FVector ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_AVRBaseCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GetVRForwardVector"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x54820401, 65535, sizeof(VRBaseCharacter_eventGetVRForwardVector_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(ReturnValue, VRBaseCharacter_eventGetVRForwardVector_Parms), 0x0010000000000580, Z_Construct_UScriptStruct_FVector());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("BaseVRCharacter|VRLocations"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacter.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AVRBaseCharacter_GetVRLocation()
+	{
+		struct VRBaseCharacter_eventGetVRLocation_Parms
+		{
+			FVector ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_AVRBaseCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GetVRLocation"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x54820401, 65535, sizeof(VRBaseCharacter_eventGetVRLocation_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(ReturnValue, VRBaseCharacter_eventGetVRLocation_Parms), 0x0010000000000580, Z_Construct_UScriptStruct_FVector());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("BaseVRCharacter|VRLocations"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacter.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AVRBaseCharacter_GetVRRightVector()
+	{
+		struct VRBaseCharacter_eventGetVRRightVector_Parms
+		{
+			FVector ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_AVRBaseCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GetVRRightVector"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x54820401, 65535, sizeof(VRBaseCharacter_eventGetVRRightVector_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(ReturnValue, VRBaseCharacter_eventGetVRRightVector_Parms), 0x0010000000000580, Z_Construct_UScriptStruct_FVector());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("BaseVRCharacter|VRLocations"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacter.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AVRBaseCharacter_GetVRRotation()
+	{
+		struct VRBaseCharacter_eventGetVRRotation_Parms
+		{
+			FRotator ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_AVRBaseCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GetVRRotation"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x54820401, 65535, sizeof(VRBaseCharacter_eventGetVRRotation_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(ReturnValue, VRBaseCharacter_eventGetVRRotation_Parms), 0x0010000000000580, Z_Construct_UScriptStruct_FRotator());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("BaseVRCharacter|VRLocations"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacter.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AVRBaseCharacter_GetVRUpVector()
+	{
+		struct VRBaseCharacter_eventGetVRUpVector_Parms
+		{
+			FVector ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_AVRBaseCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GetVRUpVector"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x54820401, 65535, sizeof(VRBaseCharacter_eventGetVRUpVector_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(ReturnValue, VRBaseCharacter_eventGetVRUpVector_Parms), 0x0010000000000580, Z_Construct_UScriptStruct_FVector());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("BaseVRCharacter|VRLocations"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacter.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AVRBaseCharacter_HasPartialPath()
+	{
+		struct VRBaseCharacter_eventHasPartialPath_Parms
+		{
+			bool ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_AVRBaseCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("HasPartialPath"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x54020401, 65535, sizeof(VRBaseCharacter_eventHasPartialPath_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, VRBaseCharacter_eventHasPartialPath_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, VRBaseCharacter_eventHasPartialPath_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, VRBaseCharacter_eventHasPartialPath_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRBaseCharacter"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacter.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Returns true if the current PathFollowingComponent's path is partial (does not reach desired destination)."));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AVRBaseCharacter_NotifyOfTeleport()
+	{
+		UObject* Outer=Z_Construct_UClass_AVRBaseCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("NotifyOfTeleport"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00024CC0, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGrip"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacter.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AVRBaseCharacter_OnClimbingSteppedUp()
+	{
+		UObject* Outer=Z_Construct_UClass_AVRBaseCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnClimbingSteppedUp"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020800, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRMovement"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacter.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Called when the client is in climbing mode and is stepped up onto a platform\nGenerally you should drop the climbing at this point and go into falling movement."));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AVRBaseCharacter_ReceiveNavigationMoveCompleted()
+	{
+		UObject* Outer=Z_Construct_UClass_AVRBaseCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ReceiveNavigationMoveCompleted"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08020800, 65535, sizeof(VRBaseCharacter_eventReceiveNavigationMoveCompleted_Parms));
+			UProperty* NewProp_PathingResult = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("PathingResult"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(PathingResult, VRBaseCharacter_eventReceiveNavigationMoveCompleted_Parms), 0x0010000000000080, Z_Construct_UEnum_AIModule_EPathFollowingResult());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRBaseCharacter"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacter.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event when a navigation pathing operation has completed, auto calls stop movement for VR characters"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AVRBaseCharacter_SetCharacterHalfHeightVR()
+	{
+		struct VRBaseCharacter_eventSetCharacterHalfHeightVR_Parms
+		{
+			float HalfHeight;
+			bool bUpdateOverlaps;
+		};
+		UObject* Outer=Z_Construct_UClass_AVRBaseCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SetCharacterHalfHeightVR"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020400, 65535, sizeof(VRBaseCharacter_eventSetCharacterHalfHeightVR_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bUpdateOverlaps, VRBaseCharacter_eventSetCharacterHalfHeightVR_Parms, bool);
+			UProperty* NewProp_bUpdateOverlaps = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bUpdateOverlaps"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bUpdateOverlaps, VRBaseCharacter_eventSetCharacterHalfHeightVR_Parms), 0x0010000000000080, CPP_BOOL_PROPERTY_BITMASK(bUpdateOverlaps, VRBaseCharacter_eventSetCharacterHalfHeightVR_Parms), sizeof(bool), true);
+			UProperty* NewProp_HalfHeight = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("HalfHeight"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(HalfHeight, VRBaseCharacter_eventSetCharacterHalfHeightVR_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("BaseVRCharacter"));
+			MetaData->SetValue(ReturnFunction, TEXT("CPP_Default_bUpdateOverlaps"), TEXT("true"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacter.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AVRBaseCharacter_SetCharacterSizeVR()
+	{
+		struct VRBaseCharacter_eventSetCharacterSizeVR_Parms
+		{
+			float NewRadius;
+			float NewHalfHeight;
+			bool bUpdateOverlaps;
+		};
+		UObject* Outer=Z_Construct_UClass_AVRBaseCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SetCharacterSizeVR"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020400, 65535, sizeof(VRBaseCharacter_eventSetCharacterSizeVR_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bUpdateOverlaps, VRBaseCharacter_eventSetCharacterSizeVR_Parms, bool);
+			UProperty* NewProp_bUpdateOverlaps = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bUpdateOverlaps"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bUpdateOverlaps, VRBaseCharacter_eventSetCharacterSizeVR_Parms), 0x0010000000000080, CPP_BOOL_PROPERTY_BITMASK(bUpdateOverlaps, VRBaseCharacter_eventSetCharacterSizeVR_Parms), sizeof(bool), true);
+			UProperty* NewProp_NewHalfHeight = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("NewHalfHeight"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(NewHalfHeight, VRBaseCharacter_eventSetCharacterSizeVR_Parms), 0x0010000000000080);
+			UProperty* NewProp_NewRadius = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("NewRadius"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(NewRadius, VRBaseCharacter_eventSetCharacterSizeVR_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("BaseVRCharacter"));
+			MetaData->SetValue(ReturnFunction, TEXT("CPP_Default_bUpdateOverlaps"), TEXT("true"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacter.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AVRBaseCharacter_StopNavigationMovement()
+	{
+		UObject* Outer=Z_Construct_UClass_AVRBaseCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("StopNavigationMovement"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRBaseCharacter"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacter.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Instantly stops pathing"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_AVRBaseCharacter_NoRegister()
+	{
+		return AVRBaseCharacter::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AVRBaseCharacter()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_ACharacter();
+			Z_Construct_UPackage__Script_VRExpansionPlugin();
+			OuterClass = AVRBaseCharacter::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_AVRBaseCharacter_ExtendedSimpleMoveToLocation());
+				OuterClass->LinkChild(Z_Construct_UFunction_AVRBaseCharacter_GetMoveStatus());
+				OuterClass->LinkChild(Z_Construct_UFunction_AVRBaseCharacter_GetTeleportLocation());
+				OuterClass->LinkChild(Z_Construct_UFunction_AVRBaseCharacter_GetVRForwardVector());
+				OuterClass->LinkChild(Z_Construct_UFunction_AVRBaseCharacter_GetVRLocation());
+				OuterClass->LinkChild(Z_Construct_UFunction_AVRBaseCharacter_GetVRRightVector());
+				OuterClass->LinkChild(Z_Construct_UFunction_AVRBaseCharacter_GetVRRotation());
+				OuterClass->LinkChild(Z_Construct_UFunction_AVRBaseCharacter_GetVRUpVector());
+				OuterClass->LinkChild(Z_Construct_UFunction_AVRBaseCharacter_HasPartialPath());
+				OuterClass->LinkChild(Z_Construct_UFunction_AVRBaseCharacter_NotifyOfTeleport());
+				OuterClass->LinkChild(Z_Construct_UFunction_AVRBaseCharacter_OnClimbingSteppedUp());
+				OuterClass->LinkChild(Z_Construct_UFunction_AVRBaseCharacter_ReceiveNavigationMoveCompleted());
+				OuterClass->LinkChild(Z_Construct_UFunction_AVRBaseCharacter_SetCharacterHalfHeightVR());
+				OuterClass->LinkChild(Z_Construct_UFunction_AVRBaseCharacter_SetCharacterSizeVR());
+				OuterClass->LinkChild(Z_Construct_UFunction_AVRBaseCharacter_StopNavigationMovement());
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_DefaultNavigationFilterClass = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("DefaultNavigationFilterClass"), RF_Public|RF_Transient|RF_MarkAsNative) UClassProperty(CPP_PROPERTY_BASE(DefaultNavigationFilterClass, AVRBaseCharacter), 0x0014000000000004, Z_Construct_UClass_UNavigationQueryFilter_NoRegister(), UClass::StaticClass());
+				UProperty* NewProp_RightMotionController = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("RightMotionController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(RightMotionController, AVRBaseCharacter), 0x00100000000a001d, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+				UProperty* NewProp_LeftMotionController = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("LeftMotionController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(LeftMotionController, AVRBaseCharacter), 0x00100000000a001d, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+				UProperty* NewProp_ParentRelativeAttachment = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("ParentRelativeAttachment"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ParentRelativeAttachment, AVRBaseCharacter), 0x00100000000a001d, Z_Construct_UClass_UParentRelativeAttachmentComponent_NoRegister());
+				UProperty* NewProp_VRReplicatedCamera = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("VRReplicatedCamera"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(VRReplicatedCamera, AVRBaseCharacter), 0x00100000000a001d, Z_Construct_UClass_UReplicatedVRCameraComponent_NoRegister());
+				UProperty* NewProp_VRMovementReference = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("VRMovementReference"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(VRMovementReference, AVRBaseCharacter), 0x00100000000a201d, Z_Construct_UClass_UVRBaseCharacterMovementComponent_NoRegister());
+				UProperty* NewProp_OffsetComponentToWorld = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("OffsetComponentToWorld"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(OffsetComponentToWorld, AVRBaseCharacter), 0x0010000000002014, Z_Construct_UScriptStruct_FTransform());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AVRBaseCharacter_ExtendedSimpleMoveToLocation(), "ExtendedSimpleMoveToLocation"); // 1684344988
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AVRBaseCharacter_GetMoveStatus(), "GetMoveStatus"); // 2608769943
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AVRBaseCharacter_GetTeleportLocation(), "GetTeleportLocation"); // 2613278466
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AVRBaseCharacter_GetVRForwardVector(), "GetVRForwardVector"); // 2870360916
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AVRBaseCharacter_GetVRLocation(), "GetVRLocation"); // 1027994764
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AVRBaseCharacter_GetVRRightVector(), "GetVRRightVector"); // 3621600998
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AVRBaseCharacter_GetVRRotation(), "GetVRRotation"); // 3657334971
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AVRBaseCharacter_GetVRUpVector(), "GetVRUpVector"); // 2825900729
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AVRBaseCharacter_HasPartialPath(), "HasPartialPath"); // 1313154903
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AVRBaseCharacter_NotifyOfTeleport(), "NotifyOfTeleport"); // 631414007
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AVRBaseCharacter_OnClimbingSteppedUp(), "OnClimbingSteppedUp"); // 1816572851
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AVRBaseCharacter_ReceiveNavigationMoveCompleted(), "ReceiveNavigationMoveCompleted"); // 3146200592
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AVRBaseCharacter_SetCharacterHalfHeightVR(), "SetCharacterHalfHeightVR"); // 3932454689
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AVRBaseCharacter_SetCharacterSizeVR(), "SetCharacterSizeVR"); // 1998687435
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AVRBaseCharacter_StopNavigationMovement(), "StopNavigationMovement"); // 3594879279
+				static TCppClassTypeInfo<TCppClassTypeTraits<AVRBaseCharacter> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Navigation"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("VRBaseCharacter.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacter.h"));
+				MetaData->SetValue(OuterClass, TEXT("ObjectInitializerConstructorDeclared"), TEXT(""));
+				MetaData->SetValue(NewProp_DefaultNavigationFilterClass, TEXT("Category"), TEXT("AI"));
+				MetaData->SetValue(NewProp_DefaultNavigationFilterClass, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacter.h"));
+				MetaData->SetValue(NewProp_RightMotionController, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_RightMotionController, TEXT("Category"), TEXT("VRBaseCharacter"));
+				MetaData->SetValue(NewProp_RightMotionController, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_RightMotionController, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacter.h"));
+				MetaData->SetValue(NewProp_LeftMotionController, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_LeftMotionController, TEXT("Category"), TEXT("VRBaseCharacter"));
+				MetaData->SetValue(NewProp_LeftMotionController, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_LeftMotionController, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacter.h"));
+				MetaData->SetValue(NewProp_ParentRelativeAttachment, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_ParentRelativeAttachment, TEXT("Category"), TEXT("VRBaseCharacter"));
+				MetaData->SetValue(NewProp_ParentRelativeAttachment, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_ParentRelativeAttachment, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacter.h"));
+				MetaData->SetValue(NewProp_VRReplicatedCamera, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_VRReplicatedCamera, TEXT("Category"), TEXT("VRBaseCharacter"));
+				MetaData->SetValue(NewProp_VRReplicatedCamera, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_VRReplicatedCamera, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacter.h"));
+				MetaData->SetValue(NewProp_VRMovementReference, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_VRMovementReference, TEXT("Category"), TEXT("VRBaseCharacter"));
+				MetaData->SetValue(NewProp_VRMovementReference, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_VRMovementReference, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacter.h"));
+				MetaData->SetValue(NewProp_OffsetComponentToWorld, TEXT("Category"), TEXT("VRExpansionLibrary"));
+				MetaData->SetValue(NewProp_OffsetComponentToWorld, TEXT("ModuleRelativePath"), TEXT("Public/VRBaseCharacter.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(AVRBaseCharacter, 1803182771);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AVRBaseCharacter(Z_Construct_UClass_AVRBaseCharacter, &AVRBaseCharacter::StaticClass, TEXT("/Script/VRExpansionPlugin"), TEXT("AVRBaseCharacter"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AVRBaseCharacter);
+	void AVRAIController::StaticRegisterNativesAVRAIController()
+	{
+	}
+	UClass* Z_Construct_UClass_AVRAIController_NoRegister()
+	{
+		return AVRAIController::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AVRAIController()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AAIController();
+			Z_Construct_UPackage__Script_VRExpansionPlugin();
+			OuterClass = AVRAIController::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900280;
+
+
+				static TCppClassTypeInfo<TCppClassTypeTraits<AVRAIController> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Collision Rendering Utilities|Transformation"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("VRAIController.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/VRAIController.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(AVRAIController, 2066259972);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AVRAIController(Z_Construct_UClass_AVRAIController, &AVRAIController::StaticClass, TEXT("/Script/VRExpansionPlugin"), TEXT("AVRAIController"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AVRAIController);
+	void UVRRootComponent::StaticRegisterNativesUVRRootComponent()
+	{
+		UClass* Class = UVRRootComponent::StaticClass();
+		static const TNameNativePtrPair<ANSICHAR> AnsiFuncs[] = {
+			{ "SetCapsuleHalfHeightVR", (Native)&UVRRootComponent::execSetCapsuleHalfHeightVR },
+			{ "SetCapsuleSizeVR", (Native)&UVRRootComponent::execSetCapsuleSizeVR },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, AnsiFuncs, 2);
+	}
+	UFunction* Z_Construct_UFunction_UVRRootComponent_SetCapsuleHalfHeightVR()
+	{
+		struct VRRootComponent_eventSetCapsuleHalfHeightVR_Parms
+		{
+			float HalfHeight;
+			bool bUpdateOverlaps;
+		};
+		UObject* Outer=Z_Construct_UClass_UVRRootComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SetCapsuleHalfHeightVR"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(VRRootComponent_eventSetCapsuleHalfHeightVR_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bUpdateOverlaps, VRRootComponent_eventSetCapsuleHalfHeightVR_Parms, bool);
+			UProperty* NewProp_bUpdateOverlaps = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bUpdateOverlaps"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bUpdateOverlaps, VRRootComponent_eventSetCapsuleHalfHeightVR_Parms), 0x0010000000000080, CPP_BOOL_PROPERTY_BITMASK(bUpdateOverlaps, VRRootComponent_eventSetCapsuleHalfHeightVR_Parms), sizeof(bool), true);
+			UProperty* NewProp_HalfHeight = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("HalfHeight"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(HalfHeight, VRRootComponent_eventSetCapsuleHalfHeightVR_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Components|Capsule"));
+			MetaData->SetValue(ReturnFunction, TEXT("CPP_Default_bUpdateOverlaps"), TEXT("true"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/VRRootComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Used to update the capsule half height and calculate the new offset value for VR"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRRootComponent_SetCapsuleSizeVR()
+	{
+		struct VRRootComponent_eventSetCapsuleSizeVR_Parms
+		{
+			float NewRadius;
+			float NewHalfHeight;
+			bool bUpdateOverlaps;
+		};
+		UObject* Outer=Z_Construct_UClass_UVRRootComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SetCapsuleSizeVR"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020400, 65535, sizeof(VRRootComponent_eventSetCapsuleSizeVR_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bUpdateOverlaps, VRRootComponent_eventSetCapsuleSizeVR_Parms, bool);
+			UProperty* NewProp_bUpdateOverlaps = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bUpdateOverlaps"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bUpdateOverlaps, VRRootComponent_eventSetCapsuleSizeVR_Parms), 0x0010000000000080, CPP_BOOL_PROPERTY_BITMASK(bUpdateOverlaps, VRRootComponent_eventSetCapsuleSizeVR_Parms), sizeof(bool), true);
+			UProperty* NewProp_NewHalfHeight = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("NewHalfHeight"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(NewHalfHeight, VRRootComponent_eventSetCapsuleSizeVR_Parms), 0x0010000000000080);
+			UProperty* NewProp_NewRadius = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("NewRadius"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(NewRadius, VRRootComponent_eventSetCapsuleSizeVR_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Components|Capsule"));
+			MetaData->SetValue(ReturnFunction, TEXT("CPP_Default_bUpdateOverlaps"), TEXT("true"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/VRRootComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("This is overidden for the VR Character to re-set physics location\nChange the capsule size. This is the unscaled size, before component scale is applied.\n@param        InRadius : radius of end-cap hemispheres and center cylinder.\n@param        InHalfHeight : half-height, from capsule center to end of top or bottom hemisphere.\n@param        bUpdateOverlaps: if true and this shape is registered and collides, updates touching array for owner actor."));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_UVRRootComponent_NoRegister()
+	{
+		return UVRRootComponent::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UVRRootComponent()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_UCapsuleComponent();
+			Z_Construct_UPackage__Script_VRExpansionPlugin();
+			OuterClass = UVRRootComponent::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20B01080;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRRootComponent_SetCapsuleHalfHeightVR());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRRootComponent_SetCapsuleSizeVR());
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_WalkingCollisionOverride = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("WalkingCollisionOverride"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(WalkingCollisionOverride, UVRRootComponent), 0x0010000000000005, Z_Construct_UEnum_Engine_ECollisionChannel());
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bUseWalkingCollisionOverride, UVRRootComponent, bool);
+				UProperty* NewProp_bUseWalkingCollisionOverride = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bUseWalkingCollisionOverride"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bUseWalkingCollisionOverride, UVRRootComponent), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bUseWalkingCollisionOverride, UVRRootComponent), sizeof(bool), true);
+				UProperty* NewProp_VRCapsuleOffset = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("VRCapsuleOffset"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(VRCapsuleOffset, UVRRootComponent), 0x0010000000000005, Z_Construct_UScriptStruct_FVector());
+				UProperty* NewProp_TargetPrimitiveComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("TargetPrimitiveComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(TargetPrimitiveComponent, UVRRootComponent), 0x001000000008200c, Z_Construct_UClass_USceneComponent_NoRegister());
+				UProperty* NewProp_OptionalWaistTrackingParent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("OptionalWaistTrackingParent"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(OptionalWaistTrackingParent, UVRRootComponent), 0x0010008000000005, Z_Construct_UScriptStruct_FBPVRWaistTracking_Info());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRRootComponent_SetCapsuleHalfHeightVR(), "SetCapsuleHalfHeightVR"); // 3346769750
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRRootComponent_SetCapsuleSizeVR(), "SetCapsuleSizeVR"); // 1062330182
+				static TCppClassTypeInfo<TCppClassTypeTraits<UVRRootComponent> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->Interfaces.Add(FImplementedInterface(Z_Construct_UClass_UVRTrackedParentInterface_NoRegister(), VTABLE_OFFSET(UVRRootComponent, IVRTrackedParentInterface), false ));
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("BlueprintSpawnableComponent"), TEXT(""));
+				MetaData->SetValue(OuterClass, TEXT("BlueprintType"), TEXT("true"));
+				MetaData->SetValue(OuterClass, TEXT("ClassGroupNames"), TEXT("VRExpansionLibrary"));
+				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Object LOD Lighting TextureStreaming Object LOD Lighting TextureStreaming Activation Components|Activation Trigger"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("VRRootComponent.h"));
+				MetaData->SetValue(OuterClass, TEXT("IsBlueprintBase"), TEXT("true"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/VRRootComponent.h"));
+				MetaData->SetValue(NewProp_WalkingCollisionOverride, TEXT("Category"), TEXT("VRExpansionLibrary"));
+				MetaData->SetValue(NewProp_WalkingCollisionOverride, TEXT("ModuleRelativePath"), TEXT("Public/VRRootComponent.h"));
+				MetaData->SetValue(NewProp_bUseWalkingCollisionOverride, TEXT("Category"), TEXT("VRExpansionLibrary"));
+				MetaData->SetValue(NewProp_bUseWalkingCollisionOverride, TEXT("ModuleRelativePath"), TEXT("Public/VRRootComponent.h"));
+				MetaData->SetValue(NewProp_VRCapsuleOffset, TEXT("Category"), TEXT("VRExpansionLibrary"));
+				MetaData->SetValue(NewProp_VRCapsuleOffset, TEXT("ModuleRelativePath"), TEXT("Public/VRRootComponent.h"));
+				MetaData->SetValue(NewProp_VRCapsuleOffset, TEXT("ToolTip"), TEXT("Used to offset the collision (IE backwards from the player slightly."));
+				MetaData->SetValue(NewProp_TargetPrimitiveComponent, TEXT("Category"), TEXT("VRExpansionLibrary"));
+				MetaData->SetValue(NewProp_TargetPrimitiveComponent, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_TargetPrimitiveComponent, TEXT("ModuleRelativePath"), TEXT("Public/VRRootComponent.h"));
+				MetaData->SetValue(NewProp_OptionalWaistTrackingParent, TEXT("Category"), TEXT("VRTrackedParentInterface"));
+				MetaData->SetValue(NewProp_OptionalWaistTrackingParent, TEXT("ModuleRelativePath"), TEXT("Public/VRRootComponent.h"));
+				MetaData->SetValue(NewProp_OptionalWaistTrackingParent, TEXT("ToolTip"), TEXT("If valid will use this as the tracked parent instead of the HMD / Parent"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UVRRootComponent, 427832664);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UVRRootComponent(Z_Construct_UClass_UVRRootComponent, &UVRRootComponent::StaticClass, TEXT("/Script/VRExpansionPlugin"), TEXT("UVRRootComponent"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UVRRootComponent);
+	static FName NAME_UVRCharacterMovementComponent_ServerMoveVR = FName(TEXT("ServerMoveVR"));
+	void UVRCharacterMovementComponent::ServerMoveVR(float TimeStamp, FVector_NetQuantize10 InAccel, FVector_NetQuantize100 ClientLoc, FVector_NetQuantize100 CapsuleLoc, FVector_NetQuantize100 rRequestedVelocity, FVector_NetQuantize100 LFDiff, FVector_NetQuantize100 CustVRInputVector, uint8 CapsuleYaw, uint8 CompressedMoveFlags, uint8 ClientRoll, uint32 View, UPrimitiveComponent* ClientMovementBase, FName ClientBaseBoneName, uint8 ClientMovementMode)
+	{
+		VRCharacterMovementComponent_eventServerMoveVR_Parms Parms;
+		Parms.TimeStamp=TimeStamp;
+		Parms.InAccel=InAccel;
+		Parms.ClientLoc=ClientLoc;
+		Parms.CapsuleLoc=CapsuleLoc;
+		Parms.rRequestedVelocity=rRequestedVelocity;
+		Parms.LFDiff=LFDiff;
+		Parms.CustVRInputVector=CustVRInputVector;
+		Parms.CapsuleYaw=CapsuleYaw;
+		Parms.CompressedMoveFlags=CompressedMoveFlags;
+		Parms.ClientRoll=ClientRoll;
+		Parms.View=View;
+		Parms.ClientMovementBase=ClientMovementBase;
+		Parms.ClientBaseBoneName=ClientBaseBoneName;
+		Parms.ClientMovementMode=ClientMovementMode;
+		ProcessEvent(FindFunctionChecked(NAME_UVRCharacterMovementComponent_ServerMoveVR),&Parms);
+	}
+	static FName NAME_UVRCharacterMovementComponent_ServerMoveVRDual = FName(TEXT("ServerMoveVRDual"));
+	void UVRCharacterMovementComponent::ServerMoveVRDual(float TimeStamp0, FVector_NetQuantize10 InAccel0, uint8 PendingFlags, uint32 View0, FVector_NetQuantize100 OldCapsuleLoc, FVector_NetQuantize100 rOldRequestedVelocity, FVector_NetQuantize100 OldLFDiff, FVector_NetQuantize100 OldCustVRInputVector, uint8 OldCapsuleYaw, float TimeStamp, FVector_NetQuantize10 InAccel, FVector_NetQuantize100 ClientLoc, FVector_NetQuantize100 CapsuleLoc, FVector_NetQuantize100 rRequestedVelocity, FVector_NetQuantize100 LFDiff, FVector_NetQuantize100 CustVRInputVector, uint8 CapsuleYaw, uint8 NewFlags, uint8 ClientRoll, uint32 View, UPrimitiveComponent* ClientMovementBase, FName ClientBaseBoneName, uint8 ClientMovementMode)
+	{
+		VRCharacterMovementComponent_eventServerMoveVRDual_Parms Parms;
+		Parms.TimeStamp0=TimeStamp0;
+		Parms.InAccel0=InAccel0;
+		Parms.PendingFlags=PendingFlags;
+		Parms.View0=View0;
+		Parms.OldCapsuleLoc=OldCapsuleLoc;
+		Parms.rOldRequestedVelocity=rOldRequestedVelocity;
+		Parms.OldLFDiff=OldLFDiff;
+		Parms.OldCustVRInputVector=OldCustVRInputVector;
+		Parms.OldCapsuleYaw=OldCapsuleYaw;
+		Parms.TimeStamp=TimeStamp;
+		Parms.InAccel=InAccel;
+		Parms.ClientLoc=ClientLoc;
+		Parms.CapsuleLoc=CapsuleLoc;
+		Parms.rRequestedVelocity=rRequestedVelocity;
+		Parms.LFDiff=LFDiff;
+		Parms.CustVRInputVector=CustVRInputVector;
+		Parms.CapsuleYaw=CapsuleYaw;
+		Parms.NewFlags=NewFlags;
+		Parms.ClientRoll=ClientRoll;
+		Parms.View=View;
+		Parms.ClientMovementBase=ClientMovementBase;
+		Parms.ClientBaseBoneName=ClientBaseBoneName;
+		Parms.ClientMovementMode=ClientMovementMode;
+		ProcessEvent(FindFunctionChecked(NAME_UVRCharacterMovementComponent_ServerMoveVRDual),&Parms);
+	}
+	static FName NAME_UVRCharacterMovementComponent_ServerMoveVRDualHybridRootMotion = FName(TEXT("ServerMoveVRDualHybridRootMotion"));
+	void UVRCharacterMovementComponent::ServerMoveVRDualHybridRootMotion(float TimeStamp0, FVector_NetQuantize10 InAccel0, uint8 PendingFlags, uint32 View0, FVector_NetQuantize100 OldCapsuleLoc, FVector_NetQuantize100 rOldRequestedVelocity, FVector_NetQuantize100 OldLFDiff, FVector_NetQuantize100 OldCustVRInputVector, uint8 OldCapsuleYaw, float TimeStamp, FVector_NetQuantize10 InAccel, FVector_NetQuantize100 ClientLoc, FVector_NetQuantize100 CapsuleLoc, FVector_NetQuantize100 rRequestedVelocity, FVector_NetQuantize100 LFDiff, FVector_NetQuantize100 CustVRInputVector, uint8 CapsuleYaw, uint8 NewFlags, uint8 ClientRoll, uint32 View, UPrimitiveComponent* ClientMovementBase, FName ClientBaseBoneName, uint8 ClientMovementMode)
+	{
+		VRCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms Parms;
+		Parms.TimeStamp0=TimeStamp0;
+		Parms.InAccel0=InAccel0;
+		Parms.PendingFlags=PendingFlags;
+		Parms.View0=View0;
+		Parms.OldCapsuleLoc=OldCapsuleLoc;
+		Parms.rOldRequestedVelocity=rOldRequestedVelocity;
+		Parms.OldLFDiff=OldLFDiff;
+		Parms.OldCustVRInputVector=OldCustVRInputVector;
+		Parms.OldCapsuleYaw=OldCapsuleYaw;
+		Parms.TimeStamp=TimeStamp;
+		Parms.InAccel=InAccel;
+		Parms.ClientLoc=ClientLoc;
+		Parms.CapsuleLoc=CapsuleLoc;
+		Parms.rRequestedVelocity=rRequestedVelocity;
+		Parms.LFDiff=LFDiff;
+		Parms.CustVRInputVector=CustVRInputVector;
+		Parms.CapsuleYaw=CapsuleYaw;
+		Parms.NewFlags=NewFlags;
+		Parms.ClientRoll=ClientRoll;
+		Parms.View=View;
+		Parms.ClientMovementBase=ClientMovementBase;
+		Parms.ClientBaseBoneName=ClientBaseBoneName;
+		Parms.ClientMovementMode=ClientMovementMode;
+		ProcessEvent(FindFunctionChecked(NAME_UVRCharacterMovementComponent_ServerMoveVRDualHybridRootMotion),&Parms);
+	}
+	void UVRCharacterMovementComponent::StaticRegisterNativesUVRCharacterMovementComponent()
+	{
+		UClass* Class = UVRCharacterMovementComponent::StaticClass();
+		static const TNameNativePtrPair<ANSICHAR> AnsiFuncs[] = {
+			{ "ServerMoveVR", (Native)&UVRCharacterMovementComponent::execServerMoveVR },
+			{ "ServerMoveVRDual", (Native)&UVRCharacterMovementComponent::execServerMoveVRDual },
+			{ "ServerMoveVRDualHybridRootMotion", (Native)&UVRCharacterMovementComponent::execServerMoveVRDualHybridRootMotion },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, AnsiFuncs, 3);
+	}
+	UFunction* Z_Construct_UFunction_UVRCharacterMovementComponent_ServerMoveVR()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRCharacterMovementComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ServerMoveVR"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x80220C40, 65535, sizeof(VRCharacterMovementComponent_eventServerMoveVR_Parms));
+			UProperty* NewProp_ClientMovementMode = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ClientMovementMode"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(ClientMovementMode, VRCharacterMovementComponent_eventServerMoveVR_Parms), 0x0010000000000080);
+			UProperty* NewProp_ClientBaseBoneName = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ClientBaseBoneName"), RF_Public|RF_Transient|RF_MarkAsNative) UNameProperty(CPP_PROPERTY_BASE(ClientBaseBoneName, VRCharacterMovementComponent_eventServerMoveVR_Parms), 0x0010000000000080);
+			UProperty* NewProp_ClientMovementBase = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ClientMovementBase"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ClientMovementBase, VRCharacterMovementComponent_eventServerMoveVR_Parms), 0x0010000000080080, Z_Construct_UClass_UPrimitiveComponent_NoRegister());
+			UProperty* NewProp_View = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("View"), RF_Public|RF_Transient|RF_MarkAsNative) UUInt32Property(CPP_PROPERTY_BASE(View, VRCharacterMovementComponent_eventServerMoveVR_Parms), 0x0010000000000080);
+			UProperty* NewProp_ClientRoll = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ClientRoll"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(ClientRoll, VRCharacterMovementComponent_eventServerMoveVR_Parms), 0x0010000000000080);
+			UProperty* NewProp_CompressedMoveFlags = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("CompressedMoveFlags"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(CompressedMoveFlags, VRCharacterMovementComponent_eventServerMoveVR_Parms), 0x0010000000000080);
+			UProperty* NewProp_CapsuleYaw = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("CapsuleYaw"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(CapsuleYaw, VRCharacterMovementComponent_eventServerMoveVR_Parms), 0x0010000000000080);
+			UProperty* NewProp_CustVRInputVector = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("CustVRInputVector"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(CustVRInputVector, VRCharacterMovementComponent_eventServerMoveVR_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_LFDiff = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("LFDiff"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(LFDiff, VRCharacterMovementComponent_eventServerMoveVR_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_rRequestedVelocity = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("rRequestedVelocity"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(rRequestedVelocity, VRCharacterMovementComponent_eventServerMoveVR_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_CapsuleLoc = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("CapsuleLoc"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(CapsuleLoc, VRCharacterMovementComponent_eventServerMoveVR_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_ClientLoc = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ClientLoc"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(ClientLoc, VRCharacterMovementComponent_eventServerMoveVR_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_InAccel = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("InAccel"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(InAccel, VRCharacterMovementComponent_eventServerMoveVR_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize10());
+			UProperty* NewProp_TimeStamp = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("TimeStamp"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(TimeStamp, VRCharacterMovementComponent_eventServerMoveVR_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/VRCharacterMovementComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Replicated function sent by client to server - contains client movement and view info."));
+			MetaData->SetValue(NewProp_ClientMovementBase, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRCharacterMovementComponent_ServerMoveVRDual()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRCharacterMovementComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ServerMoveVRDual"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x80220C40, 65535, sizeof(VRCharacterMovementComponent_eventServerMoveVRDual_Parms));
+			UProperty* NewProp_ClientMovementMode = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ClientMovementMode"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(ClientMovementMode, VRCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080);
+			UProperty* NewProp_ClientBaseBoneName = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ClientBaseBoneName"), RF_Public|RF_Transient|RF_MarkAsNative) UNameProperty(CPP_PROPERTY_BASE(ClientBaseBoneName, VRCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080);
+			UProperty* NewProp_ClientMovementBase = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ClientMovementBase"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ClientMovementBase, VRCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000080080, Z_Construct_UClass_UPrimitiveComponent_NoRegister());
+			UProperty* NewProp_View = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("View"), RF_Public|RF_Transient|RF_MarkAsNative) UUInt32Property(CPP_PROPERTY_BASE(View, VRCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080);
+			UProperty* NewProp_ClientRoll = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ClientRoll"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(ClientRoll, VRCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080);
+			UProperty* NewProp_NewFlags = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("NewFlags"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(NewFlags, VRCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080);
+			UProperty* NewProp_CapsuleYaw = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("CapsuleYaw"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(CapsuleYaw, VRCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080);
+			UProperty* NewProp_CustVRInputVector = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("CustVRInputVector"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(CustVRInputVector, VRCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_LFDiff = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("LFDiff"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(LFDiff, VRCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_rRequestedVelocity = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("rRequestedVelocity"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(rRequestedVelocity, VRCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_CapsuleLoc = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("CapsuleLoc"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(CapsuleLoc, VRCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_ClientLoc = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ClientLoc"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(ClientLoc, VRCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_InAccel = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("InAccel"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(InAccel, VRCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize10());
+			UProperty* NewProp_TimeStamp = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("TimeStamp"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(TimeStamp, VRCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080);
+			UProperty* NewProp_OldCapsuleYaw = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OldCapsuleYaw"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(OldCapsuleYaw, VRCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080);
+			UProperty* NewProp_OldCustVRInputVector = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OldCustVRInputVector"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(OldCustVRInputVector, VRCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_OldLFDiff = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OldLFDiff"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(OldLFDiff, VRCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_rOldRequestedVelocity = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("rOldRequestedVelocity"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(rOldRequestedVelocity, VRCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_OldCapsuleLoc = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OldCapsuleLoc"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(OldCapsuleLoc, VRCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_View0 = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("View0"), RF_Public|RF_Transient|RF_MarkAsNative) UUInt32Property(CPP_PROPERTY_BASE(View0, VRCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080);
+			UProperty* NewProp_PendingFlags = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("PendingFlags"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(PendingFlags, VRCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080);
+			UProperty* NewProp_InAccel0 = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("InAccel0"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(InAccel0, VRCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize10());
+			UProperty* NewProp_TimeStamp0 = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("TimeStamp0"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(TimeStamp0, VRCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/VRCharacterMovementComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Replicated function sent by client to server - contains client movement and view info for two moves."));
+			MetaData->SetValue(NewProp_ClientMovementBase, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRCharacterMovementComponent_ServerMoveVRDualHybridRootMotion()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRCharacterMovementComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ServerMoveVRDualHybridRootMotion"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x80220C40, 65535, sizeof(VRCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms));
+			UProperty* NewProp_ClientMovementMode = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ClientMovementMode"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(ClientMovementMode, VRCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080);
+			UProperty* NewProp_ClientBaseBoneName = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ClientBaseBoneName"), RF_Public|RF_Transient|RF_MarkAsNative) UNameProperty(CPP_PROPERTY_BASE(ClientBaseBoneName, VRCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080);
+			UProperty* NewProp_ClientMovementBase = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ClientMovementBase"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ClientMovementBase, VRCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000080080, Z_Construct_UClass_UPrimitiveComponent_NoRegister());
+			UProperty* NewProp_View = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("View"), RF_Public|RF_Transient|RF_MarkAsNative) UUInt32Property(CPP_PROPERTY_BASE(View, VRCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080);
+			UProperty* NewProp_ClientRoll = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ClientRoll"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(ClientRoll, VRCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080);
+			UProperty* NewProp_NewFlags = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("NewFlags"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(NewFlags, VRCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080);
+			UProperty* NewProp_CapsuleYaw = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("CapsuleYaw"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(CapsuleYaw, VRCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080);
+			UProperty* NewProp_CustVRInputVector = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("CustVRInputVector"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(CustVRInputVector, VRCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_LFDiff = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("LFDiff"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(LFDiff, VRCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_rRequestedVelocity = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("rRequestedVelocity"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(rRequestedVelocity, VRCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_CapsuleLoc = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("CapsuleLoc"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(CapsuleLoc, VRCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_ClientLoc = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ClientLoc"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(ClientLoc, VRCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_InAccel = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("InAccel"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(InAccel, VRCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize10());
+			UProperty* NewProp_TimeStamp = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("TimeStamp"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(TimeStamp, VRCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080);
+			UProperty* NewProp_OldCapsuleYaw = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OldCapsuleYaw"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(OldCapsuleYaw, VRCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080);
+			UProperty* NewProp_OldCustVRInputVector = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OldCustVRInputVector"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(OldCustVRInputVector, VRCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_OldLFDiff = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OldLFDiff"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(OldLFDiff, VRCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_rOldRequestedVelocity = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("rOldRequestedVelocity"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(rOldRequestedVelocity, VRCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_OldCapsuleLoc = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OldCapsuleLoc"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(OldCapsuleLoc, VRCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_View0 = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("View0"), RF_Public|RF_Transient|RF_MarkAsNative) UUInt32Property(CPP_PROPERTY_BASE(View0, VRCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080);
+			UProperty* NewProp_PendingFlags = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("PendingFlags"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(PendingFlags, VRCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080);
+			UProperty* NewProp_InAccel0 = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("InAccel0"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(InAccel0, VRCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize10());
+			UProperty* NewProp_TimeStamp0 = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("TimeStamp0"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(TimeStamp0, VRCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/VRCharacterMovementComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Replicated function sent by client to server - contains client movement and view info for two moves. First move is non root motion, second is root motion."));
+			MetaData->SetValue(NewProp_ClientMovementBase, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_UVRCharacterMovementComponent_NoRegister()
+	{
+		return UVRCharacterMovementComponent::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UVRCharacterMovementComponent()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_UVRBaseCharacterMovementComponent();
+			Z_Construct_UPackage__Script_VRExpansionPlugin();
+			OuterClass = UVRCharacterMovementComponent::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20B00084;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRCharacterMovementComponent_ServerMoveVR());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRCharacterMovementComponent_ServerMoveVRDual());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRCharacterMovementComponent_ServerMoveVRDualHybridRootMotion());
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_WallRepulsionMultiplier = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("WallRepulsionMultiplier"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(WallRepulsionMultiplier, UVRCharacterMovementComponent), 0x0010000000000005);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bAllowMovementMerging, UVRCharacterMovementComponent, bool);
+				UProperty* NewProp_bAllowMovementMerging = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bAllowMovementMerging"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bAllowMovementMerging, UVRCharacterMovementComponent), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bAllowMovementMerging, UVRCharacterMovementComponent), sizeof(bool), true);
+				UProperty* NewProp_VRRootCapsule = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("VRRootCapsule"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(VRRootCapsule, UVRCharacterMovementComponent), 0x001000000008201c, Z_Construct_UClass_UVRRootComponent_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRCharacterMovementComponent_ServerMoveVR(), "ServerMoveVR"); // 2085875505
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRCharacterMovementComponent_ServerMoveVRDual(), "ServerMoveVRDual"); // 2855709155
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRCharacterMovementComponent_ServerMoveVRDualHybridRootMotion(), "ServerMoveVRDualHybridRootMotion"); // 2362289869
+				OuterClass->ClassConfigName = FName(TEXT("Engine"));
+				static TCppClassTypeInfo<TCppClassTypeTraits<UVRCharacterMovementComponent> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("VRCharacterMovementComponent.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/VRCharacterMovementComponent.h"));
+				MetaData->SetValue(OuterClass, TEXT("ObjectInitializerConstructorDeclared"), TEXT(""));
+				MetaData->SetValue(NewProp_WallRepulsionMultiplier, TEXT("Category"), TEXT("VRCharacterMovementComponent"));
+				MetaData->SetValue(NewProp_WallRepulsionMultiplier, TEXT("ClampMax"), TEXT("1.0"));
+				MetaData->SetValue(NewProp_WallRepulsionMultiplier, TEXT("ClampMin"), TEXT("0.01"));
+				MetaData->SetValue(NewProp_WallRepulsionMultiplier, TEXT("ModuleRelativePath"), TEXT("Public/VRCharacterMovementComponent.h"));
+				MetaData->SetValue(NewProp_WallRepulsionMultiplier, TEXT("ToolTip"), TEXT("Higher values will cause more slide but better step up"));
+				MetaData->SetValue(NewProp_WallRepulsionMultiplier, TEXT("UIMax"), TEXT("1"));
+				MetaData->SetValue(NewProp_WallRepulsionMultiplier, TEXT("UIMin"), TEXT("0"));
+				MetaData->SetValue(NewProp_bAllowMovementMerging, TEXT("Category"), TEXT("VRCharacterMovementComponent"));
+				MetaData->SetValue(NewProp_bAllowMovementMerging, TEXT("ModuleRelativePath"), TEXT("Public/VRCharacterMovementComponent.h"));
+				MetaData->SetValue(NewProp_bAllowMovementMerging, TEXT("ToolTip"), TEXT("Allow merging movement replication (may cause issues when >10 players due to capsule location"));
+				MetaData->SetValue(NewProp_VRRootCapsule, TEXT("Category"), TEXT("VRMovement"));
+				MetaData->SetValue(NewProp_VRRootCapsule, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_VRRootCapsule, TEXT("ModuleRelativePath"), TEXT("Public/VRCharacterMovementComponent.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UVRCharacterMovementComponent, 66155868);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UVRCharacterMovementComponent(Z_Construct_UClass_UVRCharacterMovementComponent, &UVRCharacterMovementComponent::StaticClass, TEXT("/Script/VRExpansionPlugin"), TEXT("UVRCharacterMovementComponent"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UVRCharacterMovementComponent);
+	static FName NAME_AVRCharacter_NotifyOfTeleport = FName(TEXT("NotifyOfTeleport"));
+	void AVRCharacter::NotifyOfTeleport()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AVRCharacter_NotifyOfTeleport),NULL);
+	}
+	void AVRCharacter::StaticRegisterNativesAVRCharacter()
+	{
+		UClass* Class = AVRCharacter::StaticClass();
+		static const TNameNativePtrPair<ANSICHAR> AnsiFuncs[] = {
+			{ "ExtendedSimpleMoveToLocation", (Native)&AVRCharacter::execExtendedSimpleMoveToLocation },
+			{ "GetTeleportLocation", (Native)&AVRCharacter::execGetTeleportLocation },
+			{ "NotifyOfTeleport", (Native)&AVRCharacter::execNotifyOfTeleport },
+			{ "SetCharacterHalfHeightVR", (Native)&AVRCharacter::execSetCharacterHalfHeightVR },
+			{ "SetCharacterSizeVR", (Native)&AVRCharacter::execSetCharacterSizeVR },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, AnsiFuncs, 5);
+	}
+	UFunction* Z_Construct_UFunction_AVRCharacter_ExtendedSimpleMoveToLocation()
+	{
+		struct VRCharacter_eventExtendedSimpleMoveToLocation_Parms
+		{
+			FVector GoalLocation;
+			float AcceptanceRadius;
+			bool bStopOnOverlap;
+			bool bUsePathfinding;
+			bool bProjectDestinationToNavigation;
+			bool bCanStrafe;
+			TSubclassOf<UNavigationQueryFilter>  FilterClass;
+			bool bAllowPartialPath;
+		};
+		UObject* Outer=Z_Construct_UClass_AVRCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ExtendedSimpleMoveToLocation"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04C20400, 65535, sizeof(VRCharacter_eventExtendedSimpleMoveToLocation_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bAllowPartialPath, VRCharacter_eventExtendedSimpleMoveToLocation_Parms, bool);
+			UProperty* NewProp_bAllowPartialPath = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bAllowPartialPath"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bAllowPartialPath, VRCharacter_eventExtendedSimpleMoveToLocation_Parms), 0x0010040000000080, CPP_BOOL_PROPERTY_BITMASK(bAllowPartialPath, VRCharacter_eventExtendedSimpleMoveToLocation_Parms), sizeof(bool), true);
+			UProperty* NewProp_FilterClass = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("FilterClass"), RF_Public|RF_Transient|RF_MarkAsNative) UClassProperty(CPP_PROPERTY_BASE(FilterClass, VRCharacter_eventExtendedSimpleMoveToLocation_Parms), 0x0014000000000080, Z_Construct_UClass_UNavigationQueryFilter_NoRegister(), UClass::StaticClass());
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bCanStrafe, VRCharacter_eventExtendedSimpleMoveToLocation_Parms, bool);
+			UProperty* NewProp_bCanStrafe = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bCanStrafe"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bCanStrafe, VRCharacter_eventExtendedSimpleMoveToLocation_Parms), 0x0010040000000080, CPP_BOOL_PROPERTY_BITMASK(bCanStrafe, VRCharacter_eventExtendedSimpleMoveToLocation_Parms), sizeof(bool), true);
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bProjectDestinationToNavigation, VRCharacter_eventExtendedSimpleMoveToLocation_Parms, bool);
+			UProperty* NewProp_bProjectDestinationToNavigation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bProjectDestinationToNavigation"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bProjectDestinationToNavigation, VRCharacter_eventExtendedSimpleMoveToLocation_Parms), 0x0010000000000080, CPP_BOOL_PROPERTY_BITMASK(bProjectDestinationToNavigation, VRCharacter_eventExtendedSimpleMoveToLocation_Parms), sizeof(bool), true);
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bUsePathfinding, VRCharacter_eventExtendedSimpleMoveToLocation_Parms, bool);
+			UProperty* NewProp_bUsePathfinding = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bUsePathfinding"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bUsePathfinding, VRCharacter_eventExtendedSimpleMoveToLocation_Parms), 0x0010000000000080, CPP_BOOL_PROPERTY_BITMASK(bUsePathfinding, VRCharacter_eventExtendedSimpleMoveToLocation_Parms), sizeof(bool), true);
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bStopOnOverlap, VRCharacter_eventExtendedSimpleMoveToLocation_Parms, bool);
+			UProperty* NewProp_bStopOnOverlap = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bStopOnOverlap"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bStopOnOverlap, VRCharacter_eventExtendedSimpleMoveToLocation_Parms), 0x0010040000000080, CPP_BOOL_PROPERTY_BITMASK(bStopOnOverlap, VRCharacter_eventExtendedSimpleMoveToLocation_Parms), sizeof(bool), true);
+			UProperty* NewProp_AcceptanceRadius = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("AcceptanceRadius"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(AcceptanceRadius, VRCharacter_eventExtendedSimpleMoveToLocation_Parms), 0x0010000000000080);
+			UProperty* NewProp_GoalLocation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GoalLocation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GoalLocation, VRCharacter_eventExtendedSimpleMoveToLocation_Parms), 0x0010000008000182, Z_Construct_UScriptStruct_FVector());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("AdvancedDisplay"), TEXT("bStopOnOverlap,bCanStrafe,bAllowPartialPath"));
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRCharacter"));
+			MetaData->SetValue(ReturnFunction, TEXT("CPP_Default_AcceptanceRadius"), TEXT("-1.000000"));
+			MetaData->SetValue(ReturnFunction, TEXT("CPP_Default_bAllowPartialPath"), TEXT("true"));
+			MetaData->SetValue(ReturnFunction, TEXT("CPP_Default_bCanStrafe"), TEXT("false"));
+			MetaData->SetValue(ReturnFunction, TEXT("CPP_Default_bProjectDestinationToNavigation"), TEXT("true"));
+			MetaData->SetValue(ReturnFunction, TEXT("CPP_Default_bStopOnOverlap"), TEXT("false"));
+			MetaData->SetValue(ReturnFunction, TEXT("CPP_Default_bUsePathfinding"), TEXT("true"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/VRCharacter.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("An extended simple move to location with additional parameters"));
+			MetaData->SetValue(NewProp_GoalLocation, TEXT("NativeConst"), TEXT(""));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AVRCharacter_GetTeleportLocation()
+	{
+		struct VRCharacter_eventGetTeleportLocation_Parms
+		{
+			FVector OriginalLocation;
+			FVector ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_AVRCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GetTeleportLocation"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x14820400, 65535, sizeof(VRCharacter_eventGetTeleportLocation_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(ReturnValue, VRCharacter_eventGetTeleportLocation_Parms), 0x0010000000000580, Z_Construct_UScriptStruct_FVector());
+			UProperty* NewProp_OriginalLocation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OriginalLocation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(OriginalLocation, VRCharacter_eventGetTeleportLocation_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGrip"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/VRCharacter.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("A helper function that offsets a given vector by the roots collision location\npass in a teleport location and it provides the correct spot for it to be at your feet"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AVRCharacter_NotifyOfTeleport()
+	{
+		UObject* Outer=Z_Construct_UClass_AVRCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("NotifyOfTeleport"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00024CC0, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGrip"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/VRCharacter.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AVRCharacter_SetCharacterHalfHeightVR()
+	{
+		struct VRCharacter_eventSetCharacterHalfHeightVR_Parms
+		{
+			float HalfHeight;
+			bool bUpdateOverlaps;
+		};
+		UObject* Outer=Z_Construct_UClass_AVRCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SetCharacterHalfHeightVR"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020400, 65535, sizeof(VRCharacter_eventSetCharacterHalfHeightVR_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bUpdateOverlaps, VRCharacter_eventSetCharacterHalfHeightVR_Parms, bool);
+			UProperty* NewProp_bUpdateOverlaps = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bUpdateOverlaps"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bUpdateOverlaps, VRCharacter_eventSetCharacterHalfHeightVR_Parms), 0x0010000000000080, CPP_BOOL_PROPERTY_BITMASK(bUpdateOverlaps, VRCharacter_eventSetCharacterHalfHeightVR_Parms), sizeof(bool), true);
+			UProperty* NewProp_HalfHeight = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("HalfHeight"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(HalfHeight, VRCharacter_eventSetCharacterHalfHeightVR_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("BaseVRCharacter"));
+			MetaData->SetValue(ReturnFunction, TEXT("CPP_Default_bUpdateOverlaps"), TEXT("true"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/VRCharacter.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AVRCharacter_SetCharacterSizeVR()
+	{
+		struct VRCharacter_eventSetCharacterSizeVR_Parms
+		{
+			float NewRadius;
+			float NewHalfHeight;
+			bool bUpdateOverlaps;
+		};
+		UObject* Outer=Z_Construct_UClass_AVRCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SetCharacterSizeVR"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020400, 65535, sizeof(VRCharacter_eventSetCharacterSizeVR_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bUpdateOverlaps, VRCharacter_eventSetCharacterSizeVR_Parms, bool);
+			UProperty* NewProp_bUpdateOverlaps = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bUpdateOverlaps"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bUpdateOverlaps, VRCharacter_eventSetCharacterSizeVR_Parms), 0x0010000000000080, CPP_BOOL_PROPERTY_BITMASK(bUpdateOverlaps, VRCharacter_eventSetCharacterSizeVR_Parms), sizeof(bool), true);
+			UProperty* NewProp_NewHalfHeight = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("NewHalfHeight"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(NewHalfHeight, VRCharacter_eventSetCharacterSizeVR_Parms), 0x0010000000000080);
+			UProperty* NewProp_NewRadius = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("NewRadius"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(NewRadius, VRCharacter_eventSetCharacterSizeVR_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("BaseVRCharacter"));
+			MetaData->SetValue(ReturnFunction, TEXT("CPP_Default_bUpdateOverlaps"), TEXT("true"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/VRCharacter.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_AVRCharacter_NoRegister()
+	{
+		return AVRCharacter::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AVRCharacter()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AVRBaseCharacter();
+			Z_Construct_UPackage__Script_VRExpansionPlugin();
+			OuterClass = AVRCharacter::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_AVRCharacter_ExtendedSimpleMoveToLocation());
+				OuterClass->LinkChild(Z_Construct_UFunction_AVRCharacter_GetTeleportLocation());
+				OuterClass->LinkChild(Z_Construct_UFunction_AVRCharacter_NotifyOfTeleport());
+				OuterClass->LinkChild(Z_Construct_UFunction_AVRCharacter_SetCharacterHalfHeightVR());
+				OuterClass->LinkChild(Z_Construct_UFunction_AVRCharacter_SetCharacterSizeVR());
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_VRRootReference = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("VRRootReference"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(VRRootReference, AVRCharacter), 0x00100000000a201d, Z_Construct_UClass_UVRRootComponent_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AVRCharacter_ExtendedSimpleMoveToLocation(), "ExtendedSimpleMoveToLocation"); // 4053133115
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AVRCharacter_GetTeleportLocation(), "GetTeleportLocation"); // 4098480968
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AVRCharacter_NotifyOfTeleport(), "NotifyOfTeleport"); // 4163682109
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AVRCharacter_SetCharacterHalfHeightVR(), "SetCharacterHalfHeightVR"); // 3434120431
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AVRCharacter_SetCharacterSizeVR(), "SetCharacterSizeVR"); // 4232211666
+				static TCppClassTypeInfo<TCppClassTypeTraits<AVRCharacter> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Navigation"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("VRCharacter.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/VRCharacter.h"));
+				MetaData->SetValue(OuterClass, TEXT("ObjectInitializerConstructorDeclared"), TEXT(""));
+				MetaData->SetValue(NewProp_VRRootReference, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_VRRootReference, TEXT("Category"), TEXT("VRCharacter"));
+				MetaData->SetValue(NewProp_VRRootReference, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_VRRootReference, TEXT("ModuleRelativePath"), TEXT("Public/VRCharacter.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(AVRCharacter, 1199373794);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AVRCharacter(Z_Construct_UClass_AVRCharacter, &AVRCharacter::StaticClass, TEXT("/Script/VRExpansionPlugin"), TEXT("AVRCharacter"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AVRCharacter);
+	static FName NAME_UVRSimpleCharacterMovementComponent_ServerMoveVR = FName(TEXT("ServerMoveVR"));
+	void UVRSimpleCharacterMovementComponent::ServerMoveVR(float TimeStamp, FVector_NetQuantize10 InAccel, FVector_NetQuantize100 ClientLoc, FVector_NetQuantize100 rRequestedVelocity, FVector_NetQuantize100 LFDiff, FVector_NetQuantize100 CustVRInputVector, uint8 CompressedMoveFlags, uint8 ClientRoll, uint32 View, UPrimitiveComponent* ClientMovementBase, FName ClientBaseBoneName, uint8 ClientMovementMode)
+	{
+		VRSimpleCharacterMovementComponent_eventServerMoveVR_Parms Parms;
+		Parms.TimeStamp=TimeStamp;
+		Parms.InAccel=InAccel;
+		Parms.ClientLoc=ClientLoc;
+		Parms.rRequestedVelocity=rRequestedVelocity;
+		Parms.LFDiff=LFDiff;
+		Parms.CustVRInputVector=CustVRInputVector;
+		Parms.CompressedMoveFlags=CompressedMoveFlags;
+		Parms.ClientRoll=ClientRoll;
+		Parms.View=View;
+		Parms.ClientMovementBase=ClientMovementBase;
+		Parms.ClientBaseBoneName=ClientBaseBoneName;
+		Parms.ClientMovementMode=ClientMovementMode;
+		ProcessEvent(FindFunctionChecked(NAME_UVRSimpleCharacterMovementComponent_ServerMoveVR),&Parms);
+	}
+	static FName NAME_UVRSimpleCharacterMovementComponent_ServerMoveVRDual = FName(TEXT("ServerMoveVRDual"));
+	void UVRSimpleCharacterMovementComponent::ServerMoveVRDual(float TimeStamp0, FVector_NetQuantize10 InAccel0, uint8 PendingFlags, uint32 View0, FVector_NetQuantize100 rOldRequestedVelocity, FVector_NetQuantize100 OldLFDiff, FVector_NetQuantize100 OldCustVRInputVector, float TimeStamp, FVector_NetQuantize10 InAccel, FVector_NetQuantize100 ClientLoc, FVector_NetQuantize100 rRequestedVelocity, FVector_NetQuantize100 LFDiff, FVector_NetQuantize100 CustVRInputVector, uint8 NewFlags, uint8 ClientRoll, uint32 View, UPrimitiveComponent* ClientMovementBase, FName ClientBaseBoneName, uint8 ClientMovementMode)
+	{
+		VRSimpleCharacterMovementComponent_eventServerMoveVRDual_Parms Parms;
+		Parms.TimeStamp0=TimeStamp0;
+		Parms.InAccel0=InAccel0;
+		Parms.PendingFlags=PendingFlags;
+		Parms.View0=View0;
+		Parms.rOldRequestedVelocity=rOldRequestedVelocity;
+		Parms.OldLFDiff=OldLFDiff;
+		Parms.OldCustVRInputVector=OldCustVRInputVector;
+		Parms.TimeStamp=TimeStamp;
+		Parms.InAccel=InAccel;
+		Parms.ClientLoc=ClientLoc;
+		Parms.rRequestedVelocity=rRequestedVelocity;
+		Parms.LFDiff=LFDiff;
+		Parms.CustVRInputVector=CustVRInputVector;
+		Parms.NewFlags=NewFlags;
+		Parms.ClientRoll=ClientRoll;
+		Parms.View=View;
+		Parms.ClientMovementBase=ClientMovementBase;
+		Parms.ClientBaseBoneName=ClientBaseBoneName;
+		Parms.ClientMovementMode=ClientMovementMode;
+		ProcessEvent(FindFunctionChecked(NAME_UVRSimpleCharacterMovementComponent_ServerMoveVRDual),&Parms);
+	}
+	static FName NAME_UVRSimpleCharacterMovementComponent_ServerMoveVRDualHybridRootMotion = FName(TEXT("ServerMoveVRDualHybridRootMotion"));
+	void UVRSimpleCharacterMovementComponent::ServerMoveVRDualHybridRootMotion(float TimeStamp0, FVector_NetQuantize10 InAccel0, uint8 PendingFlags, uint32 View0, FVector_NetQuantize100 rOldRequestedVelocity, FVector_NetQuantize100 OldLFDiff, FVector_NetQuantize100 OldCustVRInputVector, float TimeStamp, FVector_NetQuantize10 InAccel, FVector_NetQuantize100 ClientLoc, FVector_NetQuantize100 rRequestedVelocity, FVector_NetQuantize100 LFDiff, FVector_NetQuantize100 CustVRInputVector, uint8 NewFlags, uint8 ClientRoll, uint32 View, UPrimitiveComponent* ClientMovementBase, FName ClientBaseBoneName, uint8 ClientMovementMode)
+	{
+		VRSimpleCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms Parms;
+		Parms.TimeStamp0=TimeStamp0;
+		Parms.InAccel0=InAccel0;
+		Parms.PendingFlags=PendingFlags;
+		Parms.View0=View0;
+		Parms.rOldRequestedVelocity=rOldRequestedVelocity;
+		Parms.OldLFDiff=OldLFDiff;
+		Parms.OldCustVRInputVector=OldCustVRInputVector;
+		Parms.TimeStamp=TimeStamp;
+		Parms.InAccel=InAccel;
+		Parms.ClientLoc=ClientLoc;
+		Parms.rRequestedVelocity=rRequestedVelocity;
+		Parms.LFDiff=LFDiff;
+		Parms.CustVRInputVector=CustVRInputVector;
+		Parms.NewFlags=NewFlags;
+		Parms.ClientRoll=ClientRoll;
+		Parms.View=View;
+		Parms.ClientMovementBase=ClientMovementBase;
+		Parms.ClientBaseBoneName=ClientBaseBoneName;
+		Parms.ClientMovementMode=ClientMovementMode;
+		ProcessEvent(FindFunctionChecked(NAME_UVRSimpleCharacterMovementComponent_ServerMoveVRDualHybridRootMotion),&Parms);
+	}
+	void UVRSimpleCharacterMovementComponent::StaticRegisterNativesUVRSimpleCharacterMovementComponent()
+	{
+		UClass* Class = UVRSimpleCharacterMovementComponent::StaticClass();
+		static const TNameNativePtrPair<ANSICHAR> AnsiFuncs[] = {
+			{ "ServerMoveVR", (Native)&UVRSimpleCharacterMovementComponent::execServerMoveVR },
+			{ "ServerMoveVRDual", (Native)&UVRSimpleCharacterMovementComponent::execServerMoveVRDual },
+			{ "ServerMoveVRDualHybridRootMotion", (Native)&UVRSimpleCharacterMovementComponent::execServerMoveVRDualHybridRootMotion },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, AnsiFuncs, 3);
+	}
+	UFunction* Z_Construct_UFunction_UVRSimpleCharacterMovementComponent_ServerMoveVR()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRSimpleCharacterMovementComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ServerMoveVR"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x80220C40, 65535, sizeof(VRSimpleCharacterMovementComponent_eventServerMoveVR_Parms));
+			UProperty* NewProp_ClientMovementMode = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ClientMovementMode"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(ClientMovementMode, VRSimpleCharacterMovementComponent_eventServerMoveVR_Parms), 0x0010000000000080);
+			UProperty* NewProp_ClientBaseBoneName = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ClientBaseBoneName"), RF_Public|RF_Transient|RF_MarkAsNative) UNameProperty(CPP_PROPERTY_BASE(ClientBaseBoneName, VRSimpleCharacterMovementComponent_eventServerMoveVR_Parms), 0x0010000000000080);
+			UProperty* NewProp_ClientMovementBase = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ClientMovementBase"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ClientMovementBase, VRSimpleCharacterMovementComponent_eventServerMoveVR_Parms), 0x0010000000080080, Z_Construct_UClass_UPrimitiveComponent_NoRegister());
+			UProperty* NewProp_View = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("View"), RF_Public|RF_Transient|RF_MarkAsNative) UUInt32Property(CPP_PROPERTY_BASE(View, VRSimpleCharacterMovementComponent_eventServerMoveVR_Parms), 0x0010000000000080);
+			UProperty* NewProp_ClientRoll = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ClientRoll"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(ClientRoll, VRSimpleCharacterMovementComponent_eventServerMoveVR_Parms), 0x0010000000000080);
+			UProperty* NewProp_CompressedMoveFlags = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("CompressedMoveFlags"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(CompressedMoveFlags, VRSimpleCharacterMovementComponent_eventServerMoveVR_Parms), 0x0010000000000080);
+			UProperty* NewProp_CustVRInputVector = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("CustVRInputVector"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(CustVRInputVector, VRSimpleCharacterMovementComponent_eventServerMoveVR_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_LFDiff = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("LFDiff"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(LFDiff, VRSimpleCharacterMovementComponent_eventServerMoveVR_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_rRequestedVelocity = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("rRequestedVelocity"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(rRequestedVelocity, VRSimpleCharacterMovementComponent_eventServerMoveVR_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_ClientLoc = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ClientLoc"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(ClientLoc, VRSimpleCharacterMovementComponent_eventServerMoveVR_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_InAccel = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("InAccel"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(InAccel, VRSimpleCharacterMovementComponent_eventServerMoveVR_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize10());
+			UProperty* NewProp_TimeStamp = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("TimeStamp"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(TimeStamp, VRSimpleCharacterMovementComponent_eventServerMoveVR_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/SimpleChar/VRSimpleCharacterMovementComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Replicated function sent by client to server - contains client movement and view info."));
+			MetaData->SetValue(NewProp_ClientMovementBase, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRSimpleCharacterMovementComponent_ServerMoveVRDual()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRSimpleCharacterMovementComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ServerMoveVRDual"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x80220C40, 65535, sizeof(VRSimpleCharacterMovementComponent_eventServerMoveVRDual_Parms));
+			UProperty* NewProp_ClientMovementMode = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ClientMovementMode"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(ClientMovementMode, VRSimpleCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080);
+			UProperty* NewProp_ClientBaseBoneName = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ClientBaseBoneName"), RF_Public|RF_Transient|RF_MarkAsNative) UNameProperty(CPP_PROPERTY_BASE(ClientBaseBoneName, VRSimpleCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080);
+			UProperty* NewProp_ClientMovementBase = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ClientMovementBase"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ClientMovementBase, VRSimpleCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000080080, Z_Construct_UClass_UPrimitiveComponent_NoRegister());
+			UProperty* NewProp_View = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("View"), RF_Public|RF_Transient|RF_MarkAsNative) UUInt32Property(CPP_PROPERTY_BASE(View, VRSimpleCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080);
+			UProperty* NewProp_ClientRoll = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ClientRoll"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(ClientRoll, VRSimpleCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080);
+			UProperty* NewProp_NewFlags = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("NewFlags"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(NewFlags, VRSimpleCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080);
+			UProperty* NewProp_CustVRInputVector = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("CustVRInputVector"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(CustVRInputVector, VRSimpleCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_LFDiff = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("LFDiff"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(LFDiff, VRSimpleCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_rRequestedVelocity = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("rRequestedVelocity"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(rRequestedVelocity, VRSimpleCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_ClientLoc = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ClientLoc"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(ClientLoc, VRSimpleCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_InAccel = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("InAccel"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(InAccel, VRSimpleCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize10());
+			UProperty* NewProp_TimeStamp = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("TimeStamp"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(TimeStamp, VRSimpleCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080);
+			UProperty* NewProp_OldCustVRInputVector = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OldCustVRInputVector"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(OldCustVRInputVector, VRSimpleCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_OldLFDiff = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OldLFDiff"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(OldLFDiff, VRSimpleCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_rOldRequestedVelocity = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("rOldRequestedVelocity"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(rOldRequestedVelocity, VRSimpleCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_View0 = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("View0"), RF_Public|RF_Transient|RF_MarkAsNative) UUInt32Property(CPP_PROPERTY_BASE(View0, VRSimpleCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080);
+			UProperty* NewProp_PendingFlags = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("PendingFlags"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(PendingFlags, VRSimpleCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080);
+			UProperty* NewProp_InAccel0 = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("InAccel0"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(InAccel0, VRSimpleCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize10());
+			UProperty* NewProp_TimeStamp0 = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("TimeStamp0"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(TimeStamp0, VRSimpleCharacterMovementComponent_eventServerMoveVRDual_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/SimpleChar/VRSimpleCharacterMovementComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Replicated function sent by client to server - contains client movement and view info for two moves."));
+			MetaData->SetValue(NewProp_ClientMovementBase, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRSimpleCharacterMovementComponent_ServerMoveVRDualHybridRootMotion()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRSimpleCharacterMovementComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ServerMoveVRDualHybridRootMotion"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x80220C40, 65535, sizeof(VRSimpleCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms));
+			UProperty* NewProp_ClientMovementMode = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ClientMovementMode"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(ClientMovementMode, VRSimpleCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080);
+			UProperty* NewProp_ClientBaseBoneName = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ClientBaseBoneName"), RF_Public|RF_Transient|RF_MarkAsNative) UNameProperty(CPP_PROPERTY_BASE(ClientBaseBoneName, VRSimpleCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080);
+			UProperty* NewProp_ClientMovementBase = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ClientMovementBase"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ClientMovementBase, VRSimpleCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000080080, Z_Construct_UClass_UPrimitiveComponent_NoRegister());
+			UProperty* NewProp_View = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("View"), RF_Public|RF_Transient|RF_MarkAsNative) UUInt32Property(CPP_PROPERTY_BASE(View, VRSimpleCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080);
+			UProperty* NewProp_ClientRoll = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ClientRoll"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(ClientRoll, VRSimpleCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080);
+			UProperty* NewProp_NewFlags = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("NewFlags"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(NewFlags, VRSimpleCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080);
+			UProperty* NewProp_CustVRInputVector = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("CustVRInputVector"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(CustVRInputVector, VRSimpleCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_LFDiff = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("LFDiff"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(LFDiff, VRSimpleCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_rRequestedVelocity = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("rRequestedVelocity"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(rRequestedVelocity, VRSimpleCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_ClientLoc = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ClientLoc"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(ClientLoc, VRSimpleCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_InAccel = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("InAccel"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(InAccel, VRSimpleCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize10());
+			UProperty* NewProp_TimeStamp = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("TimeStamp"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(TimeStamp, VRSimpleCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080);
+			UProperty* NewProp_OldCustVRInputVector = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OldCustVRInputVector"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(OldCustVRInputVector, VRSimpleCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_OldLFDiff = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OldLFDiff"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(OldLFDiff, VRSimpleCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_rOldRequestedVelocity = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("rOldRequestedVelocity"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(rOldRequestedVelocity, VRSimpleCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize100());
+			UProperty* NewProp_View0 = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("View0"), RF_Public|RF_Transient|RF_MarkAsNative) UUInt32Property(CPP_PROPERTY_BASE(View0, VRSimpleCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080);
+			UProperty* NewProp_PendingFlags = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("PendingFlags"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(PendingFlags, VRSimpleCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080);
+			UProperty* NewProp_InAccel0 = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("InAccel0"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(InAccel0, VRSimpleCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector_NetQuantize10());
+			UProperty* NewProp_TimeStamp0 = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("TimeStamp0"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(TimeStamp0, VRSimpleCharacterMovementComponent_eventServerMoveVRDualHybridRootMotion_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/SimpleChar/VRSimpleCharacterMovementComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Replicated function sent by client to server - contains client movement and view info for two moves. First move is non root motion, second is root motion."));
+			MetaData->SetValue(NewProp_ClientMovementBase, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_UVRSimpleCharacterMovementComponent_NoRegister()
+	{
+		return UVRSimpleCharacterMovementComponent::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UVRSimpleCharacterMovementComponent()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_UVRBaseCharacterMovementComponent();
+			Z_Construct_UPackage__Script_VRExpansionPlugin();
+			OuterClass = UVRSimpleCharacterMovementComponent::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20B00084;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRSimpleCharacterMovementComponent_ServerMoveVR());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRSimpleCharacterMovementComponent_ServerMoveVRDual());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRSimpleCharacterMovementComponent_ServerMoveVRDualHybridRootMotion());
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_VRCameraComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("VRCameraComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(VRCameraComponent, UVRSimpleCharacterMovementComponent), 0x001000000008201c, Z_Construct_UClass_UCameraComponent_NoRegister());
+				UProperty* NewProp_VRRootCapsule = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("VRRootCapsule"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(VRRootCapsule, UVRSimpleCharacterMovementComponent), 0x001000000008201c, Z_Construct_UClass_UCapsuleComponent_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRSimpleCharacterMovementComponent_ServerMoveVR(), "ServerMoveVR"); // 2908825346
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRSimpleCharacterMovementComponent_ServerMoveVRDual(), "ServerMoveVRDual"); // 2332904648
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRSimpleCharacterMovementComponent_ServerMoveVRDualHybridRootMotion(), "ServerMoveVRDualHybridRootMotion"); // 4182114189
+				OuterClass->ClassConfigName = FName(TEXT("Engine"));
+				static TCppClassTypeInfo<TCppClassTypeTraits<UVRSimpleCharacterMovementComponent> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("SimpleChar/VRSimpleCharacterMovementComponent.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/SimpleChar/VRSimpleCharacterMovementComponent.h"));
+				MetaData->SetValue(OuterClass, TEXT("ObjectInitializerConstructorDeclared"), TEXT(""));
+				MetaData->SetValue(OuterClass, TEXT("ToolTip"), TEXT("DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FAIMoveCompletedSignature, FAIRequestID, RequestID, EPathFollowingResult::Type, Result);"));
+				MetaData->SetValue(NewProp_VRCameraComponent, TEXT("Category"), TEXT("VRMovement"));
+				MetaData->SetValue(NewProp_VRCameraComponent, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_VRCameraComponent, TEXT("ModuleRelativePath"), TEXT("Public/SimpleChar/VRSimpleCharacterMovementComponent.h"));
+				MetaData->SetValue(NewProp_VRRootCapsule, TEXT("Category"), TEXT("VRMovement"));
+				MetaData->SetValue(NewProp_VRRootCapsule, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_VRRootCapsule, TEXT("ModuleRelativePath"), TEXT("Public/SimpleChar/VRSimpleCharacterMovementComponent.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UVRSimpleCharacterMovementComponent, 3624292536);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UVRSimpleCharacterMovementComponent(Z_Construct_UClass_UVRSimpleCharacterMovementComponent, &UVRSimpleCharacterMovementComponent::StaticClass, TEXT("/Script/VRExpansionPlugin"), TEXT("UVRSimpleCharacterMovementComponent"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UVRSimpleCharacterMovementComponent);
+	void AVRSimpleCharacter::StaticRegisterNativesAVRSimpleCharacter()
+	{
+		UClass* Class = AVRSimpleCharacter::StaticClass();
+		static const TNameNativePtrPair<ANSICHAR> AnsiFuncs[] = {
+			{ "GetTeleportLocation", (Native)&AVRSimpleCharacter::execGetTeleportLocation },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, AnsiFuncs, 1);
+	}
+	UFunction* Z_Construct_UFunction_AVRSimpleCharacter_GetTeleportLocation()
+	{
+		struct VRSimpleCharacter_eventGetTeleportLocation_Parms
+		{
+			FVector OriginalLocation;
+			FVector ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_AVRSimpleCharacter();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GetTeleportLocation"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x14820400, 65535, sizeof(VRSimpleCharacter_eventGetTeleportLocation_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(ReturnValue, VRSimpleCharacter_eventGetTeleportLocation_Parms), 0x0010000000000580, Z_Construct_UScriptStruct_FVector());
+			UProperty* NewProp_OriginalLocation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OriginalLocation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(OriginalLocation, VRSimpleCharacter_eventGetTeleportLocation_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGrip"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/SimpleChar/VRSimpleCharacter.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("A helper function that offsets a given vector by the roots collision location\npass in a teleport location and it provides the correct spot for it to be at your feet"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_AVRSimpleCharacter_NoRegister()
+	{
+		return AVRSimpleCharacter::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AVRSimpleCharacter()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_AVRBaseCharacter();
+			Z_Construct_UPackage__Script_VRExpansionPlugin();
+			OuterClass = AVRSimpleCharacter::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900080;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_AVRSimpleCharacter_GetTeleportLocation());
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_VRSceneComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("VRSceneComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(VRSceneComponent, AVRSimpleCharacter), 0x00100000000a001d, Z_Construct_UClass_USceneComponent_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_AVRSimpleCharacter_GetTeleportLocation(), "GetTeleportLocation"); // 1015277616
+				static TCppClassTypeInfo<TCppClassTypeTraits<AVRSimpleCharacter> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Navigation"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("SimpleChar/VRSimpleCharacter.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/SimpleChar/VRSimpleCharacter.h"));
+				MetaData->SetValue(OuterClass, TEXT("ObjectInitializerConstructorDeclared"), TEXT(""));
+				MetaData->SetValue(NewProp_VRSceneComponent, TEXT("AllowPrivateAccess"), TEXT("true"));
+				MetaData->SetValue(NewProp_VRSceneComponent, TEXT("Category"), TEXT("VRSimpleCharacter"));
+				MetaData->SetValue(NewProp_VRSceneComponent, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_VRSceneComponent, TEXT("ModuleRelativePath"), TEXT("Public/SimpleChar/VRSimpleCharacter.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(AVRSimpleCharacter, 2826327638);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AVRSimpleCharacter(Z_Construct_UClass_AVRSimpleCharacter, &AVRSimpleCharacter::StaticClass, TEXT("/Script/VRExpansionPlugin"), TEXT("AVRSimpleCharacter"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AVRSimpleCharacter);
+	UFunction* Z_Construct_UDelegateFunction_VRExpansionPlugin_VRButtonStateChangedSignature__DelegateSignature()
+	{
+		struct _Script_VRExpansionPlugin_eventVRButtonStateChangedSignature_Parms
+		{
+			bool ButtonState;
+		};
+		UObject* Outer=Z_Construct_UPackage__Script_VRExpansionPlugin();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("VRButtonStateChangedSignature__DelegateSignature"), RF_Public|RF_Transient|RF_MarkAsNative) UDelegateFunction(FObjectInitializer(), NULL, 0x00130000, 65535, sizeof(_Script_VRExpansionPlugin_eventVRButtonStateChangedSignature_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ButtonState, _Script_VRExpansionPlugin_eventVRButtonStateChangedSignature_Parms, bool);
+			UProperty* NewProp_ButtonState = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ButtonState"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ButtonState, _Script_VRExpansionPlugin_eventVRButtonStateChangedSignature_Parms), 0x0010000000000080, CPP_BOOL_PROPERTY_BITMASK(ButtonState, _Script_VRExpansionPlugin_eventVRButtonStateChangedSignature_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRButtonComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Delegate for notification when the button state changes."));
+#endif
+		}
+		return ReturnFunction;
+	}
+static UEnum* EVRButtonType_StaticEnum()
+{
+	extern VREXPANSIONPLUGIN_API class UPackage* Z_Construct_UPackage__Script_VRExpansionPlugin();
+	static UEnum* Singleton = nullptr;
+	if (!Singleton)
+	{
+		extern VREXPANSIONPLUGIN_API class UEnum* Z_Construct_UEnum_VRExpansionPlugin_EVRButtonType();
+		Singleton = GetStaticEnum(Z_Construct_UEnum_VRExpansionPlugin_EVRButtonType, Z_Construct_UPackage__Script_VRExpansionPlugin(), TEXT("EVRButtonType"));
+	}
+	return Singleton;
+}
+static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EVRButtonType(EVRButtonType_StaticEnum, TEXT("/Script/VRExpansionPlugin"), TEXT("EVRButtonType"), false, nullptr, nullptr);
+	UEnum* Z_Construct_UEnum_VRExpansionPlugin_EVRButtonType()
+	{
+		UPackage* Outer=Z_Construct_UPackage__Script_VRExpansionPlugin();
+		extern uint32 Get_Z_Construct_UEnum_VRExpansionPlugin_EVRButtonType_CRC();
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EVRButtonType"), 0, Get_Z_Construct_UEnum_VRExpansionPlugin_EVRButtonType_CRC(), false);
+		if (!ReturnEnum)
+		{
+			ReturnEnum = new(EC_InternalUseOnlyConstructor, Outer, TEXT("EVRButtonType"), RF_Public|RF_Transient|RF_MarkAsNative) UEnum(FObjectInitializer());
+			TArray<TPair<FName, int64>> EnumNames;
+			EnumNames.Emplace(TEXT("EVRButtonType::Btn_Press"), 0);
+			EnumNames.Emplace(TEXT("EVRButtonType::Btn_Toggle_Return"), 1);
+			EnumNames.Emplace(TEXT("EVRButtonType::Btn_Toggle_Stay"), 2);
+			EnumNames.Emplace(TEXT("EVRButtonType::Btn_MAX"), 3);
+			ReturnEnum->SetEnums(EnumNames, UEnum::ECppForm::EnumClass);
+			ReturnEnum->CppType = TEXT("EVRButtonType");
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnEnum->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnEnum, TEXT("BlueprintType"), TEXT("true"));
+			MetaData->SetValue(ReturnEnum, TEXT("IsBlueprintBase"), TEXT("true"));
+			MetaData->SetValue(ReturnEnum, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRButtonComponent.h"));
+			MetaData->SetValue(ReturnEnum, TEXT("ToolTip"), TEXT("// VR Button Types"));
+#endif
+		}
+		return ReturnEnum;
+	}
+	uint32 Get_Z_Construct_UEnum_VRExpansionPlugin_EVRButtonType_CRC() { return 1997616614U; }
+	void UVRButtonComponent::StaticRegisterNativesUVRButtonComponent()
+	{
+		UClass* Class = UVRButtonComponent::StaticClass();
+		static const TNameNativePtrPair<ANSICHAR> AnsiFuncs[] = {
+			{ "IsButtonInUse", (Native)&UVRButtonComponent::execIsButtonInUse },
+			{ "OnOverlapBegin", (Native)&UVRButtonComponent::execOnOverlapBegin },
+			{ "OnOverlapEnd", (Native)&UVRButtonComponent::execOnOverlapEnd },
+			{ "ResetInitialButtonLocation", (Native)&UVRButtonComponent::execResetInitialButtonLocation },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, AnsiFuncs, 4);
+	}
+	UFunction* Z_Construct_UFunction_UVRButtonComponent_IsButtonInUse()
+	{
+		struct VRButtonComponent_eventIsButtonInUse_Parms
+		{
+			bool ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_UVRButtonComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("IsButtonInUse"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x14020401, 65535, sizeof(VRButtonComponent_eventIsButtonInUse_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, VRButtonComponent_eventIsButtonInUse_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, VRButtonComponent_eventIsButtonInUse_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, VRButtonComponent_eventIsButtonInUse_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRButtonComponent"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRButtonComponent.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRButtonComponent_OnOverlapBegin()
+	{
+		struct VRButtonComponent_eventOnOverlapBegin_Parms
+		{
+			UPrimitiveComponent* OverlappedComp;
+			AActor* OtherActor;
+			UPrimitiveComponent* OtherComp;
+			int32 OtherBodyIndex;
+			bool bFromSweep;
+			FHitResult SweepResult;
+		};
+		UObject* Outer=Z_Construct_UClass_UVRButtonComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnOverlapBegin"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00420401, 65535, sizeof(VRButtonComponent_eventOnOverlapBegin_Parms));
+			UProperty* NewProp_SweepResult = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("SweepResult"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(SweepResult, VRButtonComponent_eventOnOverlapBegin_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FHitResult());
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bFromSweep, VRButtonComponent_eventOnOverlapBegin_Parms, bool);
+			UProperty* NewProp_bFromSweep = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bFromSweep"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bFromSweep, VRButtonComponent_eventOnOverlapBegin_Parms), 0x0010000000000080, CPP_BOOL_PROPERTY_BITMASK(bFromSweep, VRButtonComponent_eventOnOverlapBegin_Parms), sizeof(bool), true);
+			UProperty* NewProp_OtherBodyIndex = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OtherBodyIndex"), RF_Public|RF_Transient|RF_MarkAsNative) UIntProperty(CPP_PROPERTY_BASE(OtherBodyIndex, VRButtonComponent_eventOnOverlapBegin_Parms), 0x0010000000000080);
+			UProperty* NewProp_OtherComp = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OtherComp"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(OtherComp, VRButtonComponent_eventOnOverlapBegin_Parms), 0x0010000000080080, Z_Construct_UClass_UPrimitiveComponent_NoRegister());
+			UProperty* NewProp_OtherActor = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OtherActor"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(OtherActor, VRButtonComponent_eventOnOverlapBegin_Parms), 0x0010000000000080, Z_Construct_UClass_AActor_NoRegister());
+			UProperty* NewProp_OverlappedComp = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OverlappedComp"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(OverlappedComp, VRButtonComponent_eventOnOverlapBegin_Parms), 0x0010000000080080, Z_Construct_UClass_UPrimitiveComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRButtonComponent.h"));
+			MetaData->SetValue(NewProp_SweepResult, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_OtherComp, TEXT("EditInline"), TEXT("true"));
+			MetaData->SetValue(NewProp_OverlappedComp, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRButtonComponent_OnOverlapEnd()
+	{
+		struct VRButtonComponent_eventOnOverlapEnd_Parms
+		{
+			UPrimitiveComponent* OverlappedComp;
+			AActor* OtherActor;
+			UPrimitiveComponent* OtherComp;
+			int32 OtherBodyIndex;
+		};
+		UObject* Outer=Z_Construct_UClass_UVRButtonComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnOverlapEnd"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535, sizeof(VRButtonComponent_eventOnOverlapEnd_Parms));
+			UProperty* NewProp_OtherBodyIndex = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OtherBodyIndex"), RF_Public|RF_Transient|RF_MarkAsNative) UIntProperty(CPP_PROPERTY_BASE(OtherBodyIndex, VRButtonComponent_eventOnOverlapEnd_Parms), 0x0010000000000080);
+			UProperty* NewProp_OtherComp = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OtherComp"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(OtherComp, VRButtonComponent_eventOnOverlapEnd_Parms), 0x0010000000080080, Z_Construct_UClass_UPrimitiveComponent_NoRegister());
+			UProperty* NewProp_OtherActor = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OtherActor"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(OtherActor, VRButtonComponent_eventOnOverlapEnd_Parms), 0x0010000000000080, Z_Construct_UClass_AActor_NoRegister());
+			UProperty* NewProp_OverlappedComp = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OverlappedComp"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(OverlappedComp, VRButtonComponent_eventOnOverlapEnd_Parms), 0x0010000000080080, Z_Construct_UClass_UPrimitiveComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRButtonComponent.h"));
+			MetaData->SetValue(NewProp_OtherComp, TEXT("EditInline"), TEXT("true"));
+			MetaData->SetValue(NewProp_OverlappedComp, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRButtonComponent_ResetInitialButtonLocation()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRButtonComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ResetInitialButtonLocation"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRButtonComponent"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRButtonComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Should be called after the button is moved post begin play"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_UVRButtonComponent_NoRegister()
+	{
+		return UVRButtonComponent::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UVRButtonComponent()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_UStaticMeshComponent();
+			Z_Construct_UPackage__Script_VRExpansionPlugin();
+			OuterClass = UVRButtonComponent::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20B01080;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRButtonComponent_IsButtonInUse());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRButtonComponent_OnOverlapBegin());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRButtonComponent_OnOverlapEnd());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRButtonComponent_ResetInitialButtonLocation());
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_MinTimeBetweenEngaging = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("MinTimeBetweenEngaging"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(MinTimeBetweenEngaging, UVRButtonComponent), 0x0010000000000005);
+				UProperty* NewProp_ButtonEngageDepth = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("ButtonEngageDepth"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(ButtonEngageDepth, UVRButtonComponent), 0x0010000000000005);
+				UProperty* NewProp_ButtonAxis = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("ButtonAxis"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ButtonAxis, UVRButtonComponent), 0x0010000000000005, Z_Construct_UEnum_VRExpansionPlugin_EVRInteractibleAxis());
+				UProperty* NewProp_ButtonAxis_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ButtonAxis, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+				UProperty* NewProp_ButtonType = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("ButtonType"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ButtonType, UVRButtonComponent), 0x0010000000000005, Z_Construct_UEnum_VRExpansionPlugin_EVRButtonType());
+				UProperty* NewProp_ButtonType_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ButtonType, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+				UProperty* NewProp_DepressDistance = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("DepressDistance"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(DepressDistance, UVRButtonComponent), 0x0010000000000005);
+				UProperty* NewProp_DepressSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("DepressSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(DepressSpeed, UVRButtonComponent), 0x0010000000000005);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bButtonState, UVRButtonComponent, bool);
+				UProperty* NewProp_bButtonState = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bButtonState"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bButtonState, UVRButtonComponent), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bButtonState, UVRButtonComponent), sizeof(bool), true);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsEnabled, UVRButtonComponent, bool);
+				UProperty* NewProp_bIsEnabled = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsEnabled"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsEnabled, UVRButtonComponent), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bIsEnabled, UVRButtonComponent), sizeof(bool), true);
+				UProperty* NewProp_InteractingComponent = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("InteractingComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UWeakObjectProperty(CPP_PROPERTY_BASE(InteractingComponent, UVRButtonComponent), 0x001400000008001c, Z_Construct_UClass_UPrimitiveComponent_NoRegister());
+				UProperty* NewProp_OnButtonStateChanged = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("OnButtonStateChanged"), RF_Public|RF_Transient|RF_MarkAsNative) UMulticastDelegateProperty(CPP_PROPERTY_BASE(OnButtonStateChanged, UVRButtonComponent), 0x0010000010080000, Z_Construct_UDelegateFunction_VRExpansionPlugin_VRButtonStateChangedSignature__DelegateSignature());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRButtonComponent_IsButtonInUse(), "IsButtonInUse"); // 94958746
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRButtonComponent_OnOverlapBegin(), "OnOverlapBegin"); // 2058813359
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRButtonComponent_OnOverlapEnd(), "OnOverlapEnd"); // 3139982356
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRButtonComponent_ResetInitialButtonLocation(), "ResetInitialButtonLocation"); // 2775527487
+				static TCppClassTypeInfo<TCppClassTypeTraits<UVRButtonComponent> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("BlueprintSpawnableComponent"), TEXT(""));
+				MetaData->SetValue(OuterClass, TEXT("BlueprintType"), TEXT("true"));
+				MetaData->SetValue(OuterClass, TEXT("ClassGroupNames"), TEXT("VRExpansionPlugin"));
+				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Object Activation Components|Activation Trigger"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("Interactibles/VRButtonComponent.h"));
+				MetaData->SetValue(OuterClass, TEXT("IsBlueprintBase"), TEXT("true"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRButtonComponent.h"));
+				MetaData->SetValue(NewProp_MinTimeBetweenEngaging, TEXT("Category"), TEXT("VRButtonComponent"));
+				MetaData->SetValue(NewProp_MinTimeBetweenEngaging, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRButtonComponent.h"));
+				MetaData->SetValue(NewProp_MinTimeBetweenEngaging, TEXT("ToolTip"), TEXT("Minimum time before the button can be switched again"));
+				MetaData->SetValue(NewProp_ButtonEngageDepth, TEXT("Category"), TEXT("VRButtonComponent"));
+				MetaData->SetValue(NewProp_ButtonEngageDepth, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRButtonComponent.h"));
+				MetaData->SetValue(NewProp_ButtonEngageDepth, TEXT("ToolTip"), TEXT("Depth at which the button engages (switches)"));
+				MetaData->SetValue(NewProp_ButtonAxis, TEXT("Category"), TEXT("VRButtonComponent"));
+				MetaData->SetValue(NewProp_ButtonAxis, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRButtonComponent.h"));
+				MetaData->SetValue(NewProp_ButtonAxis, TEXT("ToolTip"), TEXT("Negative on this axis is the depress direction"));
+				MetaData->SetValue(NewProp_ButtonType, TEXT("Category"), TEXT("VRButtonComponent"));
+				MetaData->SetValue(NewProp_ButtonType, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRButtonComponent.h"));
+				MetaData->SetValue(NewProp_ButtonType, TEXT("ToolTip"), TEXT("Type of button this is"));
+				MetaData->SetValue(NewProp_DepressDistance, TEXT("Category"), TEXT("VRButtonComponent"));
+				MetaData->SetValue(NewProp_DepressDistance, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRButtonComponent.h"));
+				MetaData->SetValue(NewProp_DepressDistance, TEXT("ToolTip"), TEXT("Distance that the button depresses"));
+				MetaData->SetValue(NewProp_DepressSpeed, TEXT("Category"), TEXT("VRButtonComponent"));
+				MetaData->SetValue(NewProp_DepressSpeed, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRButtonComponent.h"));
+				MetaData->SetValue(NewProp_DepressSpeed, TEXT("ToolTip"), TEXT("Speed that the button de-presses when no longer interacted with"));
+				MetaData->SetValue(NewProp_bButtonState, TEXT("Category"), TEXT("VRButtonComponent"));
+				MetaData->SetValue(NewProp_bButtonState, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRButtonComponent.h"));
+				MetaData->SetValue(NewProp_bButtonState, TEXT("ToolTip"), TEXT("Current state of the button, writable to set initial value"));
+				MetaData->SetValue(NewProp_bIsEnabled, TEXT("Category"), TEXT("VRButtonComponent"));
+				MetaData->SetValue(NewProp_bIsEnabled, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRButtonComponent.h"));
+				MetaData->SetValue(NewProp_bIsEnabled, TEXT("ToolTip"), TEXT("Whether the button is enabled or not (can be interacted with)"));
+				MetaData->SetValue(NewProp_InteractingComponent, TEXT("Category"), TEXT("VRButtonComponent"));
+				MetaData->SetValue(NewProp_InteractingComponent, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRButtonComponent.h"));
+				MetaData->SetValue(NewProp_OnButtonStateChanged, TEXT("Category"), TEXT("VRButtonComponent"));
+				MetaData->SetValue(NewProp_OnButtonStateChanged, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRButtonComponent.h"));
+				MetaData->SetValue(NewProp_OnButtonStateChanged, TEXT("ToolTip"), TEXT("Call to use an object"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UVRButtonComponent, 1674219142);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UVRButtonComponent(Z_Construct_UClass_UVRButtonComponent, &UVRButtonComponent::StaticClass, TEXT("/Script/VRExpansionPlugin"), TEXT("UVRButtonComponent"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UVRButtonComponent);
+	static FName NAME_UVRLeverComponent_AdvancedPhysicsSettings = FName(TEXT("AdvancedPhysicsSettings"));
+	FBPAdvGripPhysicsSettings UVRLeverComponent::AdvancedPhysicsSettings()
+	{
+		VRLeverComponent_eventAdvancedPhysicsSettings_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UVRLeverComponent_AdvancedPhysicsSettings),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UVRLeverComponent_ClosestPrimarySlotInRange = FName(TEXT("ClosestPrimarySlotInRange"));
+	void UVRLeverComponent::ClosestPrimarySlotInRange(FVector WorldLocation, bool& bHadSlotInRange, FTransform& SlotWorldTransform, FName OverridePrefix)
+	{
+		VRLeverComponent_eventClosestPrimarySlotInRange_Parms Parms;
+		Parms.WorldLocation=WorldLocation;
+		Parms.bHadSlotInRange=bHadSlotInRange ? true : false;
+		Parms.SlotWorldTransform=SlotWorldTransform;
+		Parms.OverridePrefix=OverridePrefix;
+		ProcessEvent(FindFunctionChecked(NAME_UVRLeverComponent_ClosestPrimarySlotInRange),&Parms);
+		bHadSlotInRange=Parms.bHadSlotInRange;
+		SlotWorldTransform=Parms.SlotWorldTransform;
+	}
+	static FName NAME_UVRLeverComponent_ClosestSecondarySlotInRange = FName(TEXT("ClosestSecondarySlotInRange"));
+	void UVRLeverComponent::ClosestSecondarySlotInRange(FVector WorldLocation, bool& bHadSlotInRange, FTransform& SlotWorldTransform, FName OverridePrefix)
+	{
+		VRLeverComponent_eventClosestSecondarySlotInRange_Parms Parms;
+		Parms.WorldLocation=WorldLocation;
+		Parms.bHadSlotInRange=bHadSlotInRange ? true : false;
+		Parms.SlotWorldTransform=SlotWorldTransform;
+		Parms.OverridePrefix=OverridePrefix;
+		ProcessEvent(FindFunctionChecked(NAME_UVRLeverComponent_ClosestSecondarySlotInRange),&Parms);
+		bHadSlotInRange=Parms.bHadSlotInRange;
+		SlotWorldTransform=Parms.SlotWorldTransform;
+	}
+	static FName NAME_UVRLeverComponent_DenyGripping = FName(TEXT("DenyGripping"));
+	bool UVRLeverComponent::DenyGripping()
+	{
+		VRLeverComponent_eventDenyGripping_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UVRLeverComponent_DenyGripping),&Parms);
+		return !!Parms.ReturnValue;
+	}
+	static FName NAME_UVRLeverComponent_FreeGripType = FName(TEXT("FreeGripType"));
+	EGripCollisionType UVRLeverComponent::FreeGripType()
+	{
+		VRLeverComponent_eventFreeGripType_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UVRLeverComponent_FreeGripType),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UVRLeverComponent_GetInteractionSettings = FName(TEXT("GetInteractionSettings"));
+	FBPInteractionSettings UVRLeverComponent::GetInteractionSettings()
+	{
+		VRLeverComponent_eventGetInteractionSettings_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UVRLeverComponent_GetInteractionSettings),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UVRLeverComponent_GripBreakDistance = FName(TEXT("GripBreakDistance"));
+	float UVRLeverComponent::GripBreakDistance()
+	{
+		VRLeverComponent_eventGripBreakDistance_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UVRLeverComponent_GripBreakDistance),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UVRLeverComponent_GripDamping = FName(TEXT("GripDamping"));
+	float UVRLeverComponent::GripDamping()
+	{
+		VRLeverComponent_eventGripDamping_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UVRLeverComponent_GripDamping),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UVRLeverComponent_GripLateUpdateSetting = FName(TEXT("GripLateUpdateSetting"));
+	EGripLateUpdateSettings UVRLeverComponent::GripLateUpdateSetting()
+	{
+		VRLeverComponent_eventGripLateUpdateSetting_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UVRLeverComponent_GripLateUpdateSetting),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UVRLeverComponent_GripMovementReplicationType = FName(TEXT("GripMovementReplicationType"));
+	EGripMovementReplicationSettings UVRLeverComponent::GripMovementReplicationType()
+	{
+		VRLeverComponent_eventGripMovementReplicationType_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UVRLeverComponent_GripMovementReplicationType),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UVRLeverComponent_GripStiffness = FName(TEXT("GripStiffness"));
+	float UVRLeverComponent::GripStiffness()
+	{
+		VRLeverComponent_eventGripStiffness_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UVRLeverComponent_GripStiffness),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UVRLeverComponent_IsHeld = FName(TEXT("IsHeld"));
+	void UVRLeverComponent::IsHeld(UGripMotionControllerComponent*& CurHoldingController, bool& bCurIsHeld)
+	{
+		VRLeverComponent_eventIsHeld_Parms Parms;
+		Parms.CurHoldingController=CurHoldingController;
+		Parms.bCurIsHeld=bCurIsHeld ? true : false;
+		ProcessEvent(FindFunctionChecked(NAME_UVRLeverComponent_IsHeld),&Parms);
+		CurHoldingController=Parms.CurHoldingController;
+		bCurIsHeld=Parms.bCurIsHeld;
+	}
+	static FName NAME_UVRLeverComponent_IsInteractible = FName(TEXT("IsInteractible"));
+	bool UVRLeverComponent::IsInteractible()
+	{
+		VRLeverComponent_eventIsInteractible_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UVRLeverComponent_IsInteractible),&Parms);
+		return !!Parms.ReturnValue;
+	}
+	static FName NAME_UVRLeverComponent_OnChildGrip = FName(TEXT("OnChildGrip"));
+	void UVRLeverComponent::OnChildGrip(UGripMotionControllerComponent* GrippingController, FBPActorGripInformation const& GripInformation)
+	{
+		VRLeverComponent_eventOnChildGrip_Parms Parms;
+		Parms.GrippingController=GrippingController;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_UVRLeverComponent_OnChildGrip),&Parms);
+	}
+	static FName NAME_UVRLeverComponent_OnChildGripRelease = FName(TEXT("OnChildGripRelease"));
+	void UVRLeverComponent::OnChildGripRelease(UGripMotionControllerComponent* ReleasingController, FBPActorGripInformation const& GripInformation)
+	{
+		VRLeverComponent_eventOnChildGripRelease_Parms Parms;
+		Parms.ReleasingController=ReleasingController;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_UVRLeverComponent_OnChildGripRelease),&Parms);
+	}
+	static FName NAME_UVRLeverComponent_OnEndSecondaryUsed = FName(TEXT("OnEndSecondaryUsed"));
+	void UVRLeverComponent::OnEndSecondaryUsed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_UVRLeverComponent_OnEndSecondaryUsed),NULL);
+	}
+	static FName NAME_UVRLeverComponent_OnEndUsed = FName(TEXT("OnEndUsed"));
+	void UVRLeverComponent::OnEndUsed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_UVRLeverComponent_OnEndUsed),NULL);
+	}
+	static FName NAME_UVRLeverComponent_OnGrip = FName(TEXT("OnGrip"));
+	void UVRLeverComponent::OnGrip(UGripMotionControllerComponent* GrippingController, FBPActorGripInformation const& GripInformation)
+	{
+		VRLeverComponent_eventOnGrip_Parms Parms;
+		Parms.GrippingController=GrippingController;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_UVRLeverComponent_OnGrip),&Parms);
+	}
+	static FName NAME_UVRLeverComponent_OnGripRelease = FName(TEXT("OnGripRelease"));
+	void UVRLeverComponent::OnGripRelease(UGripMotionControllerComponent* ReleasingController, FBPActorGripInformation const& GripInformation)
+	{
+		VRLeverComponent_eventOnGripRelease_Parms Parms;
+		Parms.ReleasingController=ReleasingController;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_UVRLeverComponent_OnGripRelease),&Parms);
+	}
+	static FName NAME_UVRLeverComponent_OnSecondaryGrip = FName(TEXT("OnSecondaryGrip"));
+	void UVRLeverComponent::OnSecondaryGrip(USceneComponent* SecondaryGripComponent, FBPActorGripInformation const& GripInformation)
+	{
+		VRLeverComponent_eventOnSecondaryGrip_Parms Parms;
+		Parms.SecondaryGripComponent=SecondaryGripComponent;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_UVRLeverComponent_OnSecondaryGrip),&Parms);
+	}
+	static FName NAME_UVRLeverComponent_OnSecondaryGripRelease = FName(TEXT("OnSecondaryGripRelease"));
+	void UVRLeverComponent::OnSecondaryGripRelease(USceneComponent* ReleasingSecondaryGripComponent, FBPActorGripInformation const& GripInformation)
+	{
+		VRLeverComponent_eventOnSecondaryGripRelease_Parms Parms;
+		Parms.ReleasingSecondaryGripComponent=ReleasingSecondaryGripComponent;
+		Parms.GripInformation=GripInformation;
+		ProcessEvent(FindFunctionChecked(NAME_UVRLeverComponent_OnSecondaryGripRelease),&Parms);
+	}
+	static FName NAME_UVRLeverComponent_OnSecondaryUsed = FName(TEXT("OnSecondaryUsed"));
+	void UVRLeverComponent::OnSecondaryUsed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_UVRLeverComponent_OnSecondaryUsed),NULL);
+	}
+	static FName NAME_UVRLeverComponent_OnUsed = FName(TEXT("OnUsed"));
+	void UVRLeverComponent::OnUsed()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_UVRLeverComponent_OnUsed),NULL);
+	}
+	static FName NAME_UVRLeverComponent_SecondaryGripType = FName(TEXT("SecondaryGripType"));
+	ESecondaryGripType UVRLeverComponent::SecondaryGripType()
+	{
+		VRLeverComponent_eventSecondaryGripType_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UVRLeverComponent_SecondaryGripType),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UVRLeverComponent_SetHeld = FName(TEXT("SetHeld"));
+	void UVRLeverComponent::SetHeld(UGripMotionControllerComponent* NewHoldingController, bool bNewIsHeld)
+	{
+		VRLeverComponent_eventSetHeld_Parms Parms;
+		Parms.NewHoldingController=NewHoldingController;
+		Parms.bNewIsHeld=bNewIsHeld ? true : false;
+		ProcessEvent(FindFunctionChecked(NAME_UVRLeverComponent_SetHeld),&Parms);
+	}
+	static FName NAME_UVRLeverComponent_SimulateOnDrop = FName(TEXT("SimulateOnDrop"));
+	bool UVRLeverComponent::SimulateOnDrop()
+	{
+		VRLeverComponent_eventSimulateOnDrop_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UVRLeverComponent_SimulateOnDrop),&Parms);
+		return !!Parms.ReturnValue;
+	}
+	static FName NAME_UVRLeverComponent_SlotGripType = FName(TEXT("SlotGripType"));
+	EGripCollisionType UVRLeverComponent::SlotGripType()
+	{
+		VRLeverComponent_eventSlotGripType_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UVRLeverComponent_SlotGripType),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UVRLeverComponent_TeleportBehavior = FName(TEXT("TeleportBehavior"));
+	EGripInterfaceTeleportBehavior UVRLeverComponent::TeleportBehavior()
+	{
+		VRLeverComponent_eventTeleportBehavior_Parms Parms;
+		ProcessEvent(FindFunctionChecked(NAME_UVRLeverComponent_TeleportBehavior),&Parms);
+		return Parms.ReturnValue;
+	}
+	static FName NAME_UVRLeverComponent_TickGrip = FName(TEXT("TickGrip"));
+	void UVRLeverComponent::TickGrip(UGripMotionControllerComponent* GrippingController, FBPActorGripInformation const& GripInformation, FVector MControllerLocDelta, float DeltaTime)
+	{
+		VRLeverComponent_eventTickGrip_Parms Parms;
+		Parms.GrippingController=GrippingController;
+		Parms.GripInformation=GripInformation;
+		Parms.MControllerLocDelta=MControllerLocDelta;
+		Parms.DeltaTime=DeltaTime;
+		ProcessEvent(FindFunctionChecked(NAME_UVRLeverComponent_TickGrip),&Parms);
+	}
+	void UVRLeverComponent::StaticRegisterNativesUVRLeverComponent()
+	{
+		UClass* Class = UVRLeverComponent::StaticClass();
+		static const TNameNativePtrPair<ANSICHAR> AnsiFuncs[] = {
+			{ "AdvancedPhysicsSettings", (Native)&UVRLeverComponent::execAdvancedPhysicsSettings },
+			{ "ClosestPrimarySlotInRange", (Native)&UVRLeverComponent::execClosestPrimarySlotInRange },
+			{ "ClosestSecondarySlotInRange", (Native)&UVRLeverComponent::execClosestSecondarySlotInRange },
+			{ "DenyGripping", (Native)&UVRLeverComponent::execDenyGripping },
+			{ "FreeGripType", (Native)&UVRLeverComponent::execFreeGripType },
+			{ "GetInteractionSettings", (Native)&UVRLeverComponent::execGetInteractionSettings },
+			{ "GripBreakDistance", (Native)&UVRLeverComponent::execGripBreakDistance },
+			{ "GripDamping", (Native)&UVRLeverComponent::execGripDamping },
+			{ "GripLateUpdateSetting", (Native)&UVRLeverComponent::execGripLateUpdateSetting },
+			{ "GripMovementReplicationType", (Native)&UVRLeverComponent::execGripMovementReplicationType },
+			{ "GripStiffness", (Native)&UVRLeverComponent::execGripStiffness },
+			{ "IsHeld", (Native)&UVRLeverComponent::execIsHeld },
+			{ "IsInteractible", (Native)&UVRLeverComponent::execIsInteractible },
+			{ "OnChildGrip", (Native)&UVRLeverComponent::execOnChildGrip },
+			{ "OnChildGripRelease", (Native)&UVRLeverComponent::execOnChildGripRelease },
+			{ "OnEndSecondaryUsed", (Native)&UVRLeverComponent::execOnEndSecondaryUsed },
+			{ "OnEndUsed", (Native)&UVRLeverComponent::execOnEndUsed },
+			{ "OnGrip", (Native)&UVRLeverComponent::execOnGrip },
+			{ "OnGripRelease", (Native)&UVRLeverComponent::execOnGripRelease },
+			{ "OnSecondaryGrip", (Native)&UVRLeverComponent::execOnSecondaryGrip },
+			{ "OnSecondaryGripRelease", (Native)&UVRLeverComponent::execOnSecondaryGripRelease },
+			{ "OnSecondaryUsed", (Native)&UVRLeverComponent::execOnSecondaryUsed },
+			{ "OnUsed", (Native)&UVRLeverComponent::execOnUsed },
+			{ "SecondaryGripType", (Native)&UVRLeverComponent::execSecondaryGripType },
+			{ "SetHeld", (Native)&UVRLeverComponent::execSetHeld },
+			{ "SimulateOnDrop", (Native)&UVRLeverComponent::execSimulateOnDrop },
+			{ "SlotGripType", (Native)&UVRLeverComponent::execSlotGripType },
+			{ "TeleportBehavior", (Native)&UVRLeverComponent::execTeleportBehavior },
+			{ "TickGrip", (Native)&UVRLeverComponent::execTickGrip },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, AnsiFuncs, 29);
+	}
+	UFunction* Z_Construct_UFunction_UVRLeverComponent_AdvancedPhysicsSettings()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRLeverComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("AdvancedPhysicsSettings"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(VRLeverComponent_eventAdvancedPhysicsSettings_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(ReturnValue, VRLeverComponent_eventAdvancedPhysicsSettings_Parms), 0x0010000000000580, Z_Construct_UScriptStruct_FBPAdvGripPhysicsSettings());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Get the advanced physics settings for this grip"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRLeverComponent_ClosestPrimarySlotInRange()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRLeverComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ClosestPrimarySlotInRange"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0CC20C00, 65535, sizeof(VRLeverComponent_eventClosestPrimarySlotInRange_Parms));
+			UProperty* NewProp_OverridePrefix = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OverridePrefix"), RF_Public|RF_Transient|RF_MarkAsNative) UNameProperty(CPP_PROPERTY_BASE(OverridePrefix, VRLeverComponent_eventClosestPrimarySlotInRange_Parms), 0x0010000000000080);
+			UProperty* NewProp_SlotWorldTransform = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("SlotWorldTransform"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(SlotWorldTransform, VRLeverComponent_eventClosestPrimarySlotInRange_Parms), 0x0010000000000180, Z_Construct_UScriptStruct_FTransform());
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bHadSlotInRange, VRLeverComponent_eventClosestPrimarySlotInRange_Parms, bool);
+			UProperty* NewProp_bHadSlotInRange = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bHadSlotInRange"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bHadSlotInRange, VRLeverComponent_eventClosestPrimarySlotInRange_Parms), 0x0010000000000180, CPP_BOOL_PROPERTY_BITMASK(bHadSlotInRange, VRLeverComponent_eventClosestPrimarySlotInRange_Parms), sizeof(bool), true);
+			UProperty* NewProp_WorldLocation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("WorldLocation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(WorldLocation, VRLeverComponent_eventClosestPrimarySlotInRange_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Get closest primary slot in range"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRLeverComponent_ClosestSecondarySlotInRange()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRLeverComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("ClosestSecondarySlotInRange"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0CC20C00, 65535, sizeof(VRLeverComponent_eventClosestSecondarySlotInRange_Parms));
+			UProperty* NewProp_OverridePrefix = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("OverridePrefix"), RF_Public|RF_Transient|RF_MarkAsNative) UNameProperty(CPP_PROPERTY_BASE(OverridePrefix, VRLeverComponent_eventClosestSecondarySlotInRange_Parms), 0x0010000000000080);
+			UProperty* NewProp_SlotWorldTransform = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("SlotWorldTransform"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(SlotWorldTransform, VRLeverComponent_eventClosestSecondarySlotInRange_Parms), 0x0010000000000180, Z_Construct_UScriptStruct_FTransform());
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bHadSlotInRange, VRLeverComponent_eventClosestSecondarySlotInRange_Parms, bool);
+			UProperty* NewProp_bHadSlotInRange = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bHadSlotInRange"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bHadSlotInRange, VRLeverComponent_eventClosestSecondarySlotInRange_Parms), 0x0010000000000180, CPP_BOOL_PROPERTY_BITMASK(bHadSlotInRange, VRLeverComponent_eventClosestSecondarySlotInRange_Parms), sizeof(bool), true);
+			UProperty* NewProp_WorldLocation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("WorldLocation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(WorldLocation, VRLeverComponent_eventClosestSecondarySlotInRange_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Get closest secondary slot in range"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRLeverComponent_DenyGripping()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRLeverComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("DenyGripping"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(VRLeverComponent_eventDenyGripping_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, VRLeverComponent_eventDenyGripping_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, VRLeverComponent_eventDenyGripping_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, VRLeverComponent_eventDenyGripping_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Set up as deny instead of allow so that default allows for gripping"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRLeverComponent_FreeGripType()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRLeverComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("FreeGripType"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(VRLeverComponent_eventFreeGripType_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, VRLeverComponent_eventFreeGripType_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_EGripCollisionType());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Grip type to use when not gripping a slot"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRLeverComponent_GetInteractionSettings()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRLeverComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GetInteractionSettings"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(VRLeverComponent_eventGetInteractionSettings_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(ReturnValue, VRLeverComponent_eventGetInteractionSettings_Parms), 0x0010000000000580, Z_Construct_UScriptStruct_FBPInteractionSettings());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Get interactable settings"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRLeverComponent_GripBreakDistance()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRLeverComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GripBreakDistance"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(VRLeverComponent_eventGripBreakDistance_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(ReturnValue, VRLeverComponent_eventGripBreakDistance_Parms), 0x0010000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("What distance to break a grip at (only relevent with physics enabled grips"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRLeverComponent_GripDamping()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRLeverComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GripDamping"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(VRLeverComponent_eventGripDamping_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(ReturnValue, VRLeverComponent_eventGripDamping_Parms), 0x0010000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("What grip damping to use if using a physics constraint"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRLeverComponent_GripLateUpdateSetting()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRLeverComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GripLateUpdateSetting"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(VRLeverComponent_eventGripLateUpdateSetting_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, VRLeverComponent_eventGripLateUpdateSetting_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_EGripLateUpdateSettings());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Define the late update setting"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRLeverComponent_GripMovementReplicationType()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRLeverComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GripMovementReplicationType"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(VRLeverComponent_eventGripMovementReplicationType_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, VRLeverComponent_eventGripMovementReplicationType_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_EGripMovementReplicationSettings());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Define which movement repliation setting to use"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRLeverComponent_GripStiffness()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRLeverComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GripStiffness"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(VRLeverComponent_eventGripStiffness_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(ReturnValue, VRLeverComponent_eventGripStiffness_Parms), 0x0010000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("What grip stiffness to use if using a physics constraint"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRLeverComponent_IsHeld()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRLeverComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("IsHeld"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C420C00, 65535, sizeof(VRLeverComponent_eventIsHeld_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bCurIsHeld, VRLeverComponent_eventIsHeld_Parms, bool);
+			UProperty* NewProp_bCurIsHeld = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bCurIsHeld"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bCurIsHeld, VRLeverComponent_eventIsHeld_Parms), 0x0010000000000180, CPP_BOOL_PROPERTY_BITMASK(bCurIsHeld, VRLeverComponent_eventIsHeld_Parms), sizeof(bool), true);
+			UProperty* NewProp_CurHoldingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("CurHoldingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(CurHoldingController, VRLeverComponent_eventIsHeld_Parms), 0x0010000000080180, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Returns if the object is held and if so, which pawn is holding it"));
+			MetaData->SetValue(NewProp_CurHoldingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRLeverComponent_IsInteractible()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRLeverComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("IsInteractible"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(VRLeverComponent_eventIsInteractible_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, VRLeverComponent_eventIsInteractible_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, VRLeverComponent_eventIsInteractible_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, VRLeverComponent_eventIsInteractible_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Check if the object is an interactable"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRLeverComponent_OnChildGrip()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRLeverComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnChildGrip"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(VRLeverComponent_eventOnChildGrip_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, VRLeverComponent_eventOnChildGrip_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_GrippingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GrippingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(GrippingController, VRLeverComponent_eventOnChildGrip_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when child component is gripped"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_GrippingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRLeverComponent_OnChildGripRelease()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRLeverComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnChildGripRelease"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(VRLeverComponent_eventOnChildGripRelease_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, VRLeverComponent_eventOnChildGripRelease_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_ReleasingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReleasingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ReleasingController, VRLeverComponent_eventOnChildGripRelease_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when child component is released"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_ReleasingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRLeverComponent_OnEndSecondaryUsed()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRLeverComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnEndSecondaryUsed"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Call to stop using an object"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRLeverComponent_OnEndUsed()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRLeverComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnEndUsed"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Call to stop using an object"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRLeverComponent_OnGrip()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRLeverComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnGrip"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(VRLeverComponent_eventOnGrip_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, VRLeverComponent_eventOnGrip_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_GrippingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GrippingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(GrippingController, VRLeverComponent_eventOnGrip_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when gripped"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_GrippingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRLeverComponent_OnGripRelease()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRLeverComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnGripRelease"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(VRLeverComponent_eventOnGripRelease_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, VRLeverComponent_eventOnGripRelease_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_ReleasingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReleasingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ReleasingController, VRLeverComponent_eventOnGripRelease_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when grip is released"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_ReleasingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRLeverComponent_OnSecondaryGrip()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRLeverComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnSecondaryGrip"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(VRLeverComponent_eventOnSecondaryGrip_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, VRLeverComponent_eventOnSecondaryGrip_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_SecondaryGripComponent = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("SecondaryGripComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(SecondaryGripComponent, VRLeverComponent_eventOnSecondaryGrip_Parms), 0x0010000000080080, Z_Construct_UClass_USceneComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when secondary gripped"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_SecondaryGripComponent, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRLeverComponent_OnSecondaryGripRelease()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRLeverComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnSecondaryGripRelease"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08420C00, 65535, sizeof(VRLeverComponent_eventOnSecondaryGripRelease_Parms));
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, VRLeverComponent_eventOnSecondaryGripRelease_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_ReleasingSecondaryGripComponent = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReleasingSecondaryGripComponent"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(ReleasingSecondaryGripComponent, VRLeverComponent_eventOnSecondaryGripRelease_Parms), 0x0010000000080080, Z_Construct_UClass_USceneComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered on the interfaced object when secondary grip is released"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_ReleasingSecondaryGripComponent, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRLeverComponent_OnSecondaryUsed()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRLeverComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnSecondaryUsed"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Call to use an object"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRLeverComponent_OnUsed()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRLeverComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnUsed"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Call to use an object"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRLeverComponent_SecondaryGripType()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRLeverComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SecondaryGripType"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(VRLeverComponent_eventSecondaryGripType_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, VRLeverComponent_eventSecondaryGripType_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_ESecondaryGripType());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Secondary grip type"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRLeverComponent_SetHeld()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRLeverComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SetHeld"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(VRLeverComponent_eventSetHeld_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bNewIsHeld, VRLeverComponent_eventSetHeld_Parms, bool);
+			UProperty* NewProp_bNewIsHeld = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bNewIsHeld"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bNewIsHeld, VRLeverComponent_eventSetHeld_Parms), 0x0010000000000080, CPP_BOOL_PROPERTY_BITMASK(bNewIsHeld, VRLeverComponent_eventSetHeld_Parms), sizeof(bool), true);
+			UProperty* NewProp_NewHoldingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("NewHoldingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(NewHoldingController, VRLeverComponent_eventSetHeld_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Sets is held, used by the plugin"));
+			MetaData->SetValue(NewProp_NewHoldingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRLeverComponent_SimulateOnDrop()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRLeverComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SimulateOnDrop"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(VRLeverComponent_eventSimulateOnDrop_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, VRLeverComponent_eventSimulateOnDrop_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, VRLeverComponent_eventSimulateOnDrop_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, VRLeverComponent_eventSimulateOnDrop_Parms), sizeof(bool), true);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Should this object simulate on drop"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRLeverComponent_SlotGripType()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRLeverComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SlotGripType"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(VRLeverComponent_eventSlotGripType_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, VRLeverComponent_eventSlotGripType_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_EGripCollisionType());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Grip type to use when gripping a slot"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRLeverComponent_TeleportBehavior()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRLeverComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("TeleportBehavior"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x0C020C00, 65535, sizeof(VRLeverComponent_eventTeleportBehavior_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(ReturnValue, VRLeverComponent_eventTeleportBehavior_Parms), 0x0010000000000580, Z_Construct_UEnum_VRExpansionPlugin_EGripInterfaceTeleportBehavior());
+			UProperty* NewProp_ReturnValue_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_ReturnValue, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("How an interfaced object behaves when teleporting"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRLeverComponent_TickGrip()
+	{
+		UObject* Outer=Z_Construct_UClass_UVRLeverComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("TickGrip"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x08C20C00, 65535, sizeof(VRLeverComponent_eventTickGrip_Parms));
+			UProperty* NewProp_DeltaTime = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("DeltaTime"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(DeltaTime, VRLeverComponent_eventTickGrip_Parms), 0x0010000000000080);
+			UProperty* NewProp_MControllerLocDelta = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("MControllerLocDelta"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(MControllerLocDelta, VRLeverComponent_eventTickGrip_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FVector());
+			UProperty* NewProp_GripInformation = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GripInformation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GripInformation, VRLeverComponent_eventTickGrip_Parms), 0x0010008008000182, Z_Construct_UScriptStruct_FBPActorGripInformation());
+			UProperty* NewProp_GrippingController = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("GrippingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(GrippingController, VRLeverComponent_eventTickGrip_Parms), 0x0010000000080080, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRGripInterface"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Event triggered each tick on the interfaced object when gripped, can be used for custom movement or grip based logic"));
+			MetaData->SetValue(NewProp_GripInformation, TEXT("NativeConst"), TEXT(""));
+			MetaData->SetValue(NewProp_GrippingController, TEXT("EditInline"), TEXT("true"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_UVRLeverComponent_NoRegister()
+	{
+		return UVRLeverComponent::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UVRLeverComponent()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_UStaticMeshComponent();
+			Z_Construct_UPackage__Script_VRExpansionPlugin();
+			OuterClass = UVRLeverComponent::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20B01080;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRLeverComponent_AdvancedPhysicsSettings());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRLeverComponent_ClosestPrimarySlotInRange());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRLeverComponent_ClosestSecondarySlotInRange());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRLeverComponent_DenyGripping());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRLeverComponent_FreeGripType());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRLeverComponent_GetInteractionSettings());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRLeverComponent_GripBreakDistance());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRLeverComponent_GripDamping());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRLeverComponent_GripLateUpdateSetting());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRLeverComponent_GripMovementReplicationType());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRLeverComponent_GripStiffness());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRLeverComponent_IsHeld());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRLeverComponent_IsInteractible());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRLeverComponent_OnChildGrip());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRLeverComponent_OnChildGripRelease());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRLeverComponent_OnEndSecondaryUsed());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRLeverComponent_OnEndUsed());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRLeverComponent_OnGrip());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRLeverComponent_OnGripRelease());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRLeverComponent_OnSecondaryGrip());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRLeverComponent_OnSecondaryGripRelease());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRLeverComponent_OnSecondaryUsed());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRLeverComponent_OnUsed());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRLeverComponent_SecondaryGripType());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRLeverComponent_SetHeld());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRLeverComponent_SimulateOnDrop());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRLeverComponent_SlotGripType());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRLeverComponent_TeleportBehavior());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRLeverComponent_TickGrip());
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_HoldingController = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("HoldingController"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(HoldingController, UVRLeverComponent), 0x001000000008000c, Z_Construct_UClass_UGripMotionControllerComponent_NoRegister());
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsHeld, UVRLeverComponent, bool);
+				UProperty* NewProp_bIsHeld = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsHeld"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsHeld, UVRLeverComponent), 0x0010000000000004, CPP_BOOL_PROPERTY_BITMASK(bIsHeld, UVRLeverComponent), sizeof(bool), true);
+				UProperty* NewProp_BreakDistance = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("BreakDistance"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(BreakDistance, UVRLeverComponent), 0x0010000000000005);
+				UProperty* NewProp_MovementReplicationSetting = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("MovementReplicationSetting"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(MovementReplicationSetting, UVRLeverComponent), 0x0010000000000005, Z_Construct_UEnum_VRExpansionPlugin_EGripMovementReplicationSettings());
+				UProperty* NewProp_MovementReplicationSetting_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_MovementReplicationSetting, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+				UProperty* NewProp_LeverLimit = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("LeverLimit"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(LeverLimit, UVRLeverComponent), 0x0010000000000005);
+				UProperty* NewProp_LeverRotationAxis = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("LeverRotationAxis"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(LeverRotationAxis, UVRLeverComponent), 0x0010000000000005, Z_Construct_UEnum_VRExpansionPlugin_EVRInteractibleAxis());
+				UProperty* NewProp_LeverRotationAxis_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_LeverRotationAxis, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bIsPhysicsLever, UVRLeverComponent, bool);
+				UProperty* NewProp_bIsPhysicsLever = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bIsPhysicsLever"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bIsPhysicsLever, UVRLeverComponent), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bIsPhysicsLever, UVRLeverComponent), sizeof(bool), true);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bRepGameplayTags, UVRLeverComponent, bool);
+				UProperty* NewProp_bRepGameplayTags = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bRepGameplayTags"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bRepGameplayTags, UVRLeverComponent), 0x0010000000000025, CPP_BOOL_PROPERTY_BITMASK(bRepGameplayTags, UVRLeverComponent), sizeof(bool), true);
+				UProperty* NewProp_GameplayTags = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("GameplayTags"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(GameplayTags, UVRLeverComponent), 0x0010000000000025, Z_Construct_UScriptStruct_FGameplayTagContainer());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRLeverComponent_AdvancedPhysicsSettings(), "AdvancedPhysicsSettings"); // 609936233
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRLeverComponent_ClosestPrimarySlotInRange(), "ClosestPrimarySlotInRange"); // 1045498066
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRLeverComponent_ClosestSecondarySlotInRange(), "ClosestSecondarySlotInRange"); // 2174078561
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRLeverComponent_DenyGripping(), "DenyGripping"); // 1822849377
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRLeverComponent_FreeGripType(), "FreeGripType"); // 755964110
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRLeverComponent_GetInteractionSettings(), "GetInteractionSettings"); // 1194944952
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRLeverComponent_GripBreakDistance(), "GripBreakDistance"); // 3109152170
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRLeverComponent_GripDamping(), "GripDamping"); // 683168760
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRLeverComponent_GripLateUpdateSetting(), "GripLateUpdateSetting"); // 2885074534
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRLeverComponent_GripMovementReplicationType(), "GripMovementReplicationType"); // 3953970088
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRLeverComponent_GripStiffness(), "GripStiffness"); // 3464876108
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRLeverComponent_IsHeld(), "IsHeld"); // 1965707024
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRLeverComponent_IsInteractible(), "IsInteractible"); // 889332678
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRLeverComponent_OnChildGrip(), "OnChildGrip"); // 3191091049
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRLeverComponent_OnChildGripRelease(), "OnChildGripRelease"); // 889856385
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRLeverComponent_OnEndSecondaryUsed(), "OnEndSecondaryUsed"); // 1064697389
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRLeverComponent_OnEndUsed(), "OnEndUsed"); // 1781923455
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRLeverComponent_OnGrip(), "OnGrip"); // 2346327818
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRLeverComponent_OnGripRelease(), "OnGripRelease"); // 4061359589
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRLeverComponent_OnSecondaryGrip(), "OnSecondaryGrip"); // 4162700945
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRLeverComponent_OnSecondaryGripRelease(), "OnSecondaryGripRelease"); // 1728110213
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRLeverComponent_OnSecondaryUsed(), "OnSecondaryUsed"); // 983574586
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRLeverComponent_OnUsed(), "OnUsed"); // 826390152
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRLeverComponent_SecondaryGripType(), "SecondaryGripType"); // 2499686248
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRLeverComponent_SetHeld(), "SetHeld"); // 4018615364
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRLeverComponent_SimulateOnDrop(), "SimulateOnDrop"); // 2975132518
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRLeverComponent_SlotGripType(), "SlotGripType"); // 2895798141
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRLeverComponent_TeleportBehavior(), "TeleportBehavior"); // 1709303192
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRLeverComponent_TickGrip(), "TickGrip"); // 82429503
+				static TCppClassTypeInfo<TCppClassTypeTraits<UVRLeverComponent> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->Interfaces.Add(FImplementedInterface(Z_Construct_UClass_UVRGripInterface_NoRegister(), VTABLE_OFFSET(UVRLeverComponent, IVRGripInterface), false ));
+				OuterClass->Interfaces.Add(FImplementedInterface(Z_Construct_UClass_UGameplayTagAssetInterface_NoRegister(), VTABLE_OFFSET(UVRLeverComponent, IGameplayTagAssetInterface), false ));
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("BlueprintSpawnableComponent"), TEXT(""));
+				MetaData->SetValue(OuterClass, TEXT("BlueprintType"), TEXT("true"));
+				MetaData->SetValue(OuterClass, TEXT("ClassGroupNames"), TEXT("VRExpansionPlugin"));
+				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Object Activation Components|Activation Trigger"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("Interactibles/VRLeverComponent.h"));
+				MetaData->SetValue(OuterClass, TEXT("IsBlueprintBase"), TEXT("true"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+				MetaData->SetValue(NewProp_HoldingController, TEXT("Category"), TEXT("VRGripInterface"));
+				MetaData->SetValue(NewProp_HoldingController, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_HoldingController, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+				MetaData->SetValue(NewProp_HoldingController, TEXT("ToolTip"), TEXT("Set on grip notify, not net serializing"));
+				MetaData->SetValue(NewProp_bIsHeld, TEXT("Category"), TEXT("VRGripInterface"));
+				MetaData->SetValue(NewProp_bIsHeld, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+				MetaData->SetValue(NewProp_BreakDistance, TEXT("Category"), TEXT("VRGripInterface"));
+				MetaData->SetValue(NewProp_BreakDistance, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+				MetaData->SetValue(NewProp_MovementReplicationSetting, TEXT("Category"), TEXT("VRGripInterface"));
+				MetaData->SetValue(NewProp_MovementReplicationSetting, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+				MetaData->SetValue(NewProp_LeverLimit, TEXT("Category"), TEXT("VRLeverComponent"));
+				MetaData->SetValue(NewProp_LeverLimit, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+				MetaData->SetValue(NewProp_LeverRotationAxis, TEXT("Category"), TEXT("VRLeverComponent"));
+				MetaData->SetValue(NewProp_LeverRotationAxis, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+				MetaData->SetValue(NewProp_bIsPhysicsLever, TEXT("Category"), TEXT("VRLeverComponent"));
+				MetaData->SetValue(NewProp_bIsPhysicsLever, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+				MetaData->SetValue(NewProp_bRepGameplayTags, TEXT("Category"), TEXT("VRGripInterface"));
+				MetaData->SetValue(NewProp_bRepGameplayTags, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+				MetaData->SetValue(NewProp_bRepGameplayTags, TEXT("ToolTip"), TEXT("Requires bReplicates to be true for the component"));
+				MetaData->SetValue(NewProp_GameplayTags, TEXT("Category"), TEXT("GameplayTags"));
+				MetaData->SetValue(NewProp_GameplayTags, TEXT("ModuleRelativePath"), TEXT("Public/Interactibles/VRLeverComponent.h"));
+				MetaData->SetValue(NewProp_GameplayTags, TEXT("ToolTip"), TEXT("Tags that are set on this object"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UVRLeverComponent, 3465156878);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UVRLeverComponent(Z_Construct_UClass_UVRLeverComponent, &UVRLeverComponent::StaticClass, TEXT("/Script/VRExpansionPlugin"), TEXT("UVRLeverComponent"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UVRLeverComponent);
+static UEnum* EBPVRConsoleDrawType_StaticEnum()
+{
+	extern VREXPANSIONPLUGIN_API class UPackage* Z_Construct_UPackage__Script_VRExpansionPlugin();
+	static UEnum* Singleton = nullptr;
+	if (!Singleton)
+	{
+		extern VREXPANSIONPLUGIN_API class UEnum* Z_Construct_UEnum_VRExpansionPlugin_EBPVRConsoleDrawType();
+		Singleton = GetStaticEnum(Z_Construct_UEnum_VRExpansionPlugin_EBPVRConsoleDrawType, Z_Construct_UPackage__Script_VRExpansionPlugin(), TEXT("EBPVRConsoleDrawType"));
+	}
+	return Singleton;
+}
+static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_EBPVRConsoleDrawType(EBPVRConsoleDrawType_StaticEnum, TEXT("/Script/VRExpansionPlugin"), TEXT("EBPVRConsoleDrawType"), false, nullptr, nullptr);
+	UEnum* Z_Construct_UEnum_VRExpansionPlugin_EBPVRConsoleDrawType()
+	{
+		UPackage* Outer=Z_Construct_UPackage__Script_VRExpansionPlugin();
+		extern uint32 Get_Z_Construct_UEnum_VRExpansionPlugin_EBPVRConsoleDrawType_CRC();
+		static UEnum* ReturnEnum = FindExistingEnumIfHotReloadOrDynamic(Outer, TEXT("EBPVRConsoleDrawType"), 0, Get_Z_Construct_UEnum_VRExpansionPlugin_EBPVRConsoleDrawType_CRC(), false);
+		if (!ReturnEnum)
+		{
+			ReturnEnum = new(EC_InternalUseOnlyConstructor, Outer, TEXT("EBPVRConsoleDrawType"), RF_Public|RF_Transient|RF_MarkAsNative) UEnum(FObjectInitializer());
+			TArray<TPair<FName, int64>> EnumNames;
+			EnumNames.Emplace(TEXT("EBPVRConsoleDrawType::VRConsole_Draw_ConsoleOnly"), 0);
+			EnumNames.Emplace(TEXT("EBPVRConsoleDrawType::VRConsole_Draw_OutputLogOnly"), 1);
+			EnumNames.Emplace(TEXT("EBPVRConsoleDrawType::VRConsole_Draw_MAX"), 2);
+			ReturnEnum->SetEnums(EnumNames, UEnum::ECppForm::EnumClass);
+			ReturnEnum->CppType = TEXT("EBPVRConsoleDrawType");
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnEnum->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnEnum, TEXT("BlueprintType"), TEXT("true"));
+			MetaData->SetValue(ReturnEnum, TEXT("ModuleRelativePath"), TEXT("Public/Misc/VRLogComponent.h"));
+#endif
+		}
+		return ReturnEnum;
+	}
+	uint32 Get_Z_Construct_UEnum_VRExpansionPlugin_EBPVRConsoleDrawType_CRC() { return 3934935814U; }
+	void UVRLogComponent::StaticRegisterNativesUVRLogComponent()
+	{
+		UClass* Class = UVRLogComponent::StaticClass();
+		static const TNameNativePtrPair<ANSICHAR> AnsiFuncs[] = {
+			{ "AppendTextToConsole", (Native)&UVRLogComponent::execAppendTextToConsole },
+			{ "DrawConsoleToRenderTarget2D", (Native)&UVRLogComponent::execDrawConsoleToRenderTarget2D },
+			{ "SendKeyEventToConsole", (Native)&UVRLogComponent::execSendKeyEventToConsole },
+			{ "SetConsoleText", (Native)&UVRLogComponent::execSetConsoleText },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, AnsiFuncs, 4);
+	}
+	UFunction* Z_Construct_UFunction_UVRLogComponent_AppendTextToConsole()
+	{
+		struct VRLogComponent_eventAppendTextToConsole_Parms
+		{
+			FString Text;
+			bool bReturnAtEnd;
+		};
+		UObject* Outer=Z_Construct_UClass_UVRLogComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("AppendTextToConsole"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(VRLogComponent_eventAppendTextToConsole_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bReturnAtEnd, VRLogComponent_eventAppendTextToConsole_Parms, bool);
+			UProperty* NewProp_bReturnAtEnd = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bReturnAtEnd"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bReturnAtEnd, VRLogComponent_eventAppendTextToConsole_Parms), 0x0010000000000080, CPP_BOOL_PROPERTY_BITMASK(bReturnAtEnd, VRLogComponent_eventAppendTextToConsole_Parms), sizeof(bool), true);
+			UProperty* NewProp_Text = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Text"), RF_Public|RF_Transient|RF_MarkAsNative) UStrProperty(CPP_PROPERTY_BASE(Text, VRLogComponent_eventAppendTextToConsole_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("bIgnoreSelf"), TEXT("true"));
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRLogComponent|Console"));
+			MetaData->SetValue(ReturnFunction, TEXT("CPP_Default_bReturnAtEnd"), TEXT("false"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Misc/VRLogComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Sends text to the console - Optionally returns at the end to \"enter\" the text, end flashes the cursor"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRLogComponent_DrawConsoleToRenderTarget2D()
+	{
+		struct VRLogComponent_eventDrawConsoleToRenderTarget2D_Parms
+		{
+			EBPVRConsoleDrawType DrawType;
+			UTextureRenderTarget2D* Texture;
+			float ScrollOffset;
+			bool bForceDraw;
+			bool ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_UVRLogComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("DrawConsoleToRenderTarget2D"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(VRLogComponent_eventDrawConsoleToRenderTarget2D_Parms));
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(ReturnValue, VRLogComponent_eventDrawConsoleToRenderTarget2D_Parms, bool);
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(ReturnValue, VRLogComponent_eventDrawConsoleToRenderTarget2D_Parms), 0x0010000000000580, CPP_BOOL_PROPERTY_BITMASK(ReturnValue, VRLogComponent_eventDrawConsoleToRenderTarget2D_Parms), sizeof(bool), true);
+			CPP_BOOL_PROPERTY_BITMASK_STRUCT(bForceDraw, VRLogComponent_eventDrawConsoleToRenderTarget2D_Parms, bool);
+			UProperty* NewProp_bForceDraw = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("bForceDraw"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bForceDraw, VRLogComponent_eventDrawConsoleToRenderTarget2D_Parms), 0x0010000000000080, CPP_BOOL_PROPERTY_BITMASK(bForceDraw, VRLogComponent_eventDrawConsoleToRenderTarget2D_Parms), sizeof(bool), true);
+			UProperty* NewProp_ScrollOffset = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ScrollOffset"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(ScrollOffset, VRLogComponent_eventDrawConsoleToRenderTarget2D_Parms), 0x0010000000000080);
+			UProperty* NewProp_Texture = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Texture"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(Texture, VRLogComponent_eventDrawConsoleToRenderTarget2D_Parms), 0x0010000000000080, Z_Construct_UClass_UTextureRenderTarget2D_NoRegister());
+			UProperty* NewProp_DrawType = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("DrawType"), RF_Public|RF_Transient|RF_MarkAsNative) UEnumProperty(CPP_PROPERTY_BASE(DrawType, VRLogComponent_eventDrawConsoleToRenderTarget2D_Parms), 0x0010000000000080, Z_Construct_UEnum_VRExpansionPlugin_EBPVRConsoleDrawType());
+			UProperty* NewProp_DrawType_Underlying = new(EC_InternalUseOnlyConstructor, NewProp_DrawType, TEXT("UnderlyingType"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(FObjectInitializer(), EC_CppProperty, 0, 0x0000000000000000);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("bIgnoreSelf"), TEXT("true"));
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRLogComponent|Console"));
+			MetaData->SetValue(ReturnFunction, TEXT("DisplayName"), TEXT("DrawConsoleToCanvasRenderTarget2D"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Misc/VRLogComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Draw the console to a render target 2D"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRLogComponent_SendKeyEventToConsole()
+	{
+		struct VRLogComponent_eventSendKeyEventToConsole_Parms
+		{
+			FKey Key;
+			TEnumAsByte<EInputEvent> KeyEvent;
+		};
+		UObject* Outer=Z_Construct_UClass_UVRLogComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SendKeyEventToConsole"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(VRLogComponent_eventSendKeyEventToConsole_Parms));
+			UProperty* NewProp_KeyEvent = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("KeyEvent"), RF_Public|RF_Transient|RF_MarkAsNative) UByteProperty(CPP_PROPERTY_BASE(KeyEvent, VRLogComponent_eventSendKeyEventToConsole_Parms), 0x0010000000000080, Z_Construct_UEnum_Engine_EInputEvent());
+			UProperty* NewProp_Key = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Key"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(Key, VRLogComponent_eventSendKeyEventToConsole_Parms), 0x0010000000000080, Z_Construct_UScriptStruct_FKey());
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("bIgnoreSelf"), TEXT("true"));
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRLogComponent|Console"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Misc/VRLogComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Sends a key to the console - Console considers Released as final, flashes the cursor"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRLogComponent_SetConsoleText()
+	{
+		struct VRLogComponent_eventSetConsoleText_Parms
+		{
+			FString Text;
+		};
+		UObject* Outer=Z_Construct_UClass_UVRLogComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SetConsoleText"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(VRLogComponent_eventSetConsoleText_Parms));
+			UProperty* NewProp_Text = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("Text"), RF_Public|RF_Transient|RF_MarkAsNative) UStrProperty(CPP_PROPERTY_BASE(Text, VRLogComponent_eventSetConsoleText_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("bIgnoreSelf"), TEXT("true"));
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("VRLogComponent|Console"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Misc/VRLogComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Sets the console input text, can be used to clear the console or enter full or partial commands"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_UVRLogComponent_NoRegister()
+	{
+		return UVRLogComponent::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UVRLogComponent()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_UActorComponent();
+			Z_Construct_UPackage__Script_VRExpansionPlugin();
+			OuterClass = UVRLogComponent::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20B00080;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRLogComponent_AppendTextToConsole());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRLogComponent_DrawConsoleToRenderTarget2D());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRLogComponent_SendKeyEventToConsole());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRLogComponent_SetConsoleText());
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_MaxStoredMessages = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("MaxStoredMessages"), RF_Public|RF_Transient|RF_MarkAsNative) UIntProperty(CPP_PROPERTY_BASE(MaxStoredMessages, UVRLogComponent), 0x0010000000000005);
+				UProperty* NewProp_MaxLineLength = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("MaxLineLength"), RF_Public|RF_Transient|RF_MarkAsNative) UIntProperty(CPP_PROPERTY_BASE(MaxLineLength, UVRLogComponent), 0x0010000000000005);
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRLogComponent_AppendTextToConsole(), "AppendTextToConsole"); // 1422831469
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRLogComponent_DrawConsoleToRenderTarget2D(), "DrawConsoleToRenderTarget2D"); // 2914736933
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRLogComponent_SendKeyEventToConsole(), "SendKeyEventToConsole"); // 2040419956
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRLogComponent_SetConsoleText(), "SetConsoleText"); // 2035753505
+				static TCppClassTypeInfo<TCppClassTypeTraits<UVRLogComponent> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("BlueprintSpawnableComponent"), TEXT(""));
+				MetaData->SetValue(OuterClass, TEXT("BlueprintType"), TEXT("true"));
+				MetaData->SetValue(OuterClass, TEXT("ClassGroupNames"), TEXT("VRExpansionPlugin"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("Misc/VRLogComponent.h"));
+				MetaData->SetValue(OuterClass, TEXT("IsBlueprintBase"), TEXT("true"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/Misc/VRLogComponent.h"));
+				MetaData->SetValue(NewProp_MaxStoredMessages, TEXT("Category"), TEXT("VRLogComponent|Console"));
+				MetaData->SetValue(NewProp_MaxStoredMessages, TEXT("ModuleRelativePath"), TEXT("Public/Misc/VRLogComponent.h"));
+				MetaData->SetValue(NewProp_MaxLineLength, TEXT("Category"), TEXT("VRLogComponent|Console"));
+				MetaData->SetValue(NewProp_MaxLineLength, TEXT("ModuleRelativePath"), TEXT("Public/Misc/VRLogComponent.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UVRLogComponent, 2704631669);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UVRLogComponent(Z_Construct_UClass_UVRLogComponent, &UVRLogComponent::StaticClass, TEXT("/Script/VRExpansionPlugin"), TEXT("UVRLogComponent"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UVRLogComponent);
+	void UVRPathFollowingComponent::StaticRegisterNativesUVRPathFollowingComponent()
+	{
+	}
+	UClass* Z_Construct_UClass_UVRPathFollowingComponent_NoRegister()
+	{
+		return UVRPathFollowingComponent::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UVRPathFollowingComponent()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_UPathFollowingComponent();
+			Z_Construct_UPackage__Script_VRExpansionPlugin();
+			OuterClass = UVRPathFollowingComponent::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20B00080;
+
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_VRMovementComp = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("VRMovementComp"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(VRMovementComp, UVRPathFollowingComponent), 0x0010000000082008, Z_Construct_UClass_UVRCharacterMovementComponent_NoRegister());
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				static TCppClassTypeInfo<TCppClassTypeTraits<UVRPathFollowingComponent> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("VRPathFollowingComponent.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/VRPathFollowingComponent.h"));
+				MetaData->SetValue(NewProp_VRMovementComp, TEXT("EditInline"), TEXT("true"));
+				MetaData->SetValue(NewProp_VRMovementComp, TEXT("ModuleRelativePath"), TEXT("Public/VRPathFollowingComponent.h"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UVRPathFollowingComponent, 2200409508);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UVRPathFollowingComponent(Z_Construct_UClass_UVRPathFollowingComponent, &UVRPathFollowingComponent::StaticClass, TEXT("/Script/VRExpansionPlugin"), TEXT("UVRPathFollowingComponent"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UVRPathFollowingComponent);
+	void AVRPlayerController::StaticRegisterNativesAVRPlayerController()
+	{
+	}
+	UClass* Z_Construct_UClass_AVRPlayerController_NoRegister()
+	{
+		return AVRPlayerController::StaticClass();
+	}
+	UClass* Z_Construct_UClass_AVRPlayerController()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_APlayerController();
+			Z_Construct_UPackage__Script_VRExpansionPlugin();
+			OuterClass = AVRPlayerController::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20900284;
+
+
+				OuterClass->ClassConfigName = FName(TEXT("Game"));
+				static TCppClassTypeInfo<TCppClassTypeTraits<AVRPlayerController> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Collision Rendering Utilities|Transformation"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("VRPlayerController.h"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/VRPlayerController.h"));
+				MetaData->SetValue(OuterClass, TEXT("ObjectInitializerConstructorDeclared"), TEXT(""));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(AVRPlayerController, 4189789569);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_AVRPlayerController(Z_Construct_UClass_AVRPlayerController, &AVRPlayerController::StaticClass, TEXT("/Script/VRExpansionPlugin"), TEXT("AVRPlayerController"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(AVRPlayerController);
+	void UVRStereoWidgetComponent::StaticRegisterNativesUVRStereoWidgetComponent()
+	{
+		UClass* Class = UVRStereoWidgetComponent::StaticClass();
+		static const TNameNativePtrPair<ANSICHAR> AnsiFuncs[] = {
+			{ "GetPriority", (Native)&UVRStereoWidgetComponent::execGetPriority },
+			{ "SetPriority", (Native)&UVRStereoWidgetComponent::execSetPriority },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, AnsiFuncs, 2);
+	}
+	UFunction* Z_Construct_UFunction_UVRStereoWidgetComponent_GetPriority()
+	{
+		struct VRStereoWidgetComponent_eventGetPriority_Parms
+		{
+			int32 ReturnValue;
+		};
+		UObject* Outer=Z_Construct_UClass_UVRStereoWidgetComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("GetPriority"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x54020401, 65535, sizeof(VRStereoWidgetComponent_eventGetPriority_Parms));
+			UProperty* NewProp_ReturnValue = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("ReturnValue"), RF_Public|RF_Transient|RF_MarkAsNative) UIntProperty(CPP_PROPERTY_BASE(ReturnValue, VRStereoWidgetComponent_eventGetPriority_Parms), 0x0010000000000580);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Components|Stereo Layer"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/VRStereoWidgetComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("@return the render priority"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_UVRStereoWidgetComponent_SetPriority()
+	{
+		struct VRStereoWidgetComponent_eventSetPriority_Parms
+		{
+			int32 InPriority;
+		};
+		UObject* Outer=Z_Construct_UClass_UVRStereoWidgetComponent();
+		static UFunction* ReturnFunction = NULL;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("SetPriority"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x04020401, 65535, sizeof(VRStereoWidgetComponent_eventSetPriority_Parms));
+			UProperty* NewProp_InPriority = new(EC_InternalUseOnlyConstructor, ReturnFunction, TEXT("InPriority"), RF_Public|RF_Transient|RF_MarkAsNative) UIntProperty(CPP_PROPERTY_BASE(InPriority, VRStereoWidgetComponent_eventSetPriority_Parms), 0x0010000000000080);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Components|Stereo Layer"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/VRStereoWidgetComponent.h"));
+			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Change the layer's render priority, higher priorities render on top of lower priorities\n@param        InPriority: Priority value"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UClass* Z_Construct_UClass_UVRStereoWidgetComponent_NoRegister()
+	{
+		return UVRStereoWidgetComponent::StaticClass();
+	}
+	UClass* Z_Construct_UClass_UVRStereoWidgetComponent()
+	{
+		static UClass* OuterClass = NULL;
+		if (!OuterClass)
+		{
+			Z_Construct_UClass_UWidgetComponent();
+			Z_Construct_UPackage__Script_VRExpansionPlugin();
+			OuterClass = UVRStereoWidgetComponent::StaticClass();
+			if (!(OuterClass->ClassFlags & CLASS_Constructed))
+			{
+				UObjectForceRegistration(OuterClass);
+				OuterClass->ClassFlags |= 0x20B01080;
+
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRStereoWidgetComponent_GetPriority());
+				OuterClass->LinkChild(Z_Construct_UFunction_UVRStereoWidgetComponent_SetPriority());
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+				UProperty* NewProp_Priority = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("Priority"), RF_Public|RF_Transient|RF_MarkAsNative) UIntProperty(CPP_PROPERTY_BASE(Priority, UVRStereoWidgetComponent), 0x001000000000001d);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bQuadPreserveTextureRatio, UVRStereoWidgetComponent, uint8);
+				UProperty* NewProp_bQuadPreserveTextureRatio = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bQuadPreserveTextureRatio"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bQuadPreserveTextureRatio, UVRStereoWidgetComponent), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bQuadPreserveTextureRatio, UVRStereoWidgetComponent), sizeof(uint8), false);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(bNoAlphaChannel, UVRStereoWidgetComponent, uint8);
+				UProperty* NewProp_bNoAlphaChannel = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("bNoAlphaChannel"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(bNoAlphaChannel, UVRStereoWidgetComponent), 0x0010000000000005, CPP_BOOL_PROPERTY_BITMASK(bNoAlphaChannel, UVRStereoWidgetComponent), sizeof(uint8), false);
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRStereoWidgetComponent_GetPriority(), "GetPriority"); // 1968970179
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_UVRStereoWidgetComponent_SetPriority(), "SetPriority"); // 3370626645
+				static TCppClassTypeInfo<TCppClassTypeTraits<UVRStereoWidgetComponent> > StaticCppClassTypeInfo;
+				OuterClass->SetCppTypeInfo(&StaticCppClassTypeInfo);
+				OuterClass->StaticLink();
+#if WITH_METADATA
+				UMetaData* MetaData = OuterClass->GetOutermost()->GetMetaData();
+				MetaData->SetValue(OuterClass, TEXT("BlueprintSpawnableComponent"), TEXT(""));
+				MetaData->SetValue(OuterClass, TEXT("BlueprintType"), TEXT("true"));
+				MetaData->SetValue(OuterClass, TEXT("ClassGroupNames"), TEXT("VRExpansionPlugin"));
+				MetaData->SetValue(OuterClass, TEXT("HideCategories"), TEXT("Object Activation Components|Activation Sockets Base Lighting LOD Mesh Mobility Trigger"));
+				MetaData->SetValue(OuterClass, TEXT("IncludePath"), TEXT("VRStereoWidgetComponent.h"));
+				MetaData->SetValue(OuterClass, TEXT("IsBlueprintBase"), TEXT("true"));
+				MetaData->SetValue(OuterClass, TEXT("ModuleRelativePath"), TEXT("Public/VRStereoWidgetComponent.h"));
+				MetaData->SetValue(NewProp_Priority, TEXT("Category"), TEXT("StereoLayer"));
+				MetaData->SetValue(NewProp_Priority, TEXT("ModuleRelativePath"), TEXT("Public/VRStereoWidgetComponent.h"));
+				MetaData->SetValue(NewProp_Priority, TEXT("ToolTip"), TEXT("Render priority among all stereo layers, higher priority render on top of lower priority *"));
+				MetaData->SetValue(NewProp_bQuadPreserveTextureRatio, TEXT("Category"), TEXT("StereoLayer"));
+				MetaData->SetValue(NewProp_bQuadPreserveTextureRatio, TEXT("ModuleRelativePath"), TEXT("Public/VRStereoWidgetComponent.h"));
+				MetaData->SetValue(NewProp_bQuadPreserveTextureRatio, TEXT("ToolTip"), TEXT("True if the quad should internally set it's Y value based on the set texture's dimensions"));
+				MetaData->SetValue(NewProp_bNoAlphaChannel, TEXT("Category"), TEXT("StereoLayer"));
+				MetaData->SetValue(NewProp_bNoAlphaChannel, TEXT("ModuleRelativePath"), TEXT("Public/VRStereoWidgetComponent.h"));
+				MetaData->SetValue(NewProp_bNoAlphaChannel, TEXT("ToolTip"), TEXT("True if the texture should not use its own alpha channel (1.0 will be substituted)"));
+#endif
+			}
+		}
+		check(OuterClass->GetClass());
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UVRStereoWidgetComponent, 1526590665);
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UVRStereoWidgetComponent(Z_Construct_UClass_UVRStereoWidgetComponent, &UVRStereoWidgetComponent::StaticClass, TEXT("/Script/VRExpansionPlugin"), TEXT("UVRStereoWidgetComponent"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UVRStereoWidgetComponent);
+	UPackage* Z_Construct_UPackage__Script_VRExpansionPlugin()
+	{
+		static UPackage* ReturnPackage = nullptr;
+		if (!ReturnPackage)
+		{
+			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), nullptr, FName(TEXT("/Script/VRExpansionPlugin")), false, false));
+			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
+			FGuid Guid;
+			Guid.A = 0xD8F198A7;
+			Guid.B = 0x1BAD16D3;
+			Guid.C = 0x00000000;
+			Guid.D = 0x00000000;
+			ReturnPackage->SetGuid(Guid);
+
+			Z_Construct_UDelegateFunction_VRExpansionPlugin_VRButtonStateChangedSignature__DelegateSignature();
+		}
+		return ReturnPackage;
+	}
+#endif
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+#ifdef _MSC_VER
+#pragma warning (pop)
+#endif
+PRAGMA_ENABLE_OPTIMIZATION

@@ -1,0 +1,14 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-RamaSaveSystem.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\Unreal4.15_Prev2\UE_4.16\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h.obj"
+"D:\_unrealProjects\ZAR_4_16\Plugins\RanmaSave\Intermediate\Build\Win64\UE4Editor\Development\RamaSaveSystem\Module.RamaSaveSystem.cpp.obj"
+"D:\_unrealProjects\ZAR_4_16\Plugins\RanmaSave\Intermediate\Build\Win64\UE4Editor\Development\RamaSaveSystem\RamaSaveSystem.generated.cpp.obj"
+"D:\Unreal4.15_Prev2\UE_4.16\Engine\Intermediate\Build\Win64\UE4Editor\Development\RamaSaveSystem\PCLaunch.rc.res"
+"D:\Unreal4.15_Prev2\UE_4.16\Engine\Intermediate\Build\Win64\UE4Editor\Development\ModuleVersionResource.rc.inl.res"
+/OUT:"D:\_unrealProjects\ZAR_4_16\Plugins\RanmaSave\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-RamaSaveSystem.lib"

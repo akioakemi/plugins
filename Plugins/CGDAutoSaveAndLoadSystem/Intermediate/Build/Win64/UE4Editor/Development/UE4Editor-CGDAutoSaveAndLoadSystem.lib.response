@@ -1,0 +1,16 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-CGDAutoSaveAndLoadSystem.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\Unreal4.15_Prev2\UE_4.16\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h.obj"
+"D:\_unrealProjects\ZAR_4_16\Plugins\CGDAutoSaveAndLoadSystem\Intermediate\Build\Win64\UE4Editor\Development\CGDAutoSaveAndLoadSystem\CGDAutoSaveAndLoadSystem.cpp.obj"
+"D:\_unrealProjects\ZAR_4_16\Plugins\CGDAutoSaveAndLoadSystem\Intermediate\Build\Win64\UE4Editor\Development\CGDAutoSaveAndLoadSystem\CGDAutoSaveAndLoadComponent.cpp.obj"
+"D:\_unrealProjects\ZAR_4_16\Plugins\CGDAutoSaveAndLoadSystem\Intermediate\Build\Win64\UE4Editor\Development\CGDAutoSaveAndLoadSystem\CGD_AutoSaveLoad_BPLibrary.cpp.obj"
+"D:\_unrealProjects\ZAR_4_16\Plugins\CGDAutoSaveAndLoadSystem\Intermediate\Build\Win64\UE4Editor\Development\CGDAutoSaveAndLoadSystem\CGDAutoSaveAndLoadSystem.generated.cpp.obj"
+"D:\Unreal4.15_Prev2\UE_4.16\Engine\Intermediate\Build\Win64\UE4Editor\Development\CGDAutoSaveAndLoadSystem\PCLaunch.rc.res"
+"D:\Unreal4.15_Prev2\UE_4.16\Engine\Intermediate\Build\Win64\UE4Editor\Development\ModuleVersionResource.rc.inl.res"
+/OUT:"D:\_unrealProjects\ZAR_4_16\Plugins\CGDAutoSaveAndLoadSystem\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-CGDAutoSaveAndLoadSystem.lib"
