@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "DevTextUEr",
+	"Description": "Create development textures of various sizes and types straight from within Unreal Engine\r\nSupported:\r\n- Flat color\r\n- Grids\r\n- Steps\r\n- Gradients\r\n\r\nTextures can be labeled with name, size, and UVs (either in 0-1 range or pixel size)",
+	"Category": "NT Entertainment",
+	"CreatedBy": "NT Entertainment",
+	"CreatedByURL": "http://nte.itch.io/DevTextUEr",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "http://nte.itch.io/DevTextUEr",
+	"CanContainContent": false,
+	"EngineVersion": "4.16.0",
+	"IsBetaVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "DevTextUEr",
+			"Type": "EditorNoCommandlet",
+			"LoadingPhase": "Default"
+		}
+	]
+}

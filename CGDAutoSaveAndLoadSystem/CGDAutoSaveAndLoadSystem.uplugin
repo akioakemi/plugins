@@ -1,0 +1,33 @@
+{
+	"FileVersion" : 3,
+	"Version" : 1,
+	"VersionName" : "1.1",
+	"FriendlyName" : "Auto Save And Load System with Compression",
+	"Description" : "Auto save and load system just by adding a component to any Actor",
+	"Category" : "Cronofear Softworks",
+	"CreatedBy" : "Cronofear Softworks",
+	"CreatedByURL" : "http://cronofear.com/",
+	"DocsURL" : "http://cronofear.com/ue4-plugins/auto-save-load-system-with-compression/",
+	"MarketplaceURL" : "com.epicgames.launcher://ue/marketplace/content/1908d4fc7b1a4c7faa285ed913155f2b",
+	"SupportURL" : "",
+	"EngineVersion" : "4.16.0",
+	"CanContainContent" : true,
+	"IsBetaVersion" : false,
+	"Installed" : true,
+	"RequiresBuildPlatform" : false,
+	"Modules" :
+	[
+		{
+			"Name" : "CGDAutoSaveAndLoadSystem",
+			"Type" : "Developer",
+			"LoadingPhase" : "Default",
+			"WhitelistPlatforms" :
+			[
+				"Win32",
+				"Win64",
+				"Linux",
+				"Android"
+			]
+		}
+	]
+}

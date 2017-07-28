@@ -1,0 +1,15 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-VRExpansionPlugin.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\Unreal4.15_Prev2\UE_4.16\Engine\Intermediate\Build\Win64\UE4Editor\Development\UnrealEd\SharedPCH.UnrealEd.h.obj"
+"D:\_unrealProjects\ZAR_4_16\Plugins\VRExpansionPlugin\VRExpansionPlugin\Intermediate\Build\Win64\UE4Editor\Development\VRExpansionPlugin\Module.VRExpansionPlugin.cpp.obj"
+"D:\_unrealProjects\ZAR_4_16\Plugins\VRExpansionPlugin\VRExpansionPlugin\Intermediate\Build\Win64\UE4Editor\Development\VRExpansionPlugin\VRExpansionPlugin.generated.1.cpp.obj"
+"D:\_unrealProjects\ZAR_4_16\Plugins\VRExpansionPlugin\VRExpansionPlugin\Intermediate\Build\Win64\UE4Editor\Development\VRExpansionPlugin\VRExpansionPlugin.generated.2.cpp.obj"
+"D:\Unreal4.15_Prev2\UE_4.16\Engine\Intermediate\Build\Win64\UE4Editor\Development\VRExpansionPlugin\PCLaunch.rc.res"
+"D:\Unreal4.15_Prev2\UE_4.16\Engine\Intermediate\Build\Win64\UE4Editor\Development\ModuleVersionResource.rc.inl.res"
+/OUT:"D:\_unrealProjects\ZAR_4_16\Plugins\VRExpansionPlugin\VRExpansionPlugin\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-VRExpansionPlugin.lib"
